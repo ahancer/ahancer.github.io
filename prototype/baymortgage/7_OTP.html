@@ -29,6 +29,36 @@
     </script>
 <!-- End Facebook Pixel Code -->
 
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap-pincode-input/js/bootstrap-pincode-input.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#pincode-input1').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
+          window.location = '8_Loading.html';
+        }});
+    });
+</script>
+
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#married-status").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box-option").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box-option").hide();
+            }
+        });
+    }).change();
+});
+</script>
+
 </head>
   <body>
 
@@ -63,37 +93,5 @@
     </div>
 
 
-
-
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="node_modules/bootstrap-pincode-input/js/bootstrap-pincode-input.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#pincode-input1').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
-              window.location = '8_Loading.html';
-            }});
-        });
-    </script>
-
-  </body>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $("#married-status").change(function(){
-            $(this).find("option:selected").each(function(){
-                var optionValue = $(this).attr("value");
-                if(optionValue){
-                    $(".box-option").not("." + optionValue).hide();
-                    $("." + optionValue).show();
-                } else{
-                    $(".box-option").hide();
-                }
-            });
-        }).change();
-    });
-  </script>
 
 </html>
