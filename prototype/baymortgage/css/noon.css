@@ -1,0 +1,26 @@
+
+.card-title h3 {
+  float: left;
+  margin: 0px;
+  font-size: 16px;
+}
+.card-title .card-header-edit{
+  float: right;
+  font-size: 14px;
+}
+.clear{
+  clear: both;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+
+.page-summary .card {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.left-text {
+  font-weight: bold;
+}

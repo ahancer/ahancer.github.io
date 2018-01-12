@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Facebook OG -->
+    <meta property="fb:app_id"             content="" />
+    <meta property="og:url"                content=""/>
+    <meta property="og:type"               content=""/>
+    <meta property="og:title"              content=""/>
+    <meta property="og:description"        content=""/>
+    <meta property="og:image"              content=""/>
+<!-- Facebook OG ENDS -->
+
+    <title>3_Profile</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+
+<!--This is Google Analytics-->
+    <script>
+    </script>
+<!--END of Google Analytics-->
+
+<!-- Facebook Pixel Code -->
+    <script>
+    </script>
+<!-- End Facebook Pixel Code -->
+
+</head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header max-width">
+          <a class="navbar-brand" href="index.html"><img src="images/bay-logo.png" alt=""> Krungsri</a>
+          <button type="button" name="button" class="btn btn-secondary">ออกจากระบบ</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="step container-fluid">
+      <div class="container">
+        <div class="row">
+          <a href="2_Loan_Amount.html">
+            <div class="step-item col-xs-4">
+              <h3>1</h3>
+              ข้อมูลสินเชื่อ
+            </div>
+          </a>
+          <a href="3_Profile.html">
+            <div class="step-item active col-xs-4">
+              <h3>2</h3>
+              ข้อมูลส่วนตัว
+            </div>
+          </a>
+          <a href="4_Financial.html">
+            <div class="step-item col-xs-4">
+              <h3>3</h3>
+              ข้อมูลการเงิน
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-header">
+        <h2>ข้อมูลส่วนตัว</h2>
+      </div>
+      <div class="card">
+        <div class="text-row">
+          <div class="left-text">
+            ชื่อ:
+          </div>
+          <div class="right-text">
+            นางสาว นวลจันทร์ สุขออม
+          </div>
+        </div>
+        <div class="text-row">
+          <div class="left-text">
+            เลขบัตรประชาชน:
+          </div>
+          <div class="right-text">
+            109-434-878-5731
+          </div>
+        </div>
+        <div class="text-row">
+          <div class="left-text">
+            สัญชาติ:
+          </div>
+          <div class="right-text">
+            ไทย
+          </div>
+        </div>
+        <div class="text-row">
+          <div class="left-text">
+            วัน/เดือน/ปีเกิด:
+          </div>
+          <div class="right-text">
+            02/11/2526
+          </div>
+        </div>
+        <div class="text-row">
+          <div class="left-text">
+            อีเมล์:
+          </div>
+          <div class="right-text">
+            naunjan@gmail.com
+          </div>
+        </div>
+      </div>
+      <small>
+        หากต้องการเปลี่ยนแปลงข้อมูลข้างต้น คุณสามารถติดต่อกับเจ้าหน้าที่ เพื่อแก้ไขได้ที่เบอร์ 1572
+      </small>
+      <div class="page-header">
+        <h2>ข้อมูลส่วนตัวเพิ่มเติม</h2>
+      </div>
+      <div class="form-group">
+        <label>ชื่อ(อังกฤษ)*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>นามสกุล(อังกฤษ)*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>สถานภาพ*</label>
+        <select class="form-control" id="married-status">
+          <option disabled selected>กรุณาเลือก</option>
+          <option value="option_single">โสด</option>
+          <option value="option_married">สมรส</option>
+          <option value="option_single">สมรสไม่จดทะเบียน</option>
+          <option value="option_single">หม้าย</option>
+        </select>
+      </div>
+
+      <div class="option_single box-option">
+        <!--Fields for this option-->
+      </div>
+      <div class="option_married box-option">
+        <div class="form-group">
+          <label>ชื่อคู่สมรส(ไทย)*</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+          <label>นามสกุลคู่สมรส(ไทย)*</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+          <label>ชื่อคู่สมรส(อังกฤษ)*</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="form-group">
+          <label>นามสกุลคู่สมรส(อังกฤษ)*</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h2>ที่อยู่ปัจจุบัน</h2>
+      </div>
+      <div class="form-group">
+        <label>เลขที่บ้าน*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>หมู่/ซอย</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>ถนน*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>แขวง/ตำบล*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>เขต/อำเภอ*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>จังหวัด*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="form-group">
+        <label>รหัสไปรษณีย์*</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+
+      <br>
+      <br>
+
+      <div class="page-button">
+        <div class="row">
+          <div class="button-left col-xs-4">
+            <button type="button" name="button" class="btn btn-secondary max-width">ย้อนกลับ</button>
+          </div>
+          <a href="4_Financial.html">
+            <div class="button-right col-xs-8">
+              <button type="button" name="button" class="btn btn-primary max-width">ถัดไป ></button>
+            </div>
+          </a>
+        </div>
+        <br>
+        *  ข้อมูลที่จำเป็นต้องกรอก
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("#married-status").change(function(){
+            $(this).find("option:selected").each(function(){
+                var optionValue = $(this).attr("value");
+                if(optionValue){
+                    $(".box-option").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else{
+                    $(".box-option").hide();
+                }
+            });
+        }).change();
+    });
+  </script>
+
+</html>

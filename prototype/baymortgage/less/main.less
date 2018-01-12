@@ -1,0 +1,290 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "_variables.less";
+@import "_mixins.less";
+
+/*---General Setting---*/
+body{
+  font-size: 16px;
+}
+h1{
+}
+h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+h4{
+  font-size: 16px;
+}
+label{
+  font-weight: normal;
+}
+hr{
+  border-top: 1px solid @color-grey-normal;
+  margin: 15px 0px;
+}
+p{
+  font-size: 14px;
+}
+a{
+  color: @color-black;
+}
+.container{
+  max-width: 600px;
+}
+.max-width{
+  width: 100%;
+}
+.box-option{
+  display: none;
+}
+.clear{
+  clear: both;
+}
+
+/*---Navigation---*/
+.navbar-inverse{
+  background-color: @color-black;
+  border: 0px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  .navbar-header{
+    margin: 0px;
+    .navbar-brand{
+      font-size: 20px;
+      color:@color-white;
+      img{
+        margin-top: -4px;
+        margin-right: 5px;
+        display: inline-block;
+      }
+    }
+    .btn-secondary{
+      float: right;
+      font-size: 14px;
+      margin: 11px 0px 11px 15px;
+      padding: 4px 5px;
+    }
+  }
+}
+
+/*---CPA Form---*/
+.step{
+  background: @color-grey-light;
+  text-align: center;
+  font-size: 14px;
+  h3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+  .step-item{
+    padding-bottom: 15px;
+    color: @color-grey-normal;
+    &.active{
+      background: url("../images/step-item-active.png") no-repeat bottom;
+      color: @color-black
+    }
+  }
+}
+.card{
+  background: @color-grey-light;
+  border: 1px solid @color-grey-normal;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 10px;
+  .text-row{
+    margin: 5px 0px;
+    font-size: 14px;
+    .left-text{
+      width: 110px;
+      text-align: right;
+      display: inline-block;
+    }
+    .right-text{
+      margin-left: 10px;
+      display: inline-block;
+    }
+  }
+  .card-header{
+    border-bottom: 1px solid @color-grey-normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    .card-header-edit{
+      float: right;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+/*---Form---*/
+.form-control{
+  height: 44px;
+  padding: 20px 15px;
+  box-shadow: none !important;
+  border: 2px solid @color-grey-normal;
+  font-size: 16px;
+}
+input.form-control{
+  -webkit-appearance: none;
+}
+.form-subtext{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.input-group-addon{
+  min-width: 60px;
+  background: @color-grey-light;
+  border: 2px solid @color-grey-normal;
+}
+
+/*---Button---*/
+.btn{
+  padding: 10px;
+  font-size: 16px;
+}
+.btn-primary {
+  &:extend(.btn all);
+  .button-variant(@color-white, @color-black, @color-black);
+}
+.btn-secondary {
+  &:extend(.btn all);
+  .button-variant(@color-black, @color-grey-light, @color-grey-light);
+}
+
+/*---Page---*/
+.page-header{
+   margin: 30px 0 20px;
+   border-bottom: 2px solid @color-grey-normal;
+}
+.page-title{
+  margin-bottom: 10px;
+  .page-title-main{
+    float: left;
+  }
+  .page-title-support{
+    float: right;
+  }
+}
+.page-button{
+   margin-bottom: 15px;
+   .button-left{
+       padding-right: 0px;
+   }
+}
+.page-summary{
+  h2{
+    margin-top: 20px;
+  }
+  .card{
+    margin: 20px 0px;
+  }
+}
+.page-tc{
+  margin-top: 30px;
+  .page-button{
+    margin-top:20px;
+  }
+}
+
+.page-otp{
+  text-align: center;
+  .card{
+    margin-top: 30px;
+  }
+  .icon-otp{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .pincode-input-container{
+    margin-top:30px;
+    margin-bottom: 10px;
+    .pincode-input-text{
+      border-color: @color-black;
+      width: 45px;
+    }
+  }
+  .page-button{
+    margin-top: 30px;
+    p{
+      color:@color-grey-dark;
+      margin-top: 20px;
+    }
+  }
+}
+
+.page-loading{
+  text-align: center;
+  img{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-result{
+  text-align: center;
+  .icon-result{
+    margin-top: 40px;
+  }
+  h2{
+    margin-top: 20px;
+    line-height: 28px;
+  }
+  .result-amount{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .result-contact{
+    line-height: 28px;
+  }
+  .result-next{
+    .icon-read-more{
+      margin: auto;
+      display: block;
+    }
+    margin: 20px -15px 0px -15px;
+    padding: 0px 15px 15px 15px;
+    background: @color-grey-light;
+    text-align: left;
+  }
+}
+
+/*---Responsive (Bootstrap Standard)---*/
+/* Only Large devices (LG) */
+@media only screen and (min-width: 1201px) {
+
+}
+/* Only Medium devices (MD) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+/* Only Small devices (SM) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+/* Only Extra Small devices (XS) */
+@media only screen and (max-width: 768px) {
+  .navbar-inverse{
+    .navbar-header{
+      .navbar-brand{
+        padding-left: 0px;
+      }
+    }
+  }
+}

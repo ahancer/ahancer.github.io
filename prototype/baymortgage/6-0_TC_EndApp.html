@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Facebook OG -->
+    <meta property="fb:app_id"             content="" />
+    <meta property="og:url"                content=""/>
+    <meta property="og:type"               content=""/>
+    <meta property="og:title"              content=""/>
+    <meta property="og:description"        content=""/>
+    <meta property="og:image"              content=""/>
+<!-- Facebook OG ENDS -->
+
+    <title>6-0_TC_EndApp</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+
+<!--This is Google Analytics-->
+    <script>
+    </script>
+<!--END of Google Analytics-->
+
+<!-- Facebook Pixel Code -->
+    <script>
+    </script>
+<!-- End Facebook Pixel Code -->
+
+</head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header max-width">
+          <a class="navbar-brand" href="index.html"><img src="images/bay-logo.png" alt=""> Krungsri</a>
+          <button type="button" name="button" class="btn btn-secondary">ออกจากระบบ</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container page-tc">
+      <div class="page-title">
+        <h2 class="page-title-main">Term & Condition</h2>
+        <div class="page-title-support">
+          1/5
+        </div>
+        <div class="clear">
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <h2>End of App</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+            ยินยอม
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            ไม่ยินยอม
+          </label>
+        </div>
+      </div>
+
+      <div class="page-button">
+        <div class="row">
+          <div class="button-left col-xs-4">
+            <button type="button" name="button" class="btn btn-secondary max-width">ย้อนกลับ</button>
+          </div>
+          <a href="7_OTP.html">
+            <div class="button-right col-xs-8">
+              <button type="button" name="button" class="btn btn-primary max-width">ถัดไป ></button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("#married-status").change(function(){
+            $(this).find("option:selected").each(function(){
+                var optionValue = $(this).attr("value");
+                if(optionValue){
+                    $(".box-option").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else{
+                    $(".box-option").hide();
+                }
+            });
+        }).change();
+    });
+  </script>
+
+</html>

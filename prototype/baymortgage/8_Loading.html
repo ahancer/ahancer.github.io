@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Facebook OG -->
+    <meta property="fb:app_id"             content="" />
+    <meta property="og:url"                content=""/>
+    <meta property="og:type"               content=""/>
+    <meta property="og:title"              content=""/>
+    <meta property="og:description"        content=""/>
+    <meta property="og:image"              content=""/>
+<!-- Facebook OG ENDS -->
+
+    <title>8_Loading</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+
+<!--This is Google Analytics-->
+    <script>
+    </script>
+<!--END of Google Analytics-->
+
+<!-- Facebook Pixel Code -->
+    <script>
+    </script>
+<!-- End Facebook Pixel Code -->
+
+</head>
+  <body>
+
+    <!-- <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header max-width">
+          <a class="navbar-brand" href="index.html"><img src="images/bay-logo.png" alt=""> Krungsri</a>
+          <a href="index.html">
+            <button type="button" name="button" class="btn btn-secondary">ออกจากระบบ</button>
+          </a>
+        </div>
+      </div>
+    </nav> -->
+
+    <div class="container page-loading">
+        <img src="images/loader.gif" alt="">
+        <h2>
+          กำลังประมวณผล<br>
+          กรุณารอผลสักครู่
+        </h2>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      function showResult(){
+          window.location = '9_Result.html';
+      }
+      setTimeout(showResult, 3000);
+
+    });
+  </script>
+
+</html>
