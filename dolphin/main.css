@@ -208,16 +208,3 @@ a.active, a:hover{
     }
 
 }
-
-/* Only Extra Small devices (XS) */
-@media only screen and (max-width: 768px) {
-  .content-introduction-image .img-hm01{
-    width: 100%;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-  .content-introduction-image .img-hm02{
-    width: 100%;
-    margin: 0px;
-  }
-}
