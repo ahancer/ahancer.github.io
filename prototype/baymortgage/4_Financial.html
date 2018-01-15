@@ -65,29 +65,103 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container page-form">
       <div class="page-header">
         <h2>ข้อมูลอาชีพ</h2>
       </div>
       <div class="form-group">
         <label>ประเภทอาชีพ*</label>
         <select class="form-control" id="job-option">
-          <option disabled selected>กรุณาเลือก</option>
-          <option value="x">x</option>
+          <option disabled selected value="option_empty">กรุณาเลือก</option>
+          <option value="option_salary">ข้าราชการ</option>
+          <option value="option_salary">พนักงานรัฐวิสาหกิจ</option>
+          <option value="option_salary">พนักงานเอกชน</option>
+          <option value="option_salary">ลูกจ้างประจำราชการฯ</option>
+          <option value="option_owner">เจ้าของกิจการ</option>
+          <option value="option_freelance">อาชีพอิสระ</option>
         </select>
       </div>
 
+      <div class="option_empty box-option">
+        <!-- None -->
 
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button with data-target
-      </button>
-      <div class="collapse" id="collapseExample">
-        <div class="well">
-          ...
+        <!-- End of None -->
+      </div>
+      <div class="option_salary box-option">
+        <!-- Salary -->
+        <!-- End of Salary -->
+      </div>
+      <div class="option_owner box-option">
+        <!-- Owner -->
+        <div class="form-group">
+          <label for="">อายุงานทั้งหมด*<br><small>(รวมอายุงานของธุรกิจหรืออาชีพก่อนหน้า - ปัจจุบัน)</small></label>
+
+          <div class="form-inline">
+            <input type="text" class="form-control form-sm" placeholder="0">
+            <div class="input-unit">
+              ปี
+            </div>
+            <input type="email" class="form-control form-sm" placeholder="0">
+            <div class="input-unit">
+              เดือน
+            </div>
+          </div>
+          <div class="page-header">
+            <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
+          </div>
+          <div class="form-group">
+            <label for="">ยอดขายต่อเดือน*</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">สัดส่วนที่คุณถือหุ้น (ร้อยละ)*</label>
+            <div class="input-group col-xs-10">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">เปอร์เซ็นต์ (%)</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>ประเภทอุตสาหกรรมและธุรกิจ*</label>
+            <select class="form-control" id="home-type">
+              <option disabled selected>กรุณาเลือก</option>
+              <option value="1">x</option>
+            </select>
+          </div>
         </div>
+        <!-- End of Owner -->
+      </div>
+      <div class="option_freelance box-option">
+        <!-- Freelance -->
+        <div class="form-group">
+          <label for="">อายุงานทั้งหมด*<br><small>(รวมอายุงานของธุรกิจหรืออาชีพก่อนหน้า - ปัจจุบัน)</small></label>
+
+          <div class="form-inline">
+            <input type="text" class="form-control form-sm" placeholder="0">
+            <div class="input-unit">
+              ปี
+            </div>
+            <input type="email" class="form-control form-sm" placeholder="0">
+            <div class="input-unit">
+              เดือน
+            </div>
+          </div>
+          <div class="page-header">
+            <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
+          </div>
+          <div class="form-group">
+            <label for="">รายได้เฉลี่ยต่อเดือน*</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Freelance -->
       </div>
 
-      <br>
       <br>
 
       <div class="page-button">
@@ -102,7 +176,7 @@
           </div>
         </div>
         <br>
-        *  ข้อมูลที่จำเป็นต้องกรอก
+        * ข้อมูลที่จำเป็นต้องกรอก
       </div>
 
     </div>
@@ -119,7 +193,7 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-        $("#married-status").change(function(){
+        $("#job-option").change(function(){
             $(this).find("option:selected").each(function(){
                 var optionValue = $(this).attr("value");
                 if(optionValue){
