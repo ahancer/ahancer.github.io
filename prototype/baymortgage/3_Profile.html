@@ -138,24 +138,41 @@
 
       <div class="option_single box-option">
         <!--Fields for this option-->
+
+
       </div>
       <div class="option_married box-option">
-        <div class="form-group">
-          <label>ชื่อคู่สมรส(ไทย)*</label>
-          <input type="text" class="form-control" placeholder="">
+        สัญชาติคู่สมรส*
+        <div class="btn-group two-btn-group" data-toggle="buttons">
+          <label class="btn btn-secondary active" id="option-couple-thai">
+            <input type="radio" name="options" autocomplete="off" checked> ชาวไทย
+          </label>
+          <label class="btn btn-secondary" id="option-couple-foreign">
+            <input type="radio" name="options" autocomplete="off"> ชาวต่างชาติ
+          </label>
         </div>
-        <div class="form-group">
-          <label>นามสกุลคู่สมรส(ไทย)*</label>
-          <input type="text" class="form-control" placeholder="">
+
+        <div id="box-couple-thai">
+          <div class="form-group">
+            <label>ชื่อคู่สมรส(ไทย)*</label>
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+            <label>นามสกุลคู่สมรส(ไทย)*</label>
+            <input type="text" class="form-control" placeholder="">
+          </div>
         </div>
-        <div class="form-group">
-          <label>ชื่อคู่สมรส(อังกฤษ)*</label>
-          <input type="text" class="form-control" placeholder="">
+        <div id="box-couple-foreign">
+          <div class="form-group">
+            <label>ชื่อคู่สมรส(อังกฤษ)*</label>
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+            <label>นามสกุลคู่สมรส(อังกฤษ)*</label>
+            <input type="text" class="form-control" placeholder="">
+          </div>
         </div>
-        <div class="form-group">
-          <label>นามสกุลคู่สมรส(อังกฤษ)*</label>
-          <input type="text" class="form-control" placeholder="">
-        </div>
+
       </div>
 
       <div class="page-header">
@@ -233,6 +250,20 @@
                 }
             });
         }).change();
+
+
+        $('#box-couple-foreign').hide();
+
+        $('#option-couple-thai').click(function() {
+          $('#box-couple-thai').show();
+          $('#box-couple-foreign').hide();
+        })
+
+        $('#option-couple-foreign').click(function() {
+          $('#box-couple-foreign').show();
+          $('#box-couple-thai').hide();
+        })
+
     });
   </script>
 
