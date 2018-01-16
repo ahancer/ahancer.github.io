@@ -89,6 +89,83 @@
       </div>
       <div class="option_salary box-option">
         <!-- Salary -->
+
+        <div class="form-group">
+          อายุงานปัจจุบัน*
+          <div class="btn-group two-btn-group" data-toggle="buttons">
+            <label class="btn btn-outline" id="option-more-two">
+              <input type="radio" name="options" autocomplete="off"> มากกว่า 2 ปี
+            </label>
+            <label class="btn btn-outline" id="option-less-two">
+              <input type="radio" name="options" autocomplete="off"> น้อยกว่า 2 ปี
+            </label>
+          </div>
+
+          <div id="box-less-two">
+            สถานะการทดลองงาน*
+            <div class="btn-group two-btn-group" data-toggle="buttons">
+              <label class="btn btn-outline">
+                <input type="radio" name="options" autocomplete="off"> ผ่านทดลองงานแล้ว
+              </label>
+              <label class="btn btn-outline">
+                <input type="radio" name="options" autocomplete="off"> กำลังทดลองงาน
+              </label>
+            </div>
+          </div>
+
+          <label for="">อายุงานทั้งหมด*<br><small>(ตั้งแต่เริ่มทำงาน - ปัจจุบัน)</small></label>
+          <div class="form-inline">
+            <input type="text" class="form-control form-sm" placeholder="0">
+            <div class="input-unit">
+              ปี
+            </div>
+            <input type="email" class="form-control form-sm" placeholder="0">
+            <div class="input-unit">
+              เดือน
+            </div>
+          </div>
+          <div class="page-header">
+            <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
+          </div>
+          <div class="form-group">
+            <label for="">รายได้ประจำต่อเดือน *</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">ค่าล่วงเวลา (เฉลี่ยย้อนหลัง 6 เดือน)</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">ค่าคอมมิชชั่น (เฉลี่ยย้อนหลัง 6 เดือน)</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">ยอดรวมโบนัสในปีที่ผ่านมา</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">รายได้อื่นๆ (ค่าโทรศัพท์, เบี้ยเลี้ยง ฯลฯ)</label>
+            <div class="input-group col-xs-8">
+              <input type="text" class="form-control" placeholder="0.00">
+              <div class="input-group-addon">บาท</div>
+            </div>
+          </div>
+
+        </div>
+
+
         <!-- End of Salary -->
       </div>
       <div class="option_owner box-option">
@@ -204,6 +281,17 @@
                 }
             });
         }).change();
+
+        $('#box-less-two').hide();
+
+        $('#option-more-two').click(function() {
+          $('#box-less-two').hide();
+        })
+
+        $('#option-less-two').click(function() {
+          $('#box-less-two').show();
+        })
+
     });
   </script>
 

@@ -138,6 +138,10 @@ a{
   }
 }
 
+.option_empty{
+  margin-bottom: 200px;
+}
+
 /*---Form---*/
 
 .form-subtext{
@@ -177,11 +181,22 @@ a{
   &:extend(.btn all);
   .button-variant(@color-black, @color-grey-light, @color-grey-light);
 }
+.btn-outline {
+  &:extend(.btn all);
+  border-width: 2px;
+  .button-variant(@color-black, #ffffff, @color-grey-normal);
+}
 .two-btn-group{
   width: 100%;
   margin: 10px 0px 15px 0px;
   .btn{
     width: 50%;
+  }
+  .btn-outline:first-child{
+    border-right-width: 1px;
+  }
+  .btn-outline:last-child{
+    border-left-width: 1px;
   }
 }
 
