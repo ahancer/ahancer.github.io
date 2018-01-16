@@ -128,7 +128,13 @@
             <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
           </div>
           <div class="form-group">
-            <label for="">รายได้ประจำต่อเดือน *</label>
+            <label for="">รายได้ประจำต่อเดือน *
+              <a class=""
+                  data-content="รายได้ประจำต่อเดือน คือ เงินที่ได้รับในแต่ละเดือน ซึ่งมาจากบริษัท พนักงานประจำ,รับจ้างประจำ ฯลฯ" rel="popover" href="#"
+                  data-original-title="ยอดขายต่อเดือน">
+                  <i class="fa fa-question-circle"></i>
+              </a>
+            </label>
             <div class="input-group col-xs-8">
               <input type="text" class="form-control" placeholder="0.00">
               <div class="input-group-addon">บาท</div>
@@ -291,6 +297,22 @@
         $('#option-less-two').click(function() {
           $('#box-less-two').show();
         })
+
+        $('a[rel=tooltip]').tooltip();
+        $('a[rel=popover]').popover();
+
+      // shows element css-classes and z-index of all tooltips, popovers and modals
+      // only for demonstration
+      showZIndex = function() {
+          var zIndices = new Array();
+          $('div.tooltip, div.popover, div.modal').each( function() {
+              zIndices.push($(this).attr('class') + '; z-index: ' + $(this).css('z-index'));
+          });
+          var html = zIndices.join('<br>');
+          $('.show-z-index').html(html);
+      };
+
+      $('body').on('hover', 'a[rel=tooltip], a[rel=popover]', showZIndex)
 
     });
   </script>
