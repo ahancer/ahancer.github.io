@@ -14,7 +14,7 @@
     <meta property="og:image"              content=""/>
 <!-- Facebook OG ENDS -->
 
-    <title>7_OTP</title>
+    <title>1-1_Login_OTP</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link href="node_modules/bootstrap-pincode-input/css/bootstrap-pincode-input.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 <script>
     $(document).ready(function() {
         function changePage(){
-            window.location = '8_Loading.html';
+            window.location = '2_Loan_Amount.html';
         }
         $('#pincode-input1').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
           setTimeout(changePage, 1000);
@@ -53,7 +53,6 @@
       <div class="container">
         <div class="navbar-header max-width">
           <a class="navbar-brand" href="index.html"><img src="images/bay-logo.png" alt=""> Krungsri</a>
-          <button type="button" name="button" class="btn btn-secondary" data-toggle="modal" data-target="#signOut">ออกจากระบบ</button>
         </div>
       </div>
     </nav>
@@ -79,29 +78,6 @@
       <p>หากพบปัญหากรุณาติดต่อ 02-XXX-XXXX</p>
     </div>
 
-    <!-- Sign Out Modal -->
-    <div class="modal fade" id="signOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <i class="fa fa-sign-out fa-3x"></i>
-            <h3>ยืนยันการออกจากระบบ</h3>
-            <p>ข้อมูลของคุณจะถูกบันทึกไว้</p>
-            <br>
-            <div class="row">
-              <div class="button-left col-xs-4">
-                <button type="button" name="button" class="btn-outline max-width" data-dismiss="modal" aria-label="Close">ยกเลิก</button>
-              </div>
-              <div class="button-right col-xs-8">
-                <a href="0_CPA_Home.html">
-                  <button type="button" name="button" class="btn-primary max-width">ออกจากระบบ</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
 </html>

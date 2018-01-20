@@ -46,10 +46,10 @@
         <label>รหัสผ่าน</label>
         <input type="password" class="form-control" placeholder="">
       </div>
-      <a href="#">ลืมบัญชีผู้ใช้</a>
+      <a href="#" data-toggle="modal" data-target="#forgetUsername">ลืมบัญชีผู้ใช้</a>
       |
       <a href="#">ลืมรหัสผ่าน</a>
-      <a href="2_Loan_Amount.html">
+      <a href="1-1_Login_OTP.html">
         <button type="button" name="button" class="btn-primary max-width">เข้าสู่ระบบ</button>
       </a>
       <a href="0_CPA_Home.html">
@@ -58,6 +58,21 @@
 
       <div class="login-footer">
         ไม่มีบัญชี KMA/กรุงศรีออนไลน์? <a href="#">ลงทะเบียน</a>
+      </div>
+    </div>
+
+    <!-- Forget Username Modal -->
+    <div class="modal fade" id="forgetUsername" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-user-times fa-3x"></i>
+            <h3>ลืมบัญชีผู้ใช้</h3>
+            <p>กรุณาติดต่อธนาคารที่เบอร์ 1572</p>
+            <br>
+            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ตกลง</button>
+          </div>
+        </div>
       </div>
     </div>
 

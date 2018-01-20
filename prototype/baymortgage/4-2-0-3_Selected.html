@@ -249,9 +249,11 @@
 
       <div class="page-button">
         <div class="row">
-          <div class="button-left col-xs-4">
-            <button type="button" name="button" class="btn btn-secondary max-width">ย้อนกลับ</button>
-          </div>
+          <a href="3_Profile.html">
+            <div class="button-left col-xs-4">
+              <button type="button" name="button" class="btn btn-secondary max-width">ย้อนกลับ</button>
+            </div>
+          </a>
           <div class="button-right col-xs-8">
             <a href="5_Summary.html">
               <button type="button" name="button" class="btn btn-primary max-width">ถัดไป ></button>
@@ -279,6 +281,29 @@
       </div>
     </div>
 
+    <!-- Sign Out Modal -->
+    <div class="modal fade" id="signOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-sign-out fa-3x"></i>
+            <h3>ยืนยันการออกจากระบบ</h3>
+            <p>ข้อมูลของคุณจะถูกบันทึกไว้</p>
+            <br>
+            <div class="row">
+              <div class="button-left col-xs-4">
+                <button type="button" name="button" class="btn-outline max-width" data-dismiss="modal" aria-label="Close">ยกเลิก</button>
+              </div>
+              <div class="button-right col-xs-8">
+                <a href="0_CPA_Home.html">
+                  <button type="button" name="button" class="btn-primary max-width" data-toggle="modal" data-target="#signOut">ออกจากระบบ</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

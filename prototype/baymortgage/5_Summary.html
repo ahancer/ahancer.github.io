@@ -36,7 +36,7 @@
       <div class="container">
         <div class="navbar-header max-width">
           <a class="navbar-brand" href="index.html"><img src="images/bay-logo.png" alt=""> Krungsri</a>
-          <button type="button" name="button" class="btn btn-secondary">ออกจากระบบ</button>
+          <button type="button" name="button" class="btn btn-secondary" data-toggle="modal" data-target="#signOut">ออกจากระบบ</button>
         </div>
       </div>
     </nav>
@@ -251,6 +251,29 @@
     </div>
 
 
+    <!-- Sign Out Modal -->
+    <div class="modal fade" id="signOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-sign-out fa-3x"></i>
+            <h3>ยืนยันการออกจากระบบ</h3>
+            <p>ข้อมูลของคุณจะถูกบันทึกไว้</p>
+            <br>
+            <div class="row">
+              <div class="button-left col-xs-4">
+                <button type="button" name="button" class="btn-outline max-width" data-dismiss="modal" aria-label="Close">ยกเลิก</button>
+              </div>
+              <div class="button-right col-xs-8">
+                <a href="0_CPA_Home.html">
+                  <button type="button" name="button" class="btn-primary max-width">ออกจากระบบ</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
