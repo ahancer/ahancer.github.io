@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Facebook OG -->
+    <meta property="fb:app_id"             content="" />
+    <meta property="og:url"                content=""/>
+    <meta property="og:type"               content=""/>
+    <meta property="og:title"              content=""/>
+    <meta property="og:description"        content=""/>
+    <meta property="og:image"              content=""/>
+<!-- Facebook OG ENDS -->
+
+    <title>5a_Edit_Profile</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/noon.css">
+
+<!--This is Google Analytics-->
+    <script>
+    </script>
+<!--END of Google Analytics-->
+
+<!-- Facebook Pixel Code -->
+    <script>
+    </script>
+<!-- End Facebook Pixel Code -->
+
+</head>
+  <body>
+
+    <div class="nav-industry">
+      <a href="5_Summary.html">
+        <i class="fa fa-times"></i>
+      </a>
+      <h4>แก้ไขข้อมูลสินเชื่อ</h4>
+    </div>
+
+
+    <div class="container page-form">
+      <div class="page-header">
+        <h2>ข้อมูลสินเชื่อ เพื่อซื้อบ้านใหม่</h2>
+      </div>
+      <div class="form-group">
+        <label>ประเภทของที่อยู่อาศัย</label>
+        <select class="form-control" id="home-type">
+          <option disabled>กรุณาเลือก</option>
+          <option value="1" selected>คอนโดมิเนี่ยม</option>
+          <option value="2">บ้านเดี่ยว / บ้านแฝด</option>
+          <option value="3">อาคารพาณิชย์ / โฮมทาวน์</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">วงเงินกู้ที่ต้องการ*</label>
+        <div class="input-group col-xs-8">
+          <input type="tel" class="form-control" placeholder="0" value="3,000,000">
+          <div class="input-group-addon">บาท</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">ระยะเวลากู้*</label>
+        <div class="input-group col-xs-8">
+          <input type="tel" class="form-control" placeholder="" value="30">
+          <div class="input-group-addon">ปี</div>
+        </div>
+        <div class="form-subtext">
+          ระยะเวลากู้ + อายุของผู้กู้ต้องรวมกันแล้วไม่เกิน 65 ปี
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="page-button">
+        <div class="row">
+          <div class="button-right col-xs-12">
+            <a href="5_Summary.html">
+              <button type="button" name="button" class="btn btn-primary max-width">บันทึก</button>
+            </a>
+          </div>
+        </div>
+        <br>
+        *  ข้อมูลที่จำเป็นต้องกรอก
+      </div>
+
+    </div>
+
+    <!-- Cancel Form Modal -->
+    <div class="modal fade" id="cancelForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-trash-o fa-3x"></i>
+            <h3>ยืนยันที่จะยกเลือกใช่หรือไม่</h3>
+            <p>การยกเลิกยากยื่นประเมิน จะทำให้ข้อมูลที่คุณกรอกไว้ทั้งหมดถูกลบและกลับไปหน้าเข้าสู้ระบบ คุณยืนยันที่จะยกเลิกหรือไม่</p>
+            <br>
+            <div class="row">
+              <div class="button-left col-xs-4">
+                <button type="button" name="button" class="btn-outline max-width" data-dismiss="modal" aria-label="Close">ไม่ใช่</button>
+              </div>
+              <div class="button-right col-xs-8">
+                <a href="0_CPA_Home.html">
+                  <button type="button" name="button" class="btn-primary max-width">ใช่</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Out Modal -->
+    <div class="modal fade" id="signOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-sign-out fa-3x"></i>
+            <h3>ยืนยันการออกจากระบบ</h3>
+            <p>ข้อมูลของคุณจะถูกบันทึกไว้</p>
+            <br>
+            <div class="row">
+              <div class="button-left col-xs-4">
+                <button type="button" name="button" class="btn-outline max-width" data-dismiss="modal" aria-label="Close">ยกเลิก</button>
+              </div>
+              <div class="button-right col-xs-8">
+                <a href="0_CPA_Home.html">
+                  <button type="button" name="button" class="btn-primary max-width">[ออกจากระบบ]</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</html>

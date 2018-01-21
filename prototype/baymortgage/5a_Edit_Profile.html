@@ -14,9 +14,10 @@
     <meta property="og:image"              content=""/>
 <!-- Facebook OG ENDS -->
 
-    <title>3_Profile</title>
+    <title>5a_Edit_Profile</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/noon.css">
 
 <!--This is Google Analytics-->
     <script>
@@ -31,39 +32,13 @@
 </head>
   <body>
 
-    <nav class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header max-width">
-          <a class="navbar-brand" href="index.html"><img src="images/bay-logo.png" alt=""> Krungsri</a>
-          <button type="button" name="button" class="btn btn-secondary" data-toggle="modal" data-target="#signOut">ออกจากระบบ</button>
-        </div>
-      </div>
-    </nav>
-
-    <div class="step container-fluid">
-      <div class="container">
-        <div class="row">
-          <a href="2_Loan_Amount.html">
-            <div class="step-item col-xs-4">
-              <h3>1</h3>
-              ข้อมูลสินเชื่อ
-            </div>
-          </a>
-          <a href="3_Profile.html">
-            <div class="step-item active col-xs-4">
-              <h3>2</h3>
-              ข้อมูลส่วนตัว
-            </div>
-          </a>
-          <a href="4_Financial.html">
-            <div class="step-item col-xs-4">
-              <h3>3</h3>
-              ข้อมูลการเงิน
-            </div>
-          </a>
-        </div>
-      </div>
+    <div class="nav-industry">
+      <a href="5_Summary.html">
+        <i class="fa fa-times"></i>
+      </a>
+      <h4>แก้ไขข้อมูลส่วนตัว</h4>
     </div>
+
 
     <div class="container page-form">
       <div class="page-header">
@@ -119,18 +94,18 @@
       </div>
       <div class="form-group">
         <label>ชื่อ(อังกฤษ)*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="Naunjan">
       </div>
       <div class="form-group">
         <label>นามสกุล(อังกฤษ)*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="Sukaom">
       </div>
       <div class="form-group">
         <label>สถานภาพ*</label>
         <select class="form-control" id="married-status">
-          <option disabled selected>กรุณาเลือก</option>
+          <option disabled>กรุณาเลือก</option>
           <option value="option_single">โสด</option>
-          <option value="option_married">สมรส</option>
+          <option value="option_married" selected>สมรส</option>
           <option value="option_single">สมรสไม่จดทะเบียน</option>
           <option value="option_single">หม้าย</option>
         </select>
@@ -153,11 +128,11 @@
         <div id="box-couple-thai">
           <div class="form-group">
             <label>ชื่อคู่สมรส(ไทย)*</label>
-            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="" value="สมศักดิ์">
           </div>
           <div class="form-group">
             <label>นามสกุลคู่สมรส(ไทย)*</label>
-            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="" value="สุขออม">
           </div>
         </div>
         <div id="box-couple-foreign">
@@ -177,31 +152,31 @@
       </div>
       <div class="form-group">
         <label>เลขที่บ้าน*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="60">
       </div>
       <div class="form-group">
         <label>หมู่/ซอย</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="2">
       </div>
       <div class="form-group">
         <label>ถนน*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="ติวานนท์">
       </div>
       <div class="form-group">
         <label>แขวง/ตำบล*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="บางกระสอ">
       </div>
       <div class="form-group">
         <label>เขต/อำเภอ*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="เมือง">
       </div>
       <div class="form-group">
         <label>จังหวัด*</label>
-        <input type="text" class="form-control" placeholder="">
+        <input type="text" class="form-control" placeholder="" value="นนทบุรี">
       </div>
       <div class="form-group">
         <label>รหัสไปรษณีย์*</label>
-        <input type="tel" class="form-control" placeholder="">
+        <input type="tel" class="form-control" placeholder="" value="11000">
       </div>
 
       <br>
@@ -209,14 +184,9 @@
 
       <div class="page-button">
         <div class="row">
-          <a href="2_Loan_Amount.html">
-            <div class="button-left col-xs-4">
-              <button type="button" name="button" class="btn btn-secondary max-width">ย้อนกลับ</button>
-            </div>
-          </a>
-          <a href="4_Financial.html">
-            <div class="button-right col-xs-8">
-              <button type="button" name="button" class="btn btn-primary max-width">ถัดไป ></button>
+          <a href="5_Summary.html">
+            <div class="button-right col-xs-12">
+              <button type="button" name="button" class="btn btn-primary max-width">บันทึก</button>
             </div>
           </a>
         </div>
