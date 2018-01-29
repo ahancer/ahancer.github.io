@@ -10,4 +10,5 @@ $('input.number').keyup(function(event) {
     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     ;
   });
+
 });
