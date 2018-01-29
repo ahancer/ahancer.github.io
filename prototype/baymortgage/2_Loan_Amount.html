@@ -18,6 +18,20 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="http://afarkas.github.io/webshim/js-webshim/minified/polyfiller.js"></script>
+    <script type="text/javascript">
+
+      webshims.setOptions('forms-ext', {
+          replaceUI: 'auto',
+          types: 'number'
+      });
+      webshims.polyfill('forms forms-ext');
+
+    </script>
+
 <!--This is Google Analytics-->
     <script>
     </script>
@@ -81,7 +95,7 @@
       <div class="form-group">
         <label for="">วงเงินกู้ที่ต้องการ*</label>
         <div class="input-group col-xs-8">
-          <input type="tel" class="form-control" placeholder="0">
+          <input class="form-control" placeholder="0" type="number" value="" min="0">
           <div class="input-group-addon">บาท</div>
         </div>
       </div>
@@ -166,9 +180,7 @@
 
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
 
   </body>
 

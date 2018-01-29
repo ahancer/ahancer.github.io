@@ -1,0 +1,131 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="http://afarkas.github.io/webshim/js-webshim/minified/shims/styles/shim-ext.css"><link rel="stylesheet" href="http://afarkas.github.io/webshim/js-webshim/minified/shims/styles/forms-picker.css">
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+    <script type="text/javascript" src="http://afarkas.github.io/webshim/js-webshim/minified/polyfiller.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+
+  <style type="text/css">
+    form {
+    margin: 20px auto;
+    width: 420px;
+}
+.form-row {
+    padding: 5px 10px;
+}
+label {
+    display: block;
+    margin: 3px 0;
+}
+.form-row input {
+    padding: 3px 1px;
+    width: 100%;
+}
+input.currency {
+    text-align: right;
+    padding-right: 15px;
+}
+.input-group .form-control {
+    float: none;
+}
+.input-group .input-buttons {
+    position: relative;
+    z-index: 3;
+}
+  </style>
+
+  <title>Using type number for a currency input by trixta</title>
+
+
+
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+webshims.setOptions('forms-ext', {
+    replaceUI: 'auto',
+    types: 'number'
+});
+webshims.polyfill('forms forms-ext');
+//]]>
+
+</script>
+
+
+</head>
+
+<body style="">
+  <form action="#">
+
+    <div>
+        <h2>With spinbuttons</h2>
+    <div class="form-row">
+        <label for="c1" id="ID-1517217535717">Currency</label>
+        <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="currency" id="c1" style="-webkit-appearance: none; display: none;"><input class="ws-number ws-inputreplace currency wsshadow-1517217535716 has-input-buttons" type="text" placeholder="" value="1,000" aria-required="false" inputmode="numeric" aria-labelledby="ID-1517217535717 ID-1517217535718" style="margin-left: 0px; margin-right: 0px; padding-right: 30px; width: 399.2px;"><span class="input-buttons number-input-buttons input-button-size-1 wsshadow-1517217535716" style="margin-right: 3px;"><span unselectable="on" class="step-controls"><span class="step-up step-control"></span><span class="step-down step-control"></span></span></span>
+    </div>
+    <div class="form-row">
+        <label for="c2" id="ID-1517217535719">Currency w bootstrap</label>
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" style="-webkit-appearance: none; display: none;"><input class="ws-number ws-inputreplace form-control currency wsshadow-1517217535716 has-input-buttons" type="text" placeholder="" value="1,000" aria-required="false" inputmode="numeric" aria-labelledby="ID-1517217535719 ID-1517217535720" style="margin-left: 0px; margin-right: 0px; padding-right: 30px; width: 366.2px;"><span class="input-buttons number-input-buttons input-button-size-1 wsshadow-1517217535716" style="margin-right: 3px;"><span unselectable="on" class="step-controls"><span class="step-up step-control"></span><span class="step-down step-control"></span></span></span>
+    </div>
+        </div>
+        <hr>
+       <div class="hide-inputbtns">
+        <h2>Without spinbuttons</h2>
+    <div class="form-row">
+        <label for="c1" id="ID-1517217535718">Currency</label>
+        <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="currency" id="c1" style="-webkit-appearance: none; display: none;"><input class="ws-number ws-inputreplace currency wsshadow-1517217535716" type="text" placeholder="" value="1,000" aria-required="false" inputmode="numeric" aria-labelledby="" style="margin-left: 0px; margin-right: 0px; width: 399.2px;"><span class="input-buttons number-input-buttons input-button-size-1 wsshadow-1517217535716"><span unselectable="on" class="step-controls"><span class="step-up step-control"></span><span class="step-down step-control"></span></span></span>
+    </div>
+    <div class="form-row">
+        <label for="c2" id="ID-1517217535720">Currency w bootstrap</label>
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" style="-webkit-appearance: none; display: none;"><input class="ws-number ws-inputreplace form-control currency wsshadow-1517217535716" type="text" placeholder="" value="1,000" aria-required="false" inputmode="numeric" aria-labelledby="" style="margin-left: 0px; margin-right: 0px; width: 366.2px;"><span class="input-buttons number-input-buttons input-button-size-1 wsshadow-1517217535716"><span unselectable="on" class="step-controls"><span class="step-up step-control"></span><span class="step-down step-control"></span></span></span>
+    </div>
+
+
+<p><a href="http://afarkas.github.io/webshim/demos/demos/cfgs/input-number.html" target="_blank">number configurator</a>
+</p>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "UC6tG"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</div></div></div></form></body></html>
