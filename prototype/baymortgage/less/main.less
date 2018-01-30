@@ -24,6 +24,7 @@ h2{
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 5px;
+  line-height: 24px;
 }
 h3{
   font-size: 18px;
@@ -378,7 +379,15 @@ a{
 }
 
 .page-tc{
-  margin-top: 30px;
+  background: @color-grey-light;
+  .page-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .tc-card{
+    background: #ffffff;
+  }
   .page-button{
     margin-top:20px;
   }
@@ -442,12 +451,19 @@ a{
     font-size: 30px;
     font-weight: bold;
   }
+  .icon-read-more{
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+    background: @color-grey-light;
+    margin: 20px -15px 0px -15px;
+  }
   .result-contact{
     line-height: 28px;
   }
   .result-next{
-    padding: 0px 0px 15px 0px;
-    margin: 20px -15px 0px -15px;
+    padding: 0px 15px 50px 15px;
+    margin: 0px -15px 0px -15px;
     background: @color-grey-light;
     text-align: left;
     .icon-read-more{
@@ -455,11 +471,10 @@ a{
       display: block;
     }
     h2{
-      margin-left: 20px;
+      margin-top: 0px;
     }
     ol{
-      margin-left: 15px;
-      margin-right: 15px;
+      -webkit-padding-start: 30px;
       li{
         font-size: 20px;
         font-weight: bold;
@@ -487,6 +502,18 @@ a{
           margin-bottom: 0px;
         }
       }
+    }
+  }
+  .footer{
+    margin: -15px -15px -15px -15px;
+    padding: 15px;
+    text-align: left;
+    background-color: @color-grey-normal;
+    h4{
+      font-size: 14px;
+    }
+    p{
+      font-size: 12px;
     }
   }
 }
