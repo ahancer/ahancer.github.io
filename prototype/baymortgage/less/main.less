@@ -271,6 +271,20 @@ a{
 .page-form{
   input.form-control{
     -webkit-appearance: none;
+    -moz-appearance: none;          /* Removes Default Firefox style*/
+  }
+  select.form-control{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: white;
+    height: 44px;
+    padding: 0px 15px;
+    background-image: url("../images/icon-dropdown.png");
+    background-repeat: no-repeat;
+    background-position: right center;
   }
   .form-control{
     height: 44px;
