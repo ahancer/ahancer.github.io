@@ -128,8 +128,9 @@
             <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
           </div>
           <div class="form-group">
-            <label for="">รายได้ประจำต่อเดือน *
-              <a href="#" data-toggle="modal" data-target="#myModal">
+            <label for="">
+              รายได้ประจำต่อเดือน *
+              <a href="#" data-toggle="modal" data-target="#salaryModal">
                   <i class="fa fa-question-circle"></i>
               </a>
             </label>
@@ -139,29 +140,49 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="">ค่าล่วงเวลา (เฉลี่ยย้อนหลัง 6 เดือน)</label>
+            <label for="">
+              ค่าล่วงเวลาต่อเดือน (เฉลี่ยย้อนหลัง 6 เดือน)
+              <a href="#" data-toggle="modal" data-target="#otModal">
+                  <i class="fa fa-question-circle"></i>
+              </a>
+            </label>
             <div class="input-group col-xs-8">
               <input type="tel" class="form-control number" placeholder="0" maxlength="11">
               <div class="input-group-addon">บาท</div>
             </div>
           </div>
           <div class="form-group">
-            <label for="">ค่าคอมมิชชั่น (เฉลี่ยย้อนหลัง 6 เดือน)</label>
+            <label for="">
+              ค่าคอมมิชชั่นต่อเดือน (เฉลี่ยย้อนหลัง 6 เดือน)
+              <a href="#" data-toggle="modal" data-target="#commissionModal">
+                  <i class="fa fa-question-circle"></i>
+              </a>
+            </label>
             <div class="input-group col-xs-8">
               <input type="tel" class="form-control number" placeholder="0" maxlength="11">
               <div class="input-group-addon">บาท</div>
             </div>
           </div>
           <div class="form-group">
-            <label for="">ยอดรวมโบนัสในปีที่ผ่านมา</label>
+            <label for="">
+              ยอดรวมโบนัสในปีที่ผ่านมา
+              <a href="#" data-toggle="modal" data-target="#bonusModal">
+                  <i class="fa fa-question-circle"></i>
+              </a>
+            </label>
             <div class="input-group col-xs-8">
               <input type="tel" class="form-control number" placeholder="0" maxlength="11">
               <div class="input-group-addon">บาท</div>
             </div>
           </div>
           <div class="form-group">
-            <label for=""> รายได้อื่นๆ ต่อเดือน
-              <br>(ได้รับเท่ากันทุกเดือน เช่น ค่าโทรศัพท์,  เบี้ยเลี้ยง ฯลฯ)</label>
+            <label for="">
+              รายได้อื่นๆ ต่อเดือน
+              <br>(ได้รับเท่ากันทุกเดือน เช่น ค่าโทรศัพท์,  เบี้ยเลี้ยง ฯลฯ)
+              <a href="#" data-toggle="modal" data-target="#otherincomeModal">
+                  <i class="fa fa-question-circle"></i>
+              </a>
+            </label>
             <div class="input-group col-xs-8">
               <input type="tel" class="form-control number" placeholder="0" maxlength="11">
               <div class="input-group-addon">บาท</div>
@@ -267,13 +288,13 @@
 
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- salaryModal -->
+    <div class="modal fade" id="salaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <h3 class="modal-title">ยอดขายต่อเดือน</h3>
-            <p>รายได้ประจำต่อเดือน คือ เงินที่ได้รับในแต่ละเดือน ซึ่งมาจากบริษัท พนักงานประจำ,รับจ้างประจำ ฯลฯ</p>
+            <h3 class="modal-title">รายได้ประจำ</h3>
+            <p>?????</p>
             <br>
             <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
           </div>
@@ -281,6 +302,61 @@
       </div>
     </div>
 
+    <!-- otModal -->
+    <div class="modal fade" id="otModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="modal-title">ค่าล่วงเวลาต่อเดือน (เฉลี่ยย้อนหลัง 6 เดือน)</h3>
+            <p>?????</p>
+            <br>
+            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- commissionModal -->
+    <div class="modal fade" id="commissionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="modal-title">ค่าคอมมิชชั่นต่อเดือน (เฉลี่ยย้อนหลัง 6 เดือน)</h3>
+            <p>?????</p>
+            <br>
+            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bonusModal -->
+    <div class="modal fade" id="bonusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="modal-title">ยอดรวมโบนัสในปีที่ผ่านมา</h3>
+            <p>?????</p>
+            <br>
+            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- otherincomeModal -->
+    <div class="modal fade" id="otherincomeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 class="modal-title">รายได้อื่นๆ ต่อเดือน</h3>
+            <p>?????</p>
+            <br>
+            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Sign Out Modal -->
     <div class="modal fade" id="signOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
