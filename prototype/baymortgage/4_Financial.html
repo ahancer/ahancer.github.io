@@ -232,7 +232,6 @@
 
             <button id="industryButton" type="button" name="button" class="btn-outline max-width btn-with-arrow" data-toggle="modal" data-target="#industryModal">
               กรุณาเลือก
-              <i class="fa fa-caret-right"></i>
             </button>
 
             <!-- <a href="4-2-0-1_Industry.html">
@@ -861,7 +860,7 @@
         })
 
         $('.industry-link').click(function() {
-          $('#industryButton').text("{{อุตสาหกรรมและธุรกิจที่คุณเลือก}}");
+          $('#industryButton').text($(this).find('button').text());
         })
 
         $('a[rel=tooltip]').tooltip();
