@@ -235,6 +235,9 @@ a{
 }
 .btn-with-arrow{
   text-align: left;
+  background-image: url("../images/icon-rightarrow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
   .fa{
     float: right;
     margin-top: 3px;
@@ -245,6 +248,42 @@ a{
 .modal{
   .modal-body{
     padding: 30px;
+    h3{
+      margin-top: 10px;
+    }
+  }
+}
+.industry-modal{
+  width: 100%;
+  .modal-dialog{
+    width: 100%;
+    margin: 0px;
+  }
+  .modal-body{
+    padding: 0px;
+    padding-bottom: 100px;
+    .panel-title{
+      a{
+        display: block;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      .fa{
+        float: right;
+      }
+      border-color: @color-grey-normal;
+    }
+    .panel-body{
+      padding: 0px;
+      .btn-outline{
+        padding-left: 15px;
+        white-space: normal;
+        text-align: left;
+        border-radius: 0px;
+        border-width: 1px;
+      }
+    }
   }
 }
 
@@ -503,7 +542,7 @@ a{
     line-height: 28px;
   }
   .result-next{
-    padding: 0px 15px 50px 15px;
+    padding: 0px 15px 40px 15px;
     margin: 0px -15px 0px -15px;
     background: @color-grey-light;
     text-align: left;
@@ -543,6 +582,19 @@ a{
           margin-bottom: 0px;
         }
       }
+    }
+  }
+  .page-button{
+    margin-top: 50px;
+    text-align: center;
+    h4{
+      font-weight: bold;
+    }
+    button{
+      margin: 10px 0px 20px 0px;
+    }
+    a{
+      text-decoration: underline;
     }
   }
   .footer{

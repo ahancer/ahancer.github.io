@@ -35,11 +35,15 @@
 <script type="text/javascript" src="node_modules/bootstrap-pincode-input/js/bootstrap-pincode-input.js"></script>
 <script>
     $(document).ready(function() {
-        function changePage(){
-            window.location = '8_Loading.html';
+        // function changePage(){
+        //     window.location = '8_Loading.html';
+        // }
+        function enableButton(){
+           $("#confirmButton").removeAttr("disabled");
         }
         $('#pincode-input1').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
-          setTimeout(changePage, 1000);
+          // setTimeout(changePage, 1000);
+          enableButton();
         }});
     });
 </script>
@@ -61,7 +65,7 @@
     <div class="container page-otp">
       <div class="card">
         <img src="images/icon-otp.png" alt="" class="icon-otp">
-        <h2>ใส่รหัส OTP ยืนยันตัวตน</h2>
+        <h2>ใส่รหัส OTP เพื่อยืนยันข้อมูล</h2>
         <p>OTP ถูกส่งไปยังเบอร์ 095-xxx-xx39</p>
 
         <input type="text" id="pincode-input1" >
@@ -70,13 +74,38 @@
         <small>Ref: 2494</small>
 
         <div class="page-button">
-          <!-- <a href="9_Result.html">
-            <button type="button" name="button" class="btn btn-primary max-width">ยืนยัน</button>
-          </a> -->
+          <button disabled id="confirmButton" type="button" name="button" class="btn btn-primary max-width" data-toggle="modal" data-target="#confirmOTP">ยืนยัน</button>
           <p>ไม่ได้รับ OTP? <a href="#">ส่งใหม่</a></p>
         </div>
       </div>
       <p>หากพบปัญหากรุณาติดต่อ 02-XXX-XXXX</p>
+    </div>
+
+
+    <!-- Confirm OTP Modal -->
+    <div class="modal fade" id="confirmOTP" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa fa-download fa-3x"></i>
+            <h3>บันทึกภาพแบบให้ความยินยอม</h3>
+            <p>คุณต้องการจะบันทึกแบบให้ความยินยอมลงเครื่องของคุณก่อนดูผลประเมินหรือไม่?</p>
+            <br>
+            <div class="row">
+              <div class="button-left col-xs-4">
+                <a href="8_Loading.html">
+                  <button type="button" name="button" class="btn-outline max-width">ไม่บันทึก</button>
+                </a>
+              </div>
+              <div class="button-right col-xs-8">
+                <a href="8_Loading.html">
+                  <button type="button" name="button" class="btn-primary max-width">บันทึก</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Sign Out Modal -->
