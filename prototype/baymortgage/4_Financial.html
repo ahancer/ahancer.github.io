@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -113,7 +114,7 @@
             </div>
           </div>
 
-          <label for="">อายุงานทั้งหมด*<br><small>(ระยะเวลาทำงานตั้งแต่ที่แรกจนถึงปัจจุบัน)</small></label>
+          <label for="">อายุงานทั้งหมด*<br><small>(ตั้งแต่เริ่มทำงาน - ปัจจุบัน)</small></label>
           <div class="form-inline">
             <input type="tel" class="form-control form-sm" placeholder="0" maxlength="2" maxlength="2">
             <div class="input-unit">
@@ -165,9 +166,8 @@
           </div>
           <div class="form-group">
             <label for="">
-              รายได้อื่นๆ ต่อเดือน
-              <br>(ได้รับเท่ากันทุกเดือน เช่น ค่าโทรศัพท์,  เบี้ยเลี้ยง ฯลฯ)
-              <a href="#" data-toggle="modal" data-target="#otherincomeModal">
+              ยอดรวมโบนัสในปีที่ผ่านมา
+              <a href="#" data-toggle="modal" data-target="#bonusModal">
                   <i class="fa fa-question-circle"></i>
               </a>
             </label>
@@ -178,10 +178,12 @@
           </div>
           <div class="form-group">
             <label for="">
-              ยอดรวมโบนัสในปีที่ผ่านมา
-              <a href="#" data-toggle="modal" data-target="#bonusModal">
+              รายได้อื่นๆ ต่อเดือน
+              <a href="#" data-toggle="modal" data-target="#otherincomeModal">
                   <i class="fa fa-question-circle"></i>
-              </a>
+              </a><br>
+              <small>(ได้รับเท่ากันทุกเดือน เช่น ค่าโทรศัพท์,  เบี้ยเลี้ยง ฯลฯ)</small>
+
             </label>
             <div class="input-group col-xs-8">
               <input type="tel" class="form-control number" placeholder="0" maxlength="11">
@@ -205,232 +207,4 @@
               ปี
             </div>
             <input type="tel" class="form-control form-sm" placeholder="0" maxlength="2">
-            <div class="input-unit">
-              เดือน
-            </div>
-          </div>
-          <div class="page-header">
-            <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
-          </div>
-          <div class="form-group">
-            <label for="">ยอดขายต่อเดือน*</label>
-            <div class="input-group col-xs-8">
-              <input type="tel" class="form-control number" placeholder="0" maxlength="11">
-              <div class="input-group-addon">บาท</div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="">สัดส่วนที่คุณถือหุ้น (เปอร์เซ็นต์ %)*</label>
-            <div class="input-group col-xs-10">
-              <input type="text" class="form-control" placeholder="0.00">
-              <div class="input-group-addon">เปอร์เซ็นต์ (%)</div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>ประเภทอุตสาหกรรมและธุรกิจ*</label>
-            <a href="4-2-0-1_Industry.html">
-              <button type="button" name="button" class="btn-outline max-width btn-with-arrow">
-                กรุณาเลือก
-                <i class="fa fa-caret-right"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-        <!-- End of Owner -->
-      </div>
-      <div class="option_freelance box-option">
-        <!-- Freelance -->
-        <div class="form-group">
-          <label for="">อายุงานทั้งหมด*<br><small>(รวมอายุงานของธุรกิจหรืออาชีพก่อนหน้า - ปัจจุบัน)</small></label>
-
-          <div class="form-inline">
-            <input type="tel" class="form-control form-sm" placeholder="0" maxlength="2">
-            <div class="input-unit">
-              ปี
-            </div>
-            <input type="tel" class="form-control form-sm" placeholder="0" maxlength="2">
-            <div class="input-unit">
-              เดือน
-            </div>
-          </div>
-          <div class="page-header">
-            <h2>รายได้ (จากในประเทศไทยเท่านั้น)</h2>
-          </div>
-          <div class="form-group">
-            <label for="">รายได้เฉลี่ยต่อเดือน*</label>
-            <div class="input-group col-xs-8">
-              <input type="tel" class="form-control number" placeholder="0" maxlength="11">
-              <div class="input-group-addon">บาท</div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Freelance -->
-      </div>
-
-      <br>
-
-      <div class="page-button">
-        <div class="row">
-          <a href="3_Profile.html">
-            <div class="button-left col-xs-4">
-              <button type="button" name="button" class="btn btn-secondary max-width">ย้อนกลับ</button>
-            </div>
-          </a>
-          <div class="button-right col-xs-8">
-            <a href="5_Summary.html">
-              <button type="button" name="button" class="btn btn-primary max-width">ถัดไป ></button>
-            </a>
-          </div>
-        </div>
-        <br>
-        * ข้อมูลที่จำเป็นต้องกรอก
-      </div>
-
-    </div>
-
-    <!-- salaryModal -->
-    <div class="modal fade" id="salaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h3 class="modal-title">รายได้ประจำ</h3>
-            <p>?????</p>
-            <br>
-            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- otModal -->
-    <div class="modal fade" id="otModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h3 class="modal-title">ค่าล่วงเวลาต่อเดือน (เฉลี่ยย้อนหลัง 6 เดือน)</h3>
-            <p>?????</p>
-            <br>
-            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- commissionModal -->
-    <div class="modal fade" id="commissionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h3 class="modal-title">ค่าคอมมิชชั่นต่อเดือน (เฉลี่ยย้อนหลัง 6 เดือน)</h3>
-            <p>?????</p>
-            <br>
-            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- bonusModal -->
-    <div class="modal fade" id="bonusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h3 class="modal-title">ยอดรวมโบนัสในปีที่ผ่านมา</h3>
-            <p>?????</p>
-            <br>
-            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- otherincomeModal -->
-    <div class="modal fade" id="otherincomeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h3 class="modal-title">รายได้อื่นๆ ต่อเดือน</h3>
-            <p>?????</p>
-            <br>
-            <button type="button" name="button" class="btn-primary max-width" data-dismiss="modal" aria-label="Close">ปิด</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sign Out Modal -->
-    <div class="modal fade" id="signOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <i class="fa fa-sign-out fa-3x"></i>
-            <h3>ยืนยันการออกจากระบบ</h3>
-            <p>ข้อมูลของคุณได้ถูกบันทึกไว้แล้ว คุณสามารถกลับมาทำแบบประเมินต่อได้ เมื่อเข้าสู่ระบบอีกครั้ง</p>
-            <br>
-            <div class="row">
-              <div class="button-left col-xs-4">
-                <button type="button" name="button" class="btn-outline max-width" data-dismiss="modal" aria-label="Close">ยกเลิก</button>
-              </div>
-              <div class="button-right col-xs-8">
-                <a href="0_CPA_Home.html">
-                  <button type="button" name="button" class="btn-primary max-width">ออกจากระบบ</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $("#job-option").change(function(){
-            $(this).find("option:selected").each(function(){
-                var optionValue = $(this).attr("value");
-                if(optionValue){
-                    $(".box-option").not("." + optionValue).hide();
-                    $("." + optionValue).show();
-                } else{
-                    $(".box-option").hide();
-                }
-            });
-        }).change();
-
-        $('#box-less-two').hide();
-
-        $('#option-more-two').click(function() {
-          $('#box-less-two').hide();
-        })
-
-        $('#option-less-two').click(function() {
-          $('#box-less-two').show();
-        })
-
-        $('a[rel=tooltip]').tooltip();
-        $('a[rel=popover]').popover();
-
-      // shows element css-classes and z-index of all tooltips, popovers and modals
-      // only for demonstration
-      showZIndex = function() {
-          var zIndices = new Array();
-          $('div.tooltip, div.popover, div.modal').each( function() {
-              zIndices.push($(this).attr('class') + '; z-index: ' + $(this).css('z-index'));
-          });
-          var html = zIndices.join('<br>');
-          $('.show-z-index').html(html);
-      };
-
-      $('body').on('hover', 'a[rel=tooltip], a[rel=popover]', showZIndex)
-
-    });
-  </script>
-
-</html>
+            <di
