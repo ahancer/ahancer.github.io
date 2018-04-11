@@ -1,0 +1,206 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Rubik:400,500";
+@import "_variables.less";
+@import "_mixins.less";
+
+/*---General Setting---*/
+body{
+  padding-top: 100px;
+  color: @color-black;
+  font-family: @font-primary;
+  font-size: 18px;
+}
+h1{
+  font-weight: 500;
+  font-style: 48px;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+h2{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+a{
+  color: @color-black;
+}
+p{
+  opacity: .8;
+  line-height: 30px;
+}
+.pattern{
+  position: absolute;
+  z-index: -1;
+}
+.graphic{
+  z-index: 3;
+}
+
+/*---Navigation Bar---*/
+.navbar{
+  padding: 15px 0px;
+  .navbar-logo{
+    height: 46px;
+  }
+  .navbar-right{
+    padding-top: 5px;
+    a{
+      margin-right: 60px;
+      opacity: .8;
+    }
+    .btn-primary{
+      width: 150px;
+      opacity: .8;
+    }
+  }
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: rgba(255,255,255,1) !important;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  transition: all 200ms linear;
+  .btn-primary{
+    opacity: 1;
+  }
+}
+
+
+/*---Banner---*/
+.banner{
+  .banner-text{
+    position: relative;
+    margin-top: 90px;
+    .btn-primary{
+      margin-top: 30px;
+      width: 220px;
+    }
+  }
+  .banner-image{
+    text-align: right;
+    position: relative;
+    .graphic{
+      width: 585px;
+    }
+    .pattern-a{
+      height: 170px;
+      top:-40px;
+      left:-40px;
+      &:extend(.pattern);
+    }
+    .pattern-b{
+      height: 120px;
+      top:120px;
+      right:-60px;
+      &:extend(.pattern);
+    }
+  }
+}
+
+/*---Content---*/
+.service-a{
+  position: relative;
+  padding-top: 100px;
+  .graphic{
+    width: 376px;
+  }
+  .pattern-a{
+    height: 300px;
+    &:extend(.pattern);
+    top:-50px;
+    left: -230px;
+  }
+}
+.service-b{
+  position: relative;
+  padding-top: 100px;
+  .graphic{
+    width: 372px;
+  }
+  .pattern-a{
+    &:extend(.pattern);
+    height: 330px;
+    top:-30px;
+    right:-100px;
+  }
+}
+.team{
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+  .team-member{
+    padding: 50px;
+  }
+  .pattern-a{
+    &:extend(.pattern);
+    height: 330px;
+    top:200px;
+    left:-100px;
+  }
+}
+.client{
+  padding-top: 80px;
+  text-align: center;
+  .client-list{
+    img{
+      margin: 0px 30px;
+    }
+  }
+}
+
+.cta{
+  background: @color-black;
+  color: @color-white;
+  margin-top: 100px;
+  padding-top: 80px;
+  .btn-primary{
+    margin-top: 20px;
+    width: 200px;
+  }
+  .graphic{
+    width: 350px;
+    margin-top: 80px;
+  }
+}
+
+/*---Button---*/
+.btn-primary {
+  &:extend(.btn all);
+  border: 0px;
+  background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background: @color-primary;
+}
+
+
+/*---Responsive (Bootstrap Standard)---*/
+/* Only Large devices (LG) */
+@media only screen and (min-width: 1201px) {
+
+}
+/* Only Medium devices (MD) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+/* Only Small devices (SM) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+/* Only Extra Small devices (XS) */
+@media only screen and (max-width: 768px) {
+  h1{
+    color:@color-secondary;
+  }
+}
