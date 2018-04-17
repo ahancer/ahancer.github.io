@@ -42,6 +42,10 @@ p{
   opacity: .8;
   line-height: 30px;
 }
+ul{
+  opacity: .8;
+  -webkit-padding-start: 24px;
+}
 .pattern{
   position: absolute;
   z-index: -1;
@@ -54,10 +58,10 @@ p{
 .navbar{
   padding: 15px 0px;
   .navbar-logo{
-    height: 46px;
+    height: 40px;
   }
   .navbar-right{
-    padding-top: 5px;
+    padding-top: 2px;
     a{
       margin-right: 60px;
       opacity: .8;
@@ -156,7 +160,7 @@ p{
   text-align: center;
   .client-list{
     img{
-      margin: 0px 30px;
+      margin: 0px 30px 30px 30px;
     }
   }
 }
@@ -164,7 +168,7 @@ p{
 .cta{
   background: @color-black;
   color: @color-white;
-  margin-top: 100px;
+  margin-top: 70px;
   .btn-primary{
     margin-top: 20px;
     width: 200px;
@@ -172,7 +176,7 @@ p{
   .container{
     padding-top: 80px;
     padding-bottom: 80px;
-    background: url("../images/img-footer-plane.png") no-repeat;
+    background: url("../images/img-footer-plane.svg") no-repeat;
     background-position: bottom right 0px;
     background-size: 40%;
     background-attachment: fixed;
@@ -183,17 +187,50 @@ p{
   }
 }
 
+/*---Modal---*/
+#ctaModal{
+  .modal-dialog{
+    width: 1000px;
+    .modal-content{
+      background: url("../images/img-popup-bg.png") no-repeat #ffffff;
+      background-position: top right 0px;
+      .modal-body{
+        padding-top: 50px;
+        padding-bottom: 120px;
+        padding-left: 50px;
+        .marker{
+          margin-top: 40px;
+          width: 35px;
+          height: 5px;
+          display: block;
+          background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
+        }
+        .close{
+          font-size: 60px;
+          margin-top: -40px;
+        }
+        h1{
+          margin-top: 5px;
+        }
+        h3{
+          color: @color-primary;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
 /*---Button---*/
 .btn-primary {
   &:extend(.btn all);
   border: 0px;
-  background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
+  background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%) !important;
   border-radius: 30px;
   font-size: 18px;
 }
 
-.btn-primary:hover {
-  // background: @color-primary;
+.btn-primary:hover{
   box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.25);
   transition: all 200ms ease;
 }

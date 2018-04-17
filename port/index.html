@@ -43,13 +43,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="images/logo-ahancer.png" class="navbar-logo" alt="">
+          <img src="images/logo-ahancer.svg" class="navbar-logo" alt="">
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <a href="#home">Home</a>
           <a href="#service">Service</a>
           <a href="#team">Team</a>
-          <button type="submit" class="btn btn-primary">Let's Talk</button>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#ctaModal">Let's Talk</button>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -64,16 +64,16 @@
           <a class="btn btn-primary btn-lg" href="#service" role="button">Learn more</a>
         </div>
         <div class="banner-image col-md-7">
-          <img src="images/pattern-dot.png" class="pattern-a" alt="">
-          <img src="images/pattern-solid.png" class="pattern-b" alt="">
-          <img src="images/img-home-banner.png" class="graphic" alt="">
+          <img src="images/pattern-dot.svg" class="pattern-a" alt="">
+          <img src="images/pattern-solid.svg" class="pattern-b" alt="">
+          <img src="images/img-home-banner.svg" class="graphic" alt="">
         </div>
       </div>
 
       <div class="service-a row" id="service">
         <div class="service-a-text col-md-6">
-          <img src="images/ico-uxdesign.png" class="graphic" alt="">
-          <img src="images/pattern-solid.png" class="pattern-a" alt="">
+          <img src="images/ico-uxdesign.svg" class="graphic" alt="">
+          <img src="images/pattern-solid.svg" class="pattern-a" alt="">
         </div>
         <div class="service-a-image col-md-5">
           <h2>We design user experience<br> with empathy.</h2>
@@ -101,16 +101,15 @@
           </ul>
         </div>
         <div class="service-a-image col-md-6 col-md-offset-1">
-          <img src="images/pattern-dot.png" class="pattern-a" alt="">
-          <img src="images/ico-uidesign.png" class="graphic" alt="">
+          <img src="images/pattern-dot.svg" class="pattern-a" alt="">
+          <img src="images/ico-uidesign.svg" class="graphic" alt="">
         </div>
       </div>
 
       <div class="team row" id="team">
-        <img src="images/pattern-dot.png" class="pattern-a" alt="">
+        <img src="images/pattern-dot.svg" class="pattern-a" alt="">
         <div class="col-md-12">
           <h1>We are User Experience Designers.</h1>
-          <p>We are Ahancer.</p>
         </div>
         <div class="col-md-3 team-member">
           <img src="images/team-natt.jpg" alt="" class="img-circle img-responsive">
@@ -135,9 +134,13 @@
           <h1>Our Clients</h1>
         </div>
         <div class="col-md-12 client-list">
-          <img src="images/client-1.png" alt="">
-          <img src="images/client-1.png" alt="">
-          <img src="images/client-1.png" alt="">
+          <img src="images/logo-bay.png" alt="">
+          <img src="images/logo-tmb.png" alt="">
+          <img src="images/logo-dva.png" alt="">
+          <img src="images/logo-tcdc.png" alt="">
+          <img src="images/logo-central.png" alt="">
+          <img src="images/logo-tk.png" alt="">
+          <img src="images/logo-ascend.png" alt="">
         </div>
       </div>
 
@@ -149,17 +152,34 @@
           <div class="col-md-6 col-md-offset-1">
             <h1>Want to know more about us</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the
+              We will love to hear about your project and show you more our process and portfolio.
             </p>
-            <button type="submit" class="btn btn-primary btn-lg">Let's Talk</button>
-          </div>
-          <div class="col-md-5">
-            <!-- <img src="images/img-footer-plane.png" class="graphic" alt=""> -->
+            <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ctaModal">Let's Talk</button>
           </div>
         </div>
       </div>
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="ctaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="marker">
+            </div>
+            <h1>Contact Us</h1>
+            <h3>Email</h3>
+            <h4>natt@ahancer.com</h4>
+            <h3>Phone</h3>
+            <h4>086-9918080</h4>
+            <h3>Address</h3>
+            <h4>68/2 Ranong 2 Rd., Dusit, Bangkok, Thailand</h4>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

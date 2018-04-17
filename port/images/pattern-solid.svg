@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="435px" height="435px" viewBox="0 0 435 435" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>pattern-solid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.104777096%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#F58B1E" offset="0%"></stop>
+            <stop stop-color="#F58B1E" offset="23.54416%"></stop>
+            <stop stop-color="#ED2755" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Resource" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g id="Artboard" transform="translate(-537.000000, -587.000000)" fill="url(#linearGradient-1)">
+            <rect id="pattern-solid" transform="translate(754.500000, 804.500000) rotate(45.000000) translate(-754.500000, -804.500000) " x="598" y="648" width="313" height="313" rx="10"></rect>
+        </g>
+    </g>
+</svg>
