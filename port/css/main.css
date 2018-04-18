@@ -7117,6 +7117,9 @@ h2 {
     line-height: 35px;
   }
 }
+h4 {
+  line-height: 24px;
+}
 a {
   color: #123456;
 }
@@ -7440,6 +7443,21 @@ ul {
 #ctaModal .modal-dialog .modal-content .modal-body h3 {
   color: #ED2755;
   font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+  #ctaModal .modal-dialog {
+    width: auto;
+  }
+  #ctaModal .modal-dialog .modal-content {
+    background: url("../images/img-popup-bg-mobile.svg") no-repeat #ffffff;
+  }
+  #ctaModal .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  #ctaModal .modal-dialog .modal-content .modal-body .marker {
+    margin-top: 120px;
+  }
 }
 /*---Button---*/
 .btn-primary {
