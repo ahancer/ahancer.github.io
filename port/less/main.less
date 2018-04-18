@@ -424,13 +424,18 @@ ul{
     }
     @media only screen and (min-width: 769px) and (max-width: 992px) {
       width: 800px;
-      .modal-body{
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 80px;
+      .modal-content{
+        .modal-body{
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 80px;
+          .marker{
+            margin-top: 120px;
+          }
+        }
       }
     }
-    }
+
     @media only screen and (max-width: 768px) {
       width: auto;
       .modal-content{
@@ -445,6 +450,7 @@ ul{
         }
       }
     }
+
   }
 }
 
