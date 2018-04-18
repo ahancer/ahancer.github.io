@@ -87,6 +87,13 @@ ul{
       opacity: .8;
     }
   }
+  .mobile-menu{
+    display: none;
+    margin-top: 6px;
+    color: @color-primary;
+    float: right;
+    opacity: .8;
+  }
   @media only screen and (max-width: 768px) {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     padding: 15px 15px;
@@ -95,6 +102,9 @@ ul{
     }
     .navbar-right{
       display: none;
+    }
+    .mobile-menu{
+      display: inline-block;
     }
   }
 }
@@ -308,7 +318,7 @@ ul{
     margin-top: 50px;
     .container{
       padding-top: 50px;
-      padding-bottom: 300px;
+      padding-bottom: 280px;
       background-attachment:inherit;
       background-position: bottom right -50px;
     }
