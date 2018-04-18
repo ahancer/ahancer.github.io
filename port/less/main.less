@@ -203,6 +203,15 @@ ul{
     background: url("../images/img-footer-plane.svg") no-repeat;
     background-position: bottom right 320px;
     background-attachment:fixed;
+    @media only screen and (min-width: 1301px) and (max-width: 1600px) {
+      background-position: bottom right 150px;
+    }
+    @media only screen and (min-width: 1201px) and (max-width: 1300px) {
+      background-position: bottom right 100px;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 1200px) {
+      background-position: bottom right 0px;
+    }
   }
   .graphic{
     width: 350px;
