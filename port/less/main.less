@@ -23,13 +23,13 @@ h1{
   font-weight: 500;
   font-style: 48px;
   line-height: 48px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 h2{
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 a{
   color: @color-black;
@@ -41,10 +41,11 @@ a:hover{
 p{
   opacity: .8;
   line-height: 30px;
-  margin: 6px 0 25px;
+  margin-bottom: 20px;
 }
 ul{
   opacity: .8;
+  line-height: 30px;
   -webkit-padding-start: 24px;
 }
 .pattern{
@@ -70,6 +71,13 @@ ul{
     .btn-primary{
       width: 150px;
       opacity: .8;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 15px 15px;
+    .navbar-right{
+      display: none;
     }
   }
 }
@@ -114,12 +122,20 @@ ul{
       &:extend(.pattern);
     }
   }
+  @media only screen and (max-width: 768px) {
+    .banner-image{
+      text-align: center;
+      .graphic{
+        width: 100%;
+      }
+    }
+  }
 }
 
 /*---Content---*/
 .service-a{
   position: relative;
-  padding-top: 200px;
+  padding-top: 180px;
   .graphic{
     width: 376px;
   }
@@ -148,7 +164,10 @@ ul{
   text-align: center;
   position: relative;
   .team-member{
-    padding: 80px;
+    margin-top: 30px;
+    .team-member-picture{
+      padding: 0px 60px;
+    }
   }
   .pattern-a{
     &:extend(.pattern);
@@ -160,7 +179,7 @@ ul{
 }
 
 .client{
-  padding-top: 50px;
+  padding-top: 60px;
   text-align: center;
   .client-list{
     padding-top: 30px;
@@ -257,7 +276,5 @@ ul{
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
-  h1{
-    color:@color-secondary;
-  }
+
 }
