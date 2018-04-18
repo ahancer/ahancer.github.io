@@ -7092,13 +7092,13 @@ h1 {
   font-weight: 500;
   font-style: 48px;
   line-height: 48px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 a {
   color: #123456;
@@ -7110,9 +7110,11 @@ a:hover {
 p {
   opacity: .8;
   line-height: 30px;
+  margin-bottom: 20px;
 }
 ul {
   opacity: .8;
+  line-height: 30px;
   -webkit-padding-start: 24px;
 }
 .pattern,
@@ -7145,6 +7147,15 @@ ul {
   width: 150px;
   opacity: .8;
 }
+@media only screen and (max-width: 768px) {
+  .navbar {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px;
+  }
+  .navbar .navbar-right {
+    display: none;
+  }
+}
 .navbar-fixed-top.scrolled {
   background-color: rgba(255, 255, 255, 0.95) !important;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -7154,6 +7165,9 @@ ul {
   opacity: 1;
 }
 /*---Banner---*/
+.banner {
+  padding-top: 40px;
+}
 .banner .banner-text {
   position: relative;
   margin-top: 90px;
@@ -7179,10 +7193,18 @@ ul {
   top: 120px;
   right: -60px;
 }
+@media only screen and (max-width: 768px) {
+  .banner .banner-image {
+    text-align: center;
+  }
+  .banner .banner-image .graphic {
+    width: 100%;
+  }
+}
 /*---Content---*/
 .service-a {
   position: relative;
-  padding-top: 250px;
+  padding-top: 180px;
 }
 .service-a .graphic {
   width: 376px;
@@ -7194,7 +7216,7 @@ ul {
 }
 .service-b {
   position: relative;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .service-b .graphic {
   width: 372px;
@@ -7205,12 +7227,15 @@ ul {
   right: -100px;
 }
 .team {
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
   position: relative;
 }
 .team .team-member {
-  padding: 50px;
+  margin-top: 30px;
+}
+.team .team-member .team-member-picture {
+  padding: 0px 60px;
 }
 .team .pattern-a {
   height: 330px;
@@ -7218,8 +7243,11 @@ ul {
   left: -100px;
 }
 .client {
-  padding-top: 80px;
+  padding-top: 60px;
   text-align: center;
+}
+.client .client-list {
+  padding-top: 30px;
 }
 .client .client-list img {
   margin: 0px 30px 30px 30px;
@@ -7292,8 +7320,3 @@ ul {
 /* Only Medium devices (MD) */
 /* Only Small devices (SM) */
 /* Only Extra Small devices (XS) */
-@media only screen and (max-width: 768px) {
-  h1 {
-    color: #F58B1E;
-  }
-}
