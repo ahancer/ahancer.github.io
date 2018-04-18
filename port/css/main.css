@@ -7167,6 +7167,13 @@ ul {
   width: 150px;
   opacity: .8;
 }
+.navbar .mobile-menu {
+  display: none;
+  margin-top: 6px;
+  color: #ED2755;
+  float: right;
+  opacity: .8;
+}
 @media only screen and (max-width: 768px) {
   .navbar {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -7177,6 +7184,9 @@ ul {
   }
   .navbar .navbar-right {
     display: none;
+  }
+  .navbar .mobile-menu {
+    display: inline-block;
   }
 }
 .navbar-fixed-top.scrolled {
@@ -7394,7 +7404,7 @@ ul {
   }
   .cta .container {
     padding-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 280px;
     background-attachment: inherit;
     background-position: bottom right -50px;
   }
