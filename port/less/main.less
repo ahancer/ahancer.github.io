@@ -8,6 +8,7 @@ To compile:
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Rubik:400,500";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400";
 @import "_variables.less";
 @import "_mixins.less";
 
@@ -30,6 +31,7 @@ h1{
   @media only screen and (max-width: 768px) {
     font-size: 32px;
     line-height: 40px;
+    margin-bottom: 15px;
   }
 }
 h2{
@@ -40,6 +42,7 @@ h2{
   @media only screen and (max-width: 768px) {
     font-size: 24px;
     line-height: 35px;
+    margin-bottom: 15px;
   }
 }
 h4{
@@ -47,6 +50,7 @@ h4{
 }
 a{
   color: @color-black;
+  font-family: @font-secondary;
 }
 a:hover{
   color: @color-primary;
@@ -56,11 +60,13 @@ p{
   opacity: .8;
   line-height: 30px;
   margin-bottom: 20px;
+  font-family: @font-secondary;
 }
 ul{
   opacity: .8;
   line-height: 30px;
   -webkit-padding-start: 24px;
+  font-family: @font-secondary;
 }
 .wrapper{
   overflow-x: hidden;
@@ -271,6 +277,9 @@ ul{
   padding-top: 100px;
   text-align: center;
   position: relative;
+  h2{
+    margin-bottom: 10px;
+  }
   .team-member{
     margin-top: 30px;
     .team-member-picture{
@@ -313,8 +322,11 @@ ul{
 }
 
 .client{
-  padding-top: 60px;
+  padding-top: 70px;
   text-align: center;
+  h2{
+    margin-bottom: 10px;
+  }
   .client-list{
     padding-top: 30px;
     img{
@@ -399,19 +411,18 @@ ul{
       background-position: top right 0px;
       border: 0px;
       .modal-body{
-        padding-top: 50px;
-        padding-bottom: 120px;
+        padding-top: 15px;
+        padding-bottom: 100px;
         padding-left: 50px;
+        .close{
+          font-size: 60px;
+        }
         .marker{
-          margin-top: 40px;
+          margin-top: 140px;
           width: 35px;
           height: 5px;
           display: block;
           background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
-        }
-        .close{
-          font-size: 60px;
-          margin-top: -40px;
         }
         h1{
           margin-top: 5px;
@@ -419,6 +430,13 @@ ul{
         h3{
           color: @color-primary;
           font-size: 18px;
+        }
+        h4{
+          a{
+            text-decoration: underline;
+            font-family: @font-primary;
+            font-weight: 500;
+          }
         }
       }
     }
@@ -428,9 +446,9 @@ ul{
         .modal-body{
           padding-left: 30px;
           padding-right: 30px;
-          padding-bottom: 80px;
+          padding-bottom: 60px;
           .marker{
-            margin-top: 120px;
+            margin-top: 160px;
           }
         }
       }
@@ -444,8 +462,12 @@ ul{
           padding-bottom: 30px;
           padding-left: 30px;
           padding-right: 30px;
+          .close{
+            margin-top: -10px;
+            margin-right: -15px;
+          }
           .marker{
-            margin-top: 120px;
+            margin-top: 140px;
           }
         }
       }
@@ -461,6 +483,7 @@ ul{
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%) !important;
   border-radius: 30px;
   font-size: 18px;
+  font-family: @font-secondary;
 }
 
 .btn-primary:hover{
