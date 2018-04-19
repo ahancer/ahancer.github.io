@@ -9,6 +9,7 @@ function check_if_in_view() {
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = (window_top_position + window_height);
+  var window_width = $window.width();
 
   //slideRight
   $.each($animation_elements_right, function() {
@@ -19,7 +20,7 @@ function check_if_in_view() {
 
     //check to see if this current container is within viewport
     if ((element_bottom_position >= window_top_position) &&
-      (element_top_position <= window_bottom_position)) {
+      (element_top_position <= window_bottom_position) && (window_width >= 768)){
       $element.addClass('animated slideInRight');
     } else {
       $element.removeClass('animated slideInRight');
@@ -35,14 +36,14 @@ function check_if_in_view() {
 
     //check to see if this current container is within viewport
     if ((element_bottom_position >= window_top_position) &&
-      (element_top_position <= window_bottom_position)) {
+      (element_top_position <= window_bottom_position) && (window_width >= 768)) {
       $element.addClass('animated slideInLeft');
     } else {
       $element.removeClass('animated slideInLeft');
     }
   });
 
-  //slideRotate
+  //RotateIn
   $.each($animation_elements_rotate, function() {
     var $element = $(this);
     var element_height = $element.outerHeight();
