@@ -365,25 +365,23 @@ ul{
   background-image: linear-gradient(-45deg, #29648F 0%, #235881 26%, #123456 100%);
   color: @color-white;
   margin-top: 70px;
+  overflow: hidden;
   .btn-primary{
     margin-top: 20px;
     width: 200px;
   }
   .container{
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background: url("../images/img-footer-plane.svg") no-repeat;
-    background-position: bottom right 320px;
-    background-attachment:fixed;
-    @media only screen and (min-width: 1301px) and (max-width: 1600px) {
-      background-position: bottom right 150px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    .cta-image{
+      padding-top: 60px;
+      padding-right: 60px;
+      text-align: right;
+      img{
+        width: 420px;
+      }
     }
-    @media only screen and (min-width: 1201px) and (max-width: 1300px) {
-      background-position: bottom right 100px;
-    }
-    @media only screen and (min-width: 0px) and (max-width: 1200px) {
-      background-position: bottom right 0px;
-    }
+
   }
   .graphic{
     width: 350px;
@@ -393,18 +391,25 @@ ul{
     margin-top: 30px;
     .container{
       padding-top: 30px;
-      padding-bottom: 80px;
-      background-attachment:inherit;
-      background-position: bottom right -30px;
+      .cta-image{
+        padding-top: 100px;
+        img{
+          width: 320px;
+        }
+      }
     }
   }
   @media only screen and (max-width: 768px) {
     margin-top: 50px;
     .container{
       padding-top: 50px;
-      padding-bottom: 280px;
-      background-attachment:inherit;
-      background-position: bottom right -50px;
+      .cta-image{
+        padding-right: 30px;
+        padding-top: 50px;
+        img{
+          width: 320px;
+        }
+      }
     }
   }
 }
