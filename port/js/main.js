@@ -82,7 +82,13 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
-// $("#test").addClass('animated rotateIn');
+// Click & animate
+$(document).ready(function(){
+  $(".open-popup").click(function() {
+    $(".popup-decoration").delay(2000).addClass('animated rotateIn');
+    $(".rocketman").delay(2000).addClass('animated slideInRight');
+  });
+});
 
 //Scroll and change nav color
 $(function () {
