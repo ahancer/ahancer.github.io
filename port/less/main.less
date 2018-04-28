@@ -26,7 +26,6 @@ body{
 h1{
   font-family: @font-primary;
   font-weight: 500;
-  font-style: 48px;
   line-height: 48px;
   margin-bottom: 20px;
   @media only screen and (max-width: 768px) {
@@ -578,8 +577,9 @@ ul{
 }
 
 .slideInLeft {
-  animation-name: slideInLeft;
+  animation-name: bounceInLeft;
   animation-duration: 1s;
+  // animation-timing-function: cubic-bezier(0.470, 0.000, 0.755, 1.260);
 }
 
 @keyframes slideInRight {
@@ -596,19 +596,18 @@ ul{
 }
 
 .slideInRight {
-  animation-name: slideInRight;
-  // transition-timing-function: ease-out;
+  animation-name: bounceInRight;
   animation-duration: 1s;
 }
 
 .slideIn-1 {
-  animation-duration: 0.8s;
+  animation-duration: 1.0s;
 }
 .slideIn-2 {
-  animation-duration: 0.9s;
+  animation-duration: 1.1s;
 }
 .slideIn-3 {
-  animation-duration: 1.0s;
+  animation-duration: 1.2s;
 }
 
 /*---Responsive (Bootstrap Standard)---*/
