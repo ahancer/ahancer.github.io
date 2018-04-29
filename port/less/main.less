@@ -360,14 +360,22 @@ ul{
   }
 }
 
+.gallery{
+  margin-top: 70px;
+  .gallery-item{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .cta{
   background-image: linear-gradient(-45deg, #29648F 0%, #235881 26%, #123456 100%);
   color: @color-white;
-  margin-top: 70px;
   overflow: hidden;
-  .btn-primary{
+  .btn{
     margin-top: 20px;
-    width: 200px;
+    margin-right: 20px;
+    width: 180px;
   }
   .container{
     padding-top: 60px;
@@ -379,7 +387,7 @@ ul{
       img{
         width: 420px;
         animation-delay: 0.5s;
-        animation-duration: .8s;
+        animation-duration: .5s;
         transition-timing-function: ease-in;
         opacity: 0;
       }
@@ -406,7 +414,11 @@ ul{
     }
   }
   @media only screen and (max-width: 768px) {
-    margin-top: 50px;
+    .btn{
+      margin-top: 20px;
+      margin-right: 15px;
+      width: 140px;
+    }
     .container{
       padding-top: 50px;
       .cta-image{
@@ -562,41 +574,94 @@ ul{
   transition: all 200ms ease;
 }
 
+.btn-secondary {
+  &:extend(.btn all);
+  border: 0px;
+  background: #ffffff !important;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: @font-secondary;
+  color: @color-primary;
+}
+
+.btn-secondary:hover{
+  box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.25);
+  transition: all 200ms ease;
+  color: @color-primary;
+}
+
 /*---Custom Animation---*/
 @keyframes slideInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
     opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(1px, 0, 0);
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1;
   }
 }
 
 .slideInLeft {
-  animation-name: bounceInLeft;
+  animation-name: slideInLeft;
   animation-duration: 1s;
-  // animation-timing-function: cubic-bezier(0.470, 0.000, 0.755, 1.260);
 }
 
 @keyframes slideInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
   from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
     opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-1px, 0, 0);
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1;
   }
 }
 
 .slideInRight {
-  animation-name: bounceInRight;
+  animation-name: slideInRight;
   animation-duration: 1s;
 }
 
