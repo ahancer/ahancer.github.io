@@ -240,10 +240,18 @@ label{
   height: 35px;
   line-height: 35px;
   padding-left: 10px;
+  @media only screen and (max-width: 768px) {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0px;
+  }
 }
 .text-line-grey {
   &:extend(.text-line);
   background: @color-grey-light;
+  @media only screen and (max-width: 768px) {
+    background: @color-white;
+  }
 }
 .text-line-white {
   &:extend(.text-line);
@@ -324,13 +332,5 @@ label{
 @media only screen and (max-width: 768px) {
   .desktop-only{
     display: none;
-  }
-  .m-text-line-grey {
-    &:extend(.text-line);
-    background: @color-grey-light;
-  }
-  .m-text-line-white {
-    &:extend(.text-line);
-    background: @color-white;
   }
 }
