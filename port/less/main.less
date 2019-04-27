@@ -88,6 +88,9 @@ ul{
 .graphic{
   z-index: 3;
 }
+.color-primary{
+  color: @color-primary;
+}
 mark {
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
   color: @color-white;
@@ -259,6 +262,10 @@ mark {
     .job-open-position{
       h3{
         margin-top: 0px;
+      }
+      &.closed{
+        opacity: .5;
+        color: #cccccc;
       }
     }
   }
@@ -717,6 +724,43 @@ mark {
       }
     }
 
+  }
+}
+
+
+/*---Job Modal---*/
+.job-modal{
+  .modal-body{
+    padding: 30px 50px;
+    h4{
+      margin-top: 30px;
+    }
+    .close{
+      position: absolute;
+      font-size: 50px;
+      right: 30px;
+      top:10px;
+      z-index: 5;
+    }
+    .job-modal-header{
+      text-align: center;
+      h2{
+        margin: 0px;
+      }
+    }
+    .job-modal-cta{
+      img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .modal-body{
+      padding: 15px 50px;
+    }
   }
 }
 
