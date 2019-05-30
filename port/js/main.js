@@ -1,3 +1,9 @@
+
+//Show Busy Modal
+$(window).on('load',function(){
+    $('#busyModal').modal('show');
+});
+
 //Scroll and Animation
 
 var $animation_elements_right = $('.animation-element-right');

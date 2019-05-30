@@ -95,7 +95,9 @@ mark {
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
   color: @color-white;
 }
-
+.modal-backdrop.in {
+    opacity: 0.9;
+}
 
 /*---Navigation Bar---*/
 .navbar{
@@ -766,6 +768,75 @@ mark {
       }
     }
   }
+}
+
+/*---Busy Modal---*/
+#busyModal{
+  .modal-dialog{
+    width: 420px;
+    .modal-content{
+      background: url("../images/img-busy-space.svg") no-repeat #ffffff;
+      background-size: 100%;
+      background-position: top left 0px;
+      border: 0px;
+      .modal-body{
+        .close{
+          position: absolute;
+          font-size: 40px;
+          right: 10px;
+          top:5px;
+          z-index: 5;
+        }
+        .busy-asto{
+          width: 230px;
+          margin-left: 45px;
+          margin-top: 16px;
+          transform: translatey(0px);
+          animation: float 4s ease-in-out infinite;
+        }
+        .modal-text{
+          padding: 60px 30px 40px 30px;
+          text-align: center;
+          p{
+            opacity: 1;
+          }
+          .btn-primary{
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .modal-dialog{
+      width: 345px;
+      margin: 30px auto;
+      .modal-content{
+        .modal-body{
+          .busy-asto{
+            width: 190px;
+            margin-left: 35px;
+            margin-top: 14px;
+          }
+          .modal-text{
+            padding: 40px 20px 30px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 /*---Button---*/
