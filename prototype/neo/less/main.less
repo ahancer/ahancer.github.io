@@ -1,0 +1,55 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Kanit:300,300i&subset=thai";
+@import "_variables.less";
+@import "_mixins.less";
+
+/*---General Setting---*/
+body{
+  padding-top: 0px;
+}
+h1{
+  color:@color-theme-primary;
+  font-family: @font-primary;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+.banner{
+  padding: 100px 0px;
+  background:#eeeeee;
+}
+
+
+/*---Button---*/
+.btn-primary {
+  &:extend(.btn all);
+  .button-variant(#ffffff, @color-theme-primary, #000000);
+}
+
+/*---Responsive (Bootstrap Standard)---*/
+/* Only Large devices (LG) */
+@media only screen and (min-width: 1201px) {
+
+}
+/* Only Medium devices (MD) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+/* Only Small devices (SM) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+/* Only Extra Small devices (XS) */
+@media only screen and (max-width: 768px) {
+  h1{
+    color:@color-theme-secondary;
+  }
+}
