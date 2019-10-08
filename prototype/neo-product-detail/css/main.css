@@ -8084,11 +8084,11 @@ ol.list-number li:before {
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  border-bottom: 1px solid #e0e0e0;
 }
 .content-faq .panel-group-faq .panel-heading {
   background-color: transparent;
   padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0;
 }
 .content-faq .panel-group-faq .panel-title {
   color: #000000;
