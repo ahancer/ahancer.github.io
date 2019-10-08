@@ -7288,6 +7288,10 @@ a:focus {
   display: block;
 }
 /*---General Setting---*/
+.container {
+  max-width: 600px;
+  width: 100%;
+}
 body {
   color: #616161;
   background: #ffffff;
@@ -8007,6 +8011,11 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary .badge {
   color: #e91f63;
   background-color: #ffffff;
+}
+/*---Banner---*/
+.section-videoBanner {
+  max-width: 600px;
+  margin: 0 auto;
 }
 /*---Why Us---*/
 .list-whyUs li {
