@@ -8030,7 +8030,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .card {
   border-radius: 6px;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -8043,7 +8043,7 @@ ol.list-number {
   counter-reset: my-awesome-counter;
   padding-left: 0;
   display: table;
-  margin: 15px auto;
+  margin: 15px auto 0;
 }
 ol.list-number li {
   counter-increment: my-awesome-counter;
@@ -8056,6 +8056,7 @@ ol.list-number li:before {
   position: absolute;
   left: 0;
   top: 3px;
+  line-height: 9px;
   background: #3b4fbc;
   color: #fff;
   width: 20px;
@@ -8118,9 +8119,15 @@ ol.list-number li:before {
   color: inherit;
 }
 .content-faq .panel-group-faq .panel-body {
-  padding: 25px 10px;
+  padding: 8px 0px;
   color: #000000;
   border-top: 0 !important;
+}
+.content-faq .panel-group-faq .panel-body ol {
+  padding-left: 24px;
+}
+ol > li {
+  margin-bottom: 10px;
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */

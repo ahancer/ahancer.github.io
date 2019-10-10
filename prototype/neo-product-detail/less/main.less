@@ -163,7 +163,7 @@ p {
 
 .card {
   border-radius: 6px;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -178,7 +178,7 @@ ol.list-number {
   counter-reset: my-awesome-counter;
   padding-left: 0; 
   display: table;
-  margin: 15px auto;
+  margin: 15px auto 0;
   li {
     counter-increment: my-awesome-counter;
     position: relative;
@@ -189,6 +189,7 @@ ol.list-number {
       position: absolute;
       left: 0;
       top: 3px;
+      line-height: 9px;
       background: @color-theme-secondary;
       color: #fff;
       width: 20px;
@@ -221,7 +222,6 @@ ol.list-number {
     border-radius: 0;
     box-shadow: none;
     border-bottom: 1px solid #e0e0e0;
-
   }
   .panel-heading {
     background-color: transparent;
@@ -253,11 +253,19 @@ ol.list-number {
     }
   }
   .panel-body {
-    padding: 25px 10px;
+    padding: 8px 0px;
     color: @color-theme-heading;
     border-top: 0 !important;
+    ol {
+      padding-left: 24px;
+    }
   }
 }
+
+ol > li {
+  margin-bottom: 10px;
+}
+
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) {
