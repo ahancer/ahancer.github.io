@@ -30,7 +30,7 @@ a {
 }
 /*---Helper Classes---*/
 
-.videoWrapper, 
+.videoWrapper,
 .embed-youtube {
   position: relative;
   padding-bottom: 56.25%;
@@ -64,20 +64,27 @@ body {
   background: #ffffff;
 }
 
+small{
+  font-size: 14px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: @font-primary;
   line-height: @heading-line-height;
   color: @color-theme-heading;
   font-weight: 400;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
 
 h1{
   font-size: @font-size-h1;
+  margin-top: 20px;
 }
 
 h2 {
   font-size: @font-size-h2;
+  margin-top: 10px;
 }
 
 h3 {
@@ -107,10 +114,10 @@ h1, h2, h3, h4, h5, h6, .font-head {
   }
 }
 
-body, 
-p, 
-input, 
-textarea, 
+body,
+p,
+input,
+textarea,
 select {
   font-size: @font-size-body;
   line-height: @body-line-height;
@@ -163,20 +170,28 @@ p {
 
 .card {
   border-radius: 6px;
-  padding: 20px 20px 5px 20px;
+  padding: 20px 20px 20px 20px;
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.card-transparent {
   border: 1px solid #e0e0e0;
   background-color: #ffffff;
+}
+
+.card-steps {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.card-steps img{
+  padding: 0px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 ol.list-number {
   list-style: none;
   counter-reset: my-awesome-counter;
-  padding-left: 0; 
+  padding-left: 0;
   display: table;
   margin: 15px auto 0;
   li {
@@ -254,7 +269,7 @@ ol.list-number {
   }
   .panel-body {
     padding: 8px 0px;
-    color: @color-theme-heading;
+    color: @color-theme-body;
     border-top: 0 !important;
     ol {
       padding-left: 24px;
@@ -269,17 +284,17 @@ ol > li {
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) {
-  
+
 }
 /* Only Medium devices (MD) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-  
+
 }
 /* Only Small devices (SM) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  
+
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
-  
+
 }
