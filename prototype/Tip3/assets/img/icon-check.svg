@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/icon-step-done</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/icon-step-done" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#00BF6C" cx="20" cy="20" r="18"></circle>
+        <g id="icon/icon-check-white-small" transform="translate(10.000000, 10.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M6.96586609,15.2989756 L1.90986768,9.52997036 C1.46065785,9.01741207 0.786117208,9.01741207 0.336907375,9.52997036 C-0.112302458,10.0425286 -0.112302458,10.8121943 0.336907375,11.3247526 L6.96617173,18.8888889 L19.6630926,4.4014232 C20.1123025,3.88886491 20.1123025,3.11919923 19.6630926,2.60664094 C19.2138828,2.09408265 18.5393422,2.09408265 18.0901323,2.60664094 L6.96586609,15.2989756 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
