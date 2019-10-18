@@ -203,10 +203,23 @@
                     </div>
                   </div>
                 </div>
+   
+                <aside class="modal fade" id="modal-tutorial"  tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <img class="img-fluid aligncenter img-tutorial" src="assets/img/icon-Tutorial@1x.svg" />
+                        <p>เลื่อนการ์ด<br>เพื่อดูแพ็คเกจอื่นๆ</p>
+                        <button type="button" class="btn btn-outline-white" data-dismiss="modal">ตกลง</button>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                
                 <section class="package">
                   <div class="container-fluid">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="package-carousel owl-carousel owl-theme">
                         <div class="package-item package-basic">
                           <div class="package-header">
                             <h3 class="name">Basic</h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Basic" data-price="195">
@@ -214,8 +227,10 @@
                                 <input type="checkbox" autocomplete="off"> เปรียบเทียบ
                               </label>
                             </div>
-                            <div class="price">195 บาท</div>
-                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            <div class="price-wrapper">
+                              <div class="price">195 <span class="price-unit">บาท</span></div>
+                              <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            </div>
                           </div>
                           <div class="package-body">
                             <div class="badge badge-light">ไม่รองรับวีซ่า</div>
@@ -237,11 +252,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="package-footer"><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a><a class="btn btn-link" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a></div>
+                          <div class="package-footer"><a class="btn btn-outline btn-block" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a></div>
                         </div>
-                      </div>
-                      
-                      <div class="col-3">
                         <div class="package-item package-basic">
                           <div class="package-header">
                             <h3 class="name">Basic <span class="badge">plus</span></h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Basic" data-price="205">
@@ -249,8 +261,8 @@
                                 <input type="checkbox" autocomplete="off"> เปรียบเทียบ
                               </label>
                             </div>
-                            <div class="price">205 บาท</div>
-                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            <div class="price-wrapper"><div class="price">205 <span class="price-unit">บาท</span></div>
+                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div></div>
                           </div>
                           <div class="package-body">
                             <div class="badge badge-light">ไม่รองรับวีซ่า</div>
@@ -272,24 +284,20 @@
                               </div>
                             </div>
                           </div>
-                          <div class="package-footer"><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a><a class="btn btn-link" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a></div>
+                          <div class="package-footer"><a class="btn btn-outline btn-block" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a></div>
                         </div>
-                      </div>
-
-                      <div class="col-3">
                         <div class="package-item package-standard">
                           <div class="package-header">
-                            <h3 class="name">Standard</h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Standard" data-price="245">
+                            <h3 class="name">Standard <span class="badge badge-info">แนะนำ</span></h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Standard" data-price="245">
                               <label class="btn">
                                 <input type="checkbox" autocomplete="off"> เปรียบเทียบ
                               </label>
                             </div>
-                            <div class="price">245 บาท</div>
-                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            <div class="price-wrapper"><div class="price">245 <span class="price-unit">บาท</span></div>
+                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div></div>
                           </div>
                           <div class="package-body">
-                            <div class="badge badge-info">แนะนำ</div>
-                            <div class="badge badge-success">ยื่นวีซ่าได้</div>
+                            <div class="badge badge-success">รองรับวีซ่า</div>
                             <div class="detail-list">
                               <div class="detail-item">
                                 <p>เสียชีวิตหรืออวัยวะจากอุบัติเหตุ <span class="icon-question" data-toggle="tooltip" data-placement="bottom" title="คุ้มครองกรณีบาดเจ็บ, เจ็บป่วยระหว่างเดินทางจำเป็นต้องเคลื่อนย้ายเพื่อรักษาด้วยวิธีที่เหมาะสมตามความเห็นของบริษัทฯ หรือเสียชีวิตภายใน 30 วันนับจากวันที่บาดเจ็บ, เจ็บป่วย จะดำเนินการส่งศพหรืออัฐิกลับสู่ไทย">?</span></p><b>1,000,000</b>
@@ -308,11 +316,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="package-footer"><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a><a class="btn btn-link" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a></div>
+                          <div class="package-footer"><a class="btn btn-outline btn-block" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a></div>
                         </div>
-                      </div>
-                      
-                      <div class="col-3">
                         <div class="package-item package-standard">
                           <div class="package-header">
                             <h3 class="name">Standard <span class="badge">plus</span></h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Standard" data-price="195">
@@ -320,11 +325,11 @@
                                 <input type="checkbox" autocomplete="off"> เปรียบเทียบ
                               </label>
                             </div>
-                            <div class="price">195 บาท</div>
-                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            <div class="price-wrapper"><div class="price">195 <span class="price-unit">บาท</span></div>
+                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div></div>
                           </div>
                           <div class="package-body">
-                            <div class="badge badge-success">ยื่นวีซ่าได้</div>
+                            <div class="badge badge-success">รองรับวีซ่า</div>
                             <div class="detail-list">
                               <div class="detail-item">
                                 <p>เสียชีวิตหรืออวัยวะจากอุบัติเหตุ <span class="icon-question" data-toggle="tooltip" data-placement="bottom" title="คุ้มครองกรณีบาดเจ็บ, เจ็บป่วยระหว่างเดินทางจำเป็นต้องเคลื่อนย้ายเพื่อรักษาด้วยวิธีที่เหมาะสมตามความเห็นของบริษัทฯ หรือเสียชีวิตภายใน 30 วันนับจากวันที่บาดเจ็บ, เจ็บป่วย จะดำเนินการส่งศพหรืออัฐิกลับสู่ไทย">?</span></p><b>1,000,000</b>
@@ -343,11 +348,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="package-footer"><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a><a class="btn btn-link" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a></div>
+                          <div class="package-footer"><a class="btn btn-outline btn-block" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a></div>
                         </div>
-                      </div>
-
-                      <div class="col-3">
                         <div class="package-item package-premium">
                           <div class="package-header">
                             <h3 class="name">Premium</h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Premium" data-price="245">
@@ -355,11 +357,11 @@
                                 <input type="checkbox" autocomplete="off"> เปรียบเทียบ
                               </label>
                             </div>
-                            <div class="price">245 บาท</div>
-                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            <div class="price-wrapper"><div class="price">245 <span class="price-unit">บาท</span></div>
+                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div></div>
                           </div>
                           <div class="package-body">
-                            <div class="badge badge-success">ยื่นวีซ่าได้</div>
+                            <div class="badge badge-success">รองรับวีซ่า</div>
                             <div class="detail-list">
                               <div class="detail-item">
                                 <p>เสียชีวิตหรืออวัยวะจากอุบัติเหตุ <span class="icon-question" data-toggle="tooltip" data-placement="bottom" title="คุ้มครองกรณีบาดเจ็บ, เจ็บป่วยระหว่างเดินทางจำเป็นต้องเคลื่อนย้ายเพื่อรักษาด้วยวิธีที่เหมาะสมตามความเห็นของบริษัทฯ หรือเสียชีวิตภายใน 30 วันนับจากวันที่บาดเจ็บ, เจ็บป่วย จะดำเนินการส่งศพหรืออัฐิกลับสู่ไทย">?</span></p><b>1,000,000</b>
@@ -378,12 +380,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="package-footer"><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a><a class="btn btn-link" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a></div>
+                          <div class="package-footer"><a class="btn btn-outline btn-block" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a></div>
                         </div>
-                      </div>
-
-
-                      <div class="col-3">
                         <div class="package-item package-premium">
                           <div class="package-header">
                             <h3 class="name">Premium <span class="badge">plus</span></h3><div class="btn-group-toggle" data-toggle="buttons" data-package="Premium" data-price="275">
@@ -391,11 +389,11 @@
                                 <input type="checkbox" autocomplete="off"> เปรียบเทียบ
                               </label>
                             </div>
-                            <div class="price">275 บาท</div>
-                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div>
+                            <div class="price-wrapper"><div class="price">275 <span class="price-unit">บาท</span></div>
+                            <div class="desc">รวม 820 บาท (สําหรับ 4 คน)</div></div>
                           </div>
                           <div class="package-body">
-                            <div class="badge badge-success">ยื่นวีซ่าได้</div>
+                            <div class="badge badge-success">รองรับวีซ่า</div>
                             <div class="detail-list">
                               <div class="detail-item">
                                 <p>เสียชีวิตหรืออวัยวะจากอุบัติเหตุ <span class="icon-question" data-toggle="tooltip" data-placement="bottom" title="คุ้มครองกรณีบาดเจ็บ, เจ็บป่วยระหว่างเดินทางจำเป็นต้องเคลื่อนย้ายเพื่อรักษาด้วยวิธีที่เหมาะสมตามความเห็นของบริษัทฯ หรือเสียชีวิตภายใน 30 วันนับจากวันที่บาดเจ็บ, เจ็บป่วย จะดำเนินการส่งศพหรืออัฐิกลับสู่ไทย">?</span></p><b>1,000,000</b>
@@ -414,7 +412,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="package-footer"><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a><a class="btn btn-link" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a></div>
+                          <div class="package-footer"><a class="btn btn-outline btn-block" href="#" title="ข้อมูลเพิ่มเติม" data-toggle="modal" data-target="#modal-package-detail">ข้อมูลเพิ่มเติม</a><a class="btn btn-danger btn-next" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a></div>
                         </div>
                       </div>
                     </div>
@@ -512,7 +510,7 @@
               </div>
               <aside class="canvas bottom compare-canvas">
                 <div class="canvas-content">
-                  <div class="compare-list"><span class="compare-item item-1" data-package="" data-price=""></span><span class="compare-item item-2" data-package="" data-price=""></span></div><a class="btn btn-danger btn-compare" href="#" title="ตกลง" data-toggle="modal" data-target="#modal-package-compare">ตกลง</a><a class="btn btn-danger-outline hide-canvas btn-cancel is--active" href="#" title="ยกเลิก" data-canvas-position="bottom">ยกเลิก</a>
+                  <div class="compare-list"><span class="compare-item item-1" data-package="" data-price=""></span><span class="compare-item item-2" data-package="" data-price=""></span></div><a class="btn btn-primary btn-compare" href="#" title="ตกลง" data-toggle="modal" data-target="#modal-package-compare">ตกลง</a><a class="btn btn-outline hide-canvas btn-cancel is--active" href="#" title="ยกเลิก" data-canvas-position="bottom">ยกเลิก</a>
                 </div>
               </aside>
               <aside class="modal fade" id="modal-package-compare" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -524,13 +522,13 @@
                     <div class="the-package package-basic">
                       <div class="package-header">
                         <h3 class="name">Basic</h3>
-                        <div class="price">205 บาท</div><a class="btn btn-link" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a>
+                        <div class="price">205 บาท</div><a class="btn btn-outline btn-block" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a>
                       </div>
                     </div>
                     <div class="the-package package-standard">
                       <div class="package-header">
                         <h3 class="name">Standard <span class="badge">plus</span></h3>
-                        <div class="price">245 บาท</div><a class="btn btn-link" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a>
+                        <div class="price">245 บาท</div><a class="btn btn-outline btn-block" href="#" title="เลือกแผนนี้">เลือกแผนนี้</a>
                       </div>
                     </div></div>
                     <div class="modal-body">
@@ -772,6 +770,7 @@
                         </div>
                       </div>
                     </aside>
+                    
                     <script src="assets/vendors/jquery/jquery.min.js"></script>
                     <script src="assets/vendors/popper/popper.min.js"></script>
                     <script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
@@ -779,6 +778,7 @@
                     <script src="assets/vendors/bootstrap/bootstrap-datepicker.min.js"></script>
                     <script src="assets/vendors/owl/owl.carousel.min.js"></script>
                     <script src="assets/vendors/mmenu/jquery.mmenu.all.js"></script>
-                    <script defer="defer" src="assets/script/main.min.js"></script>
+                    <!-- <script defer="defer" src="assets/script/main.min.js"></script> -->
+                    <script defer="defer" src="assets/script/main.js"></script>
                   </body>
                   </html>

@@ -1,4 +1,9 @@
 $(function() {
+
+    if( $(window).outerWidth() <= 1024 ) {
+        $("#modal-tutorial").modal();
+    }
+
     jQuery().mmenu && $("#mobilenav").mmenu({
         navbar: {
             title: "Menu"
@@ -102,32 +107,47 @@ $(function() {
         },
         navText: ["<span class='arrow-left'></span>", "<span class='arrow-right'></span>"]
     }), $(".package-carousel").owlCarousel({
-        // items: 1.3,
-        items: 1,
-        loop: 0,
+        items: 1.3,
+        // items: 1,
+        loop: false,
         dots: !1,
         nav: !1,
-        margin: 0,
+        margin: 15,
         responsiveClass: !0,
-        // stagePadding: 200,
+        rewind: false,
         responsive: {
-            767: {
-                // items: 2.3,
+            0: {
+                // items: 2.5,
+                items: 1,
+                dots: !1,
+                nav: !1,
+                stagePadding: 50
+            },
+            768: {
+                // items: 3.5,
                 items: 2,
                 dots: !1,
-                nav: !1
+                nav: !1,
+                stagePadding: 50
             },
-            1023: {
-                // items: 3.4,
+            992: {
                 items: 3,
                 dots: !1,
-                nav: !1
+                nav: !1,
+                stagePadding: 80
             },
-            1199: {
+            1200: {
                 // items: 4.5,
+                items: 3,
+                dots: !1,
+                nav: !0,
+                stagePadding: 100
+            },
+            1600: {
                 items: 4,
                 dots: !1,
-                nav: !0
+                nav: !0,
+                stagePadding: 200
             }
         },
         navText: ["<span class='arrow-left'></span>", "<span class='arrow-right'></span>"]
