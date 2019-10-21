@@ -18158,6 +18158,11 @@ body {
     border-top: 5px solid #ffad00;
 }
 
+.package-premium .btn-next {
+    background-color: #f0a203;
+    border-color: #f0a203;
+}
+
 .package-premium .name,
 .package-premium .price {
     color: #ffad00
