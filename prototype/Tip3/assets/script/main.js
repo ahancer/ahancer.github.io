@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 $(function() {
 
     if( $(window).outerWidth() <= 1024 ) {

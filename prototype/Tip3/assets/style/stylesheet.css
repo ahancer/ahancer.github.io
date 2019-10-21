@@ -6639,20 +6639,21 @@ a.close.disabled {
 .bs-popover-auto[x-placement^="bottom"]>.arrow {
     top: calc((0.5rem + 1px) * -1)
 }
-
+/* START Ahancer New Code */
 .bs-popover-bottom>.arrow::before,
 .bs-popover-auto[x-placement^="bottom"]>.arrow::before {
     top: 0;
     border-width: 0 0.5rem 0.5rem 0.5rem;
-    border-bottom-color: rgba(0, 0, 0, 0.25)
+    border-bottom-color: #484848;
 }
 
 .bs-popover-bottom>.arrow::after,
 .bs-popover-auto[x-placement^="bottom"]>.arrow::after {
     top: 1px;
     border-width: 0 0.5rem 0.5rem 0.5rem;
-    border-bottom-color: #fff
+    border-bottom-color: #484848;
 }
+/* END Ahancer New Code */
 
 .bs-popover-bottom .popover-header::before,
 .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
@@ -6711,6 +6712,22 @@ a.close.disabled {
     padding: 0.5rem 0.75rem;
     color: #212529
 }
+
+/* START Ahancer New Code */
+
+.popover{
+  background-color: #484848;
+  border: 1px solid #484848;
+  min-width: 300px;
+}
+
+.popover-body{
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* END Ahancer New Code */
 
 .carousel {
     position: relative
@@ -16287,21 +16304,21 @@ tfoot td {
 @media only screen and (min-width: 1024px) {
     #modal-package-detail .modal-dialog,
     #modal-package-compare .modal-dialog {
-        max-width: 520px
+        max-width: 520px;
     }
 }
 
 #modal-package-compare .modal-header {
-    padding: 0
+    padding: 0;
 }
 
 #modal-package-compare .the-package {
-    flex-basis: 50%
+    flex-basis: 50%;
 }
 
 /* START Ahancer New Code */
 #modal-package-compare .package-header {
-    padding: 15px 10px 15px
+    padding: 15px 10px 15px;
 }
 /* END Ahancer New Code */
 
@@ -16347,7 +16364,7 @@ tfoot td {
     }
     /* START Ahancer New Code */
     #modal-package-compare .package-header {
-        padding: 15px 20px 15px
+        padding: 15px 20px 15px;
     }
     /* END Ahancer New Code */
 }
@@ -18290,7 +18307,7 @@ body {
 .package-header .btn-group-toggle {
     position: absolute;
     top: 14px;
-    right: 0
+    right: 0;
 }
 
 .package-header .btn-group-toggle .btn,
