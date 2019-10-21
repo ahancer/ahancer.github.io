@@ -18071,7 +18071,7 @@ body {
     }
 }
 
-
+/*START Ahancer new code*/
 .package-item {
     background-color: #fff;
     border-radius: 4px;
@@ -18416,6 +18416,8 @@ body {
     position: absolute;
     right: 0px
 }
+/*END Ahancer new code*/
+
 
 .compare-canvas {
     box-shadow: 0 -2px 13px 0 rgba(0, 0, 0, 0.5)
