@@ -7292,6 +7292,10 @@ a:focus {
   max-width: 600px;
   width: 100%;
 }
+.section-videoBanner {
+  max-width: 600px;
+  margin: 0 auto;
+}
 body {
   color: #616161;
   background: #ffffff;
@@ -8019,10 +8023,6 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
 }
 /*---Banner---*/
-.section-videoBanner {
-  max-width: 600px;
-  margin: 0 auto;
-}
 /*---Why Us---*/
 .list-whyUs li {
   margin-bottom: 20px;
