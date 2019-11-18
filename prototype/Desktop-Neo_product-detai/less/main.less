@@ -173,6 +173,11 @@ p {
 }
 
 /*---Why Us---*/
+
+.section-main-content {
+  padding: 40px 0;
+}
+
 .list-whyUs {
   li {
     margin-bottom: 20px;
@@ -317,38 +322,47 @@ ol > li {
 
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1200px) {
 
 }
 
 /* Only Medium devices (MD) */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 }
 
 /* Only Small devices (SM) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  .container {
-    max-width: 600px;
-    width: 100%;
-  }
-  
-  .section-videoBanner {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
+@media only screen and (max-width: 991px) {
   h1{
     font-size: @font-size-h1-mobile;
   }
   
   h2 {
     font-size: @font-size-h2-mobile;
+  }
+  .section-main-banner {
+      background: none !important;
+      color: #000 !important;
+      min-height: auto;
+      padding: 40px 0;
+  }
+
+  .section-main-banner h1 {
+      color: #000;
+  }
+  .section-main-banner p {
+      font-size: 16px;
+  }
+  .section-main-banner {
+      padding: 0;
+  }
+  .section-main-content {
+    padding: 0 0;
   }
 }
 
 /* Only Extra Small devices (XS) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .container {
     max-width: 600px;
     width: 100%;
@@ -366,5 +380,6 @@ ol > li {
   h2 {
     font-size: @font-size-h2-mobile;
   }
+  
 }
 

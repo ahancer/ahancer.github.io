@@ -8045,6 +8045,9 @@ fieldset[disabled] .btn-primary.active {
   font-size: 22px;
 }
 /*---Why Us---*/
+.section-main-content {
+  padding: 40px 0;
+}
 .list-whyUs li {
   margin-bottom: 20px;
 }
@@ -8180,24 +8183,34 @@ ol > li {
 /* Only Large devices (LG) */
 /* Only Medium devices (MD) */
 /* Only Small devices (SM) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  .container {
-    max-width: 600px;
-    width: 100%;
-  }
-  .section-videoBanner {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+@media only screen and (max-width: 991px) {
   h1 {
     font-size: 24px;
   }
   h2 {
     font-size: 20px;
   }
+  .section-main-banner {
+    background: none !important;
+    color: #000 !important;
+    min-height: auto;
+    padding: 40px 0;
+  }
+  .section-main-banner h1 {
+    color: #000;
+  }
+  .section-main-banner p {
+    font-size: 16px;
+  }
+  .section-main-banner {
+    padding: 0;
+  }
+  .section-main-content {
+    padding: 0 0;
+  }
 }
 /* Only Extra Small devices (XS) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .container {
     max-width: 600px;
     width: 100%;
