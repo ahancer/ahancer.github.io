@@ -8029,7 +8029,7 @@ fieldset[disabled] .btn-primary.active {
 }
 /*---Banner---*/
 .section-main-banner {
-  background: url('/images/Video Placeholder.png') no-repeat scroll center center / cover;
+  background: url('./images/Video Placeholder.png') no-repeat scroll center center / cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
