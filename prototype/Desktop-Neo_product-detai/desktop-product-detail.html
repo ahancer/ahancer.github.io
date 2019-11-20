@@ -8,25 +8,90 @@
     <title>Product Detail</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/v4-shims.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./bower_components/mmenu/dist/mmenu.css" />
 </head>
   <body>
-
-    <div class="section section-videoBanner visible-xs visible-sm">
-        <div class="videoWrapper">
-          <img src="./images/Video Placeholder.png" alt="Video Banner" />
+    <div class="header">
+      <section class="section-header navbar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-sm-2 col-xs-4">
+                <a class="navbar-logo" href="#"><img src="./images/icon-neo@3x.png"></a>
+            </div>
+            <div class="col-md-9 col-sm-10 col-xs-8">
+              <div class="navigation-wrapper">
+              <div class="main-nav">
+              <div class="navbar-collapse" id="navbarResponsive">
+                <nav id="desktop-menu">
+                  <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">หน้าแรก
+                        <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">เกี่ยวกับนีโอ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">หมวดหมู่ <b class="caret"></b></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Money Coach</a>
+                    </li>
+                  </ul>
+                </nav>
+                </div>
+                <div class="mobile-nav">
+                    <nav id="menu">
+                      <ul class="nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">หน้าแรก
+                            <span class="sr-only">(current)</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">เกี่ยวกับนีโอ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">หมวดหมู่ <b class="caret"></b></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Money Coach</a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+                  <ul class="nav navbar-nav ml-auto nav-login">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">เข้าสู่ระบบ</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="navbar-toggler" href="#menu"><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section section-videoBanner">
+        <div class="container">
+          <div class="videoWrapper">
+            <img src="./images/Video Placeholder.png" alt="Video Banner" />
+          </div>
         </div>
     </div>
 
-    <div class="section section-main-banner section-style-white">
+    <div class="section section-main-banner">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <h1>สินเชื่อรวมหนี้นีโอ โดย ธนาคารซีไอเอ็มบี ไทย</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
-            <p>จัดการภาระหนี้ โดยการรวมหนี้ บัตรเครดิต บัตรกดเงินสด<br class="visible-lg"> สินเชื่อส่วนบุคคล มาไว้กับ ซีไอเอ็มบี ไทย ที่เดียว</p>
+            <h1><strong>สินเชื่อรวมหนี้นีโอ โดย ธนาคารซีไอเอ็มบี ไทย</strong></h1>
+            <p>จัดการภาระหนี้ โดยการรวมหนี้ บัตรเครดิต บัตรกดเงินสด สินเชื่อส่วนบุคคล มาไว้กับ<br class="visible-lg"> ซีไอเอ็มบี ไทย ที่เดียว</p>
           </div>
         </div>
       </div>
@@ -36,13 +101,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <h2>ทำไมต้องรวมหนี้กับเรา?</h2>
+            <h2><strong>ทำไมต้องรวมหนี้กับเรา?</strong></h2>
             <div class="list-whyUs">
               <ul class="fa-ul">
-                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><strong class="accent">ดอกเบี้ยต่ำลง ปลดหนี้ได้เร็วขึ้น</strong><br><small>อัตราดอกเบี้ย 11.84% - 18% (อัตราดอกเบี้ยสูงสุด บัตรกดเงินสด 28%, บัตรเครดิต 18%) สามารถปิดหนี้ก่อนครบกำหนด หลัง 12 เดือน ได้โดยไม่เสียค่าใช้จ่ายปิดก่อนกำหนด และดอกเบี้ยงวดที่เหลือ</small></li>
-                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><strong class="accent">ผ่อนรายเดือนน้อยลง</strong><br><small>เลือกผ่อนชำระสบายๆ 24, 36 หรือ 60 เดือน มีมากจ่ายมาก ลดต้นลดดอกทันที</small></li>
-                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><strong class="accent">อนุมัติสูงสุด 5 เท่าของรายได้</strong><br><small>ไม่เกิน 1,500,000 บาท</small></li>
-                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><strong class="accent">เป็นโปรแกรมรวมหนี้โดยตรง ที่นี่ที่เดียว</strong><br><small>จะทำให้คุณปลดภาระหนี้ได้ง่ายขึ้น</small></li>
+                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><h3 class="font-body bold">ดอกเบี้ยต่ำลง ปลดหนี้ได้เร็วขึ้น</h3><p>อัตราดอกเบี้ย 11.84% - 18% (อัตราดอกเบี้ยสูงสุด บัตรกดเงินสด 28%, บัตรเครดิต 18%) สามารถปิดหนี้ก่อนครบกำหนด หลัง 12 เดือน ได้โดยไม่เสียค่าใช้จ่ายปิดก่อนกำหนด และดอกเบี้ยงวดที่เหลือ</small></li>
+                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><h3 class="font-body bold">ผ่อนรายเดือนน้อยลง</h3><p>เลือกผ่อนชำระสบายๆ 24, 36 หรือ 60 เดือน มีมากจ่ายมาก ลดต้นลดดอกทันที</small></li>
+                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><h3 class="font-body bold">อนุมัติสูงสุด 5 เท่าของรายได้</h3><p>ไม่เกิน 1,500,000 บาท</small></li>
+                <li><img src="./images/icon/icon-tick.png" class="fa-li" /><h3 class="font-body bold">เป็นโปรแกรมรวมหนี้โดยตรง ที่นี่ที่เดียว</h3><p>จะทำให้คุณปลดภาระหนี้ได้ง่ายขึ้น</small></li>
               </ul>
             </div>
           </div>
@@ -50,13 +115,13 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="card card-steps">
-              <h2 class="text-center">สมัคร รู้ผล และจัดการเองได้ง่ายๆ ผ่าน แอปพลิเคชัน นีโอ มันนี่</h2>
               <img class="aligncenter img-responsive" src="./images/illus/product-detail.png">
-                <ol  class="list-number accent3">
+              <h3 class="text-center font-body bold">สมัคร รู้ผล และจัดการเองได้ง่ายๆ ผ่าน แอปพลิเคชัน นีโอ มันนี่</h3>
+                <ol  class="list-number">
                   <li>สมัครรวมหนี้ผ่านแอป NEO Money</li>
                   <li>ได้รับผลยืนยันวงเงินอนุมัติภายใน 2 วัน</li>
                   <li>ธนาคารซีไอเอ็มบี ไทย นำเงินไปปิดหนี้ให้ หลังจากคุณยอมรับผลอนุมัติ</li>
-                  <li>ตรวจสอบข้อมูลสินเชื่อและรับแจ้งเตือนรายการผ่อนชำระผ่านแอป NEO Money</li>
+                  <li>ตรวจสอบข้อมูลสินเชื่อและรับแจ้งเตือนรายการผ่อนชำระผ่านแอป</li>
                 </ol>
             </div>
           </div>
@@ -64,8 +129,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="content-faq">
-              <h2>ข้อควรทราบ</h2>
-              <p>สินเชื่อรวมหนี้นีโอ โดย ซีไอเอ็มบี ไทย เมื่ออนุมัติแล้วเงินจะชำระตรงให้กับเจ้าหนี้เดิมที่นำมารวมหนี้ ไม่มีการโอนเงินให้กับผู้กู้</p>
+              <h2><strong>คำถามที่พบบ่อย</strong></h2>
 
               <div class="panel-group panel-group-faq" id="accordion-faq-01" role="tablist" aria-multiselectable="true">
                   <div class="panel panel-default">
@@ -93,7 +157,7 @@
                   <div class="panel panel-default">
                       <div class="panel-heading" role="tab" id="headingTwo">
                           <p class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-faq-02" href="#accordion-faq-item-02" aria-expanded="false" aria-controls="collapseTwo">ก่อนกดสมัคร เอกสารที่ต้องเตรียม
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-faq-02" href="#accordion-faq-item-02" aria-expanded="false" aria-controls="collapseTwo">ต้องเตรียมเอกสารอะไรบ้าง
                               </a>
                           </p>
                       </div>
@@ -121,6 +185,10 @@
                   </div>
               </div>
 
+              <div class="cta-group">
+                <a href="#" class="btn btn-secondary">คำนวณสินเชื่อ</a><a href="#" class="btn btn-primary">สมัครเลย</a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -133,7 +201,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">รายละเอียดเงื่อนไข</h4>
+            <h3 class="modal-title" id="myModalLabel">รายละเอียดเงื่อนไข</h3>
           </div>
           <div class="modal-body">
             <ol>
@@ -170,12 +238,71 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+  <footer>
+      <section class="section section-style-dark section-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-6">
+              <p>เกี่ยวกับนีโอ</p>
+              <p>หมวดหมู่บทความ</p>
+              <ul class="nav-vertical footer-nav">
+                <li><a href="#">รู้การเงินพื้นฐาน</a></li>
+                <li><a href="#">จัดการหนี้</a></li>
+                <li><a href="#">สภาพคล่องดี</a></li>
+                <li><a href="#">เครดิตดี</a></li>
+                <li><a href="#">พร้อมรับความเสี่ยง</a></li>
+                <li><a href="#">ออมเพื่อเป้าหมาย</a></li>
+                <li><a href="#">สร้างทรัพย์สิน</a></li>
+                <li><a href="#">วางแผนภาษี</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+              <p>Money Coach</p>
+              <ul class="nav-vertical footer-nav">
+                  <li><a href="#">อีเวนท์</a></li>
+                  <li><a href="#">ออนไลน์คอร์ส</a></li>
+                </ul>
+              <p>เครื่องมือ</p>
+              <ul class="nav-vertical footer-nav">
+                  <li><a href="#">คำนวณเวลาปลดหนี้</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+              <p>เงื่อนไขและนโยบาย</p>
+              <ul class="nav-vertical footer-nav">
+                  <li><a href="#">เงื่อนไขการให้บริการ</a></li>
+                  <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                </ul>
+              <p>ติดต่อเรา</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
+      <section class="section footer-social section-style-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="social-icon-group">
+                <a href="http://www.instagram.com/neomoney.ig"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com/neomoney"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UCDLDVRkIHv6gBuB2z0nDFfA"><i class="fab fa-youtube"></i></a>
+              </div>
+              <p class="footer-tagline small-body text-center mb-0">ทำด้วย <i class="fa fa-heart accent-pink"></i> อยากให้ดี</p>
+              <div class="footer-copy text-center"><p class="xs-small-body accent-white-transparent">© Copyright 2019 NEO Money Co., Ltd.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./bower_components/mmenu/dist/mmenu.polyfills.js"></script>
+    <script src="./bower_components/mmenu/dist/mmenu.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+      new Mmenu( document.querySelector( '#menu' ));
+    </script>
   </body>
 </html>
