@@ -8022,7 +8022,14 @@ fieldset[disabled] .btn-primary.active {
   color: #e91f63;
   background-color: #ffffff;
 }
+/*--- Margin ---*/
+.mb-5 {
+  margin-bottom: 5px;
+}
 /*---Banner---*/
+.text-download-app {
+  text-decoration: none !important;
+}
 /*---Why Us---*/
 .list-whyUs li {
   margin-bottom: 20px;

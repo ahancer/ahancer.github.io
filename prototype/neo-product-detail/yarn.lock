@@ -159,6 +159,11 @@ global@^4.4.0:
     min-document "^2.19.0"
     process "^0.11.10"
 
+glocal@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/glocal/-/glocal-0.2.0.tgz#2f25faf6472905083015c3d49f65accb80a17851"
+  integrity sha1-LyX69kcpBQgwFcPUn2Wsy4CheFE=
+
 graceful-fs@^4.1.2:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
