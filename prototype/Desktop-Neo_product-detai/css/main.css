@@ -8727,4 +8727,15 @@ ol.list-number li:last-child {
   .content-faq .panel-group-faq .panel-body {
     padding: 20px 5px 0;
   }
+  .section.section-videoBanner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header .navbar {
+    margin-bottom: 0;
+  }
+  .section.section-videoBanner .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

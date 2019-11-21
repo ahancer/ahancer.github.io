@@ -1,0 +1,172 @@
+.form-wrapper {
+    margin-top: 30px;
+}
+
+.form-label {
+    color: @color-theme-desc;
+    margin-bottom: 30px;
+    font-size: @font-size-h3-mobile;
+    font-weight: 400;
+    display: block;
+}
+
+.form-control {
+    color: @color-theme-body;
+    border-color: @color-border;
+    box-shadow: none;
+    height: 44px;
+    font-size: 16px;
+}
+
+.field-salary {
+    .form-control {
+        max-width: 313px;
+        margin: 0 auto;
+    }
+}
+
+.field-group {
+    margin-bottom: 40px;
+}
+
+.card.card-cal {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    .btn {
+        width: 100%;
+        max-width: 313px;
+    }
+}
+
+/*--- Dept ---*/
+
+.card.card-dept {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    .dept-progressbar-wrapper {
+        margin-top: 30px;
+    }
+}
+
+.dept-val {
+    margin-bottom: 12px;
+}
+
+.progressbar-title {
+    margin-bottom: 20px;
+}
+
+.dept-progressbar-wrapper {
+    .progress {
+        border-radius: 4.5px;
+        height: 8px;
+        box-shadow: none;
+        background-color: #eeeff0;
+        margin-bottom: 40px;
+        .progress-bar {
+            background-color: #3c6fd6;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            box-shadow: none;
+        }
+    }
+}
+
+.row-title-credit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+}
+
+.card.card-credit {
+    margin-bottom: 50px;
+    margin-top: 0;
+    .icon-edit {
+        max-width: 24px;
+    }
+    .title-credit-detail-val {
+        text-align: right;
+    }
+    .title-credit-detail {
+        color: @color-theme-desc;
+    }
+}
+
+
+/*--- Add new Dept ---*/
+.img-addLoan {
+    max-width: 61px;
+    margin-bottom: 30px;
+}
+
+.card.card-addnew {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/*--- Modal ---*/
+.modal-precal {
+    .modal-dialog {
+        width: 500px;
+    }
+    .modal-body {
+        padding: 60px 80px;
+    }
+    .form-label {
+        color: @color-theme-body;
+        margin-bottom: 15px;
+    }
+    .form-footer {
+        margin-top:10px;
+    }
+    .btn + .btn {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .form-label {
+        font-size: 16px;
+    }
+    .card.card-visible-desktop {
+        padding: 0 0;
+        background-color: transparent;
+        box-shadow: none;
+        border: 0;
+    }
+    .section-salary-cal.space-huge {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-salary-cal.section-style-grey {
+        background-color: #fff;
+    }
+    .progressbar-title {
+        margin-bottom: 10px;
+    }
+    .dept-progressbar-wrapper .progress {
+        margin-bottom:20px;
+    }
+    .card.card-credit {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-precal .modal-dialog {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .modal-precal .modal-body {
+        padding: 40px 20px;
+    }
+    .field-group {
+        margin-bottom: 30px;
+    }
+}
