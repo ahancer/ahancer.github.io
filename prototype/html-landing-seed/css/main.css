@@ -1,0 +1,970 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+0.1 Type yarn global add less
+0.2 Type yarn global add less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@font-face {
+  font-family: 'Kanit';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Kanit Light Italic'), local('Kanit-LightItalic'), url(https://fonts.gstatic.com/s/kanit/v5/nKKS-Go6G5tXcraQI6miZbdhNA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kanit Light'), local('Kanit-Light'), url(https://fonts.gstatic.com/s/kanit/v5/nKKU-Go6G5tXcr4-ORWzVaQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFnD-vYSZviVYUb_rj3ij__anPXDTngOWwu5DRj.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFnD-vYSZviVYUb_rj3ij__anPXDTngAW4u5DRj.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e4w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(https://fonts.gstatic.com/s/playfairdisplay/v15/nuFlD-vYSZviVYUb_rj3ij__anPXBb__lW4e4w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/*--- Global Settings ---*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-head,
+h1.h1,
+h2.h1,
+h3.h1,
+h4.h1,
+h5.h1,
+h6.h1,
+.font-head.h1,
+h1.h2,
+h2.h2,
+h3.h2,
+h4.h2,
+h5.h2,
+h6.h2,
+.font-head.h2,
+h1.h3,
+h2.h3,
+h3.h3,
+h4.h3,
+h5.h3,
+h6.h3,
+.font-head.h3,
+h1.h4,
+h2.h4,
+h3.h4,
+h4.h4,
+h5.h4,
+h6.h4,
+.font-head.h4,
+h1.h5,
+h2.h5,
+h3.h5,
+h4.h5,
+h5.h5,
+h6.h5,
+.font-head.h5,
+h1.h6,
+h2.h6,
+h3.h6,
+h4.h6,
+h5.h6,
+h6.h6,
+.font-head.h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  line-height: 1.41em;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong,
+.font-head strong,
+h1.h1 strong,
+h2.h1 strong,
+h3.h1 strong,
+h4.h1 strong,
+h5.h1 strong,
+h6.h1 strong,
+.font-head.h1 strong,
+h1.h2 strong,
+h2.h2 strong,
+h3.h2 strong,
+h4.h2 strong,
+h5.h2 strong,
+h6.h2 strong,
+.font-head.h2 strong,
+h1.h3 strong,
+h2.h3 strong,
+h3.h3 strong,
+h4.h3 strong,
+h5.h3 strong,
+h6.h3 strong,
+.font-head.h3 strong,
+h1.h4 strong,
+h2.h4 strong,
+h3.h4 strong,
+h4.h4 strong,
+h5.h4 strong,
+h6.h4 strong,
+.font-head.h4 strong,
+h1.h5 strong,
+h2.h5 strong,
+h3.h5 strong,
+h4.h5 strong,
+h5.h5 strong,
+h6.h5 strong,
+.font-head.h5 strong,
+h1.h6 strong,
+h2.h6 strong,
+h3.h6 strong,
+h4.h6 strong,
+h5.h6 strong,
+h6.h6 strong,
+.font-head.h6 strong,
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold,
+h6.bold,
+.font-head.bold,
+h1.h1.bold,
+h2.h1.bold,
+h3.h1.bold,
+h4.h1.bold,
+h5.h1.bold,
+h6.h1.bold,
+.font-head.h1.bold,
+h1.h2.bold,
+h2.h2.bold,
+h3.h2.bold,
+h4.h2.bold,
+h5.h2.bold,
+h6.h2.bold,
+.font-head.h2.bold,
+h1.h3.bold,
+h2.h3.bold,
+h3.h3.bold,
+h4.h3.bold,
+h5.h3.bold,
+h6.h3.bold,
+.font-head.h3.bold,
+h1.h4.bold,
+h2.h4.bold,
+h3.h4.bold,
+h4.h4.bold,
+h5.h4.bold,
+h6.h4.bold,
+.font-head.h4.bold,
+h1.h5.bold,
+h2.h5.bold,
+h3.h5.bold,
+h4.h5.bold,
+h5.h5.bold,
+h6.h5.bold,
+.font-head.h5.bold,
+h1.h6.bold,
+h2.h6.bold,
+h3.h6.bold,
+h4.h6.bold,
+h5.h6.bold,
+h6.h6.bold,
+.font-head.h6.bold,
+h1 .bold,
+h2 .bold,
+h3 .bold,
+h4 .bold,
+h5 .bold,
+h6 .bold,
+.font-head .bold,
+h1.h1 .bold,
+h2.h1 .bold,
+h3.h1 .bold,
+h4.h1 .bold,
+h5.h1 .bold,
+h6.h1 .bold,
+.font-head.h1 .bold,
+h1.h2 .bold,
+h2.h2 .bold,
+h3.h2 .bold,
+h4.h2 .bold,
+h5.h2 .bold,
+h6.h2 .bold,
+.font-head.h2 .bold,
+h1.h3 .bold,
+h2.h3 .bold,
+h3.h3 .bold,
+h4.h3 .bold,
+h5.h3 .bold,
+h6.h3 .bold,
+.font-head.h3 .bold,
+h1.h4 .bold,
+h2.h4 .bold,
+h3.h4 .bold,
+h4.h4 .bold,
+h5.h4 .bold,
+h6.h4 .bold,
+.font-head.h4 .bold,
+h1.h5 .bold,
+h2.h5 .bold,
+h3.h5 .bold,
+h4.h5 .bold,
+h5.h5 .bold,
+h6.h5 .bold,
+.font-head.h5 .bold,
+h1.h6 .bold,
+h2.h6 .bold,
+h3.h6 .bold,
+h4.h6 .bold,
+h5.h6 .bold,
+h6.h6 .bold,
+.font-head.h6 .bold {
+  font-weight: 900;
+}
+input,
+button,
+select,
+textarea,
+body,
+.lead,
+.font-body,
+input.h1,
+button.h1,
+select.h1,
+textarea.h1,
+body.h1,
+.lead.h1,
+.font-body.h1,
+input.h2,
+button.h2,
+select.h2,
+textarea.h2,
+body.h2,
+.lead.h2,
+.font-body.h2,
+input.h3,
+button.h3,
+select.h3,
+textarea.h3,
+body.h3,
+.lead.h3,
+.font-body.h3,
+input.h4,
+button.h4,
+select.h4,
+textarea.h4,
+body.h4,
+.lead.h4,
+.font-body.h4,
+input.h5,
+button.h5,
+select.h5,
+textarea.h5,
+body.h5,
+.lead.h5,
+.font-body.h5,
+input.h6,
+button.h6,
+select.h6,
+textarea.h6,
+body.h6,
+.lead.h6,
+.font-body.h6,
+input .h1,
+button .h1,
+select .h1,
+textarea .h1,
+body .h1,
+.lead .h1,
+.font-body .h1,
+input .h2,
+button .h2,
+select .h2,
+textarea .h2,
+body .h2,
+.lead .h2,
+.font-body .h2,
+input .h3,
+button .h3,
+select .h3,
+textarea .h3,
+body .h3,
+.lead .h3,
+.font-body .h3,
+input .h4,
+button .h4,
+select .h4,
+textarea .h4,
+body .h4,
+.lead .h4,
+.font-body .h4,
+input .h5,
+button .h5,
+select .h5,
+textarea .h5,
+body .h5,
+.lead .h5,
+.font-body .h5,
+input .h6,
+button .h6,
+select .h6,
+textarea .h6,
+body .h6,
+.lead .h6,
+.font-body .h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+input strong,
+button strong,
+select strong,
+textarea strong,
+body strong,
+.lead strong,
+.font-body strong,
+input.h1 strong,
+button.h1 strong,
+select.h1 strong,
+textarea.h1 strong,
+body.h1 strong,
+.lead.h1 strong,
+.font-body.h1 strong,
+input.h2 strong,
+button.h2 strong,
+select.h2 strong,
+textarea.h2 strong,
+body.h2 strong,
+.lead.h2 strong,
+.font-body.h2 strong,
+input.h3 strong,
+button.h3 strong,
+select.h3 strong,
+textarea.h3 strong,
+body.h3 strong,
+.lead.h3 strong,
+.font-body.h3 strong,
+input.h4 strong,
+button.h4 strong,
+select.h4 strong,
+textarea.h4 strong,
+body.h4 strong,
+.lead.h4 strong,
+.font-body.h4 strong,
+input.h5 strong,
+button.h5 strong,
+select.h5 strong,
+textarea.h5 strong,
+body.h5 strong,
+.lead.h5 strong,
+.font-body.h5 strong,
+input.h6 strong,
+button.h6 strong,
+select.h6 strong,
+textarea.h6 strong,
+body.h6 strong,
+.lead.h6 strong,
+.font-body.h6 strong,
+input .h1 strong,
+button .h1 strong,
+select .h1 strong,
+textarea .h1 strong,
+body .h1 strong,
+.lead .h1 strong,
+.font-body .h1 strong,
+input .h2 strong,
+button .h2 strong,
+select .h2 strong,
+textarea .h2 strong,
+body .h2 strong,
+.lead .h2 strong,
+.font-body .h2 strong,
+input .h3 strong,
+button .h3 strong,
+select .h3 strong,
+textarea .h3 strong,
+body .h3 strong,
+.lead .h3 strong,
+.font-body .h3 strong,
+input .h4 strong,
+button .h4 strong,
+select .h4 strong,
+textarea .h4 strong,
+body .h4 strong,
+.lead .h4 strong,
+.font-body .h4 strong,
+input .h5 strong,
+button .h5 strong,
+select .h5 strong,
+textarea .h5 strong,
+body .h5 strong,
+.lead .h5 strong,
+.font-body .h5 strong,
+input .h6 strong,
+button .h6 strong,
+select .h6 strong,
+textarea .h6 strong,
+body .h6 strong,
+.lead .h6 strong,
+.font-body .h6 strong,
+input.bold,
+button.bold,
+select.bold,
+textarea.bold,
+body.bold,
+.lead.bold,
+.font-body.bold,
+input.h1.bold,
+button.h1.bold,
+select.h1.bold,
+textarea.h1.bold,
+body.h1.bold,
+.lead.h1.bold,
+.font-body.h1.bold,
+input.h2.bold,
+button.h2.bold,
+select.h2.bold,
+textarea.h2.bold,
+body.h2.bold,
+.lead.h2.bold,
+.font-body.h2.bold,
+input.h3.bold,
+button.h3.bold,
+select.h3.bold,
+textarea.h3.bold,
+body.h3.bold,
+.lead.h3.bold,
+.font-body.h3.bold,
+input.h4.bold,
+button.h4.bold,
+select.h4.bold,
+textarea.h4.bold,
+body.h4.bold,
+.lead.h4.bold,
+.font-body.h4.bold,
+input.h5.bold,
+button.h5.bold,
+select.h5.bold,
+textarea.h5.bold,
+body.h5.bold,
+.lead.h5.bold,
+.font-body.h5.bold,
+input.h6.bold,
+button.h6.bold,
+select.h6.bold,
+textarea.h6.bold,
+body.h6.bold,
+.lead.h6.bold,
+.font-body.h6.bold,
+input .h1.bold,
+button .h1.bold,
+select .h1.bold,
+textarea .h1.bold,
+body .h1.bold,
+.lead .h1.bold,
+.font-body .h1.bold,
+input .h2.bold,
+button .h2.bold,
+select .h2.bold,
+textarea .h2.bold,
+body .h2.bold,
+.lead .h2.bold,
+.font-body .h2.bold,
+input .h3.bold,
+button .h3.bold,
+select .h3.bold,
+textarea .h3.bold,
+body .h3.bold,
+.lead .h3.bold,
+.font-body .h3.bold,
+input .h4.bold,
+button .h4.bold,
+select .h4.bold,
+textarea .h4.bold,
+body .h4.bold,
+.lead .h4.bold,
+.font-body .h4.bold,
+input .h5.bold,
+button .h5.bold,
+select .h5.bold,
+textarea .h5.bold,
+body .h5.bold,
+.lead .h5.bold,
+.font-body .h5.bold,
+input .h6.bold,
+button .h6.bold,
+select .h6.bold,
+textarea .h6.bold,
+body .h6.bold,
+.lead .h6.bold,
+.font-body .h6.bold,
+input .bold,
+button .bold,
+select .bold,
+textarea .bold,
+body .bold,
+.lead .bold,
+.font-body .bold,
+input.h1 .bold,
+button.h1 .bold,
+select.h1 .bold,
+textarea.h1 .bold,
+body.h1 .bold,
+.lead.h1 .bold,
+.font-body.h1 .bold,
+input.h2 .bold,
+button.h2 .bold,
+select.h2 .bold,
+textarea.h2 .bold,
+body.h2 .bold,
+.lead.h2 .bold,
+.font-body.h2 .bold,
+input.h3 .bold,
+button.h3 .bold,
+select.h3 .bold,
+textarea.h3 .bold,
+body.h3 .bold,
+.lead.h3 .bold,
+.font-body.h3 .bold,
+input.h4 .bold,
+button.h4 .bold,
+select.h4 .bold,
+textarea.h4 .bold,
+body.h4 .bold,
+.lead.h4 .bold,
+.font-body.h4 .bold,
+input.h5 .bold,
+button.h5 .bold,
+select.h5 .bold,
+textarea.h5 .bold,
+body.h5 .bold,
+.lead.h5 .bold,
+.font-body.h5 .bold,
+input.h6 .bold,
+button.h6 .bold,
+select.h6 .bold,
+textarea.h6 .bold,
+body.h6 .bold,
+.lead.h6 .bold,
+.font-body.h6 .bold,
+input .h1 .bold,
+button .h1 .bold,
+select .h1 .bold,
+textarea .h1 .bold,
+body .h1 .bold,
+.lead .h1 .bold,
+.font-body .h1 .bold,
+input .h2 .bold,
+button .h2 .bold,
+select .h2 .bold,
+textarea .h2 .bold,
+body .h2 .bold,
+.lead .h2 .bold,
+.font-body .h2 .bold,
+input .h3 .bold,
+button .h3 .bold,
+select .h3 .bold,
+textarea .h3 .bold,
+body .h3 .bold,
+.lead .h3 .bold,
+.font-body .h3 .bold,
+input .h4 .bold,
+button .h4 .bold,
+select .h4 .bold,
+textarea .h4 .bold,
+body .h4 .bold,
+.lead .h4 .bold,
+.font-body .h4 .bold,
+input .h5 .bold,
+button .h5 .bold,
+select .h5 .bold,
+textarea .h5 .bold,
+body .h5 .bold,
+.lead .h5 .bold,
+.font-body .h5 .bold,
+input .h6 .bold,
+button .h6 .bold,
+select .h6 .bold,
+textarea .h6 .bold,
+body .h6 .bold,
+.lead .h6 .bold,
+.font-body .h6 .bold {
+  font-weight: 700;
+}
+body,
+p,
+form input,
+form textarea,
+form select {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.41em;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 28px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 20px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 16px;
+}
+.lead {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+a {
+  color: #5938ff;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #4824ff;
+}
+/*---Button---*/
+.btn-primary {
+  color: #ffffff;
+  background-color: #5938ff;
+  border-color: #5938ff;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 14px 42px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #846bff;
+  border-color: #8c75ff;
+}
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:active:focus,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active:focus,
+.btn-primary[disabled]:active:focus,
+fieldset[disabled] .btn-primary:active:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #5938ff;
+  border-color: #5938ff;
+}
+.btn-primary .badge {
+  color: #5938ff;
+  background-color: #ffffff;
+}
+.btn-secondary {
+  color: #5938ff;
+  background-color: #ffffff;
+  border-color: #5938ff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:active:focus,
+.btn-secondary.active,
+.open .dropdown-toggle.btn-secondary {
+  color: #5938ff;
+  background-color: #ffffff;
+  border-color: #8c75ff;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.btn-secondary:active:focus,
+.open .dropdown-toggle.btn-secondary {
+  background-image: none;
+}
+.btn-secondary.disabled,
+.btn-secondary[disabled],
+fieldset[disabled] .btn-secondary,
+.btn-secondary.disabled:hover,
+.btn-secondary[disabled]:hover,
+fieldset[disabled] .btn-secondary:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:focus,
+fieldset[disabled] .btn-secondary:focus,
+.btn-secondary.disabled:active:focus,
+.btn-secondary[disabled]:active:focus,
+fieldset[disabled] .btn-secondary:active:focus,
+.btn-secondary.disabled:active,
+.btn-secondary[disabled]:active,
+fieldset[disabled] .btn-secondary:active,
+.btn-secondary.disabled.active,
+.btn-secondary[disabled].active,
+fieldset[disabled] .btn-secondary.active {
+  background-color: #ffffff;
+  border-color: #5938ff;
+}
+.btn-secondary .badge {
+  color: #ffffff;
+  background-color: #5938ff;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #fff !important;
+  border-color: #5938ff !important;
+}
+/*--- Fonts ---*/
+.huge-heading {
+  font-size: 72px;
+}
+.heading {
+  font-size: 36px;
+}
+.sub-heading {
+  font-size: 24px;
+}
+/*-------------------------------------------*\
+Accent Colors 
+\*-------------------------------------------*/
+.accent {
+  color: #5938ff !important;
+}
+.accent2 {
+  color: #f2c36b !important;
+}
+.accent3 {
+  color: #9a9a99 !important;
+}
+/*--- Section Styles ---*/
+.section-style-white {
+  background-color: #fff;
+  color: #17181f;
+}
+.section-style-white h1,
+.section-style-white h2,
+.section-style-white h3,
+.section-style-white h4,
+.section-style-white h5,
+.section-style-white h6 {
+  color: #17181f;
+}
+.section-style-primary {
+  background-color: #F1F0EA;
+  color: #17181f;
+}
+.section-style-primary h1,
+.section-style-primary h2,
+.section-style-primary h3,
+.section-style-primary h4,
+.section-style-primary h5,
+.section-style-primary h6 {
+  color: #17181f;
+}
+/*--- Section Spacing ---*/
+.space-small {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.space-medium {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.space-large {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.space-huge {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/*--- Burger Menu ---*/
+.navbar-toggler {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+.navbar-toggler-icon {
+  font-size: 20px;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #17181f;
+  border: 1px solid #17181f;
+  float: right;
+}
+/*--- Header ---*/
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: #17181f;
+}
+.header .navbar-expand-lg .navbar-nav > li > .nav-link {
+  font-size: 18px;
+  color: #17181f;
+  padding: 0 0;
+}
+.header .navbar-expand-lg .navbar-nav > li + li {
+  margin-left: 30px;
+}
+/*--- Footer ---*/
+.section-footer p {
+  margin-bottom: 0;
+  color: #7a7a7f;
+}
+.footer-media {
+  max-width: 140px;
+  margin-left: auto;
+  font-size: 24px;
+}
+/*---Responsive (Bootstrap Standard)---*/
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none;
+  }
+  .main-nav {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .space-huge {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .huge-heading {
+    font-size: 34px;
+  }
+  .sub-heading {
+    font-size: 18px;
+  }
+  .btn-primary {
+    padding: 10px 32px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}

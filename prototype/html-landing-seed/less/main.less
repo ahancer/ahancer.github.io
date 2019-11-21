@@ -1,0 +1,284 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+0.1 Type yarn global add less
+0.2 Type yarn global add less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@import "https://fonts.googleapis.com/css?family=Kanit:300,300i&subset=thai";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap');
+@import "_variables.less";
+@import "_mixins.less";
+
+
+/*--- Global Settings ---*/
+
+h1, h2, h3, h4, h5, h6, .font-head {
+	&, &.h1, &.h2, &.h3, &.h4, &.h5, &.h6 {
+		font-family: @font-heading;
+		font-weight: 900;
+		line-height: @line-height-heading;
+		strong, &.bold, .bold {
+			font-weight: 900;
+		}
+	}
+}
+
+input, button, select, textarea, body, .lead, .font-body {
+	&, &.h1, &.h2, &.h3, &.h4, &.h5, &.h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: @font-body;
+		font-weight: 300;
+		line-height: @line-height-body;
+		strong, &.bold, .bold {
+			font-weight: 700;
+		}
+	}
+}
+
+body, 
+p, 
+form input, 
+form textarea, 
+form select {
+	font-size: @font-default;
+	line-height: @line-height-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: @line-height-heading;
+}
+
+h1,
+.h1 {
+	font-size: @font-h1;
+}
+
+h2,
+.h2 {
+	font-size: @font-h2;
+}
+
+h3,
+.h3 {
+	font-size: @font-h3;
+}
+
+h4,
+.h4 {
+	font-size: @font-h4;
+}
+
+h5,
+.h5 {
+	font-size: @font-h5;
+}
+
+h6,
+.h6 {
+	font-size: @font-h6;
+}
+
+.lead {
+	font-size: @font-h5;
+	line-height: @line-height-body;
+}
+
+a {
+  color: @color-theme-secondary;
+  &:hover, &:active, &:focus {
+    color: darken( @color-theme-secondary, 4% );
+  }
+}
+/*---Button---*/
+.btn-primary {
+  &:extend(.btn all);
+  .button-variant(#ffffff, @color-theme-secondary, @color-theme-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  padding: 14px 42px;
+}
+
+.btn-secondary {
+  &:extend(.btn all);
+  .button-variant( @color-theme-secondary, #ffffff, @color-theme-secondary);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #fff !important;
+	  border-color: @color-theme-secondary !important;
+  }
+}
+
+/*--- Fonts ---*/
+
+.huge-heading {
+  font-size: @font-huge;
+}
+.heading {
+  font-size: @font-h1;
+}
+
+.sub-heading {
+  font-size: @font-h3;
+}
+
+/*-------------------------------------------*\
+Accent Colors 
+\*-------------------------------------------*/
+
+.accent {
+	color: @color-theme-secondary !important;
+}
+.accent2 {
+	color: @accent2 !important;
+}
+.accent3 {
+	color: @accent3 !important;
+}
+
+/*--- Section Styles ---*/
+
+.section-style-white {
+  background-color: #fff;
+  color: @color-theme-body;
+  h1, h2, h3, h4, h5, h6 {
+    color: @color-theme-heading;
+  }
+}
+
+.section-style-primary {
+  background-color: @color-theme-primary;
+  color: @color-theme-body;
+  h1, h2, h3, h4, h5, h6 {
+    color: @color-theme-heading;
+  }
+}
+
+/*--- Section Spacing ---*/
+
+.space-small {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.space-medium {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.space-large {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.space-huge {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/*--- Burger Menu ---*/
+
+.navbar-toggler {
+  background: transparent;
+  padding: 0;
+  border:0;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.navbar-toggler-icon {
+  font-size: 20px;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: @color-theme-body;
+  border:1px solid @color-theme-body;
+  float: right;
+}
+
+/*--- Header ---*/
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: @color-theme-heading;
+}
+
+.header .navbar-expand-lg .navbar-nav {
+  > li {
+    > .nav-link {
+      font-size: 18px;
+      color: @color-theme-body;
+      padding: 0 0;
+    }
+  }
+  > li + li {
+    margin-left: 30px;
+  }
+}
+
+/*--- Footer ---*/
+
+.section-footer p {
+  margin-bottom: 0;
+  color: @color-theme-desc;
+}
+
+.footer-media {
+  max-width: 140px;
+  margin-left: auto;
+  font-size: 24px;
+}
+
+/*---Responsive (Bootstrap Standard)---*/
+
+@media (max-width:991px) {
+  .navbar-collapse {
+    display:none;
+  }
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .space-huge {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .huge-heading {
+    font-size: 34px;
+  }
+  .sub-heading {
+    font-size: 18px;
+  }
+  .btn-primary {
+    padding: 10px 32px;
+  }
+}
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
