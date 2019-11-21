@@ -8377,6 +8377,9 @@ fieldset[disabled] .btn-secondary.active {
   margin-bottom: 0;
 }
 /*---Why Us---*/
+.text-download-app {
+  text-decoration: none !important;
+}
 .section-main-content {
   padding-top: 40px;
   padding-bottom: 40px;
