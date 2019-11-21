@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Product Detail</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/v4-shims.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./bower_components/mmenu/dist/mmenu.css" />
+</head>
+<body>
+  <div class="header">
+    <section class="section-header navbar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-2 col-xs-4">
+            <a class="navbar-logo" href="#"><img src="./images/icon-neo@3x.png"></a>
+          </div>
+          <div class="col-md-9 col-sm-10 col-xs-8">
+            <div class="navigation-wrapper">
+              <div class="main-nav">
+                <div class="navbar-collapse" id="navbarResponsive">
+                  <nav id="desktop-menu">
+                    <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">หน้าแรก
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">เกี่ยวกับนีโอ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">หมวดหมู่ <b class="caret"></b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Money Coach</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="mobile-nav">
+                  <nav id="menu">
+                    <ul class="nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">หน้าแรก
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">เกี่ยวกับนีโอ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">หมวดหมู่ <b class="caret"></b></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Money Coach</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <ul class="nav navbar-nav ml-auto nav-login">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">เข้าสู่ระบบ</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="navbar-toggler" href="#menu"><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Start Content -->
+  <section class="section space-huge section-salary-cal section-style-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-cal card-visible-desktop">
+            <h1 class="text-center"><strong>คำนวณสินเชื่อ</strong></h1>
+            <form id="form_cal_salary" class="form-wrapper" action="http://127.0.0.1:5500/desktop-precal.html" method="POST">
+              <div class="field-group field-salary">
+                <label for="fieldSalary" class="form-label text-center">รายได้ประจำเดือน (เงินเดือน, เงินประจำตำแหน่ง, ค่ารถ)</label>
+                <input class="form-control" type="number" name="salary" id="fieldSalary" placeholder="0.00" required />
+              </div>
+              <div class="form-footer text-center"><button type="submit" class="btn btn-primary" disabled>ถัดไป</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Content -->
+  
+  
+  <footer>
+    <section class="section section-style-dark section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <p>เกี่ยวกับนีโอ</p>
+            <p>หมวดหมู่บทความ</p>
+            <ul class="nav-vertical footer-nav">
+              <li><a href="#">รู้การเงินพื้นฐาน</a></li>
+              <li><a href="#">จัดการหนี้</a></li>
+              <li><a href="#">สภาพคล่องดี</a></li>
+              <li><a href="#">เครดิตดี</a></li>
+              <li><a href="#">พร้อมรับความเสี่ยง</a></li>
+              <li><a href="#">ออมเพื่อเป้าหมาย</a></li>
+              <li><a href="#">สร้างทรัพย์สิน</a></li>
+              <li><a href="#">วางแผนภาษี</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <p>Money Coach</p>
+            <ul class="nav-vertical footer-nav">
+              <li><a href="#">อีเวนท์</a></li>
+              <li><a href="#">ออนไลน์คอร์ส</a></li>
+            </ul>
+            <p>เครื่องมือ</p>
+            <ul class="nav-vertical footer-nav">
+              <li><a href="#">คำนวณเวลาปลดหนี้</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <p>เงื่อนไขและนโยบาย</p>
+            <ul class="nav-vertical footer-nav">
+              <li><a href="#">เงื่อนไขการให้บริการ</a></li>
+              <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+            </ul>
+            <p>ติดต่อเรา</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section footer-social section-style-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social-icon-group">
+              <a href="http://www.instagram.com/neomoney.ig"><i class="fab fa-instagram"></i></a>
+              <a href="http://www.facebook.com/neomoney"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/channel/UCDLDVRkIHv6gBuB2z0nDFfA"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-tagline small-body text-center mb-0">ทำด้วย <i class="fa fa-heart accent-pink"></i> อยากให้ดี</p>
+            <div class="footer-copy text-center"><p class="xs-small-body accent-white-transparent">© Copyright 2019 NEO Money Co., Ltd.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="./bower_components/mmenu/dist/mmenu.polyfills.js"></script>
+  <script src="./bower_components/mmenu/dist/mmenu.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    new Mmenu( document.querySelector( '#menu' ));
+  </script>
+  <script>
+    $("#fieldSalary").on("keyup", function(){
+        if($(this).val()){
+            $("button[type='submit']").removeAttr("disabled");
+        } else {
+            $("button[type='submit']").attr("disabled", "disabled");
+        }
+    });
+
+    $("#fieldSalary").on("change", function(){
+        if($(this).val()){
+            $("button[type='submit']").removeAttr("disabled");
+        } else {
+            $("button[type='submit']").attr("disabled", "disabled");
+        }
+    });
+  </script>
+</body>
+</html>

@@ -59,6 +59,12 @@ a {
   max-width: 600px;
   width: 100%;
 }
+
+.section-videoBanner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 body {
   color: @color-theme-body;
   background: #ffffff;
@@ -148,12 +154,16 @@ p {
   .button-variant(#ffffff, @color-theme-primary, #000000);
 }
 
-/*---Banner---*/
-.section-videoBanner {
-  max-width: 600px;
-  margin: 0 auto;
+/*--- Margin ---*/
+.mb-5 {
+  margin-bottom: 5px;
 }
 
+/*---Banner---*/
+
+.text-download-app {
+  text-decoration: none !important;
+}
 /*---Why Us---*/
 .list-whyUs {
   li {
@@ -281,20 +291,39 @@ ol > li {
   margin-bottom: 10px;
 }
 
+/* Modal */
+
+#tcModal.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 25%);
+  -ms-transform: translate(0, 25%);
+  -o-transform: translate(0, 25%);
+  transform: translate(0, 25%);
+}
+
+#tcModal.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) {
 
 }
+
 /* Only Medium devices (MD) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 
 }
+
 /* Only Small devices (SM) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
 
 }
+
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
-
+  
 }
