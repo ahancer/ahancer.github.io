@@ -1,12 +1,20 @@
+.heading-underline:after {
+    content: "";
+    margin-top:10px;
+    background: @color-border;
+    height: 1px;
+    width: 100%;
+    display: block;
+}
 .form-wrapper {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .form-label {
-    color: @color-theme-desc;
-    margin-bottom: 30px;
+    color: @color-theme-body;
+    margin-bottom: 15px;
     font-size: @font-size-h3-mobile;
-    font-weight: 400;
+    font-weight: 700;
     display: block;
 }
 
@@ -20,7 +28,7 @@
 
 .field-salary {
     .form-control {
-        max-width: 313px;
+        max-width: 329px;
         margin: 0 auto;
     }
 }
@@ -30,15 +38,20 @@
 }
 
 .card.card-cal {
-    max-width: 680px;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 60px 40px;
+    padding: 60px 85px;
     .btn {
         width: 100%;
-        max-width: 313px;
+        max-width: 329px;
     }
 }
 
+.cta-group {
+    .btn + .btn {
+        margin-left: 15px;
+    }
+}
 /*--- Dept ---*/
 
 .card.card-dept {
@@ -130,6 +143,48 @@
         margin-top: 20px;
     }
 }
+
+#modal_approveLimit {
+    .cta-group {
+        margin-top: 30px;
+    }
+    .modal-dialog {
+        width: 100%;
+        max-width: 500px;
+    }
+    .modal-body {
+        padding: 20px 20px 40px;
+    }
+    img {
+        max-width: 89px;
+        margin-bottom: 20px;
+    }
+    .modal-header {
+        padding: 20px 20px 0;
+        border-bottom: 0;
+    }
+    .close {
+        opacity: 1;
+        color: @color-theme-body;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1;
+    }
+    .btn {
+        width: 48%;
+    }
+    .cta-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+    }
+}
 @media (max-width: 991px) {
     .form-label {
         font-size: 16px;
@@ -139,6 +194,7 @@
         background-color: transparent;
         box-shadow: none;
         border: 0;
+        max-width: 329px;
     }
     .section-salary-cal.space-huge {
         padding-top: 40px;
@@ -168,5 +224,18 @@
     }
     .field-group {
         margin-bottom: 30px;
+    }
+    #modal_approveLimit {
+        .modal-dialog {
+            width: 90%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-group {
+            .btn {
+                width: 47%;
+            }
+        }
     }
 }

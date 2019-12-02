@@ -7523,14 +7523,22 @@ button.close {
   src: local('Prompt Bold'), local('Prompt-Bold'), url(https://fonts.gstatic.com/s/prompt/v4/-W_8XJnvUD7dzB2C2_8IfWMr.ttf) format('truetype');
 }
 /* Do not touch */
+.heading-underline:after {
+  content: "";
+  margin-top: 10px;
+  background: #d5d8df;
+  height: 1px;
+  width: 100%;
+  display: block;
+}
 .form-wrapper {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .form-label {
-  color: #727483;
-  margin-bottom: 30px;
+  color: #2A3346;
+  margin-bottom: 15px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   display: block;
 }
 .form-control {
@@ -7541,16 +7549,16 @@ button.close {
   font-size: 16px;
 }
 .field-salary .form-control {
-  max-width: 313px;
+  max-width: 329px;
   margin: 0 auto;
 }
 .field-group {
   margin-bottom: 40px;
 }
 .card.card-cal {
-  max-width: 680px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 60px 85px;
 }
 .card.card-cal .btn,
 .card.card-cal .btn-primary,
@@ -7558,7 +7566,14 @@ button.close {
 .card.card-cal .btn-secondary-red,
 .card.card-cal .btn-primary[disabled] {
   width: 100%;
-  max-width: 313px;
+  max-width: 329px;
+}
+.cta-group .btn + .btn,
+.cta-group .btn-primary + .btn-primary,
+.cta-group .btn-secondary + .btn-secondary,
+.cta-group .btn-secondary-red + .btn-secondary-red,
+.cta-group .btn-primary[disabled] + .btn-primary[disabled] {
+  margin-left: 15px;
 }
 /*--- Dept ---*/
 .card.card-dept {
@@ -7641,6 +7656,48 @@ button.close {
 .modal-precal .btn-primary[disabled] + .btn-primary[disabled] {
   margin-top: 20px;
 }
+#modal_approveLimit .cta-group {
+  margin-top: 30px;
+}
+#modal_approveLimit .modal-dialog {
+  width: 100%;
+  max-width: 500px;
+}
+#modal_approveLimit .modal-body {
+  padding: 20px 20px 40px;
+}
+#modal_approveLimit img {
+  max-width: 89px;
+  margin-bottom: 20px;
+}
+#modal_approveLimit .modal-header {
+  padding: 20px 20px 0;
+  border-bottom: 0;
+}
+#modal_approveLimit .close {
+  opacity: 1;
+  color: #2A3346;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+}
+#modal_approveLimit .btn,
+#modal_approveLimit .btn-primary,
+#modal_approveLimit .btn-secondary,
+#modal_approveLimit .btn-secondary-red,
+#modal_approveLimit .btn-primary[disabled] {
+  width: 48%;
+}
+#modal_approveLimit .cta-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 @media (max-width: 991px) {
   .form-label {
     font-size: 16px;
@@ -7650,6 +7707,7 @@ button.close {
     background-color: transparent;
     box-shadow: none;
     border: 0;
+    max-width: 329px;
   }
   .section-salary-cal.space-huge {
     padding-top: 40px;
@@ -7678,6 +7736,19 @@ button.close {
   }
   .field-group {
     margin-bottom: 30px;
+  }
+  #modal_approveLimit .modal-dialog {
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #modal_approveLimit .cta-group .btn,
+  #modal_approveLimit .cta-group .btn-primary,
+  #modal_approveLimit .cta-group .btn-secondary,
+  #modal_approveLimit .cta-group .btn-secondary-red,
+  #modal_approveLimit .cta-group .btn-primary[disabled] {
+    width: 47%;
   }
 }
 ::selection {
