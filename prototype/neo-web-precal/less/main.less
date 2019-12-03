@@ -124,6 +124,21 @@ select {
 p {
   margin: 0 0 15px;
 }
+
+/*--- Margin ---*/
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 /*---Accent Colors---*/
 
 .accent-pink {
@@ -381,6 +396,12 @@ p {
   border-color: @color-border;
 }
 
+.card-grey {
+  box-shadow: none;
+  background-color: #eeeff0;
+  border-color: #eeeff0;
+}
+
 /*---Footer---*/
 
 .section-footer {
@@ -446,16 +467,19 @@ p {
 
 /* Only Small devices (SM) */
 @media only screen and (max-width: 991px) {
-  h1 {
+  .h1, h1 {
     font-size: @font-size-h1-mobile;
   }
   
-  h2 {
+  .h2, h2 {
     font-size: @font-size-h2-mobile;
   }
 
-  h3 {
+  .h3, h3 {
     font-size: @font-size-h3-mobile;
+  }
+  h4, .h4 {
+      font-size: 16px;
   }
   body, p, input, textarea, select {
     font-size: @font-size-body-mobile;
@@ -502,6 +526,9 @@ p {
   }
   .navigation-wrapper {
     padding-right: 0;
+  }
+  .card h1 {
+    font-size: 24px;
   }
 }
 

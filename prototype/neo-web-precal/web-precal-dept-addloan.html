@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Product Detail</title>
+  <title>ยอดหนี้ที่ต้องการปิด</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet">
@@ -163,29 +163,31 @@
   <div class="modal fade modal-precal" id="modal-Addnew">
     <div class="modal-dialog">
       <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
         <div class="modal-body">
-          <h1 class="text-center"><strong>รายการหนี้ของคุณ</strong></h1>
           <form id="form_edit_dept" class="form-wrapper" action="/" method="POST">
             <div class="field-group">
               <label for="fieldCreditType" class="form-label">ประเภทสินเชื่อ</label>
               <select name="fieldCreditType" id="fieldCreditType" class="form-control" required="required">
                 <option value="">เลือกประเภทสินเชื่อ</option>
-                <option value="credit-1">สินเชื่อ 1</option>
-                <option value="credit-2">สินเชื่อ 2</option>
-                <option value="credit-3">สินเชื่อ 3</option>
+                <option value="credit-1">บัตรเครดิต</option>
+                <option value="credit-2">บัตรกดเงินสด</option>
+                <option value="credit-3">สินเชื่อส่วนบุคคล</option>
               </select>
             </div>
             <div class="field-group">
               <label for="field_remaindept" class="form-label">ยอดหนี้คงเหลือ</label>
-              <input type="text" class="form-control" id="field_remaindept"/>
+              <input type="text" class="form-control" id="field_remaindept" placeholder="0.00" />
             </div>
             <div class="field-group">
               <label for="field_deptpermonth" class="form-label">ยอดชำระต่อเดือน</label>
-              <input type="text" class="form-control" id="field_deptpermonth"/>
+              <input type="text" class="form-control" id="field_deptpermonth" placeholder="0.00"/>
             </div>
             <div class="field-group">
                 <label for="field_interestrate" class="form-label">อัตราดอกเบี้ยต่อปี (โดยประมาณ)</label>
-                <input type="text" class="form-control" id="field_interestrate"/>
+                <input type="text" class="form-control" id="field_interestrate" placeholder="0.00"/>
               </div>
             <div class="form-footer text-center"><button type="submit" class="btn btn-primary btn-block">บันทึก</button></div>
           </form>
@@ -197,43 +199,62 @@
   <div class="modal fade modal-precal" id="modal-Edit">
       <div class="modal-dialog">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
           <div class="modal-body">
-            <h1 class="text-center"><strong>รายการหนี้ของคุณ</strong></h1>
             <form id="form_edit_dept" class="form-wrapper" action="/" method="POST">
               <div class="field-group">
                 <label for="fieldCreditType" class="form-label">ประเภทสินเชื่อ</label>
                 <select name="fieldCreditType" id="fieldCreditType" class="form-control" required="required">
                   <option value="">เลือกประเภทสินเชื่อ</option>
-                  <option value="credit-1">สินเชื่อ 1</option>
-                  <option value="credit-2">สินเชื่อ 2</option>
-                  <option value="credit-3">สินเชื่อ 3</option>
+                  <option value="credit-1">บัตรเครดิต</option>
+                  <option value="credit-2">บัตรกดเงินสด</option>
+                  <option value="credit-3">สินเชื่อส่วนบุคคล</option>
                 </select>
               </div>
               <div class="field-group">
                 <label for="field_remaindept" class="form-label">ยอดหนี้คงเหลือ</label>
-                <input type="text" class="form-control" id="field_remaindept"/>
+                <input type="text" class="form-control" id="field_remaindept" placeholder="0.00"/>
               </div>
               <div class="field-group">
                 <label for="field_deptpermonth" class="form-label">ยอดชำระต่อเดือน</label>
-                <input type="text" class="form-control" id="field_deptpermonth"/>
+                <input type="text" class="form-control" id="field_deptpermonth" placeholder="0.00"/>
               </div>
               <div class="field-group">
                   <label for="field_interestrate" class="form-label">อัตราดอกเบี้ยต่อปี (โดยประมาณ)</label>
-                  <input type="text" class="form-control" id="field_interestrate"/>
+                  <input type="text" class="form-control" id="field_interestrate" placeholder="0.00"/>
                 </div>
               <div class="form-footer text-center">
                 <button type="submit" class="btn btn-primary btn-block">บันทึก</button>
-                <button type="submit" class="btn btn-secondary-red btn-icon btn-block"><img src="./images/icon/icon-delete.png" class="img-responsive" />ลบรายการ</button>
+                <a href="#modal_ConfirmDelete" class="btn btn-secondary-red btn-icon btn-block btn-delete"><img src="./images/icon/icon-delete.png" class="img-responsive" />ลบรายการ</a>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- Modal -->
+    <div class="modal fade modal-precal modal-delete" id="modal_ConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="bold font-body text-center">ยืนยันการลบ?</h3>
+            <p class="text-center">คุณยืนยันที่จะลบข้อมูลนี้หรือไม่?</p>
+            <div class="cta-group">
+              <a href="#" data-dismiss="modal" class="btn btn-secondary btn-confirmDelete">ยกเลิก</a><a href="#" class="btn btn-primary btn-confirmDelete">ยืนยันลบ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
   <!-- End Content -->
-  
-  
+
   <footer>
     <section class="section section-style-dark section-footer">
       <div class="container">
@@ -298,6 +319,21 @@
   <script src="js/main.js"></script>
   <script>
     new Mmenu( document.querySelector( '#menu' ));
+  </script>
+  <script>
+    $('.btn-delete').click(function(e) {
+      e.preventDefault();
+      $('.modal').modal('hide');
+      var modal_delete = $(this).attr("href");
+      setTimeout(function(){ 
+        $( modal_delete ).modal('show');
+      }, 500 );
+    });
+
+    $('.btn-confirmDelete').click(function(e){
+      e.preventDefault();
+      $('.modal').modal('hide');
+    })
   </script>
 </body>
 </html>

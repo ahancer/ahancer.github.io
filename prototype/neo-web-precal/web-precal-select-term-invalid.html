@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Product Detail</title>
+  <title>Precal - Select Term</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" rel="stylesheet">
@@ -80,117 +80,63 @@
   </div>
 
   <!-- Start Content -->
-  <section class="section space-huge section-salary-cal section-style-grey">
+  <section class="section space-huge section-salary-cal section-select-term section-style-grey">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="card card-dept card-visible-desktop">
-            <h1 class="text-center"><strong>ยอดหนี้ที่ต้องการปิด</strong></h1>
-            <div class="dept-progressbar-wrapper">
-              <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  <p class="accent-grey progressbar-title">ยอดหนี้ที่จะปิด</p>
-                  <p class="dept-val">0</p>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-                    <p class="accent-grey progressbar-title">วงเงินอนุมัติสูงสุด</p>
-                    <p class="dept-val"><strong>150,000</strong></p>
-                </div>
+          <div class="card card-term card-visible-desktop">
+            <h1 class="text-center mb-15"><strong>เลือกจำนวนเดือนผ่อนชำระ</strong></h1>
+            <h3 class="font-body text-center">ยอดหนี้ที่ต้องการรวม 150,000 บาท</h3>
+            <div class="term-wrapper">
+              <div class="term-item">
+                <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                <label class="term-text" for="radio1">
+                  <h3 class="term-month font-body"><strong>24 เดือน</strong></h3>
+                  <p class="term-label-price">ผ่อน/เดือน</p>
+                  <p class="term-price">7,000 บาท</p>
+                  <p class="term-label-price">ดอกเบี้ย/ปี</p>
+                  <p class="term-price">11.84%</p>
+                </label>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="term-item">
+                  <input type="radio" name="radio" id="radio2" class="radio"/>
+                  <label class="term-text" for="radio2">
+                    <h3 class="term-month font-body"><strong>36 เดือน</strong></h3>
+                    <p class="term-label-price">ผ่อน/เดือน</p>
+                    <p class="term-price">5,100 บาท</p>
+                    <p class="term-label-price">ดอกเบี้ย/ปี</p>
+                    <p class="term-price">13.33%</p>
+                  </label>
+                </div>
+                <div class="term-item">
+                    <input type="radio" name="radio" id="radio3" class="radio"/>
+                    <label class="term-text" for="radio3">
+                      <h3 class="term-month font-body"><strong>60 เดือน</strong></h3>
+                      <p class="term-label-price">ผ่อน/เดือน</p>
+                      <p class="term-price">3,800 บาท</p>
+                      <p class="term-label-price">ดอกเบี้ย/ปี</p>
+                      <p class="term-price">18.00%</p>
+                    </label>
                   </div>
+            </div>
+
+            <div class="card card-border card-invalid">
+              <p class="text-center small-body accent-pink mb-0">ขออภัย ไม่สามารถเลือกงวดผ่อนชำระนี้ได้ เนื่องจากคุณจะมียอดผ่อนต่อเดือนมากกว่าเดิม</p>
+            </div>
+
+
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                  <a href="#" class="btn btn-primary btn-block" disabled >สมัคร</a>
                 </div>
               </div>
             </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <a href="#modal-Addnew" class="card card-border card-addnew btn-block" data-toggle="modal">
-                    <img src="./images/icon/img-add-loanbill.png" class="img-responsive aligncenter img-addLoan" />
-                    <p class="font-18 accent-blue text-center">เพิ่มรายการหนี้</p>
-                  </a>
-                </div>
-              </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <div class="modal fade modal-precal" id="modal-Addnew">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <form id="form_edit_dept" class="form-wrapper" action="/" method="POST">
-              <div class="field-group">
-                <label for="fieldCreditType" class="form-label">ประเภทสินเชื่อ</label>
-                <select name="fieldCreditType" id="fieldCreditType" class="form-control" required="required">
-                  <option value="">เลือกประเภทสินเชื่อ</option>
-                  <option value="credit-1">บัตรเครดิต</option>
-                  <option value="credit-2">บัตรกดเงินสด</option>
-                  <option value="credit-3">สินเชื่อส่วนบุคคล</option>
-                </select>
-              </div>
-              <div class="field-group">
-                <label for="field_remaindept" class="form-label">ยอดหนี้คงเหลือ</label>
-                <input type="text" class="form-control" id="field_remaindept" placeholder="0.00" />
-              </div>
-              <div class="field-group">
-                <label for="field_deptpermonth" class="form-label">ยอดชำระต่อเดือน</label>
-                <input type="text" class="form-control" id="field_deptpermonth" placeholder="0.00"/>
-              </div>
-              <div class="field-group">
-                  <label for="field_interestrate" class="form-label">อัตราดอกเบี้ยต่อปี (โดยประมาณ)</label>
-                  <input type="text" class="form-control" id="field_interestrate" placeholder="%"/>
-                </div>
-              <div class="form-footer text-center"><button type="submit" class="btn btn-primary btn-block">บันทึก</button></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <div class="modal fade modal-precal" id="modal-Edit">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h1 class="text-center"><strong>รายการหนี้ของคุณ</strong></h1>
-            <form id="form_edit_dept" class="form-wrapper" action="/" method="POST">
-              <div class="field-group">
-                <label for="fieldCreditType" class="form-label">ประเภทสินเชื่อ</label>
-                <select name="fieldCreditType" id="fieldCreditType" class="form-control" required="required">
-                  <option value="">เลือกประเภทสินเชื่อ</option>
-                  <option value="credit-1">สินเชื่อ 1</option>
-                  <option value="credit-2">สินเชื่อ 2</option>
-                  <option value="credit-3">สินเชื่อ 3</option>
-                </select>
-              </div>
-              <div class="field-group">
-                <label for="field_remaindept" class="form-label">ยอดหนี้คงเหลือ</label>
-                <input type="text" class="form-control" id="field_remaindept"/>
-              </div>
-              <div class="field-group">
-                <label for="field_deptpermonth" class="form-label">ยอดชำระต่อเดือน</label>
-                <input type="text" class="form-control" id="field_deptpermonth"/>
-              </div>
-              <div class="field-group">
-                  <label for="field_interestrate" class="form-label">อัตราดอกเบี้ยต่อปี (โดยประมาณ)</label>
-                  <input type="text" class="form-control" id="field_interestrate"/>
-                </div>
-              <div class="form-footer text-center">
-                <button type="submit" class="btn btn-primary btn-block">บันทึก</button>
-                <button type="submit" class="btn btn-secondary-red btn-icon btn-block"><img src="./images/icon/icon-delete.png" class="img-responsive" />ลบรายการ</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
   
   <!-- End Content -->
   

@@ -61,6 +61,9 @@
     .dept-progressbar-wrapper {
         margin-top: 30px;
     }
+    .card-footer{
+        margin-top: 30px;
+    }
 }
 
 .dept-val {
@@ -98,7 +101,7 @@
 }
 
 .card.card-credit {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 0;
     .icon-edit {
         max-width: 24px;
@@ -108,6 +111,25 @@
     }
     .title-credit-detail {
         color: @color-theme-desc;
+    }
+}
+
+.card.card-max-credit {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.card-max-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    margin-bottom: 15px;
+    img {
+        margin-right: 20px;
+        max-width: 40px;
     }
 }
 
@@ -122,6 +144,147 @@
     padding-top: 40px;
     margin-bottom: 20px;
     margin-top: 0;
+    text-decoration: none !important;
+}
+
+/*--- Select Term ---*/
+
+.card.card-term {
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    .card-footer{
+        margin-top: 50px;
+    }
+    .card-border {
+        min-height: 171px;
+    }
+    .card-invalid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    }
+}
+
+.term-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px;
+    .term-item + .term-item {
+        margin-left: 15px;
+    }
+}
+.term-item {
+    width: 32%;
+    position: relative;
+    input[type="radio"] {
+        position: absolute;
+        top:0;
+        left:0;
+        opacity: 0;
+        &:checked ~ .term-text {
+            box-shadow: 0 6px 15px 0 rgba(42, 51, 70, 0.2);
+            background: #FEFBFC;
+            border-color: @color-theme-primary;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.term-text {
+    display: block;
+    text-align: center;
+    padding: 40px 15px 25px;
+    border: 1px solid @color-border;
+    border-radius: 4px;
+    font-weight: normal;
+    &:before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        display: block;
+        background: url('/images/icon/icon-tick.png') no-repeat scroll top left / cover;
+        border-radius: 100px;
+        opacity: 0;
+    }
+    .term-label-price {
+        font-size: 18px;
+        color: @color-theme-desc;
+        margin-bottom: 5px;
+    }
+    .term-price {
+        font-weight: 700;
+    }
+    .term-month {
+        margin-bottom: 15px;
+    }
+}
+
+.term-progress {
+    .progress {
+        box-shadow: none;
+        background: transparent;
+        height: 26px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+}
+.term-progress-bar {
+    background-color: #e0e0e0;
+    padding: 0px 10px 2px;
+    box-shadow: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: left;
+    .progress-desc {
+        font-size: 16px;
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: text-top;
+        line-height: 1.5;
+        color: @color-theme-body;
+    }
+}
+
+.new-term-progress {
+    background-color: @color-theme-secondary;
+    .progress-desc {
+        color: #ffffff;
+    }
+}
+
+.old-term-progress {
+    background-color: #e0e0e0;
+}
+
+.title-term-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+    .icon-question {
+        max-width: 14px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
 }
 
 /*--- Modal ---*/
@@ -130,7 +293,7 @@
         width: 500px;
     }
     .modal-body {
-        padding: 60px 80px;
+        padding: 8px 85px 40px;
     }
     .form-label {
         color: @color-theme-body;
@@ -159,17 +322,6 @@
         max-width: 89px;
         margin-bottom: 20px;
     }
-    .modal-header {
-        padding: 20px 20px 0;
-        border-bottom: 0;
-    }
-    .close {
-        opacity: 1;
-        color: @color-theme-body;
-        font-size: 30px;
-        font-weight: normal;
-        line-height: 1;
-    }
     .btn {
         width: 48%;
     }
@@ -183,6 +335,73 @@
         -ms-flex-pack: center;
         justify-content: center;
 
+    }
+}
+
+.modal-delete {
+    h3 {
+        margin-bottom: 20px;
+    }
+    .cta-group {
+        margin-top: 40px;
+        .btn + .btn {
+            margin-top: 0;
+        }
+    }
+}
+
+.modal-appDownload {
+    .img-appLogo {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1.6;
+    }
+    .img-qrcode {
+        margin-top: 20px;
+    }
+    .app-group {
+        margin-top: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        a + a {
+            margin-left: 15px;
+        }
+    }
+}
+
+.modal-precal.modal-info {
+    .modal-body {
+        padding: 40px 30px;
+    }
+    h2 {
+        margin-bottom: 35px;
+    }
+    .cta-group {
+        margin-top: 50px;
+    }
+    p {
+        line-height: 1.5em;
+    }
+}
+//global modal settings 
+
+.modal {
+    .modal-header {
+        padding: 20px 20px 0;
+        border-bottom: 0;
+    }
+    .close {
+        opacity: 1;
+        color: @color-theme-body;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1;
     }
 }
 @media (max-width: 991px) {
@@ -210,7 +429,43 @@
         margin-bottom:20px;
     }
     .card.card-credit {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+    }
+    .card-footer{
+        margin-top: 40px;
+    }
+    .card.card-term.card-visible-desktop {
+        max-width: 400px;
+    }
+    .term-text .term-label-price {
+        font-size: 14px;
+    }
+    .term-progress-bar .progress-desc {
+        font-size: 14px;
+    }
+    .term-text:before {
+        width: 20px;
+        height: 20px;
+    }
+    .term-text {
+        padding: 30px 10px 10px;
+    }
+    .card.card-max-credit {
+        margin-bottom: 20px;
+    }
+    .card-max-title img {
+        max-width: 24px;
+        margin-right: 10px;
+    }
+}
+
+#modal_calError {
+    .img-error-cal {
+        max-width: 90px;
+        margin-bottom: 35px;
+    }
+    .cta-modal {
+        margin-top: 50px;
     }
 }
 
@@ -220,7 +475,7 @@
         margin: 0 auto;
     }
     .modal-precal .modal-body {
-        padding: 40px 20px;
+        padding: 0px 20px 40px;
     }
     .field-group {
         margin-bottom: 30px;
@@ -237,5 +492,9 @@
                 width: 47%;
             }
         }
+    }
+    section.section-select-term {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
