@@ -63,6 +63,21 @@
     }
     .card-footer{
         margin-top: 30px;
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+        .btn + .btn {
+            margin-top: 0;
+        }
+        .btn {
+            width: 48%;
+        }
     }
 }
 
@@ -103,6 +118,7 @@
 .card.card-credit {
     margin-bottom: 20px;
     margin-top: 0;
+    padding-bottom: 5px;
     .icon-edit {
         max-width: 24px;
     }
@@ -171,6 +187,10 @@
         -ms-flex-align:center;
             align-items:center;
     }
+}
+
+.card.card-term-detail {
+    padding-bottom: 10px;
 }
 
 .term-wrapper {
@@ -343,7 +363,15 @@
         margin-bottom: 20px;
     }
     .cta-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         margin-top: 40px;
+        .btn {
+            width: 48%;
+        }
         .btn + .btn {
             margin-top: 0;
         }
@@ -389,11 +417,21 @@
         line-height: 1.5em;
     }
 }
+
+#modal_calError {
+    .img-error-cal {
+        max-width: 90px;
+        margin-bottom: 35px;
+    }
+    .cta-modal {
+        margin-top: 50px;
+    }
+}
 //global modal settings 
 
 .modal {
     .modal-header {
-        padding: 20px 20px 0;
+        padding: 15px 15px 0;
         border-bottom: 0;
     }
     .close {
@@ -404,6 +442,14 @@
         line-height: 1;
     }
 }
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 8%);
+    -ms-transform: translate(0, 8%);
+    -o-transform: translate(0, 8%);
+    transform: translate(0, 8%);
+}
+
 @media (max-width: 991px) {
     .form-label {
         font-size: 16px;
@@ -457,15 +503,16 @@
         max-width: 24px;
         margin-right: 10px;
     }
-}
-
-#modal_calError {
-    .img-error-cal {
-        max-width: 90px;
-        margin-bottom: 35px;
+    .card.card-visible-desktop {
+        margin-bottom: 50px;
     }
-    .cta-modal {
-        margin-top: 50px;
+    .card.card-credit {
+        .icon-edit {
+            max-width: 16px;
+        }
+    }
+    .field-group {
+        margin-bottom: 20px;
     }
 }
 

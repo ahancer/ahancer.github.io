@@ -7586,6 +7586,29 @@ button.close {
 }
 .card.card-dept .card-footer {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.card.card-dept .card-footer .btn + .btn,
+.card.card-dept .card-footer .btn-primary + .btn-primary,
+.card.card-dept .card-footer .btn-secondary + .btn-secondary,
+.card.card-dept .card-footer .btn-secondary-red + .btn-secondary-red,
+.card.card-dept .card-footer .btn-primary[disabled] + .btn-primary[disabled] {
+  margin-top: 0;
+}
+.card.card-dept .card-footer .btn,
+.card.card-dept .card-footer .btn-primary,
+.card.card-dept .card-footer .btn-secondary,
+.card.card-dept .card-footer .btn-secondary-red,
+.card.card-dept .card-footer .btn-primary[disabled] {
+  width: 48%;
 }
 .dept-val {
   margin-bottom: 12px;
@@ -7618,6 +7641,7 @@ button.close {
 .card.card-credit {
   margin-bottom: 20px;
   margin-top: 0;
+  padding-bottom: 5px;
 }
 .card.card-credit .icon-edit {
   max-width: 24px;
@@ -7679,6 +7703,9 @@ button.close {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.card.card-term-detail {
+  padding-bottom: 10px;
 }
 .term-wrapper {
   display: -webkit-box;
@@ -7841,7 +7868,19 @@ button.close {
   margin-bottom: 20px;
 }
 .modal-delete .cta-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 40px;
+}
+.modal-delete .cta-group .btn,
+.modal-delete .cta-group .btn-primary,
+.modal-delete .cta-group .btn-secondary,
+.modal-delete .cta-group .btn-secondary-red,
+.modal-delete .cta-group .btn-primary[disabled] {
+  width: 48%;
 }
 .modal-delete .cta-group .btn + .btn,
 .modal-delete .cta-group .btn-primary + .btn-primary,
@@ -7884,8 +7923,15 @@ button.close {
 .modal-precal.modal-info p {
   line-height: 1.5em;
 }
+#modal_calError .img-error-cal {
+  max-width: 90px;
+  margin-bottom: 35px;
+}
+#modal_calError .cta-modal {
+  margin-top: 50px;
+}
 .modal .modal-header {
-  padding: 20px 20px 0;
+  padding: 15px 15px 0;
   border-bottom: 0;
 }
 .modal .close {
@@ -7894,6 +7940,12 @@ button.close {
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 8%);
+  -ms-transform: translate(0, 8%);
+  -o-transform: translate(0, 8%);
+  transform: translate(0, 8%);
 }
 @media (max-width: 991px) {
   .form-label {
@@ -7948,13 +8000,15 @@ button.close {
     max-width: 24px;
     margin-right: 10px;
   }
-}
-#modal_calError .img-error-cal {
-  max-width: 90px;
-  margin-bottom: 35px;
-}
-#modal_calError .cta-modal {
-  margin-top: 50px;
+  .card.card-visible-desktop {
+    margin-bottom: 50px;
+  }
+  .card.card-credit .icon-edit {
+    max-width: 16px;
+  }
+  .field-group {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767px) {
   .modal-precal .modal-dialog {
