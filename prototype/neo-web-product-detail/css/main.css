@@ -8701,7 +8701,6 @@ ol.list-number li:last-child {
   input,
   textarea,
   select {
-    font-size: 20px;
     line-height: 1.6em;
   }
   .container {
