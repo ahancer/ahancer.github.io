@@ -89,7 +89,7 @@
             <form id="form_cal_salary" class="form-wrapper"  method="POST">
               <div class="field-group field-salary">
                 <label for="fieldSalary" class="form-label">รายได้ประจำเดือน (เงินเดือน, เงินประจำตำแหน่ง, ค่ารถ)</label>
-                <input class="form-control" type="number" name="salary" id="fieldSalary" placeholder="0.00" required />
+                <input class="form-control field-money" type="text" name="salary" id="fieldSalary" placeholder="0.00" required  data-reverse="false"/>
               </div>
               <div class="form-footer text-center"><button id="button_precal" type="submit" class="btn btn-primary" disabled>ถัดไป</button></div>
             </form>
@@ -180,15 +180,18 @@
       </div>
     </section>
   </footer>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/mmenu/dist/mmenu.polyfills.js"></script>
   <script src="./bower_components/mmenu/dist/mmenu.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.rawgit.com/plentz/jquery-maskmoney/master/dist/jquery.maskMoney.min.js"></script>
   <script>
     new Mmenu( document.querySelector( '#menu' ));
   </script>
   <script>
+    $(".field-money").maskMoney();
+
     $("#fieldSalary").on("keyup", function(){
         if($(this).val()){
             $("button[type='submit']").removeAttr("disabled");

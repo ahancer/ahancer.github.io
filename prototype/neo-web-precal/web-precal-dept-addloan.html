@@ -173,15 +173,15 @@
             </div>
             <div class="field-group">
               <label for="field_remaindept" class="form-label">ยอดหนี้คงเหลือ</label>
-              <input type="text" class="form-control" id="field_remaindept" placeholder="0.00" />
+              <input type="text" class="form-control field-money" id="field_remaindept" placeholder="0.00" data-reverse="false"/>
             </div>
             <div class="field-group">
               <label for="field_deptpermonth" class="form-label">ยอดชำระต่อเดือน</label>
-              <input type="text" class="form-control" id="field_deptpermonth" placeholder="0.00"/>
+              <input type="text" class="form-control field-money" id="field_deptpermonth" placeholder="0.00" data-reverse="false"/>
             </div>
             <div class="field-group">
                 <label for="field_interestrate" class="form-label">อัตราดอกเบี้ยต่อปี (โดยประมาณ)</label>
-                <input type="text" class="form-control" id="field_interestrate" placeholder="0.00"/>
+                <input type="text" class="form-control field-money" id="field_interestrate" placeholder="0.00" data-reverse="false"/>
               </div>
             <div class="form-footer text-center"><button type="submit" class="btn btn-primary btn-block">บันทึก</button></div>
           </form>
@@ -209,15 +209,15 @@
               </div>
               <div class="field-group">
                 <label for="field_remaindept" class="form-label">ยอดหนี้คงเหลือ</label>
-                <input type="text" class="form-control" id="field_remaindept" placeholder="0.00"/>
+                <input type="text" class="form-control field-money" id="field_remaindept" placeholder="0.00" data-reverse="false"/>
               </div>
               <div class="field-group">
                 <label for="field_deptpermonth" class="form-label">ยอดชำระต่อเดือน</label>
-                <input type="text" class="form-control" id="field_deptpermonth" placeholder="0.00"/>
+                <input type="text" class="form-control field-money" id="field_deptpermonth" placeholder="0.00" data-reverse="false"/>
               </div>
               <div class="field-group">
                   <label for="field_interestrate" class="form-label">อัตราดอกเบี้ยต่อปี (โดยประมาณ)</label>
-                  <input type="text" class="form-control" id="field_interestrate" placeholder="0.00"/>
+                  <input type="text" class="form-control field-money" id="field_interestrate" placeholder="0.00" data-reverse="false"/>
                 </div>
               <div class="form-footer text-center">
                 <button type="submit" class="btn btn-primary btn-block">บันทึก</button>
@@ -311,10 +311,13 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.rawgit.com/plentz/jquery-maskmoney/master/dist/jquery.maskMoney.min.js"></script>
   <script>
     new Mmenu( document.querySelector( '#menu' ));
   </script>
   <script>
+    $(".field-money").maskMoney();
+
     $('.btn-delete').click(function(e) {
       e.preventDefault();
       $('.modal').modal('hide');
