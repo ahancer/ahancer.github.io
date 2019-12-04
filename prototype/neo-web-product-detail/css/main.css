@@ -7505,7 +7505,7 @@ body .h6,
 .font-body .h6 {
   font-family: 'Sarabun', sans-serif;
   font-weight: 400;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 input strong,
 button strong,
@@ -7992,7 +7992,7 @@ input,
 textarea,
 select {
   font-size: 20px;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 p {
   margin: 0 0 15px;
@@ -8397,7 +8397,7 @@ fieldset[disabled] .btn-secondary.active {
   width: 24px;
   height: 24px;
   display: block;
-  margin-top: 0px;
+  margin-top: 3px;
   margin-left: 5px;
 }
 .list-whyUs li h3 {
@@ -8528,7 +8528,7 @@ ol.list-number li:last-child {
 }
 .content-faq .panel-group-faq .panel-body {
   padding: 30px 20px 0;
-  color: #727483;
+  color: #2A3346;
   border-top: 0 !important;
 }
 .content-faq .panel-group-faq .panel-body ol {
@@ -8689,6 +8689,10 @@ ol.list-number li:last-child {
     width: 90%;
     max-width: 800px;
   }
+  .list-whyUs li img {
+    margin-left: -7px;
+    margin-top: 0;
+  }
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 767px) {
@@ -8705,6 +8709,8 @@ ol.list-number li:last-child {
     width: 20px;
     height: 20px;
     left: -43px;
+    margin-top: 0;
+    margin-left: 5px;
   }
   .list-whyUs ul {
     margin-left: 40px;
@@ -8753,6 +8759,18 @@ ol.list-number li:last-child {
   .section.section-videoBanner .container {
     padding-left: 0;
     padding-right: 0;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  ol.list-number li:before {
+    top: 0;
   }
 }
 /* iPhone 5 */
