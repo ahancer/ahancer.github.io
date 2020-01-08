@@ -543,6 +543,70 @@ ol.list-number {
   transform: translate(0, 0);
 }
 
+.modal-appDownload {
+  .img-appLogo {
+      max-width: 115px;
+      margin-bottom: 20px;
+  }
+  h2 {
+      line-height: 1.6;
+  }
+  .img-qrcode {
+      margin-top: 20px;
+  }
+  .app-group {
+      margin-top: 35px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      a + a {
+          margin-left: 15px;
+      }
+  }
+}
+
+.modal-precal {
+  .modal-dialog {
+      width: 500px;
+  }
+  .modal-body {
+      padding: 8px 85px 40px;
+  }
+  .form-label {
+      color: @color-theme-body;
+      margin-bottom: 15px;
+  }
+  .form-footer {
+      margin-top:10px;
+  }
+  .btn + .btn {
+      margin-top: 20px;
+  }
+}
+
+.modal {
+  .modal-header {
+      padding: 15px 15px 0;
+      border-bottom: 0;
+  }
+  .close {
+      opacity: 1;
+      color: @color-theme-body;
+      font-size: 30px;
+      font-weight: normal;
+      line-height: 1;
+  }
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 8%);
+  -ms-transform: translate(0, 8%);
+  -o-transform: translate(0, 8%);
+  transform: translate(0, 8%);
+}
 
 /*---Footer---*/
 
@@ -749,6 +813,17 @@ ol.list-number {
   }
   ol.list-number li:before {
     top: 0;
+  }
+  .modal-precal .modal-dialog {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .modal-precal .modal-body {
+      padding: 0px 20px 40px;
+  }
+  .modal-appDownload .img-appLogo {
+      max-width: 75px;
+      margin-bottom: 20px;
   }
 }
 
