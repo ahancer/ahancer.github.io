@@ -12,6 +12,33 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/v4-shims.min.css" rel="stylesheet">
+
+    <script>
+// Mobile Safari in standalone mode
+if(("standalone" in window.navigator) && window.navigator.standalone){
+
+    // If you want to prevent remote links in standalone web apps opening Mobile Safari, change 'remotes' to true
+    var noddy, remotes = false;
+
+    document.addEventListener('click', function(event) {
+
+        noddy = event.target;
+
+        // Bubble up until we hit link or top HTML element. Warning: BODY element is not compulsory so better to stop on HTML
+        while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+            noddy = noddy.parentNode;
+        }
+
+        if('href' in noddy && noddy.href.indexOf('https') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+        {
+            event.preventDefault();
+            document.location.href = noddy.href;
+        }
+
+    },false);
+}
+</script>
+
 </head>
   <body>
 
