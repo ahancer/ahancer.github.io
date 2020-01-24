@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/icon-error" transform="translate(2.000000, 2.000000)">
+            <circle id="Oval" fill="#FFFFFF" fill-rule="evenodd" cx="30" cy="30" r="25"></circle>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#B00020" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <circle id="Oval" fill="#F9F9F9" fill-rule="evenodd" mask="url(#mask-2)" cx="30" cy="30" r="23.0769231"></circle>
+            <path d="M34.6153846,43.8461538 C34.6153846,50 25.3846154,50 25.3846154,43.8461538 C25.3846154,37.6923077 34.6153846,37.6923077 34.6153846,43.8461538" id="Path" fill="#B00020" fill-rule="evenodd" mask="url(#mask-2)"></path>
+            <rect id="Rectangle" fill="#B00020" fill-rule="evenodd" mask="url(#mask-2)" x="25.3846154" y="11.5384615" width="9.23076923" height="23.0769231" rx="4.61538462"></rect>
+        </g>
+    </g>
+</svg>

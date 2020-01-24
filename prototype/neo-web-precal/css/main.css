@@ -7549,7 +7549,7 @@ button.close {
   margin-top: 15px;
 }
 .field-salary .form-control {
-  max-width: 329px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .field-group {
@@ -7558,7 +7558,7 @@ button.close {
 .card.card-cal {
   max-width: 500px;
   margin: 0 auto;
-  padding: 60px 85px;
+  padding: 60px 39px;
 }
 .card.card-cal .btn,
 .card.card-cal .btn-primary,
@@ -7566,7 +7566,8 @@ button.close {
 .card.card-cal .btn-secondary-red,
 .card.card-cal .btn-primary[disabled] {
   width: 100%;
-  max-width: 329px;
+  max-width: 222px;
+  margin: 0 auto;
 }
 .cta-group .btn + .btn,
 .cta-group .btn-primary + .btn-primary,
@@ -7669,6 +7670,22 @@ button.close {
   margin-right: 20px;
   max-width: 40px;
 }
+.card.card-alert {
+  margin-bottom: 40px;
+}
+.card-alert-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+.card-alert-title img {
+  margin-right: 20px;
+  max-width: 40px;
+}
 /*--- Add new Dept ---*/
 .img-addLoan {
   max-width: 61px;
@@ -7703,6 +7720,11 @@ button.close {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.card.card-term .card-invalid .icon-alert-red {
+  margin-bottom: 20px;
 }
 .card.card-term-detail {
   padding-bottom: 10px;
@@ -7957,7 +7979,7 @@ button.close {
     background-color: transparent;
     box-shadow: none;
     border: 0;
-    max-width: 329px;
+    max-width: 420px;
   }
   .section-salary-cal.space-huge {
     padding-top: 40px;
@@ -8001,6 +8023,13 @@ button.close {
     max-width: 24px;
     margin-right: 10px;
   }
+  .card.card-alert {
+    margin-bottom: 20px;
+  }
+  .card-alert-title img {
+    max-width: 24px;
+    margin-right: 10px;
+  }
   .card.card-visible-desktop {
     margin-bottom: 50px;
   }
@@ -8008,13 +8037,24 @@ button.close {
     max-width: 16px;
   }
   .field-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+  }
+  .card.card-term .card-invalid .icon-alert-red {
+    max-width: 40px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
   .modal-appDownload .img-appLogo {
     max-width: 75px;
     margin-bottom: 20px;
+  }
+  .card.card-cal .btn,
+  .card.card-cal .btn-primary,
+  .card.card-cal .btn-secondary,
+  .card.card-cal .btn-secondary-red,
+  .card.card-cal .btn-primary[disabled] {
+    max-width: 100%;
   }
   .modal-precal .modal-dialog {
     width: 90%;

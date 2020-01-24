@@ -29,7 +29,7 @@
 
 .field-salary {
     .form-control {
-        max-width: 329px;
+        max-width: 100%;
         margin: 0 auto;
     }
 }
@@ -41,10 +41,11 @@
 .card.card-cal {
     max-width: 500px;
     margin: 0 auto;
-    padding: 60px 85px;
+    padding: 60px 39px;
     .btn {
         width: 100%;
-        max-width: 329px;
+        max-width: 222px;
+        margin: 0 auto;
     }
 }
 
@@ -150,6 +151,23 @@
     }
 }
 
+.card.card-alert {
+    margin-bottom: 40px;
+}
+
+.card-alert-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 0;
+    img {
+        margin-right: 20px;
+        max-width: 40px;
+    }
+}
 
 /*--- Add new Dept ---*/
 .img-addLoan {
@@ -187,6 +205,11 @@
         -webkit-box-align:center;
         -ms-flex-align:center;
             align-items:center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        .icon-alert-red {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -462,7 +485,7 @@
         background-color: transparent;
         box-shadow: none;
         border: 0;
-        max-width: 329px;
+        max-width: 420px;
     }
     .section-salary-cal.space-huge {
         padding-top: 40px;
@@ -506,6 +529,13 @@
         max-width: 24px;
         margin-right: 10px;
     }
+    .card.card-alert {
+        margin-bottom: 20px;
+    }
+    .card-alert-title img {
+        max-width: 24px;
+        margin-right: 10px;
+    }
     .card.card-visible-desktop {
         margin-bottom: 50px;
     }
@@ -515,7 +545,11 @@
         }
     }
     .field-group {
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
+    }
+    .card.card-term .card-invalid .icon-alert-red {
+        max-width: 40px;
+        margin-bottom: 10px;
     }
 }
 
@@ -524,6 +558,11 @@
         .img-appLogo {
             max-width: 75px;
             margin-bottom: 20px;
+        }
+    }
+    .card.card-cal {
+        .btn {
+            max-width: 100%;
         }
     }
     .modal-precal .modal-dialog {
