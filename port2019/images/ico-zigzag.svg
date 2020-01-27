@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="20px" viewBox="0 0 100 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ico-zigzag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F58B1E" offset="0%"></stop>
+            <stop stop-color="#F58B1E" offset="23.54416%"></stop>
+            <stop stop-color="#ED2755" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ico-zigzag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Fill-1" fill="url(#linearGradient-1)" points="73.3239834 16 65.5514813 8.43148521 57.7758413 16 50.0033392 8.43148521 42.2308371 16 34.4551971 8.43148521 26.682695 16 18.907055 8.43148521 12.269186 14.8707007 10 12.6519025 18.910032 4.0031339 26.6825341 11.5685148 34.4550362 4 42.2306762 11.5685148 50.0031783 4 57.7756804 11.5685148 65.5513204 4 73.3238225 11.5685148 81.0899683 4.00924499 90 12.5569455 87.7433659 14.7910997 81.1054969 8.42231856"></polygon>
+    </g>
+</svg>
