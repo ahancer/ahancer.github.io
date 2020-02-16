@@ -94,7 +94,13 @@ ul{
 mark {
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
   color: @color-white;
+  padding:10px 8px;
 }
+mark:hover{
+  box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.25);
+  transition: all 200ms ease;
+}
+
 .modal-backdrop.in {
     opacity: 0.9;
 }
@@ -254,7 +260,7 @@ mark {
 /*---Job Open---*/
 .job-open{
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   position: relative;
   .job-open-text{
     padding: 100px 0px 50px 0px;
@@ -264,6 +270,7 @@ mark {
     .job-open-position{
       h3{
         margin-top: 0px;
+        color: @color-black !important;
       }
       &.closed{
         opacity: .5;
@@ -275,6 +282,9 @@ mark {
     margin-top: 10px;
     p{
       margin-top: 20px;
+    }
+    .job-cta-separator{
+      margin-top: 30px;
     }
   }
   .pattern-a{
@@ -450,7 +460,8 @@ mark {
   }
 }
 .team{
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   position: relative;
   h2{
