@@ -72,6 +72,7 @@ body {
 
 small{
   font-size: 14px;
+  line-height: 22px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -164,6 +165,18 @@ p {
 .text-download-app {
   text-decoration: none !important;
 }
+
+/*---Page Title---*/
+.page-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  h2{
+    line-height: 26px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+}
+
 /*---Why Us---*/
 .list-whyUs {
   li {
@@ -235,6 +248,48 @@ ol.list-number {
     }
   }
 }
+
+ol.list-number-criteria {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding-left: 0;
+  display: table;
+  margin: 15px auto 0;
+  li {
+    counter-increment: my-awesome-counter;
+    position: relative;
+    padding-left: 28px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    &:before {
+      content: counter(my-awesome-counter);
+      position: absolute;
+      left: 0;
+      top: 2px;
+      line-height: 9px;
+      background: @color-theme-secondary;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}
+
 
 .content-faq {
   margin-bottom: 30px;
@@ -325,5 +380,5 @@ ol > li {
 
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
-  
+
 }
