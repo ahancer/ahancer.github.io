@@ -45,6 +45,14 @@ a,a:hover,a:active{
 /*---Button---*/
 .btn-primary {
   &:extend(.btn all);
+  .button-variant(@color-black, @color-call-to-action, @color-call-to-action);
+  font-size: 18px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+}
+.btn-secondary {
+  &:extend(.btn all);
   .button-variant(@color-theme-primary, @color-white, @color-theme-primary);
   font-size: 18px;
 }
