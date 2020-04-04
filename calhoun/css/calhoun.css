@@ -10,6 +10,14 @@ h1{
   font-weight: 800;
   letter-spacing: 2px;
 }
+h2{
+  font-size: 40px;
+  font-weight: 800;
+}
+h3{
+  font-size: 20px;
+  font-weight: 800;
+}
 
 .left{
   float: left;
@@ -70,6 +78,27 @@ h1{
   margin-top: 75px;
 }
 
+/*---Content---*/
+.content{
+  margin-top: 160px;
+}
+.content h2{
+  margin-bottom: 50px;
+}
+.content p{
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.content .panel{
+  padding: 20px;
+  height: 370px;
+}
+.content .panel p{
+  font-style: normal;
+}
+.content .panel img{
+  width: 80px;
+}
 
 /*---Responsive---*/
 
