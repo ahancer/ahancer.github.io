@@ -71,6 +71,7 @@ h2{
   font-family: 'Mitr', sans-serif; font-size: 30px;
   padding-top: 10px;
   padding-bottom: 5px;
+  color: #1D1D1D;
   }
 
 h3{
@@ -98,6 +99,7 @@ p{
   font-family: 'Sarabun', sans-serif; font-size: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: #1D1D1D;
   }
 
 /*--Modify Bootstrap Code--*/
@@ -109,6 +111,11 @@ p{
   font-size: 20px;
   padding: 10px 30px;
 }
+
+.BlackText{
+  color: #1D1D1D;
+}
+
 /*--Section--*/
 .banner{
   background-color:#FEE315;
