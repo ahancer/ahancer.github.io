@@ -1,0 +1,100 @@
+.asterix {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+
+.CenterText {
+  text-align: center;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.inner {
+  overflow: hidden;
+  width: 2000px;
+}
+
+.child {
+  float: left;
+  margin-left: 20px;
+}
+
+.BlackoutWhite {
+  background-color: black;
+  color: white;
+  width: 440px;
+}
+
+.BlackoutYellow {
+  color: #FEE315;
+  transform: rotate(4deg);
+}
+
+.BlackoutYellow2 {
+  color: #FEE315;
+  transform: rotate(-4deg);
+}
+
+.GUNlogo {
+  margin-bottom: 25px;
+}
+
+.GUNyellow {
+  background: rgb(254, 227,21)
+}
+
+.YellowBG {
+  width:100%;
+  height:300px;
+  background-color:#FEE315;
+  position: absolute;
+  z-index: -100;
+}
+
+h1{
+  font-family: 'Mitr', sans-serif; font-size: 40px;
+  }
+
+h1 span {
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2{
+  font-family: 'Mitr', sans-serif; font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  }
+
+h3{
+  font-family: 'Mitr', sans-serif; font-size: 30px;
+  }
+
+  h3 {
+     width: 100%;
+     text-align: center;
+     border-bottom: 1px solid #000;
+     line-height: 0.1em;
+     margin: 10px 0 20px;
+  }
+
+  h3 Span {
+      background:#fff;
+      padding:0 10px;
+  }
+
+  h4{
+    font-family: 'Mitr', sans-serif; font-size: 20px;
+    }
+
+p{
+  font-family: 'Sarabun', sans-serif; font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  }
