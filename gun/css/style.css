@@ -14,15 +14,15 @@
   padding: 10px;
 }
 
-.inner {
+/* .inner {
   overflow: hidden;
   width: 2000px;
-}
+} */
 
-.child {
+/* .child {
   float: left;
   margin-left: 20px;
-}
+} */
 
 .BlackoutWhite {
   background-color: black;
@@ -119,6 +119,10 @@ p{
 }
 .content{
   padding-top: 160px;
+}
+.service-icons .child{
+  display: inline-block;
+  margin-left: 20px;
 }
 
 /*--Others--*/
