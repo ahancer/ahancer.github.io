@@ -56,6 +56,7 @@
   z-index: -100;
 }
 
+/*--Modify Fundamental Code--*/
 h1{
   font-family: 'Mitr', sans-serif; font-size: 40px;
   }
@@ -98,3 +99,26 @@ p{
   padding-top: 5px;
   padding-bottom: 5px;
   }
+
+/*--Modify Bootstrap Code--*/
+.btn-outline-dark{
+  border-radius: 30px;
+  border: 2px solid #000000;
+  font-family: 'Mitr', sans-serif;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+/*--Section--*/
+.banner{
+  background-color:#FEE315;
+  padding-top: 67px;
+}
+.banner .banner-image{
+  width: 500px;
+  margin-bottom: -100px;
+}
+.content{
+  padding-top: 160px;
+}
+
+/*--Others--*/
