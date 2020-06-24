@@ -28,11 +28,16 @@
   background-color: black;
   color: white;
   width: 440px;
+  padding-top: 10px;
 }
 
 .BlackoutYellow {
   color: #FEE315;
   transform: rotate(4deg);
+}
+
+.BlackoutYellowFlat {
+  color: #FEE315;
 }
 
 .BlackoutYellow2 {
@@ -135,7 +140,23 @@ p{
   padding-top: 13px;
 }
 
+.AdditionalService {
+  padding-top: 80px;
+}
+
 /*--Others--*/
+.TopPadding40{
+  padding-top: 40px;
+}
+
+.TopPadding80{
+  padding-top: 80px;
+}
+
+.TopPadding140{
+  padding-top: 140px;
+}
+
 .Margin80{
   margin-top: 80px;
   margin-bottom: 80px;
@@ -151,4 +172,20 @@ p{
 
 .IphoneImg{
   padding-top: 60px;
+}
+
+.Card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0px 2px 15px rgba(29, 29, 29, 0.12);
+  border-radius: 5px;
+  height: 396px;
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.quotes {
+  width: 721px;
+  height: 366px;
+  background: white;
 }
