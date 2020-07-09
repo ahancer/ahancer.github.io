@@ -231,7 +231,21 @@ p{
 .quotes {
   width: 721px;
   height: 366px;
+  margin-bottom: 50px;
   background: white;
+  position: relative;
+}
+
+.quotes .top-quote{
+  position: absolute;
+  top: -40px;
+  left: -20px;
+}
+
+.quotes .bottom-quote{
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
 }
 
 .carousel-control-prev-icon {
