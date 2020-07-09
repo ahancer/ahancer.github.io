@@ -127,10 +127,35 @@ p{
   padding-top: 67px;
 }
 
+.footer{
+  background-color:#1D1D1D;
+  padding-top: 55px;
+}
+
+.footer .footer-image{
+  width: 284px;
+  padding-bottom: 45px;
+}
+
 .Reviewbanner{
   background-color:#FEE315;
   padding-top: 70px;
   padding-bottom: 100px;
+}
+
+
+.reviewtitle{
+  margin-bottom: -50px;
+}
+
+.Quotes-icons-left {
+  top: 100px;
+  right: 100px;
+}
+
+.Quotes-icons-right {
+  bottom: 100px;
+  left: 100px;
 }
 
 .banner .banner-image{
@@ -186,6 +211,17 @@ p{
   box-shadow: 0px 2px 15px rgba(29, 29, 29, 0.12);
   border-radius: 5px;
   height: 396px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.CardReview {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0px 2px 15px rgba(29, 29, 29, 0.12);
+  border-radius: 5px;
+  height: 396px;
+  margin-top: 100px;
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
