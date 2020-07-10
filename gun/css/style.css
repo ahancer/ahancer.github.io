@@ -1,8 +1,12 @@
+/*--Tool to see Columns--*/
+
 .asterix {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 }
+
+/*--Modify Fonts and Images--*/
 
 .CenterText {
   text-align: center;
@@ -13,16 +17,6 @@
   width: 60%;
   padding: 10px;
 }
-
-/* .inner {
-  overflow: hidden;
-  width: 2000px;
-} */
-
-/* .child {
-  float: left;
-  margin-left: 20px;
-} */
 
 .BlackoutWhite {
   background-color: black;
@@ -121,6 +115,10 @@ p{
   color: #1D1D1D;
 }
 
+.WhiteText{
+  color: #FFFFFF;
+}
+
 /*--Section--*/
 .banner{
   background-color:#FEE315;
@@ -135,6 +133,11 @@ p{
 .footer .footer-image{
   width: 284px;
   padding-bottom: 45px;
+}
+
+.footer .footer-logo{
+  width: 300px;
+  padding-bottom: 30px;
 }
 
 .Reviewbanner{
