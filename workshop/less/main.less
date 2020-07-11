@@ -8,16 +8,16 @@ To compile:
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Rubik:400,500";
-@import "https://fonts.googleapis.com/css?family=Open+Sans:400";
+@import "https://fonts.googleapis.com/css2?family=Prompt:wght@400;700;900&display=swap";
 @import "_variables.less";
 @import "_mixins.less";
 
 /*---General Setting---*/
 body{
-  padding-top: 300px;
+  padding-top: 60px;
   color: @color-black;
   font-family: @font-secondary;
-  font-size: 18px;
+  font-size: 16px;
   @media only screen and (max-width: 768px) {
     padding-top: 80px;
     font-size: 16px;
@@ -25,35 +25,27 @@ body{
 }
 h1{
   font-family: @font-primary;
-  font-weight: 500;
-  line-height: 48px;
-  margin-bottom: 20px;
+  font-style: 30px;
+  font-weight: bold;
   @media only screen and (max-width: 768px) {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 28px;
   }
 }
 h2{
   font-family: @font-primary;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 26px;
   @media only screen and (max-width: 768px) {
     font-size: 24px;
-    line-height: 35px;
-    margin-bottom: 15px;
   }
 }
 h3{
-  font-family: @font-primary;
-  font-weight: 500;
+  font-family: @font-secondary;
+  font-size: 18px;
+  font-weight: black;
+  margin-bottom: 0px;
 }
-h4{
-  font-family: @font-primary;
-  line-height: 24px;
-}
+
 a{
   color: @color-black;
   font-family: @font-secondary;
@@ -91,6 +83,12 @@ ul{
 .color-primary{
   color: @color-primary !important;
 }
+.color-secondary{
+  color: @color-secondary !important;
+}
+.center{
+  text-align: center;
+}
 mark {
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
   color: @color-white;
@@ -105,6 +103,8 @@ mark:hover{
     opacity: 0.9;
 }
 
+
+
 /*---Navigation Bar---*/
 .navbar{
   padding: 15px 0px;
@@ -118,7 +118,7 @@ mark:hover{
       margin-right: 60px;
       opacity: .8;
       display: inline-block;
-      transform: translateY(2px);
+      transform: translateY(8px);
     }
     .btn-primary{
       width: 150px;
@@ -135,12 +135,10 @@ mark:hover{
   .mobile-menu{
     display: none;
     margin-top: 6px;
-    color: @color-primary;
     float: right;
     opacity: .8;
   }
   @media only screen and (max-width: 768px) {
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
     padding: 15px 15px;
     margin-bottom: 0px;
     .navbar-logo{
@@ -185,12 +183,12 @@ mark:hover{
     }
     .pattern-a{
       height: 170px;
-      top:-40px;
+      top:200px;
       left:-40px;
       &:extend(.pattern);
     }
     .pattern-b{
-      height: 120px;
+      height: 200px;
       top:120px;
       right:-60px;
       &:extend(.pattern);
@@ -236,24 +234,47 @@ mark:hover{
 .job-banner{
   padding-top: 0px;
   position: relative;
+  text-align: center;
   .banner{
     position: relative;
-    padding-top: 0px;
+    padding: 0 30px;
+    margin-top: 20px;
     z-index: 9;
+    @media only screen and (max-width: 768px) {
+      padding: 0 0px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
   .pattern-a{
-    height: 330px;
-    top: 300px;
-    right:-80px;
+    height: 300px;
+    top: 20px;
+    right:-200px;
     position: absolute;
     z-index: 1;
   }
   .pattern-b{
-    height: 150px;
-    top:700px;
-    left:-60px;
+    height: 400px;
+    top:350px;
+    left:-300px;
     position: absolute;
     z-index: 1;
+  }
+  .btn-primary{
+    width: 240px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .detail{
+    margin-bottom: 10px;
+    img{
+      margin-right: 5px;
+      margin-top: -5px;
+    }
+  }
+  .note{
+    color: @color-primary;
+    margin-bottom: 20px;
   }
 }
 
@@ -460,8 +481,8 @@ mark:hover{
   }
 }
 .team{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 0px;
   text-align: center;
   position: relative;
   h2{
@@ -470,6 +491,13 @@ mark:hover{
   .team-member{
     margin-top: 30px;
     .team-member-picture{
+      padding: 0px 20px;
+    }
+  }
+  .learning{
+    margin-top: 30px;
+    padding: 0px 30px;
+    @media only screen and (max-width: 768px) {
       padding: 0px 60px;
     }
   }
@@ -477,7 +505,7 @@ mark:hover{
     &:extend(.pattern);
     height: 330px;
     top:200px;
-    left:-100px;
+    right:-300px;
   }
   @media only screen and (min-width: 769px) and (max-width: 992px) {
     .team-member{
@@ -492,7 +520,7 @@ mark:hover{
     }
   }
   @media only screen and (max-width: 768px) {
-    padding-top: 50px;
+    padding-top: 30px;
     .team-member{
       margin-top: 20px;
       .team-member-picture{
@@ -740,6 +768,38 @@ mark:hover{
   }
 }
 
+/*---Previous Class---*/
+.section-previous-class{
+  background: @color-black;
+  color:@color-white;
+  margin-top: 60px;
+  padding: 60px 0px;
+  h2{
+    margin-bottom: 30px;
+  }
+  .comment{
+    color: @color-black;
+    background: linear-gradient(90deg, #FCE2E4 0%, #FCE7D3 100%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    .comment-icon{
+      text-align: right;
+      img{
+        margin-left: 5px;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 30px;
+    padding: 30px 0px;
+  }
+}
+
 
 /*---Job Modal---*/
 .job-modal{
@@ -861,8 +921,8 @@ mark:hover{
   &:extend(.btn all);
   border: 0px;
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%) !important;
-  border-radius: 30px;
-  font-size: 18px;
+  border-radius: 40px;
+  font-size: 22px;
   font-family: @font-secondary;
 }
 
@@ -1004,6 +1064,15 @@ mark:hover{
     display: block;
   }
   .desktop-only{
+    display: none;
+  }
+  .pattern{
+    display: none;
+  }
+  .pattern-a{
+    display: none;
+  }
+  .pattern-b{
     display: none;
   }
 }

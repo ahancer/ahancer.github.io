@@ -7265,17 +7265,32 @@ button.close {
   src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Eyjmmd8WU.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Prompt';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  font-display: swap;
+  src: local('Prompt'), local('Prompt-Regular'), url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB26Zw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Prompt Bold'), local('Prompt-Bold'), url(https://fonts.gstatic.com/s/prompt/v4/-W_8XJnvUD7dzB2C2_84bg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Prompt Black'), local('Prompt-Black'), url(https://fonts.gstatic.com/s/prompt/v4/-W_8XJnvUD7dzB2C4_04bg.ttf) format('truetype');
 }
 /*---General Setting---*/
 body {
-  padding-top: 300px;
-  color: #FD79a8;
-  font-family: 'Open Sans';
-  font-size: 18px;
+  padding-top: 60px;
+  color: #123456;
+  font-family: 'Prompt';
+  font-size: 16px;
 }
 @media only screen and (max-width: 768px) {
   body {
@@ -7285,62 +7300,53 @@ body {
 }
 h1 {
   font-family: 'Rubik';
-  font-weight: 500;
-  line-height: 48px;
-  margin-bottom: 20px;
+  font-style: 30px;
+  font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 28px;
   }
 }
 h2 {
   font-family: 'Rubik';
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 26px;
 }
 @media only screen and (max-width: 768px) {
   h2 {
     font-size: 24px;
-    line-height: 35px;
-    margin-bottom: 15px;
   }
 }
 h3 {
-  font-family: 'Rubik';
-  font-weight: 500;
-}
-h4 {
-  font-family: 'Rubik';
-  line-height: 24px;
+  font-family: 'Prompt';
+  font-size: 18px;
+  font-weight: black;
+  margin-bottom: 0px;
 }
 a {
-  color: #FD79a8;
-  font-family: 'Open Sans';
+  color: #123456;
+  font-family: 'Prompt';
   text-decoration: none !important;
 }
 a.active {
-  color: #FD79a8;
+  color: #EF8721;
 }
 a:hover {
-  color: #FD79a8;
+  color: #EF8721;
   text-decoration: none;
 }
 p {
   opacity: 0.8;
   line-height: 30px;
   margin-bottom: 20px;
-  font-family: 'Open Sans';
+  font-family: 'Prompt';
 }
 ul {
   opacity: 0.8;
   line-height: 30px;
   -webkit-padding-start: 24px;
-  font-family: 'Open Sans';
+  font-family: 'Prompt';
 }
 .wrapper {
   overflow-x: hidden;
@@ -7358,7 +7364,13 @@ ul {
   z-index: 3;
 }
 .color-primary {
-  color: #FD79a8 !important;
+  color: #EF8721 !important;
+}
+.color-secondary {
+  color: #F05B7A !important;
+}
+.center {
+  text-align: center;
 }
 mark {
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%);
@@ -7387,7 +7399,7 @@ mark:hover {
   margin-right: 60px;
   opacity: 0.8;
   display: inline-block;
-  transform: translateY(2px);
+  transform: translateY(8px);
 }
 .navbar .navbar-right .btn-primary {
   width: 150px;
@@ -7405,13 +7417,11 @@ mark:hover {
 .navbar .mobile-menu {
   display: none;
   margin-top: 6px;
-  color: #FD79a8;
   float: right;
   opacity: 0.8;
 }
 @media only screen and (max-width: 768px) {
   .navbar {
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     padding: 15px 15px;
     margin-bottom: 0px;
   }
@@ -7454,11 +7464,11 @@ mark:hover {
 }
 .banner .banner-image .pattern-a {
   height: 170px;
-  top: -40px;
+  top: 200px;
   left: -40px;
 }
 .banner .banner-image .pattern-b {
-  height: 120px;
+  height: 200px;
   top: 120px;
   right: -60px;
 }
@@ -7497,25 +7507,50 @@ mark:hover {
 .job-banner {
   padding-top: 0px;
   position: relative;
+  text-align: center;
 }
 .job-banner .banner {
   position: relative;
-  padding-top: 0px;
+  padding: 0 30px;
+  margin-top: 20px;
   z-index: 9;
 }
+@media only screen and (max-width: 768px) {
+  .job-banner .banner {
+    padding: 0 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 .job-banner .pattern-a {
-  height: 330px;
-  top: 300px;
-  right: -80px;
+  height: 300px;
+  top: 20px;
+  right: -200px;
   position: absolute;
   z-index: 1;
 }
 .job-banner .pattern-b {
-  height: 150px;
-  top: 700px;
-  left: -60px;
+  height: 400px;
+  top: 350px;
+  left: -300px;
   position: absolute;
   z-index: 1;
+}
+.job-banner .btn-primary {
+  width: 240px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.job-banner .detail {
+  margin-bottom: 10px;
+}
+.job-banner .detail img {
+  margin-right: 5px;
+  margin-top: -5px;
+}
+.job-banner .note {
+  color: #EF8721;
+  margin-bottom: 20px;
 }
 /*---Job Open---*/
 .job-open {
@@ -7531,7 +7566,7 @@ mark:hover {
 }
 .job-open .job-open-position-all .job-open-position h3 {
   margin-top: 0px;
-  color: #FD79a8 !important;
+  color: #123456 !important;
 }
 .job-open .job-open-position-all .job-open-position.closed {
   opacity: 0.5;
@@ -7720,8 +7755,8 @@ mark:hover {
   }
 }
 .team {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 0px;
   text-align: center;
   position: relative;
 }
@@ -7732,12 +7767,21 @@ mark:hover {
   margin-top: 30px;
 }
 .team .team-member .team-member-picture {
-  padding: 0px 60px;
+  padding: 0px 20px;
+}
+.team .learning {
+  margin-top: 30px;
+  padding: 0px 30px;
+}
+@media only screen and (max-width: 768px) {
+  .team .learning {
+    padding: 0px 60px;
+  }
 }
 .team .pattern-a {
   height: 330px;
   top: 200px;
-  left: -100px;
+  right: -300px;
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .team .team-member .team-member-picture {
@@ -7751,7 +7795,7 @@ mark:hover {
 }
 @media only screen and (max-width: 768px) {
   .team {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .team .team-member {
     margin-top: 20px;
@@ -7902,7 +7946,7 @@ mark:hover {
   margin-top: 5px;
 }
 #ctaModal .modal-dialog .modal-content .modal-body h3 {
-  color: #FD79a8;
+  color: #EF8721;
   font-size: 18px;
 }
 #ctaModal .modal-dialog .modal-content .modal-body h4 a {
@@ -7988,6 +8032,41 @@ mark:hover {
   }
   #ctaModal .modal-dialog .modal-content .modal-body .moon {
     display: none;
+  }
+}
+/*---Previous Class---*/
+.section-previous-class {
+  background: #123456;
+  color: #ffffff;
+  margin-top: 60px;
+  padding: 60px 0px;
+}
+.section-previous-class h2 {
+  margin-bottom: 30px;
+}
+.section-previous-class .comment {
+  color: #123456;
+  background: linear-gradient(90deg, #FCE2E4 0%, #FCE7D3 100%);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.section-previous-class .comment .comment-icon {
+  text-align: right;
+}
+.section-previous-class .comment .comment-icon img {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .section-previous-class .comment {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-previous-class {
+    margin-top: 30px;
+    padding: 30px 0px;
   }
 }
 /*---Job Modal---*/
@@ -8096,9 +8175,9 @@ mark:hover {
 .btn-primary {
   border: 0px;
   background: linear-gradient(270deg, #F58B1E 0%, #F58B1E 10%, #ED2755 100%) !important;
-  border-radius: 30px;
-  font-size: 18px;
-  font-family: 'Open Sans';
+  border-radius: 40px;
+  font-size: 22px;
+  font-family: 'Prompt';
 }
 .btn-primary:hover {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
@@ -8109,13 +8188,13 @@ mark:hover {
   background: #ffffff !important;
   border-radius: 30px;
   font-size: 18px;
-  font-family: 'Open Sans';
-  color: #FD79a8;
+  font-family: 'Prompt';
+  color: #EF8721;
 }
 .btn-secondary:hover {
   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
   transition: all 200ms ease;
-  color: #FD79a8;
+  color: #EF8721;
 }
 /*---Custom Animation---*/
 @keyframes slideInLeft {
@@ -8219,6 +8298,20 @@ mark:hover {
     display: block;
   }
   .desktop-only {
+    display: none;
+  }
+  .pattern,
+  .banner .banner-image .pattern-a,
+  .banner .banner-image .pattern-b,
+  .service-a .pattern-a,
+  .service-b .pattern-a,
+  .team .pattern-a {
+    display: none;
+  }
+  .pattern-a {
+    display: none;
+  }
+  .pattern-b {
     display: none;
   }
 }
