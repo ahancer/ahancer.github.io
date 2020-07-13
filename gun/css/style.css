@@ -258,3 +258,44 @@ p{
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+
+
+/*---Responsive (Bootstrap Standard)---*/
+/* Only Large devices (LG) */
+@media only screen and (min-width: 1201px) {
+  .banner-mobile{
+    display: none;
+  }
+}
+/* Only Medium devices (MD) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .banner-mobile{
+    display: none;
+  }
+}
+/* Only Small devices (SM) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .banner-desktop{
+    display: none;
+  }
+  .banner-mobile{
+    margin-top: 30px;
+    display: block;
+  }
+}
+/* Only Extra Small devices (XS) */
+@media only screen and (max-width: 768px) {
+  .banner-desktop{
+    display: none;
+  }
+  .banner-mobile{
+    margin-top: 30px;
+    display: block;
+  }
+
+  .service-icons .child{
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
