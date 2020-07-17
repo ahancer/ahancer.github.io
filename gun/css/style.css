@@ -6,56 +6,8 @@
     outline: solid #f00 1px !important;
 }
 
-/*--Modify Fonts and Images--*/
-
-.CenterText {
-  text-align: center;
-}
-
-.center {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-}
-
-.BlackoutWhite {
-  background-color: black;
-  color: white;
-  width: 440px;
-  padding-top: 10px;
-}
-
-.BlackoutYellow {
-  color: #FEE315;
-  transform: rotate(4deg);
-}
-
-.BlackoutYellowFlat {
-  color: #FEE315;
-}
-
-.BlackoutYellow2 {
-  color: #FEE315;
-  transform: rotate(-4deg);
-}
-
-.GUNlogo {
-  margin-bottom: 15px;
-}
-
-.GUNyellow {
-  background: rgb(254, 227,21)
-}
-
-.YellowBG {
-  width:100%;
-  height:300px;
-  background-color:#FEE315;
-  position: absolute;
-  z-index: -100;
-}
-
 /*--Modify Fundamental Code--*/
+
 h1{
   font-family: 'Mitr', sans-serif; font-size: 40px;
   }
@@ -101,85 +53,30 @@ p{
   color: #1D1D1D;
   }
 
-/*--Modify Bootstrap Code--*/
-.btn-outline-dark{
-  border-radius: 30px;
-  border: 2px solid #000000;
-  font-family: 'Mitr', sans-serif;
-  color: #000000;
-  font-size: 20px;
-  padding: 10px 30px;
+/*--Atomic CSS--*/
+
+    /*--Modify Object--*/
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
 }
 
-.BlackText{
-  color: #1D1D1D;
+.Card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0px 2px 15px rgba(29, 29, 29, 0.12);
+  border-radius: 5px;
+  height: 396px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.WhiteText{
-  color: #FFFFFF;
+.GUNlogo {
+  margin-bottom: 15px;
 }
 
-/*--Section--*/
-.banner{
-  background-color:#FEE315;
-  padding-top: 67px;
-}
-
-.footer{
-  background-color:#1D1D1D;
-  padding-top: 55px;
-}
-
-.footer .footer-image{
-  width: 284px;
-  padding-bottom: 45px;
-}
-
-.footer .footer-logo{
-  width: 300px;
-  padding-bottom: 30px;
-}
-
-.Reviewbanner{
-  background-color:#FEE315;
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
-
-
-.reviewtitle{
-  margin-bottom: -50px;
-}
-
-.Quotes-icons-left {
-  top: 100px;
-  right: 100px;
-}
-
-.Quotes-icons-right {
-  bottom: 100px;
-  left: 100px;
-}
-
-.banner .banner-image{
-  width: 500px;
-  margin-bottom: -100px;
-  margin-left: -14px;
-}
-.content{
-  padding-top: 130px;
-}
-.service-icons .child{
-  display: inline-block;
-  margin-left: 20px;
-  padding-top: 13px;
-}
-
-.AdditionalService {
-  padding-top: 80px;
-}
-
-/*--Others--*/
 .TopPadding40{
   padding-top: 40px;
 }
@@ -190,6 +87,10 @@ p{
 
 .TopPadding140{
   padding-top: 140px;
+}
+
+.MarginUp{
+  margin-top: -20px;
 }
 
 .Margin80{
@@ -209,14 +110,21 @@ p{
   padding-top: 60px;
 }
 
-.Card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0px 2px 15px rgba(29, 29, 29, 0.12);
-  border-radius: 5px;
-  height: 396px;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+/*--Review Section--*/
+.Quotes-icons-left {
+  top: 100px;
+  right: 100px;
+}
+
+.Quotes-icons-right {
+  bottom: 100px;
+  left: 100px;
+}
+
+.banner .banner-image{
+  width: 500px;
+  margin-bottom: -100px;
+  margin-left: -14px;
 }
 
 .CardReview {
@@ -250,6 +158,123 @@ p{
   bottom: -40px;
   right: -20px;
 }
+
+    /*--Modify Text--*/
+
+.CenterText {
+      text-align: center;
+}
+
+.BlackText{
+  color: #1D1D1D;
+}
+
+.WhiteText{
+  color: #FFFFFF;
+}
+
+.BlackoutWhite {
+  background-color: black;
+  color: white;
+  width: 440px;
+  padding-top: 10px;
+}
+
+.BlackoutYellow {
+  color: #FEE315;
+  transform: rotate(4deg);
+}
+
+.BlackoutYellowFlat {
+  color: #FEE315;
+}
+
+.BlackoutYellow2 {
+  color: #FEE315;
+  transform: rotate(-4deg);
+}
+
+    /*--Modify Color--*/
+.GUNyellow {
+  background: rgb(254, 227,21)
+}
+
+.YellowBG {
+  width:100%;
+  height:300px;
+  background-color:#FEE315;
+  position: absolute;
+  z-index: -100;
+}
+
+
+/*--Modify Bootstrap Code--*/
+.btn-outline-dark{
+  border-radius: 30px;
+  border: 2px solid #000000;
+  font-family: 'Mitr', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+.btn-yellow{
+  border-radius: 30px;
+  font-family: 'Mitr', sans-serif;
+  background-color: #FEE315;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-bottom: 60px;
+}
+
+
+/*--Section--*/
+.banner{
+  background-color:#FEE315;
+  padding-top: 67px;
+}
+
+.footer{
+  background-color:#1D1D1D;
+  padding-top: 55px;
+}
+
+.footer .footer-image{
+  width: 284px;
+  padding-bottom: 45px;
+}
+
+.footer .footer-logo{
+  width: 300px;
+  padding-bottom: 30px;
+}
+
+.Reviewbanner{
+  background-color:#FEE315;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.reviewtitle{
+  margin-bottom: -50px;
+}
+
+.content{
+  padding-top: 130px;
+}
+
+.service-icons .child{
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 13px;
+}
+
+.AdditionalService {
+  padding-top: 80px;
+}
+
+
+/*---Additional Bootstrap Code---*/
 
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -296,6 +321,6 @@ p{
   .service-icons .child{
     margin-bottom: 20px;
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 60px;
   }
 }
