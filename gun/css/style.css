@@ -9,7 +9,7 @@
 /*--Modify Fundamental Code--*/
 
 h1{
-  font-family: 'Mitr', sans-serif; font-size: 40px;
+  font-family: 'Mitr', sans-serif; font-size: 40px; font-weight: 300 !important;
   }
 
 h1 span {
@@ -57,7 +57,7 @@ p{
 
     /*--Modify Object--*/
 
-.center {
+.center-title {
   margin: auto;
   width: 60%;
   padding: 10px;
@@ -176,7 +176,7 @@ p{
 .BlackoutWhite {
   background-color: black;
   color: white;
-  width: 440px;
+  display: inline-block;
   padding-top: 10px;
 }
 
@@ -215,6 +215,7 @@ p{
   font-family: 'Mitr', sans-serif;
   color: #000000;
   font-size: 20px;
+  font-weight: 400;
   padding: 10px 30px;
 }
 
@@ -223,6 +224,7 @@ p{
   font-family: 'Mitr', sans-serif;
   background-color: #FEE315;
   font-size: 20px;
+  font-weight: 400;
   padding: 10px 30px;
   margin-bottom: 60px;
 }
@@ -316,22 +318,54 @@ p{
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
-  .banner-desktop{
-    display: none;
-  }
-  .banner-mobile{
-    margin-top: 30px;
-    display: block;
+  p{
+    font-size: 18px;
   }
 
-  .service-icons .child{
-    margin-bottom: 20px;
-    margin-right: 50px;
-    margin-left: 60px;
+  /* XS Banner */
+  .banner{
+    padding-top: 50px;
   }
-  .BlackoutWhite {
-    width: auto;
+  .banner .banner-desktop{
+    display: none;
   }
+  .banner .banner-mobile{
+    display: block;
+  }
+  .banner .banner-mobile .GUNlogo{
+    width: 240px;
+  }
+  .banner .banner-mobile .BlackoutWhite{
+    padding: 8px 20px 5px 20px;
+  }
+  .banner .banner-mobile p{
+    margin-top: 20px;
+  }
+  .banner .banner-image{
+    margin: 30px auto -200px auto;
+  }
+
+  /* XS Content */
+  .content{
+    padding-top: 220px;
+  }
+  .content .service-icons {
+    text-align: center;
+  }
+  .content .service-icons .item{
+    margin-bottom: 40px;
+  }
+  .content .service-icons .item img{
+    width: 100px;
+  }
+  .content .center-title {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
   .quotes{
     width: auto;
     height: auto;
