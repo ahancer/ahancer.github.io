@@ -464,8 +464,26 @@ p{
     padding: 30px;
     margin-bottom: 40px;
   }
+  .content .Team{
+    text-align: center;
+  }
+  .content .Team .team-member{
+    display: block;
+    margin: 10px auto;
+    width: 240px;
+  }
+  .content .Team .team-member img{
+    width: 150px;
+  }
 
-
+  /* XS Review Banner */
+  .Reviewbanner{
+    padding-top: 0px;
+  }
+  .Reviewbanner .center-title{
+    width: 90%;
+    line-height: 300px;
+  }
   .quotes{
     width: auto;
     height: auto;
