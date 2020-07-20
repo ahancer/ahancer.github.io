@@ -413,6 +413,29 @@ p{
     width: 300px;
   }
 
+  /* SM Review Banner */
+  .Reviewbanner{
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    margin-top: -80px;
+  }
+  .Reviewbanner .CardReview{
+    padding: 30px;
+    width: auto;
+    height: auto;
+    margin: 10px 30px;
+  }
+  .Reviewbanner .quotes .top-quote{
+    width: 40px;
+    top:-30px;
+  }
+  .Reviewbanner .quotes .bottom-quote{
+    width: 40px;
+    bottom:-30px;
+  }
+
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 576px) {
