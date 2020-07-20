@@ -485,6 +485,9 @@ p{
   .content .AdditionalService{
     padding-top: 0px;
   }
+  .content .AdditionalService img{
+    width: 100px;
+  }
   .content .AdditionalService .Card{
     padding: 30px;
     margin-bottom: 40px;
