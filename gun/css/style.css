@@ -211,7 +211,7 @@ p{
 /*--Modify Bootstrap Code--*/
 .btn-outline-dark{
   border-radius: 30px;
-  border: 2px solid #000000;
+  border: 3px solid #000000;
   font-family: 'Mitr', sans-serif;
   color: #000000;
   font-size: 20px;
@@ -410,7 +410,7 @@ p{
     width: 240px;
   }
   .content .Team .team-member img{
-    width: 300px;
+    width: 200px;
   }
 
   /* SM Review Banner */
@@ -508,6 +508,10 @@ p{
   .content .AdditionalService{
     padding-top: 0px;
   }
+  .content .AdditionalService .row{
+    padding-top: 0px;
+    margin: 0px;
+  }
   .content .AdditionalService img{
     width: 100px;
   }
@@ -517,6 +521,10 @@ p{
   }
   .content .Team{
     text-align: center;
+  }
+  .content .Team .row{
+    margin: 0px;
+    padding: 0px;
   }
   .content .Team .team-member{
     display: block;
@@ -549,5 +557,13 @@ p{
   .Reviewbanner .quotes .bottom-quote{
     width: 40px;
     bottom:-30px;
+  }
+
+  /* XS Footer */
+  .footer{
+    padding: 50px 20px 10px 20px;
+  }
+  .footer h1{
+    font-size: 30px;
   }
 }
