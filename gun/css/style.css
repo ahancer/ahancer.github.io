@@ -301,8 +301,35 @@ p{
   }
 }
 /* Only Small devices (SM) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  .banner-desktop{
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* SM Banner */
+  .banner{
+    padding-top: 50px;
+  }
+  .banner .banner-desktop{
+    display: none;
+  }
+  .banner .banner-mobile{
+    display: block;
+  }
+  .banner .banner-mobile .GUNlogo{
+    width: 280px;
+  }
+  .banner .banner-mobile .BlackoutWhite{
+    padding: 8px 20px 5px 20px;
+  }
+  .banner .banner-mobile p{
+    margin-top: 20px;
+  }
+  .banner .banner-image{
+    margin: 30px auto -200px auto;
+  }
+  .logo{
+    display: block;
+  }
+
+
+/*  .banner-desktop{
     display: none;
   }
   .banner-mobile{
@@ -315,6 +342,7 @@ p{
   .quotes{
     width: auto;
   }
+  */
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
