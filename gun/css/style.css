@@ -322,6 +322,7 @@ p{
     font-size: 18px;
   }
 
+
   /* XS Banner */
   .banner{
     padding-top: 50px;
@@ -364,6 +365,9 @@ p{
     padding: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .content .LaptopText{
+    padding-top: 0px;
   }
 
   .quotes{
