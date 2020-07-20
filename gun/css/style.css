@@ -327,6 +327,8 @@ p{
   }
   .banner .banner-image{
     margin: 30px auto -200px auto;
+    width: auto;
+    display: block;
   }
   .logo{
     display: block;
@@ -355,10 +357,14 @@ p{
   .content .LaptopText{
     padding-top: 0px;
   }
-
-  }
   .content .CoffeeImg{
     padding-top: 60px;
+  }
+  .content .IphoneImg-mobile{
+    display: none;
+  }
+  .content .IphoneImg-tablet{
+    display: block;
   }
 
 
@@ -396,6 +402,7 @@ p{
   }
   .banner .banner-image{
     margin: 30px auto -200px auto;
+    display: block;
   }
 
   /* XS Content */
@@ -423,6 +430,12 @@ p{
   }
   .content .CoffeeImg{
     padding-top: 60px;
+  }
+  .content .IphoneImg-mobile{
+    display: block;
+  }
+  .content .IphoneImg-tablet{
+    display: none;
   }
   .content .AdditionalService{
     padding-top: 0px;
