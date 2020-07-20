@@ -67,8 +67,8 @@ p{
   /* Add shadows to create the "card" effect */
   box-shadow: 0px 2px 15px rgba(29, 29, 29, 0.12);
   border-radius: 5px;
-  height: 396px;
   padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -412,7 +412,7 @@ p{
     margin-bottom: 40px;
   }
   .content .service-icons .item img{
-    width: 100px;
+    width: 120px;
   }
   .content .center-title {
     margin: auto;
@@ -427,6 +427,15 @@ p{
   .content .CoffeeImg{
     padding-top: 60px;
   }
+  .content .AdditionalService{
+    padding-top: 0px;
+  }
+  .content .AdditionalService .Card{
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+
+
   .quotes{
     width: auto;
     height: auto;
