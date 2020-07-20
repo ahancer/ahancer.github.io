@@ -387,6 +387,31 @@ p{
     display: block;
   }
 
+  .content .AdditionalService{
+    padding-top: 0px;
+  }
+
+  .content .AdditionalService img{
+    width: 100px;
+  }
+
+  .content .AdditionalService .card-title{
+    padding-top: 40px;
+  }
+
+  .content .AdditionalService .Card{
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+
+  .content .Team .team-member{
+    display: block;
+    margin: 10px auto;
+    width: 240px;
+  }
+  .content .Team .team-member img{
+    width: 300px;
+  }
 
 }
 /* Only Extra Small devices (XS) */
