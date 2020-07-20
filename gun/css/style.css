@@ -355,11 +355,31 @@ p{
     margin-bottom: 40px;
   }
   .content .LaptopText{
-    padding-top: 0px;
+    padding-top: 30px;
   }
+
+  .content .LaptopImg{
+    padding-top: 30px;
+  }
+
+  .content .IphoneText{
+    margin-top: 100px;
+  }
+
+  .content .IphoneImg{
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+
   .content .CoffeeImg{
-    padding-top: 60px;
+    padding-top: 30px;
+    margin-top: 80px;
   }
+
+  .content .CoffeeText{
+    margin-top: 80px;
+  }
+
   .content .IphoneImg-mobile{
     display: none;
   }
