@@ -340,6 +340,12 @@ p{
   p{
     font-size: 18px;
   }
+  .mobile-only{
+    display: block;
+  }
+  .destkop-only{
+    display: none;
+  }
 
   /* XS Banner */
   .banner{
@@ -387,7 +393,9 @@ p{
   .content .LaptopText{
     padding-top: 0px;
   }
-
+  .content .CoffeeImg{
+    padding-top: 60px;
+  }
   .quotes{
     width: auto;
     height: auto;
