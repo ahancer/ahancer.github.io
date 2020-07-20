@@ -356,13 +356,10 @@ p{
     padding-top: 0px;
   }
 
-  .quotes{
-    width: auto;
-    height: auto;
-    margin: 10px 30px;
   }
-
-
+  .content .CoffeeImg{
+    padding-top: 60px;
+  }
 
 
 }
