@@ -414,6 +414,12 @@ p{
     padding-top: 0px;
     padding-bottom: 40px;
   }
+  .content .IphoneImg-tablet{
+    display: none;
+  }
+  .content .tablet-mobile {
+    display: none;
+  }
 
 }
 /* Only Small devices (SM) */
