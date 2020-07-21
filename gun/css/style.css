@@ -1,10 +1,10 @@
-/*--Tool to see Columns--*/
+/*--WIREFRAME MODE: To see Columns--*/
 
-.asterix {
+/* *{
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
-}
+} */
 
 /*--Modify Fundamental Code--*/
 
@@ -297,6 +297,113 @@ p{
     padding-top: 40px;
     padding-bottom: 10px;
   }
+
+  .content{
+    padding-top: 170px;
+  }
+  .content .service-icons {
+    text-align: center;
+  }
+  .content .service-icons .item{
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  .content .service-icons .item img{
+    width: 120px;
+  }
+
+  .content .center-title {
+    margin: auto;
+    width: 55%;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .content .LaptopText{
+    padding-top: 120px;
+  }
+
+  .content .LaptopImg{
+    padding-top: 30px;
+  }
+
+  .content .IphoneText{
+    margin-top: 100px;
+  }
+
+  .content .IphoneImg{
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+
+  .content .CoffeeImg{
+    padding-top: 30px;
+    margin-top: 80px;
+  }
+
+  .content .CoffeeText{
+    margin-top: 80px;
+  }
+
+  .content .IphoneImg-mobile{
+    display: none;
+  }
+  .content .IphoneImg-tablet{
+    display: block;
+  }
+
+  .content .tablet-mobile {
+    display: none;
+  }
+
+  .content .desktop-only {
+    display: block;
+    margin-bottom: -10px;
+  }
+
+  .content .AdditionalService {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .content .AdditionalService img{
+    width: 100px;
+  }
+
+  .content .AdditionalService .col-sm-6{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .content .AdditionalService .card-title{
+    padding-top: 40px;
+  }
+
+  .content .AdditionalService .Card{
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+
+  .content .Team {
+    width: 100%;
+  }
+
+  .content .Team .team-member{
+    display: block;
+    margin: 10px auto;
+    width: 240px;
+  }
+
+  .content .Team .team-member img{
+    width: 240px;
+  }
+
+  .content .Team .team-text {
+    width: 240px;
+    align-items: center;
+  }
+
 }
 /* Only Medium devices (MD) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -307,6 +414,7 @@ p{
     padding-top: 0px;
     padding-bottom: 40px;
   }
+
 }
 /* Only Small devices (SM) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -393,6 +501,10 @@ p{
   }
   .content .IphoneImg-tablet{
     display: block;
+  }
+
+  .content .desktop-only {
+    display: none;
   }
 
   .content .AdditionalService{
@@ -519,6 +631,11 @@ p{
   .content .IphoneImg-tablet{
     display: none;
   }
+
+  .content .desktop-only {
+    display: none;
+  }
+
   .content .AdditionalService{
     padding-top: 0px;
   }
