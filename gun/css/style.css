@@ -412,11 +412,17 @@ p{
     padding-bottom: 60px;
     margin-top: -80px;
   }
+
   .Reviewbanner .CardReview{
-    padding: 30px;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
     width: 720px;
     height: auto;
-    margin: 10px 30px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   .Reviewbanner .quotes .top-quote{
     width: 40px;
