@@ -294,7 +294,7 @@ p{
     display: none;
   }
   .banner-text{
-    padding-top: 10px;
+    padding-top: 40px;
     padding-bottom: 10px;
   }
 }
@@ -304,8 +304,8 @@ p{
     display: none;
   }
   .banner-text{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 40px;
   }
 }
 /* Only Small devices (SM) */
@@ -464,7 +464,7 @@ p{
 
   /* XS Banner */
   .banner{
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .banner .banner-desktop{
     display: none;
@@ -473,11 +473,11 @@ p{
     display: block;
   }
   .banner .banner-mobile .GUNlogo{
-    width: 260px;
+    width: 250px;
     margin-bottom: 20px;
   }
   .banner .banner-mobile .BlackoutWhite{
-    padding: 8px 20px 5px 20px;
+    padding: 8px 15px 5px 15px;
   }
   .banner .banner-mobile p{
     margin-top: 20px;
