@@ -451,7 +451,7 @@ p{
 
   /* XS Banner */
   .banner{
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .banner .banner-desktop{
     display: none;
@@ -460,7 +460,8 @@ p{
     display: block;
   }
   .banner .banner-mobile .GUNlogo{
-    width: 280px;
+    width: 260px;
+    margin-bottom: 20px;
   }
   .banner .banner-mobile .BlackoutWhite{
     padding: 8px 20px 5px 20px;
@@ -469,7 +470,7 @@ p{
     margin-top: 20px;
   }
   .banner .banner-image{
-    margin: 30px auto -200px auto;
+    margin: 60px auto -200px auto;
     display: block;
   }
 
