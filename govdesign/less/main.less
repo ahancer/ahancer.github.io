@@ -12,16 +12,22 @@ To compile:
 @import "_mixins.less";
 
 /*---General Setting---*/
-body{
-  padding-top: 50px;
+html,body{
+  padding-top: 0px;
+  background: #F1EDE2;
+  height: 100%;
+  position: relative;
+  display: block;
 }
 h1{
   color:@color-theme-primary;
   font-family: @font-primary;
 }
 .banner{
-  padding: 100px 0px;
-  background:#eeeeee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
 }
 
 
