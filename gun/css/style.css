@@ -411,6 +411,7 @@ p{
     padding-right: 50px;
     padding-bottom: 60px;
     margin-top: -80px;
+    height: 700px;
   }
 
   .Reviewbanner .CardReview{
@@ -589,11 +590,11 @@ p{
   }
   .Reviewbanner .quotes .top-quote{
     width: 40px;
-    top:-30px;
+    top:-15px;
   }
   .Reviewbanner .quotes .bottom-quote{
     width: 40px;
-    bottom:-30px;
+    bottom:-15px;
   }
 
 }
@@ -718,11 +719,11 @@ p{
   }
   .Reviewbanner .quotes .top-quote{
     width: 40px;
-    top:-30px;
+    top:-15px;
   }
   .Reviewbanner .quotes .bottom-quote{
     width: 40px;
-    bottom:-30px;
+    bottom:-15px;
   }
 
   /* XS Footer */
