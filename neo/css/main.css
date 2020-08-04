@@ -7355,6 +7355,12 @@ h5 {
 .our-services .btn-primary {
   margin-top: 30px;
 }
+.seven-pillars img {
+  width: 50px;
+}
+.seven-pillars {
+  text-align: center;
+}
 /*---Button---*/
 .btn-primary {
   color: #ffffff;
