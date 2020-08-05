@@ -7443,12 +7443,64 @@ h5 {
   color: #000000;
   font-family: 'Sarabun';
   margin-bottom: 15px;
+  padding-top: 10px;
 }
 .articles {
   margin-top: 70px;
 }
+.articles hr {
+  border: 1px solid #E0E0E0;
+}
+.fa-clock {
+  margin-right: 5px;
+}
+.fa-calendar-alt {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.articles .far-clock {
+  color: #616161;
+}
 .blackbody p {
   color: #000000;
+}
+.footer img {
+  height: 70px;
+  margin-left: 98px;
+}
+.footer {
+  background-color: #2C3345;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+.footer a {
+  color: #BDBDBD;
+  margin-bottom: 10px;
+  display: block;
+}
+.footer p {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.footer-link-group {
+  margin-bottom: 40px;
+}
+.fa-facebook-square {
+  margin-right: 10px;
+}
+.copyright p {
+  color: #FFFFFF;
+}
+.copyright .black300 {
+  color: #E0E0E0;
+}
+.copyright {
+  padding-top: 30px;
+  background-color: #2C3345;
+}
+.pocket {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /*---Button---*/
 .btn,
