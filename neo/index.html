@@ -70,6 +70,10 @@
             <li class="nav-item"><a href="#">เข้าสู่ระบบ</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
+        <!-- <ul class="nav navbar-nav navbar-right mobile-only mobile-login">
+          <li class="nav-item"><a href="#">เข้าสู่ระบบ</a></li>
+        </ul> -->
+
       </div><!-- /.container-fluid -->
     </nav>
 
@@ -77,24 +81,32 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="banner">
       <div class="container hero-text">
-        <h1 class="text-shadow">นีโอ มันนี่ ช่วยให้คุณบรรลุเป้าหมายทางการเงิน</h1>
+        <h1 class="text-shadow desktop-only">นีโอ มันนี่ ช่วยให้คุณบรรลุเป้าหมายทางการเงิน</h1>
+        <h1 class="text-shadow mobile-only">นีโอ มันนี่ ช่วยให้คุณ</h1>
+        <h1 class="text-shadow mobile-only upfive">บรรลุเป้าหมายทางการเงิน</h1>
         <h2 class="text-shadow">เริ่มจากการบริหารหนี้สิน</h2>
 
         <div class="banner-cta">
-          <h4>ฉันต้องการ</h4>
-          <div class="btn-group">
-            <button type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              จ่ายหนี้บัตรเครดิต/บัตรกดเงินสด <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
+          <div class="row centerit">
+            <div class="col-md-3">
+              <h4 class="iwant">ฉันต้องการ</h4>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                จ่ายหนี้บัตรเครดิต/บัตรกดเงินสด <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary btn-lg cta-btn" href="#" role="button">ต่อไป</button>
+            </div>
           </div>
-          <button class="btn btn-primary btn-lg" href="#" role="button">ต่อไป</button>
         </div>
 
         </div>
@@ -105,9 +117,9 @@
       <div class="container text-center">
         <h5>พันธมิตรของเรา</h5>
         <div class="bank-logos">
-          <img src="assets/img-cimbt-logo.png" alt="CIMB Thailand Bank Logo">
-          <img src="assets/img-citi-large-logo.png" alt="Citi Bank Logo">
-          <img src="assets/img-uob-logo.png" alt="UOB Bank Logo">
+          <img class="cimb" src="assets/img-cimbt-logo.png" alt="CIMB Thailand Bank Logo">
+          <img class="citi" src="assets/img-citi-large-logo.png" alt="Citi Bank Logo">
+          <img class="uob" src="assets/img-uob-logo.png" alt="UOB Bank Logo">
         </div>
       </div>
     </div>
@@ -119,7 +131,13 @@
             <img src="assets/img-section-service.png" alt="Loving Hand">
             <h2>บริการของเรา</h2>
           </div>
-          <div class="service-a row">
+          <div class="mobile-service mobile-only centerit">
+            <button class="service-button">สินเชื่อรวมหนี้ <i class="fas fa-angle-right"></i></button>
+            <button class="service-button">สินเชื่อส่วนบุคคล <i class="fas fa-angle-right"></i></button>
+            <button class="service-button">สินเชื่อรถแลกเงิน <i class="fas fa-angle-right"></i></button>
+            <button class="service-button">สินเชื่อบ้านแลกเงิน <i class="fas fa-angle-right"></i></button>
+          </div>
+          <div class="service-a row desktop-only">
             <div class="col-md-6 card-refin text-left">
               <h3>สินเชื่อรวมหนี้</h3>
               <p>รวมหนี้ บัตรเครดิต บัตรกดเงินสด และ สินเชื่อส่วนบุคคลมาไว้ที่เดียว </p>
@@ -132,7 +150,7 @@
               <img src="assets/img-refinance.png" alt="Someone spreading out all their debts forms on the bed">
             </div>
           </div>
-          <div class="service-b row">
+          <div class="service-b row desktop-only">
             <div class="col-md-6 service-image">
               <img src="assets/img-personal-loan.png" alt="Someone spreading out all their debts forms on the bed">
             </div>
@@ -145,7 +163,7 @@
               <button class="btn btn-primary" href="#" role="button">รายละเอียดเพิ่มเติม</button>
             </div>
           </div>
-          <div class="service-a row">
+          <div class="service-a row desktop-only">
             <div class="col-md-6 card-refin text-left">
               <h3>สินเชื่อรถแลกเงิน</h3>
               <p>Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆที่ใช้กันในธุรกิจงาน </p>
@@ -158,7 +176,7 @@
               <img src="assets/img-piggy-bank.png" alt="Someone spreading out all their debts forms on the bed">
             </div>
           </div>
-          <div class="service-b row">
+          <div class="service-b row desktop-only">
             <div class="col-md-6 service-image">
               <img src="assets/img-home-loan.png" alt="Someone spreading out all their debts forms on the bed">
             </div>
@@ -199,8 +217,6 @@
       <img src="assets/icon-contentcat-goodcredit.png" alt="Thumbs up">
       <p>สร้างสภาพคล่อง</p>
     </div>
-  </div>
-  <div class="pillars-group">
     <div class="pillar">
       <img src="assets/icon-contentcat-riskprotect.png" alt="Shield">
       <p>พร้อมรับความเสี่ยง</p>

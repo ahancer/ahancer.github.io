@@ -32,6 +32,9 @@ h1{
   font-family: @font-primary;
   font-weight: 500;
   font-size: 40px;
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 h2{
@@ -39,6 +42,9 @@ h2{
   font-family: @font-primary;
   font-weight: 400;
   font-size: 30px;
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 h3{
@@ -52,6 +58,9 @@ h4{
   color:@color-white;
   font-family: @font-secondary;
   font-size: 24px;
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 h5 {
@@ -63,6 +72,15 @@ h5 {
 
 
 /*---Modify Object---*/
+
+.upfive {
+  margin-top: -5px;
+}
+
+.centerit {
+  text-align: center;
+  display: inline-block;
+}
 
 // Navbar
 
@@ -100,6 +118,12 @@ h5 {
     color: black;
 }
 
+.navbar .mobile-login{
+  float: right;
+  position: relative;
+  display: inline-block !important;
+}
+
 // Banner
 
 .text-shadow {
@@ -131,6 +155,7 @@ h5 {
   text-align: center;
   vertical-align: middle;
 }
+
 .banner .banner-cta h4, .banner .banner-cta .btn-group, .banner .banner-cta p{
   display: inline-block;
 }
@@ -143,20 +168,40 @@ h5 {
   vertical-align: top;
 }
 
+.banner .cta-btn {
+  @media only screen and (min-width: 1201px) {
+    margin-left: 200px;
+  }
+}
+
+.iwant {
+  @media only screen and (min-width: 1201px) {
+    margin-right: -100px;
+  }
+}
+
 .banner .dropdown-toggle {
   vertical-align: top;
-  margin-right: 20px;
+  // margin-right: 20px;
 }
 
 .banner h4 {
   vertical-align: top;
   margin-top: 13px;
-  margin-right: 20px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: -10px;
+  }
 }
 
 .banner-cta {
-  margin-top: 60px;
+  @media only screen and (min-width: 1201px) {
+    margin-top: 60px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
 }
+
 
 // Our products
 .our-products {
@@ -171,6 +216,7 @@ h5 {
 .our-products .bank-logos img {
   padding-left: 10px;
   padding-right: 10px;
+  height: 40px;
 }
 
 // Our services
@@ -270,15 +316,27 @@ h5 {
   margin: auto;
   margin-top: 100px;
   margin-bottom: 80px;
+  @media only screen and (max-width: 768px) {
+    width: 294px;
+  }
 }
 .seven-pillars .pillars-group{
+  text-align: center;
   margin: auto;
   margin-bottom: 30px;
   display: block;
+  @media only screen and (max-width: 768px) {
+    text-align: left;
+  }
 }
 .seven-pillars .pillar {
   display: inline-block;
   width: 125px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .seven-pillars img {
@@ -443,35 +501,85 @@ h5 {
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) {
+  .mobile-only{
+    display: none;
+  }
 
-}
+  }
 /* Only Medium devices (MD) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-
+  .mobile-only{
+    display: none;
+  }
 }
 /* Only Small devices (SM) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-
+  .mobile-only{
+    display: none;
+  }
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
   .mobile-only{
     display: block;
-  }
+    }
   .desktop-only{
     display: none;
-  }
+    }
   .navbar-brand {
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
-  }
+    }
   .navbar-toggle{
     float: left;
     margin-left: 15px;
     border: none;
     outline: none;
-  }
+    }
 
+  //banner
+  .banner{
+    height: 343px;
+    }
 
+  .banner .hero-text {
+    margin-top: -100px;
+    }
+
+  .banner .dropdown-toggle {
+    height: 40px;
+    font-size: 18px;
+    }
+
+  .banner .btn {
+    font-size: 18px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    font-family: @font-secondary;
+    vertical-align: top;
+    margin-top: 20px;
+    }
+
+//product
+
+    .service-button {
+      border: none;
+      background: @color-white;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      height: 40px;
+      width: 345px;
+      text-align: left;
+      font-size: 18px;
+      font-family: @font-primary;
+      padding-left: 25px;
+      padding-right: 25px;
+      color: @color-theme-primary;
+      margin-bottom: 10px;
+    }
+
+    .i {
+      float: right;
+    }
 }
