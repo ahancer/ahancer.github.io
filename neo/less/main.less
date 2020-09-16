@@ -134,56 +134,49 @@ h5 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
 }
 
-.banner .dropdown-toggle {
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
-  border-radius: 5px;
-  color: @color-white;
-}
-
-.banner .caret {
-  border-top:4px solid @color-theme-primary;
-}
-
 .banner{
   padding: 120px 0px 150px 0px;
   background:#eeeeee;
   background: url('../assets/home-herobanner.jpg');
   background-size: cover;
 }
+
 .banner .hero-text{
   text-align: center;
   vertical-align: middle;
 }
 
-.banner .banner-cta h4, .banner .banner-cta .btn-group, .banner .banner-cta p{
-  display: inline-block;
+.banner-cta {
+  margin-top: 60px;
 }
 
-.banner .btn {
+.iwant {
+  margin-right: 20px;
+  margin-top: -5px;
+}
+
+.banner .dropdown-toggle {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  color: @color-white;
+  border: 0px;
+  outline: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 24px;
-  padding-top: 9px;
-  padding-bottom: 7px;
   font-family: @font-secondary;
   vertical-align: top;
 }
 
-.banner .cta-btn {
-  @media only screen and (min-width: 1201px) {
-    margin-left: 200px;
-  }
+.cta-btn {
+  margin-bottom: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.iwant {
-  @media only screen and (min-width: 1201px) {
-    margin-right: -100px;
-  }
-}
-
-.banner .dropdown-toggle {
-  vertical-align: top;
-  // margin-right: 20px;
-}
 
 .banner h4 {
   vertical-align: top;
@@ -271,14 +264,12 @@ h5 {
 .our-services .service-a .card-refin {
   position: absolute;
   top: 30px;
-  right: -140px;
+  // right: -70px;
   background: @color-white;
   border-radius: 5px;
   text-align: left;
   padding: 40px;
   z-index: 2;
-  width: 500px;
-  height: 350px;
 }
 
 .our-services .service-b .col-md-6:last-child{
@@ -293,8 +284,6 @@ h5 {
   text-align: left;
   padding: 40px;
   z-index: 2;
-  width: 500px;
-  height: 350px;
 }
 
 .our-services .service-b {
@@ -302,7 +291,7 @@ h5 {
 }
 
 .our-services .service-b .service-image {
-  left: 140px;
+  // left: 100px;
 }
 
 .our-services .btn {
@@ -508,10 +497,10 @@ h5 {
   .button-variant(@color-theme-primary, #ffffff, @color-theme-primary);
 }
 
-.btn-primary .btn-lg {
-  padding-left: 40px;
-  padding-right: 40px;
-}
+// .btn-primary .btn-lg {
+//   padding-left: 40px;
+//   padding-right: 40px;
+// }
 
 
 
@@ -530,13 +519,16 @@ h5 {
   }
 }
 /* Only Small devices (SM) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .mobile-only{
     display: none;
   }
+
+
+
 }
 /* Only Extra Small devices (XS) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .mobile-only{
     display: block;
     }
@@ -564,19 +556,19 @@ h5 {
     margin-top: -100px;
     }
 
-  .banner .dropdown-toggle {
-    height: 40px;
-    font-size: 18px;
-    }
+  // .banner .dropdown-toggle {
+  //   height: 40px;
+  //   font-size: 18px;
+  //   }
 
-  .banner .btn {
-    font-size: 18px;
-    padding-top: 9px;
-    padding-bottom: 7px;
-    font-family: @font-secondary;
-    vertical-align: top;
-    margin-top: 20px;
-    }
+  // .banner .btn {
+  //   font-size: 18px;
+  //   padding-top: 9px;
+  //   padding-bottom: 7px;
+  //   font-family: @font-secondary;
+  //   vertical-align: top;
+  //   margin-top: 20px;
+  //   }
 
 //product
 

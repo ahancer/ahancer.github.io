@@ -7388,15 +7388,6 @@ h5 {
 .box-shadow {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
 }
-.banner .dropdown-toggle {
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
-  border-radius: 5px;
-  color: #FFFFFF;
-}
-.banner .caret {
-  border-top: 4px solid #E91F63;
-}
 .banner {
   padding: 120px 0px 150px 0px;
   background: #eeeeee;
@@ -7407,32 +7398,32 @@ h5 {
   text-align: center;
   vertical-align: middle;
 }
-.banner .banner-cta h4,
-.banner .banner-cta .btn-group,
-.banner .banner-cta p {
-  display: inline-block;
+.banner-cta {
+  margin-top: 60px;
 }
-.banner .btn,
-.banner .btn-primary,
-.banner .btn-secondary {
+.iwant {
+  margin-right: 20px;
+  margin-top: -5px;
+}
+.banner .dropdown-toggle {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0px;
+  outline: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 24px;
-  padding-top: 9px;
-  padding-bottom: 7px;
   font-family: 'Sarabun';
   vertical-align: top;
 }
-@media only screen and (min-width: 1201px) {
-  .banner .cta-btn {
-    margin-left: 200px;
-  }
-}
-@media only screen and (min-width: 1201px) {
-  .iwant {
-    margin-right: -100px;
-  }
-}
-.banner .dropdown-toggle {
-  vertical-align: top;
+.cta-btn {
+  margin-bottom: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .banner h4 {
   vertical-align: top;
@@ -7504,14 +7495,11 @@ h5 {
 .our-services .service-a .card-refin {
   position: absolute;
   top: 30px;
-  right: -140px;
   background: #FFFFFF;
   border-radius: 5px;
   text-align: left;
   padding: 40px;
   z-index: 2;
-  width: 500px;
-  height: 350px;
 }
 .our-services .service-b .col-md-6:last-child {
   position: relative;
@@ -7524,14 +7512,9 @@ h5 {
   text-align: left;
   padding: 40px;
   z-index: 2;
-  width: 500px;
-  height: 350px;
 }
 .our-services .service-b {
   margin-bottom: 100px;
-}
-.our-services .service-b .service-image {
-  left: 140px;
 }
 .our-services .btn,
 .our-services .btn-primary,
@@ -7897,10 +7880,6 @@ fieldset[disabled] .btn-secondary.active {
   color: #ffffff;
   background-color: #E91F63;
 }
-.btn-primary .btn-lg {
-  padding-left: 40px;
-  padding-right: 40px;
-}
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) {
@@ -7915,13 +7894,13 @@ fieldset[disabled] .btn-secondary.active {
   }
 }
 /* Only Small devices (SM) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .mobile-only {
     display: none;
   }
 }
 /* Only Extra Small devices (XS) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .mobile-only {
     display: block;
   }
@@ -7944,20 +7923,6 @@ fieldset[disabled] .btn-secondary.active {
   }
   .banner .hero-text {
     margin-top: -100px;
-  }
-  .banner .dropdown-toggle {
-    height: 40px;
-    font-size: 18px;
-  }
-  .banner .btn,
-  .banner .btn-primary,
-  .banner .btn-secondary {
-    font-size: 18px;
-    padding-top: 9px;
-    padding-bottom: 7px;
-    font-family: 'Sarabun';
-    vertical-align: top;
-    margin-top: 20px;
   }
   .service-button {
     border: none;
