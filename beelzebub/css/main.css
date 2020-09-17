@@ -7205,7 +7205,7 @@ h4 {
 }
 /*---Navigation---*/
 .navbar {
-  background: #000000;
+  background: #424242;
   border-bottom: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 0px;
@@ -7257,23 +7257,24 @@ h4 {
   bottom: 0;
   overflow-y: auto;
   padding-top: 40px;
-  border-right: 1px solid #CCCCCC;
+  border-right: 1px solid #E0E0E0;
 }
 .menubar h3 {
   margin-left: 30px;
 }
 .menubar .nav-pills li a {
   padding: 7px 30px;
-  color: #949494;
+  color: #616161;
   border-radius: 0px;
 }
 .menubar .nav-pills li.active a {
   background: none;
-  color: #000000;
+  color: #424242;
   font-weight: 500;
 }
 .content {
   display: block;
+  padding-top: 20px;
 }
 @media only screen and (min-width: 1401px) {
   .content .container {
@@ -7299,9 +7300,6 @@ h4 {
   .content .container {
     width: 700px;
   }
-}
-.content .container .article {
-  margin-top: 70px;
 }
 @media only screen and (min-width: 1401px) {
   .content .container .article {
@@ -7345,40 +7343,40 @@ h4 {
 }
 .content .container .lift .lift-items .nav-pills li a {
   padding: 5px 15px;
-  color: #000000;
+  color: #424242;
   border-radius: 0px;
-  border-left: 2px #CCCCCC solid;
+  border-left: 2px #E0E0E0 solid;
   font-size: 14px;
   width: 200px;
 }
 .content .container .lift .lift-items .nav-pills li.active a {
   background: none;
-  color: #000000;
+  color: #424242;
   font-weight: 500;
 }
 /*---Button---*/
 .btn-primary {
   color: #FFFFFF;
   background-color: #FF0000;
-  border-color: #000000;
+  border-color: #424242;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #FFFFFF;
   background-color: #cc0000;
-  border-color: #000000;
+  border-color: #020202;
 }
 .btn-primary:hover {
   color: #FFFFFF;
   background-color: #cc0000;
-  border-color: #000000;
+  border-color: #232323;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #FFFFFF;
   background-color: #cc0000;
-  border-color: #000000;
+  border-color: #232323;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -7391,7 +7389,7 @@ h4 {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #FFFFFF;
   background-color: #a80000;
-  border-color: #000000;
+  border-color: #020202;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7408,7 +7406,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
   background-color: #FF0000;
-  border-color: #000000;
+  border-color: #424242;
 }
 .btn-primary .badge {
   color: #FF0000;
@@ -7422,7 +7420,7 @@ fieldset[disabled] .btn-primary.focus {
 .open .dropdown-toggle.btn-primary {
   color: #FFFFFF;
   background-color: #cc0000;
-  border-color: #000000;
+  border-color: #232323;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7449,7 +7447,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #FF0000;
-  border-color: #000000;
+  border-color: #424242;
 }
 .btn-primary .badge {
   color: #FF0000;
@@ -7458,6 +7456,79 @@ fieldset[disabled] .btn-primary.active {
 /*---Article---*/
 .article img {
   margin: 40px 0px;
+}
+.article .article-section {
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.article .bs-example {
+  margin-right: 0;
+  margin-left: 0;
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+}
+.article .bs-example:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Example";
+}
+.article .highlight {
+  display: block;
+  margin-top: -1px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 0px 0px 4px 4px;
+}
+.article .highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  border-radius: 4px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  overflow: auto;
+}
+.article .highlight pre code:first-child {
+  display: inline-block;
+  padding-right: 45px;
+}
+.article .highlight pre code {
+  font-size: inherit;
+  color: #333;
+}
+.article pre code {
+  padding: 0;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+.article .nt {
+  color: #2f6f9f;
+}
+.article .na {
+  color: #4f9fcf;
+}
+.article .s {
+  color: #d44950;
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */

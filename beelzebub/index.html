@@ -50,8 +50,9 @@
       </ul>
       </div>
     </nav>
+    <!-- End of Top Nav -->
 
-    <!-- Body-Container -->
+    <!-- Body Container -->
     <div class="body-container">
       <div class="menubar">
         <h3>Components</h3>
@@ -64,47 +65,73 @@
       <div class="content">
         <div class="container">
           <div class="row">
+
+            <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
-              <h1>Button</h1>
-              <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
-              <img src="images/wmk/img-buttons-overview.png" class="img-responsive" alt="button">
+              <div id="overview" class="article-section">
+                <h1>Button</h1>
+                <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
+                <img src="images/wmk/img-button-overview.png" class="img-responsive" alt="button">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus lacinia interdum. Nulla feugiat turpis metus, sit amet suscipit massa iaculis facilisis. Aliquam molestie rhoncus ultrices. Fusce vel sapien non mauris auctor blandit. Duis feugiat, mi sit amet porttitor accumsan, nunc neque porta justo, quis lobortis arcu lorem commodo tellus. Nunc tincidunt ultrices augue quis pharetra. Duis quis lacus felis. Donec id tellus id ex lobortis scelerisque. Vivamus iaculis nisl erat, rutrum venenatis ante condimentum et.
+                </p>
+              </div>
+              <div id="specs" class="article-section">
+                <h2>Specs</h2>
+                <img src="images/wmk/img-button-spec.png" class="img-responsive" alt="button">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus lacinia interdum. Nulla feugiat turpis metus, sit amet suscipit massa iaculis facilisis. Aliquam molestie rhoncus ultrices. Fusce vel sapien non mauris auctor blandit. Duis feugiat, mi sit amet porttitor accumsan, nunc neque porta justo, quis lobortis arcu lorem commodo tellus. Nunc tincidunt ultrices augue quis pharetra. Duis quis lacus felis. Donec id tellus id ex lobortis scelerisque. Vivamus iaculis nisl erat, rutrum venenatis ante condimentum et.
+                </p>
+              </div>
+              <div id="examples" class="article-section">
+                <h2>Examples</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus lacinia interdum. Nulla feugiat turpis metus, sit amet suscipit massa iaculis facilisis. Aliquam molestie rhoncus ultrices. Fusce vel sapien non mauris auctor blandit. Duis feugiat, mi sit amet porttitor accumsan, nunc neque porta justo, quis lobortis arcu lorem commodo tellus. Nunc tincidunt ultrices augue quis pharetra. Duis quis lacus felis. Donec id tellus id ex lobortis scelerisque. Vivamus iaculis nisl erat, rutrum venenatis ante condimentum et.
+                </p>
+              </div>
+              <div id="code" class="article-section">
+                <h2>Code</h2>
+                <h3>Button Group</h3>
+                <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+                <div class="bs-example" data-example-id="simple-button-group">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-default">Left</button>
+                    <button type="button" class="btn btn-default">Middle</button>
+                    <button type="button" class="btn btn-default">Right</button>
+                  </div>
+                </div>
+                <figure class="highlight">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code>
+                  </pre>
+                </figure>
+              </div>
 
+              <!-- End of Article -->
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus lacinia interdum. Nulla feugiat turpis metus, sit amet suscipit massa iaculis facilisis. Aliquam molestie rhoncus ultrices. Fusce vel sapien non mauris auctor blandit. Duis feugiat, mi sit amet porttitor accumsan, nunc neque porta justo, quis lobortis arcu lorem commodo tellus. Nunc tincidunt ultrices augue quis pharetra. Duis quis lacus felis. Donec id tellus id ex lobortis scelerisque. Vivamus iaculis nisl erat, rutrum venenatis ante condimentum et. Phasellus mattis mauris vitae sapien ultricies sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque urna risus, mattis sit amet nunc mattis, sollicitudin lobortis ante. Morbi nec euismod lacus. Integer sodales leo metus, in consectetur sapien porta et. Nulla maximus massa non ligula consectetur accumsan. Cras erat velit, pretium eget orci non, ultricies placerat orci.
-                Maecenas maximus vehicula augue id accumsan. Integer lobortis urna in ex tincidunt, nec aliquam tellus viverra. Proin maximus velit vitae accumsan dapibus. Aenean sit amet venenatis justo. Suspendisse potenti. Integer sed est sit amet arcu malesuada bibendum a eget ante. Nullam et tempor metus. Quisque cursus dolor justo, nec egestas ante eleifend eu. Praesent sollicitudin iaculis lectus, ut volutpat metus scelerisque quis. Sed congue nisl mi, id tincidunt dolor dictum vitae. Suspendisse quis magna est.
-              </p>
-              <p>
-                Suspendisse est neque, sodales vitae magna nec, suscipit volutpat est.
-                Maecenas cursus quam eget eros auctor elementum. Duis eleifend, lacus sit amet imperdiet hendrerit, mauris nisl finibus lectus, vitae eleifend justo purus ut velit. Suspendisse cursus vestibulum tellus quis condimentum. Aenean sed elit sed odio vestibulum rhoncus vel eu mi. Phasellus in interdum felis, quis rutrum justo. Vestibulum vel ligula id arcu consequat aliquam a in ipsum. Nulla porta ex nec erat molestie viverra. In volutpat cursus odio et tempor. Maecenas vestibulum, velit quis laoreet tincidunt, metus nunc dapibus enim, facilisis venenatis nisi urna ut libero. Nullam tristique, leo id ultricies sollicitudin, leo nisi molestie ipsum, in euismod eros felis quis ante.
-                Phasellus malesuada et justo quis rutrum. Praesent malesuada a sapien nec lacinia. Pellentesque quis orci eu velit condimentum cursus. Vivamus volutpat pulvinar elit, ut gravida ante cursus eu. Nullam quam eros, ultricies vitae semper non, lobortis in magna. Quisque consequat risus id iaculis dignissim. Maecenas dui leo, finibus vel mi et, sodales ultricies felis. Fusce dignissim purus vel est accumsan, at convallis turpis suscipit. Aliquam feugiat, leo eget facilisis mollis, mi ante placerat eros, quis dapibus ante lectus ut neque. Sed at lorem vitae purus blandit sollicitudin.
-                Maecenas mattis felis nec arcu condimentum, et ultricies lorem aliquet. Donec et placerat erat. Cras vel mi nec quam ultrices pharetra. Nam vitae tincidunt diam. Suspendisse nec purus elit. Quisque sed est quis dui ullamcorper aliquam nec eget sem. Ut at massa sit amet arcu bibendum mattis.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus lacinia interdum. Nulla feugiat turpis metus, sit amet suscipit massa iaculis facilisis. Aliquam molestie rhoncus ultrices. Fusce vel sapien non mauris auctor blandit. Duis feugiat, mi sit amet porttitor accumsan, nunc neque porta justo, quis lobortis arcu lorem commodo tellus. Nunc tincidunt ultrices augue quis pharetra. Duis quis lacus felis. Donec id tellus id ex lobortis scelerisque. Vivamus iaculis nisl erat, rutrum venenatis ante condimentum et. Phasellus mattis mauris vitae sapien ultricies sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque urna risus, mattis sit amet nunc mattis, sollicitudin lobortis ante. Morbi nec euismod lacus. Integer sodales leo metus, in consectetur sapien porta et. Nulla maximus massa non ligula consectetur accumsan. Cras erat velit, pretium eget orci non, ultricies placerat orci.
-                Maecenas maximus vehicula augue id accumsan. Integer lobortis urna in ex tincidunt, nec aliquam tellus viverra. Proin maximus velit vitae accumsan dapibus. Aenean sit amet venenatis justo. Suspendisse potenti. Integer sed est sit amet arcu malesuada bibendum a eget ante. Nullam et tempor metus. Quisque cursus dolor justo, nec egestas ante eleifend eu. Praesent sollicitudin iaculis lectus, ut volutpat metus scelerisque quis. Sed congue nisl mi, id tincidunt dolor dictum vitae. Suspendisse quis magna est. Suspendisse est neque, sodales vitae magna nec, suscipit volutpat est.
-                Maecenas cursus quam eget eros auctor elementum. Duis eleifend, lacus sit amet imperdiet hendrerit, mauris nisl finibus lectus, vitae eleifend justo purus ut velit. Suspendisse cursus vestibulum tellus quis condimentum. Aenean sed elit sed odio vestibulum rhoncus vel eu mi. Phasellus in interdum felis, quis rutrum justo. Vestibulum vel ligula id arcu consequat aliquam a in ipsum. Nulla porta ex nec erat molestie viverra. In volutpat cursus odio et tempor. Maecenas vestibulum, velit quis laoreet tincidunt, metus nunc dapibus enim, facilisis venenatis nisi urna ut libero. Nullam tristique, leo id ultricies sollicitudin, leo nisi molestie ipsum, in euismod eros felis quis ante.
-                Phasellus malesuada et justo quis rutrum. Praesent malesuada a sapien nec lacinia. Pellentesque quis orci eu velit condimentum cursus. Vivamus volutpat pulvinar elit, ut gravida ante cursus eu. Nullam quam eros, ultricies vitae semper non, lobortis in magna. Quisque consequat risus id iaculis dignissim. Maecenas dui leo, finibus vel mi et, sodales ultricies felis. Fusce dignissim purus vel est accumsan, at convallis turpis suscipit. Aliquam feugiat, leo eget facilisis mollis, mi ante placerat eros, quis dapibus ante lectus ut neque. Sed at lorem vitae purus blandit sollicitudin.
-              </p>
             </div>
             <div class="lift col-sm-12 col-md-1 col-lg-2">
               <div class="lift-items">
                 <h4>CONTENTS</h4>
                 <ul class="nav nav-pills nav-stacked">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Spec</a></li>
-                  <li><a href="#">Example</a></li>
-                  <li><a href="#">Code</a></li>
+                  <li><a href="#overview">Overview</a></li>
+                  <li><a href="#specs">Specs</a></li>
+                  <li><a href="#examples">Examples</a></li>
+                  <li><a href="#code">Code</a></li>
                 </ul>
               </div>
             </div>
           </div>
 
-
         </div>
       </div>
     </div>
-
+    <!-- End of Body Container -->
 
 
 
