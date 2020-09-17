@@ -1,0 +1,219 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap";
+@import "_variables.less";
+@import "_mixins.less";
+
+/*---Reset Default Setting---*/
+body{
+  padding-top: 60px;
+  font-size: 16px;
+  font-family: @font-primary;
+  font-weight: 300;
+}
+h1{
+  font-size: 60px;
+  font-family: @font-primary;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+h3{
+  font-size: 20px;
+  font-family: @font-primary;
+  font-weight: 400;
+}
+h4{
+  font-size: 14px;
+  font-family: @font-primary;
+  font-weight: 400;
+}
+
+/*---Navigation---*/
+.navbar{
+  background: @color-black;
+  border-bottom: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  .navbar-brand{
+    padding: 16px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: @color-white;
+    .logo-image{
+      width: 30px;
+      margin-top: -1px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    small{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  .navbar-right{
+    margin-right: 15px;
+  }
+  .navbar-nav{
+    li{
+      padding: 0px 15px;
+      a{
+        padding: 20px 0px 16px 0px;
+        color: @color-white;
+      }
+      a:hover, a:focus{
+        background: none;
+      }
+    }
+    li.active{
+      a{
+        border-bottom: @color-white 4px solid;
+      }
+    }
+  }
+}
+
+/*---Page Layout---*/
+.body-container{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.menubar{
+  display: block;
+  min-width: 230px;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding-top: 40px;
+  border-right: 1px solid @color-grey-1;
+  h3{
+    margin-left: 30px;
+  }
+  .nav-pills{
+    li{
+      a{
+        padding: 7px 30px;
+        color: @color-grey-2;
+        border-radius: 0px;
+      }
+    }
+    li.active{
+      a{
+        background: none;
+        color: @color-black;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.content{
+  display: block;
+  .container{
+    @media only screen and (min-width: 1401px) {
+      width: 1200px;
+    }
+    @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+      width: 1000px;
+    }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+      width: 800px;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      width: 700px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 700px;
+    }
+    .article{
+      margin-top: 70px;
+      @media only screen and (min-width: 1401px) {
+        padding-left: 120px;
+      }
+      @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+        padding-left: 80px;
+      }
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        padding-left: 60px;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        padding-left: 40px;
+      }
+    }
+    .lift{
+      position: relative;
+      @media only screen and (max-width: 992px) {
+        display: none;
+      }
+      .lift-items{
+        position: fixed;
+        top:150px;
+        margin-left: 30px;
+        z-index:10;
+        h4{
+          margin-bottom: 15px;
+        }
+        .nav-pills{
+          li{
+            margin-top: 0px;
+            a{
+              padding: 5px 15px;
+              color: @color-black;
+              border-radius: 0px;
+              border-left: 2px @color-grey-1 solid;
+              font-size: 14px;
+              width: 200px;
+            }
+          }
+          li.active{
+            a{
+              background: none;
+              color: @color-black;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---Button---*/
+.btn-primary {
+  &:extend(.btn all);
+  .button-variant(@color-white, @color-theme-primary, @color-black);
+}
+
+/*---Article---*/
+.article{
+  img{
+    margin: 40px 0px;
+  }
+}
+
+/*---Responsive (Bootstrap Standard)---*/
+/* Only Large devices (LG) */
+@media only screen and (min-width: 1201px) {
+
+}
+/* Only Medium devices (MD) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+/* Only Small devices (SM) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+/* Only Extra Small devices (XS) */
+@media only screen and (max-width: 768px) {
+  h1{
+    color:@color-theme-secondary;
+  }
+}
