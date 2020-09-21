@@ -8,6 +8,7 @@ To compile:
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600&display=swap";
 @import "_variables.less";
 @import "_mixins.less";
 
@@ -204,18 +205,22 @@ h4{
     }
   }
   #example{
-    .bs-example{
+    .demo{
+      margin: 0px;
       margin-right: 0;
       margin-left: 0;
+      margin-bottom: 30px;
       position: relative;
       padding: 45px 15px 15px;
-      margin: 0px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 4px 4px 0 0;
+      background-color: @color-white;
+      border: 1px solid @color-grey-1;
+      border-radius: 4px 4px 4px 4px;
       box-shadow: none;
+      .btn{
+        margin-right: 5px;
+      }
     }
-    .bs-example:after {
+    .demo:after {
       position: absolute;
       top: 15px;
       left: 15px;
@@ -229,6 +234,7 @@ h4{
     .highlight{
       display: block;
       margin-top: -1px;
+      margin-bottom: 30px;
       background-color: #f7f7f9;
       border: 1px solid #e1e1e8;
       border-radius: 0px 0px 4px 4px;
@@ -277,10 +283,6 @@ h4{
 }
 
 /*---Overrided Bootstrap Components---*/
-.btn-primary {
-  &:extend(.btn all);
-  .button-variant(@color-white, @color-theme-primary, @color-theme-primary);
-}
 .table{
   font-size: 14px;
   thead{
@@ -308,6 +310,56 @@ h4{
   }
 }
 
+
+/*---WMK Style---*/
+.style-wmk{
+  .btn{
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: @font-wmk-primary;
+    font-weight: 500;
+    padding: 10px 16px 9px 16px;
+    min-width: 90px;
+    .icon{
+      vertical-align:middle;
+      margin-left: -4px;
+      margin-top: -4px;
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .btn-primary {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-white, @color-wmk-primary-600, @color-wmk-primary-600);
+    /* Font,Background,Border */
+  }
+  .btn-primary-raised {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-white, @color-wmk-primary-600, @color-wmk-primary-600);
+    /* Font,Background,Border */
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px 0 rgba(0, 0, 0, 0.02);
+  }
+  .btn-secondary {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-primary-500, @color-wmk-white, @color-wmk-grey-1);
+    /* Font,Background,Border */
+  }
+  .btn-tertiary {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-black, @color-wmk-white, @color-wmk-grey-1);
+    /* Font,Background,Border */
+  }
+  .btn-ghost {
+    &:extend(.btn all);
+    background: none;
+    border: 0px;
+    /* Font,Background,Border */
+  }
+}
+
+
+
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) {
@@ -323,7 +375,5 @@ h4{
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
-  h1{
-    color:@color-theme-secondary;
-  }
+
 }
