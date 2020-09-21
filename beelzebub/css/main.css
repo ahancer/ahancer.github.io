@@ -7832,6 +7832,30 @@ h4 {
 .article #example .s {
   color: #d44950;
 }
+.article #usage .box {
+  padding: 20px;
+}
+.article #usage .box h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.article #usage .box h4 .glyphicon {
+  margin-right: 8px;
+}
+.article #usage .box-do {
+  border-top: 4px solid #59b37f;
+  background: #e3fcef;
+}
+.article #usage .box-do .glyphicon {
+  color: #59b37f;
+}
+.article #usage .box-dont {
+  border-top: 4px solid #DE3B30;
+  background: #FBEBE6;
+}
+.article #usage .box-dont .glyphicon {
+  color: #DE3B30;
+}
 /*---Overrided Bootstrap Components---*/
 .table {
   font-size: 14px;
