@@ -7182,7 +7182,6 @@ button.close {
 }
 /*---Reset Default Setting---*/
 body {
-  padding-top: 60px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -7252,11 +7251,14 @@ h4 {
 .menubar {
   display: block;
   min-width: 230px;
+  height: 100vh;
+  position: sticky;
+  overflow: auto;
   z-index: 3;
   top: 0;
   bottom: 0;
   overflow-y: auto;
-  padding-top: 40px;
+  padding-top: 100px;
   border-right: 1px solid #E0E0E0;
 }
 .menubar h3 {
@@ -7274,7 +7276,7 @@ h4 {
 }
 .content {
   display: block;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 @media only screen and (min-width: 1401px) {
   .content .container {
@@ -7350,33 +7352,113 @@ h4 {
   width: 200px;
 }
 .content .container .lift .lift-items .nav-pills li.active a {
-  background: none;
+  background: red;
   color: #424242;
   font-weight: 500;
 }
-/*---Button---*/
+/*---Article---*/
+.article .article-section {
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.article #overview img {
+  margin: 40px 0px;
+}
+.article #spec p {
+  margin: 20px 0px;
+}
+.article #example .bs-example {
+  margin-right: 0;
+  margin-left: 0;
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+}
+.article #example .bs-example:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "LIVE DEMO";
+}
+.article #example .highlight {
+  display: block;
+  margin-top: -1px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 0px 0px 4px 4px;
+}
+.article #example .highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  border-radius: 4px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  overflow: auto;
+}
+.article #example .highlight pre code:first-child {
+  display: inline-block;
+  padding-right: 45px;
+}
+.article #example .highlight pre code {
+  font-size: inherit;
+  color: #333;
+}
+.article #example pre code {
+  padding: 0;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+.article #example .nt {
+  color: #2f6f9f;
+}
+.article #example .na {
+  color: #4f9fcf;
+}
+.article #example .s {
+  color: #d44950;
+}
+/*---Overrided Bootstrap Components---*/
 .btn-primary {
   color: #FFFFFF;
-  background-color: #FF0000;
-  border-color: #424242;
+  background-color: #03A9F4;
+  border-color: #03A9F4;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #FFFFFF;
-  background-color: #cc0000;
-  border-color: #020202;
+  background-color: #0286c2;
+  border-color: #015276;
 }
 .btn-primary:hover {
   color: #FFFFFF;
-  background-color: #cc0000;
-  border-color: #232323;
+  background-color: #0286c2;
+  border-color: #027fb8;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #FFFFFF;
-  background-color: #cc0000;
-  border-color: #232323;
+  background-color: #0286c2;
+  border-color: #027fb8;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -7388,8 +7470,8 @@ h4 {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #FFFFFF;
-  background-color: #a80000;
-  border-color: #020202;
+  background-color: #026e9e;
+  border-color: #015276;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7405,11 +7487,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #FF0000;
-  border-color: #424242;
+  background-color: #03A9F4;
+  border-color: #03A9F4;
 }
 .btn-primary .badge {
-  color: #FF0000;
+  color: #03A9F4;
   background-color: #FFFFFF;
 }
 .btn-primary:hover,
@@ -7419,8 +7501,8 @@ fieldset[disabled] .btn-primary.focus {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #FFFFFF;
-  background-color: #cc0000;
-  border-color: #232323;
+  background-color: #0286c2;
+  border-color: #027fb8;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7446,89 +7528,30 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #FF0000;
-  border-color: #424242;
+  background-color: #03A9F4;
+  border-color: #03A9F4;
 }
 .btn-primary .badge {
-  color: #FF0000;
+  color: #03A9F4;
   background-color: #FFFFFF;
 }
-/*---Article---*/
-.article img {
-  margin: 40px 0px;
+.table {
+  font-size: 14px;
 }
-.article .article-section {
-  padding: 50px 0px 50px 0px;
-  border-bottom: 1px solid #E0E0E0;
+.table thead > tr > th:first-child {
+  padding-left: 20px;
 }
-.article .bs-example {
-  margin-right: 0;
-  margin-left: 0;
-  position: relative;
-  padding: 45px 15px 15px;
-  margin: 0px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px 4px 0 0;
-  box-shadow: none;
+.table tbody > tr > th {
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 150px;
 }
-.article .bs-example:after {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #959595;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  content: "Example";
-}
-.article .highlight {
-  display: block;
-  margin-top: -1px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-  border-radius: 0px 0px 4px 4px;
-}
-.article .highlight pre {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  word-break: normal;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-  display: block;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  color: #333;
-  border-radius: 4px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  overflow: auto;
-}
-.article .highlight pre code:first-child {
-  display: inline-block;
-  padding-right: 45px;
-}
-.article .highlight pre code {
-  font-size: inherit;
-  color: #333;
-}
-.article pre code {
-  padding: 0;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border-radius: 0;
-}
-.article .nt {
-  color: #2f6f9f;
-}
-.article .na {
-  color: #4f9fcf;
-}
-.article .s {
-  color: #d44950;
+.table tbody > tr > td {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */

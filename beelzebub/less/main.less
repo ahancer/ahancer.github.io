@@ -13,7 +13,6 @@ To compile:
 
 /*---Reset Default Setting---*/
 body{
-  padding-top: 60px;
   font-size: 16px;
   font-family: @font-primary;
   font-weight: 300;
@@ -88,11 +87,14 @@ h4{
 .menubar{
   display: block;
   min-width: 230px;
+  height: 100vh;
+  position: sticky;
+  overflow: auto;
   z-index: 3;
   top: 0;
   bottom: 0;
   overflow-y: auto;
-  padding-top: 40px;
+  padding-top: 100px;
   border-right: 1px solid @color-grey-1;
   h3{
     margin-left: 30px;
@@ -116,7 +118,7 @@ h4{
 }
 .content{
   display: block;
-  padding-top: 20px;
+  padding-top: 80px;
   .container{
     @media only screen and (min-width: 1401px) {
       width: 1200px;
@@ -174,7 +176,7 @@ h4{
           }
           li.active{
             a{
-              background: none;
+              background: red;
               color: @color-black;
               font-weight: 500;
             }
@@ -185,89 +187,124 @@ h4{
   }
 }
 
-/*---Button---*/
-.btn-primary {
-  &:extend(.btn all);
-  .button-variant(@color-white, @color-theme-primary, @color-black);
-}
-
 /*---Article---*/
 .article{
-  img{
-    margin: 40px 0px;
-  }
   .article-section{
     padding: 50px 0px 50px 0px;
     border-bottom: 1px solid @color-grey-1;
   }
-  .bs-example{
-    margin-right: 0;
-    margin-left: 0;
-    position: relative;
-    padding: 45px 15px 15px;
-    margin: 0px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
-    box-shadow: none;
+  #overview{
+    img{
+      margin: 40px 0px;
+    }
   }
-  .bs-example:after {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #959595;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    content: "Example";
+  #spec{
+    p{
+      margin: 20px 0px;
+    }
   }
-  .highlight{
-    display: block;
-    margin-top: -1px;
-    background-color: #f7f7f9;
-    border: 1px solid #e1e1e8;
-    border-radius: 0px 0px 4px 4px;
+  #example{
+    .bs-example{
+      margin-right: 0;
+      margin-left: 0;
+      position: relative;
+      padding: 45px 15px 15px;
+      margin: 0px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px 4px 0 0;
+      box-shadow: none;
+    }
+    .bs-example:after {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #959595;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      content: "LIVE DEMO";
+    }
+    .highlight{
+      display: block;
+      margin-top: -1px;
+      background-color: #f7f7f9;
+      border: 1px solid #e1e1e8;
+      border-radius: 0px 0px 4px 4px;
+    }
+    .highlight pre {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      word-break: normal;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0;
+      display: block;
+      margin: 0 0 10px;
+      font-size: 13px;
+      line-height: 1.42857143;
+      color: #333;
+      border-radius: 4px;
+      font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+      overflow: auto;
+    }
+    .highlight pre code:first-child {
+      display: inline-block;
+      padding-right: 45px;
+    }
+    .highlight pre code {
+      font-size: inherit;
+      color: #333;
+    }
+    pre code {
+      padding: 0;
+      white-space: pre-wrap;
+      background-color: transparent;
+      border-radius: 0;
+    }
+    .nt {
+      color: #2f6f9f;
+    }
+    .na {
+      color: #4f9fcf;
+    }
+    .s {
+      color: #d44950;
+    }
   }
-  .highlight pre {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    word-break: normal;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    display: block;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.42857143;
-    color: #333;
-    border-radius: 4px;
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-    overflow: auto;
+}
+
+/*---Overrided Bootstrap Components---*/
+.btn-primary {
+  &:extend(.btn all);
+  .button-variant(@color-white, @color-theme-primary, @color-theme-primary);
+}
+.table{
+  font-size: 14px;
+  thead{
+    >tr{
+      >th:first-child{
+        padding-left: 20px;
+      }
+    }
   }
-  .highlight pre code:first-child {
-    display: inline-block;
-    padding-right: 45px;
-  }
-  .highlight pre code {
-    font-size: inherit;
-    color: #333;
-  }
-  pre code {
-    padding: 0;
-    white-space: pre-wrap;
-    background-color: transparent;
-    border-radius: 0;
-  }
-  .nt {
-    color: #2f6f9f;
-  }
-  .na {
-    color: #4f9fcf;
-  }
-  .s {
-    color: #d44950;
+  tbody{
+    >tr{
+      >th{
+        font-weight: 300;
+        font-style: italic;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: 150px;
+      }
+      >td{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
   }
 }
 
