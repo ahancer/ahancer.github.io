@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Facebook OG -->
+    <meta property="fb:app_id"             content="" />
+    <meta property="og:url"                content=""/>
+    <meta property="og:type"               content=""/>
+    <meta property="og:title"              content=""/>
+    <meta property="og:description"        content=""/>
+    <meta property="og:image"              content=""/>
+<!-- Facebook OG ENDS -->
+
+    <title>Beelzebub Design System</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+
+<!--This is Google Analytics-->
+    <script>
+    </script>
+<!--END of Google Analytics-->
+
+<!-- Facebook Pixel Code -->
+    <script>
+    </script>
+<!-- End Facebook Pixel Code -->
+
+</head>
+  <body>
+
+    <!-- Top Nav -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Beelzebub</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo" class="logo-image">WealthMagik Design System <small>by Ahancer</small></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Foundation</a></li>
+        <li class="active"><a href="#">Components</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+      </div>
+    </nav>
+    <!-- End of Top Nav -->
+
+    <!-- Body Container -->
+    <div class="body-container">
+      <div class="menubar">
+        <h3>Components</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Button</a></li>
+          <li><a href="#">Field</a></li>
+          <li><a href="#">Modal</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+
+            <!-- Article -->
+            <div class="article col-sm-12 col-md-11 col-lg-10">
+              <section id="overview" class="article-section">
+                <h1>Button Toggle</h1>
+                <p>These group buttons are are single selection and work similar to radio-buttons. There are two-state and three-state button toggles.</p>
+                <img src="images/wmk/img-button-toggle-overview.png" class="img-responsive" alt="button">
+              </section>
+
+
+              <section id="spec" class="article-section">
+                <h2>Spec</h2>
+                <p>Like all our other buttons, toggle buttons also have a padding of 16px and a min width of 90px.</p>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-toggle-spac-1.png" class="img-responsive" alt="button">
+                  </div>
+                </div>
+              </section>
+              <section id="example" class="article-section">
+                <h2>Example</h2>
+                <p>
+                  The following HTML code is based off the <a href="#">Ahancer Seed</a>
+                </p>
+
+                <h3>Two-State Toggle</h3>
+                <div class="demo style-wmk">
+                  <div class="btn-group">
+                    <button class="left">ความเสี่ยงที่รับได้</button>
+                    <button class="right">กำหนดด้วยตัวเอง</button>
+                  </div>
+                </div>
+                <!-- <figure class="highlight">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary Button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary-raised"</span><span class="nt">&gt;</span>Primary Button<span class="nt">&lt;/button&gt;</span></code>
+                  </pre>
+                </figure> -->
+
+                <h3>Secondary Button</h3>
+                <div class="demo style-wmk">
+                  <button type="button" class="btn btn-secondary">ยกเลิก</button>
+                  <button type="button" class="btn btn-secondary"><img src="images/wmk/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                </div>
+
+                <h3>Tertiary Button</h3>
+                <div class="demo style-wmk">
+                  <button type="button" class="btn btn-tertiary">ยกเลิก</button>
+                  <button type="button" class="btn btn-tertiary"><img src="images/wmk/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                </div>
+
+                <h3>Ghost Button</h3>
+                <div class="demo style-wmk">
+                  <button type="button" class="btn btn-ghost">ยกเลิก</button>
+                  <button type="button" class="btn btn-ghost"><img src="images/wmk/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                </div>
+
+
+              </section>
+
+              <section id="usage" class="article-section">
+                <h2>Usage</h2>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>1. Proper Button Sizing</h3>
+                    <p>ขนาดของปุ่มต้องไม่ยาวเกินไป และไม่สั้นเกิน 90px โดยมี padding ซ้ายและขวาระยะ 16px</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-1-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>หากในปุ่มมี text ยาว ให้ยึด padding ซ้ายและขวา ขนาด 16px และความสั้นของปุ่มต้องไม่น้อยกว่า min-width: 90px</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-1-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>ห้ามให้ padding ซ้ายและขวาของปุ่มยาวหรือสั้นกว่า 16px <br><br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>2. Proper Icon Sizing</h3>
+                    <p>ขนาดของ Icon ที่ใช้ในปุ่มต้องไม่ใหญ่หรือเล็กเกินกว่าขนาด 18 x 18 px</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-2-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>ขนาดของ Icon ในปุ่มต้องเท่ากับ 18 x 18 px เท่านั้น และให้ Icon ห่างจากขอบ 12px ห่างจาก text 8px</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-2-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>ห้ามใช้ Icon ขนาดเล็กกว่าหรือใหญ่กว่า 18 x 18 px<br><br></p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>3. Have one Primary action per screen</h3>
+                    <p>ในทุก ๆ หน้าควรจะมี Primary Button เพียงอันเดียว เพื่อแสดงให้เห็นถึง Action ที่สำคัญที่สุดที่ต้องการให้ User ทำ</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-3-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>ตอน Design หน้าควรมี Primary Button เพียงแค่หน้าละ 1 ปุ่มเท่านั้น เพื่อให้ user focus ที่ action หลักที่ต้องทำได้ดีที่สุด</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-3-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>ยกตัวอย่าง เช่น หากหน้า Home มี Primary Button หลาย ๆ ปุ่ม อาจจะทำให้ User สับสนหรือไม่เข้าใจว่าควรจะทำอะไรก่อน</p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>4. Use Actionable text for button</h3>
+                    <p>ใช้ text ให้สื่อความหมายถึง Action ของปุ่มนั้น ๆ อย่างชัดเจน เช่น ปุ่ม “เพิ่มกองทุน” และ ปุ่ม “ข้อมูลเพิ่มเติม” </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-3-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>ใช้ชื่อปุ่มให้สื่อความหมายอย่างชัดเจน เช่น ปุ่ม “เพิ่มกองทุน” และ ปุ่ม “ข้อมูลเพิ่มเติม” <br><br><br></p>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="images/wmk/img-button-usage-4-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>หากมี Action ที่ User ต้องตัดสินใจ ชื่อปุ่มควรทำให้ User เข้าใจ Action นั้นอย่างชัดเจน
+                        จากตัวอย่าง ควรเปลี่ยนจาก “Yes” เป็น “Delete” เพื่อให้มีความชัดเจนมากขึ้น และหากต้องใช้ภาษาอังกฤษ
+                        ห้ามให้ ชื่อปุ่มเป็นตัวพิมพ์ใหญ่ทั้งหมด</p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+              </section>
+              <!-- End of Article -->
+
+            </div>
+
+            <!--Lift -->
+                <div class="col-sm-12 col-md-1 col-lg-2 lift ">
+                  <nav class="col-xs-3 lift-items nav nav-pills nav-stacked bs-docs-sidebar ">
+                    <h4>CONTENT</h4>
+                      <ul id="sidebar" class="nav nav-stacked">
+                          <li>
+                              <a href="#overview">overview</a>
+                          </li>
+                          <li>
+                              <a href="#spec">spec</a>
+                          </li>
+                          <li>
+                              <a href="#example">Example</a>
+                          </li>
+                          <li>
+                              <a href="#usage">Usage</a>
+                          </li>
+
+                      </ul>
+                  </nav>
+          </div>
+            <!--End of Lift -->
+
+        </div>
+      </div>
+    </div>
+    <!-- End of Body Container -->
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
