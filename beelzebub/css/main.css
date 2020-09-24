@@ -7711,10 +7711,34 @@ h4 {
 }
 .content .container .lift {
   position: relative;
+  /*--Lift--*/
+  /* sidebar */
+  /* all links */
+  /* nested links */
+  /* active & hover links */
+  /* hide inactive nested list */
+  /* show active nested list */
 }
 @media only screen and (max-width: 992px) {
   .content .container .lift {
     display: none;
+  }
+  .content .container .lift .nav-pills li {
+    margin-top: 0px;
+  }
+  .content .container .lift .nav-pills li a {
+    padding: 5px 15px;
+    color: #424242;
+    border-radius: 0px;
+    border-left: 2px #E0E0E0 solid;
+    font-size: 14px;
+    width: 200px;
+  }
+  .content .container .lift .nav-pills li.active a {
+    background: transparent;
+    border-left: 4px solid red;
+    color: #424242;
+    font-weight: 500;
   }
 }
 .content .container .lift .lift-items {
@@ -7726,21 +7750,43 @@ h4 {
 .content .container .lift .lift-items h4 {
   margin-bottom: 15px;
 }
-.content .container .lift .lift-items .nav-pills li {
+.content .container .lift .nav-stacked > li + li {
   margin-top: 0px;
+  margin-left: 0;
 }
-.content .container .lift .lift-items .nav-pills li a {
+.content .container .lift .bs-docs-sidebar {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content .container .lift .bs-docs-sidebar .nav > li > a {
   padding: 5px 15px;
   color: #424242;
   border-radius: 0px;
   border-left: 2px #E0E0E0 solid;
   font-size: 14px;
-  width: 200px;
+  width: auto;
 }
-.content .container .lift .lift-items .nav-pills li.active a {
-  background: red;
-  color: #424242;
+.content .container .lift .bs-docs-sidebar .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+}
+.content .container .lift .bs-docs-sidebar .nav > .active > a,
+.content .container .lift .bs-docs-sidebar .nav > li > a:hover,
+.content .container .lift .bs-docs-sidebar .nav > li > a:focus {
+  color: #03A9F4;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #03A9F4;
   font-weight: 500;
+}
+.content .container .lift .bs-docs-sidebar .nav ul.nav {
+  display: none;
+}
+.content .container .lift .bs-docs-sidebar .nav > .active > ul.nav {
+  display: block;
 }
 /*---Article---*/
 .article .article-section {

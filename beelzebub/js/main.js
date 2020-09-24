@@ -23,3 +23,9 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+$('body').scrollspy({
+    target: '.nav-pills',
+    offset: 10
+});
