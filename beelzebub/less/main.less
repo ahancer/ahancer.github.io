@@ -473,6 +473,8 @@ a:hover, a:focus{
       height: 18px;
     }
   }
+
+
   .btn-primary {
     &:extend(.btn all);
     .button-variant(@color-wmk-white, @color-wmk-theme-600, @color-wmk-theme-600);
@@ -500,7 +502,6 @@ a:hover, a:focus{
     border: 0px;
     /* Font,Background,Border */
   }
-
   .btn-group button {
     background-color: @color-wmk-white; /* Green background */
     border: 1px solid @color-wmk-theme-primary; /* Green border */
@@ -516,22 +517,18 @@ a:hover, a:focus{
     }
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
 
 /* Add a background color on hover */
 .btn-group button:hover {
   background-color: @color-wmk-grey-1;
 }
+.btn-group button:active {
+  background-color: @color-wmk-white;
+  border: 1px solid @color-wmk-primary-500;
 }
+
+}
+
 
 
 
