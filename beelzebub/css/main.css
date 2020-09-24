@@ -7804,6 +7804,32 @@ a:focus {
 .article .gallery .gallery-item p {
   font-size: 14px;
 }
+.article .color-box .color {
+  width: 100%;
+  height: 150px;
+}
+.article .color-box .border {
+  border: #FAFAFA 2px solid;
+}
+.article .color-box .description {
+  padding: 15px;
+  font-size: 14px;
+  background: #FAFAFA;
+}
+.article .color-box .description h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.article .color-box .description .hex {
+  display: inline-block;
+  margin-right: 15px;
+}
+.article .color-box .description .rgb {
+  display: inline-block;
+}
+.article .color-box .description .usage {
+  margin-top: 10px;
+}
 .article #overview img {
   margin: 40px 0px;
 }
@@ -7933,6 +7959,60 @@ a:focus {
   padding-bottom: 20px;
 }
 /*---WMK Style---*/
+.color-wmk-theme-50 {
+  background: #E1F5FE;
+}
+.color-wmk-theme-100 {
+  background: #B3E5FC;
+}
+.color-wmk-theme-200 {
+  background: #81D4FA;
+}
+.color-wmk-theme-300 {
+  background: #4FC3F7;
+}
+.color-wmk-theme-400 {
+  background: #29B6F6;
+}
+.color-wmk-theme-primary {
+  background: #03a9f4;
+}
+.color-wmk-theme-600 {
+  background: #039BE5;
+}
+.color-wmk-theme-700 {
+  background: #0288D1;
+}
+.color-wmk-theme-inactive {
+  background: #3E97CA;
+}
+.color-wmk-white {
+  background: #FFFFFF;
+}
+.color-wmk-grey-0 {
+  background: #fafbfe;
+}
+.color-wmk-grey-1 {
+  background: #e2e5eb;
+}
+.color-wmk-grey-2 {
+  background: #939eb2;
+}
+.color-wmk-grey-3 {
+  background: #758093;
+}
+.color-wmk-black {
+  background: #2b3549;
+}
+.color-status-green {
+  background: #2b3549;
+}
+.color-status-red {
+  background: #2b3549;
+}
+.color-status-error {
+  background: #2b3549;
+}
 .style-wmk {
   /* Clear floats (clearfix hack) */
   /* Add a background color on hover */
@@ -7965,8 +8045,8 @@ a:focus {
 }
 .style-wmk .btn-primary {
   color: #FFFFFF;
-  background-color: #039be5;
-  border-color: #039be5;
+  background-color: #039BE5;
+  border-color: #039BE5;
   /* Font,Background,Border */
 }
 .style-wmk .btn-primary:focus,
@@ -8014,11 +8094,11 @@ fieldset[disabled] .style-wmk .btn-primary:focus,
 .style-wmk .btn-primary.disabled.focus,
 .style-wmk .btn-primary[disabled].focus,
 fieldset[disabled] .style-wmk .btn-primary.focus {
-  background-color: #039be5;
-  border-color: #039be5;
+  background-color: #039BE5;
+  border-color: #039BE5;
 }
 .style-wmk .btn-primary .badge {
-  color: #039be5;
+  color: #039BE5;
   background-color: #FFFFFF;
 }
 .style-wmk .btn-primary:hover,
@@ -8055,17 +8135,17 @@ fieldset[disabled] .style-wmk .btn-primary:active,
 .style-wmk .btn-primary.disabled.active,
 .style-wmk .btn-primary[disabled].active,
 fieldset[disabled] .style-wmk .btn-primary.active {
-  background-color: #039be5;
-  border-color: #039be5;
+  background-color: #039BE5;
+  border-color: #039BE5;
 }
 .style-wmk .btn-primary .badge {
-  color: #039be5;
+  color: #039BE5;
   background-color: #FFFFFF;
 }
 .style-wmk .btn-primary-raised {
   color: #FFFFFF;
-  background-color: #039be5;
-  border-color: #039be5;
+  background-color: #039BE5;
+  border-color: #039BE5;
   /* Font,Background,Border */
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -8114,11 +8194,11 @@ fieldset[disabled] .style-wmk .btn-primary-raised:focus,
 .style-wmk .btn-primary-raised.disabled.focus,
 .style-wmk .btn-primary-raised[disabled].focus,
 fieldset[disabled] .style-wmk .btn-primary-raised.focus {
-  background-color: #039be5;
-  border-color: #039be5;
+  background-color: #039BE5;
+  border-color: #039BE5;
 }
 .style-wmk .btn-primary-raised .badge {
-  color: #039be5;
+  color: #039BE5;
   background-color: #FFFFFF;
 }
 .style-wmk .btn-primary-raised:hover,
@@ -8155,11 +8235,11 @@ fieldset[disabled] .style-wmk .btn-primary-raised:active,
 .style-wmk .btn-primary-raised.disabled.active,
 .style-wmk .btn-primary-raised[disabled].active,
 fieldset[disabled] .style-wmk .btn-primary-raised.active {
-  background-color: #039be5;
-  border-color: #039be5;
+  background-color: #039BE5;
+  border-color: #039BE5;
 }
 .style-wmk .btn-primary-raised .badge {
-  color: #039be5;
+  color: #039BE5;
   background-color: #FFFFFF;
 }
 .style-wmk .btn-secondary {
