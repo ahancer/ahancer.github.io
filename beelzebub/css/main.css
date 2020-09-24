@@ -7588,6 +7588,14 @@ h4 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+a {
+  color: #424242;
+}
+a:hover,
+a:focus {
+  color: #424242;
+  text-decoration: none;
+}
 /*---Navigation---*/
 .navbar {
   background: #424242;
@@ -7599,6 +7607,7 @@ h4 {
   padding: 16px 15px;
   font-size: 20px;
   font-weight: 400;
+  margin-right: 15px;
   color: #FFFFFF;
 }
 .navbar .navbar-brand .logo-image {
@@ -7607,18 +7616,14 @@ h4 {
   margin-right: 10px;
   display: inline-block;
 }
-.navbar .navbar-brand small {
-  font-size: 14px;
-  font-weight: 300;
-}
 .navbar .navbar-right {
-  margin-right: 15px;
+  margin-right: 0px;
 }
 .navbar .navbar-nav li {
   padding: 0px 15px;
 }
 .navbar .navbar-nav li a {
-  padding: 20px 0px 16px 0px;
+  padding: 21px 0px 15px 0px;
   color: #FFFFFF;
 }
 .navbar .navbar-nav li a:hover,
@@ -7792,6 +7797,12 @@ h4 {
 .article .article-section {
   padding: 50px 0px 50px 0px;
   border-bottom: 1px solid #E0E0E0;
+}
+.article .gallery .gallery-item {
+  margin-top: 30px;
+}
+.article .gallery .gallery-item p {
+  font-size: 14px;
 }
 .article #overview img {
   margin: 40px 0px;
