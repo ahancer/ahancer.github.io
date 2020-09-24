@@ -7934,7 +7934,6 @@ a:focus {
 }
 /*---WMK Style---*/
 .style-wmk {
-  /* Clear floats (clearfix hack) */
   /* Add a background color on hover */
 }
 .style-wmk .btn,
@@ -8368,9 +8367,9 @@ fieldset[disabled] .style-wmk .btn-tertiary.active {
 .style-wmk .btn-group button {
   background-color: #FFFFFF;
   /* Green background */
-  border: 1px solid #03a9f4;
+  border: 1px solid #e2e5eb;
   /* Green border */
-  color: #03a9f4;
+  color: #2b3549;
   /* White text */
   padding: 10px 16px;
   /* Some padding */
@@ -8379,23 +8378,12 @@ fieldset[disabled] .style-wmk .btn-tertiary.active {
   float: left;
   /* Float the buttons side by side */
 }
-.style-wmk .btn-group button .left {
-  border-radius: 4px 0px 0px 4px;
-}
-.style-wmk .btn-group button .right {
-  border-radius: 0px 4px 4px 0px;
-}
-.style-wmk .btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.style-wmk .btn-group button:not(:last-child) {
-  border-right: none;
-  /* Prevent double borders */
-}
 .style-wmk .btn-group button:hover {
   background-color: #e2e5eb;
+}
+.style-wmk .btn-group button:active {
+  background-color: #FFFFFF;
+  border: 1px solid #03a9f4;
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
