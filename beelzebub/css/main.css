@@ -7804,6 +7804,9 @@ a:focus {
 .article .gallery .gallery-item p {
   font-size: 14px;
 }
+.article .color-box {
+  margin-bottom: 20px;
+}
 .article .color-box .color {
   width: 100%;
   height: 150px;
@@ -7826,6 +7829,13 @@ a:focus {
 }
 .article .color-box .description .rgb {
   display: inline-block;
+}
+.article .color-box .description .color-box-small {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-bottom: -1px;
+  margin-left: 15px;
 }
 .article .color-box .description .usage {
   margin-top: 10px;
@@ -8005,16 +8015,97 @@ a:focus {
   background: #2b3549;
 }
 .color-status-green {
-  background: #2b3549;
+  background: #00BC91;
 }
 .color-status-red {
-  background: #2b3549;
+  background: #EF5350;
 }
 .color-status-error {
-  background: #2b3549;
+  background: #B00020;
 }
-.style-wmk {
-  /* Add a background color on hover */
+.color-port-purple {
+  background: #7057D3;
+}
+.color-port-orange {
+  background: #FE8560;
+}
+.color-port-pink {
+  background: #FF7598;
+}
+.color-port-yellow {
+  background: #FFA833;
+}
+.color-gadient-light-blue {
+  background: linear-gradient(0deg, #FFFFFF 0%, #E1F5FE 100%);
+}
+.color-gadient-primary-blue {
+  background: linear-gradient(0deg, #039be5 0%, #4bbdf4 100%);
+}
+.color-gadient-green {
+  background: linear-gradient(60deg, #65C4AE 0%, #5294C8 100%);
+}
+.color-gadient-yellow {
+  background: linear-gradient(60deg, #F1A342 0%, #F7CF68 100%);
+}
+.color-gadient-orange {
+  background: linear-gradient(60deg, #EAA663 0%, #E67597 100%);
+}
+.color-gadient-navy-blue {
+  background: linear-gradient(60deg, #74ADC6 0%, #355380 100%);
+}
+.color-gadient-purple {
+  background: linear-gradient(60deg, #A266CA 0%, #6746B8 100%);
+}
+.color-gadient-green-1 {
+  background: #65C4AE;
+}
+.color-gadient-green-2 {
+  background: #5294C8;
+}
+.color-gadient-yellow-1 {
+  background: #F1A342;
+}
+.color-gadient-yellow-2 {
+  background: #F7CF68;
+}
+.color-gadient-orange-1 {
+  background: #EAA663;
+}
+.color-gadient-orange-2 {
+  background: #E67597;
+}
+.color-gadient-navy-1 {
+  background: #74ADC6;
+}
+.color-gadient-navy-2 {
+  background: #355380;
+}
+.color-gadient-purple-1 {
+  background: #A266CA;
+}
+.color-gadient-purple-2 {
+  background: #6746B8;
+}
+.color-chart-blue {
+  background: #3E98F5;
+}
+.color-chart-yellow {
+  background: #FEBB6A;
+}
+.color-chart-red {
+  background: #FA5C89;
+}
+.color-chart-purple {
+  background: #8279F6;
+}
+.color-chart-orange {
+  background: #FB8B61;
+}
+.color-chart-turquoise {
+  background: #30C9EB;
+}
+.color-chart-pink {
+  background: #D449AE;
 }
 .style-wmk .btn,
 .style-wmk .style-wmk .btn-primary,
@@ -8443,27 +8534,6 @@ fieldset[disabled] .style-wmk .btn-tertiary.active {
   background: none;
   border: 0px;
   /* Font,Background,Border */
-}
-.style-wmk .btn-group button {
-  background-color: #FFFFFF;
-  /* Green background */
-  border: 1px solid #e2e5eb;
-  /* Green border */
-  color: #2b3549;
-  /* White text */
-  padding: 10px 16px;
-  /* Some padding */
-  cursor: pointer;
-  /* Pointer/hand icon */
-  float: left;
-  /* Float the buttons side by side */
-}
-.style-wmk .btn-group button:hover {
-  background-color: #e2e5eb;
-}
-.style-wmk .btn-group button:active {
-  background-color: #FFFFFF;
-  border: 1px solid #03a9f4;
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */

@@ -263,6 +263,7 @@ a:hover, a:focus{
     }
   }
   .color-box{
+    margin-bottom: 20px;
     .color{
       width: 100%;
       height: 150px;
@@ -284,6 +285,13 @@ a:hover, a:focus{
       }
       .rgb{
         display: inline-block;
+      }
+      .color-box-small{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-bottom: -1px;
+        margin-left: 15px;
       }
       .usage{
         margin-top: 10px;
@@ -456,6 +464,40 @@ a:hover, a:focus{
 .color-status-red{background: @color-status-red;}
 .color-status-error{background: @color-status-error;}
 
+.color-port-purple{background:@color-port-purple;}
+.color-port-orange{background:@color-port-orange;}
+.color-port-pink{background:@color-port-pink;}
+.color-port-yellow{background:@color-port-yellow;}
+
+.color-gadient-light-blue{background:@color-gadient-light-blue;}
+.color-gadient-primary-blue{background:@color-gadient-primary-blue;}
+.color-gadient-green{background:@color-gadient-green;}
+.color-gadient-yellow{background:@color-gadient-yellow;}
+.color-gadient-orange{background:@color-gadient-orange;}
+.color-gadient-navy-blue{background:@color-gadient-navy-blue;}
+.color-gadient-purple{background:@color-gadient-purple;}
+
+.color-gadient-green-1{background:@color-gadient-green-1;}
+.color-gadient-green-2{background:@color-gadient-green-2;}
+.color-gadient-yellow-1{background:@color-gadient-yellow-1;}
+.color-gadient-yellow-2{background:@color-gadient-yellow-2;}
+.color-gadient-orange-1{background:@color-gadient-orange-1;}
+.color-gadient-orange-2{background:@color-gadient-orange-2;}
+.color-gadient-navy-1{background:@color-gadient-navy-1;}
+.color-gadient-navy-2{background:@color-gadient-navy-2;}
+.color-gadient-purple-1{background:@color-gadient-purple-1;}
+.color-gadient-purple-2{background:@color-gadient-purple-2;}
+
+.color-chart-blue{background:@color-chart-blue;}
+.color-chart-yellow{background:@color-chart-yellow;}
+.color-chart-red{background:@color-chart-red;}
+.color-chart-purple{background:@color-chart-purple;}
+.color-chart-orange{background:@color-chart-orange;}
+.color-chart-turquoise{background:@color-chart-turquoise;}
+.color-chart-pink{background:@color-chart-pink;}
+
+
+
 .style-wmk{
   .btn{
     border-radius: 4px;
@@ -503,30 +545,7 @@ a:hover, a:focus{
     /* Font,Background,Border */
   }
 
-  .btn-group button {
-    background-color: @color-wmk-white; /* Green background */
-    border: 1px solid @color-wmk-theme-primary; /* Green border */
-    color: @color-wmk-theme-primary; /* White text */
-    padding: 10px 16px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
-    .left {
-      border-radius: 4px 0px 0px 4px;
-    }
-    .right {
-      border-radius: 0px 4px 4px 0px;
-    }
-}
 
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: @color-wmk-grey-1;
-}
-.btn-group button:active {
-  background-color: @color-wmk-white;
-  border: 1px solid @color-wmk-primary-500;
-}
 
 }
 
