@@ -64,8 +64,8 @@
           <li><a href="component-button-toggle.html">Button Toggle</a></li>
           <li><a href="component-input.html">Input</a></li>
           <li><a href="component-card.html">Card</a></li>
-          <li class="active"><a href="component-table.html">Table</a></li>
-          <li><a href="component-popup.html">Popup</a></li>
+          <li><a href="component-table.html">Table</a></li>
+          <li class="active"><a href="component-popup.html">Popup</a></li>
         </ul>
       </div>
       <div class="content">
@@ -75,10 +75,10 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Table</h1>
-                <p>Tables enable users to easily scan, understand, analyze, compare, and act upon the information within them.</p>
-                <img src="images/wmk/component/img-table-overview1.png" class="img-responsive" alt="button">
-                <img src="images/wmk/component/img-table-overview2.png" class="img-responsive" alt="button">
+                <h1>Popup</h1>
+                <p>A popup (also known as an overlay) is a window or dialog that appears on top of the page content allowing users quick access to information if they choose to.</p>
+                <img src="images/wmk/component/img-popup-overview.png" class="img-responsive" alt="button">
+
                 <table class="table">
                   <thead>
                     <tr>
@@ -88,16 +88,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Cell with Navigate</th>
-                      <td>Cells with a caret “>” makes the whole cell serves as a button that leads to more detailed content (can lead to a popup or a new page).</td>
+                      <th scope="row">Full page</th>
+                      <td>ใช้กับหน้าที่ต้องการแสดงตาราง หรือแสดงค่าที่ให้ User อ่าน</td>
                     </tr>
                     <tr>
-                      <th scope="row">Cell with Accordion</th>
-                      <td>Cells with Accordions open up a cell below to reveal more information.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Cell with Multiple</th>
-                      <td>Cells can also have dropdowns, input fields, and icon buttons</td>
+                      <th scope="row">Normal</th>
+                      <td>ใช้กับหน้าที่ข้อมูลไม่เยอะ เช่น หน้ากรอกฟอร์ม หรือหน้าที่ต้องการให้ User ยืนยัน</td>
                     </tr>
                   </tbody>
                 </table>
@@ -109,21 +105,14 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <p>Normal Cell (50px Height)</p>
-                    <img src="images/wmk/component/img-table-spec-1.png" class="img-responsive" alt="button">
+                    <p>Full page popup</p>
+                    <img src="images/wmk/component/img-popup-spec-1.png" class="img-responsive" alt="button">
                   </div>
                   <div class="col-xs-12">
-                    <p>Cell with Text Field (60px Height)</p>
-                    <img src="images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
+                    <p>Normal popup</p>
+                    <img src="images/wmk/component/img-popup-spec-2.png" class="img-responsive" alt="button">
                   </div>
-                  <div class="col-xs-12">
-                    <p>Numeric Alignment</p>
-                    <img src="images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-12">
-                    <p>Text Alignment</p>
-                    <img src="images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
-                  </div>
+
 
                 </div>
               </section>
@@ -135,7 +124,7 @@
                   The following HTML code is based off the <a href="#">Ahancer Seed</a>
                 </p>
 
-                <h3>Table with Sorting</h3>
+                <h3>Full page popup</h3>
                 <div class="demo style-wmk">
                   <button type="button" class="btn btn-primary">ตกลง</button>
                   <button type="button" class="btn btn-primary"><img src="images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
@@ -148,24 +137,30 @@
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary-raised"</span><span class="nt">&gt;</span>Primary Button<span class="nt">&lt;/button&gt;</span></code>
                   </pre>
                 </figure> -->
-
+                <h3>Normal popup</h3>
+                <div class="demo style-wmk">
+                  <button type="button" class="btn btn-primary">ตกลง</button>
+                  <button type="button" class="btn btn-primary"><img src="images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                  <button type="button" class="btn btn-primary-raised"><img src="images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                </div>
 
               </section>
 
               <section id="usage" class="article-section">
                 <h2>Usage</h2>
+
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>1. Have one Primary action per screen</h3>
-                    <p>ในทุก ๆ หน้าควรจะมี Primary Button เพียงอันเดียว เพื่อแสดงให้เห็นถึง Action ที่สำคัญที่สุดที่ต้องการให้ User ทำ</p>
+                    <h3>1. Contextually Relevant and Non-intrusive Popups</h3>
+                    <p>Repeated popups displayed after the user enter can be really bothersome and intrusive.</p>
                   </div>
                   <div class="col-xs-6">
-                    <img src="images/wmk/component/img-table-usage-1-do.png" class="img-responsive" alt="button">
+                    <img src="images/wmk/component/img-popup-usage-1-do.png" class="img-responsive" alt="button">
                     <div class="box box-do">
                       <h4>
                         <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
                       </h4>
-                      <p>lorem</p>
+                      <p>Give users some time and space to complete their tasks after logging into their account and don’t show popups right away. It’s acceptable to eventually present helpful new features after some time has gone by, but only if the user’s task is enhanced or further supported by the content presented or by the new functionality.</p>
                     </div>
                   </div>
                   <div class="col-xs-6">
@@ -174,7 +169,11 @@
                       <h4>
                         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
                       </h4>
-                      <p>lorem</p>
+                      <p>Don’t use popups that take up a lot of screen real estate. And don’t make the popup appear again and again even after the user closes it.</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
                     </div>
                   </div>
                 </div>
@@ -182,54 +181,47 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>2. Some Examples of Screens with Tables include:</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Fund Detail</h4>
-                    <img src="images/wmk/component/img-table-usage-2-1.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Bond List</h4>
-                    <img src="images/wmk/component/img-table-usage-2-2.png" class="img-responsive" alt="button">
-                    <br>
+                    <h3>2. Showing multiple popups one after another</h3>
 
                   </div>
-
                   <div class="col-xs-6">
-                    <h4>Fund Display</h4>
-                    <img src="images/wmk/component/img-table-usage-2-3.png" class="img-responsive" alt="button">
+                    <img src="images/wmk/component/img-popup-usage-2-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>If a popup is needed show only one at a time.  Even better, don’t show critical information in a popup, since people tend to close them without reading. </p>
+
+                      </div>
                   </div>
                   <div class="col-xs-6">
-                    <h4>Consol Report</h4>
-                    <img src="images/wmk/component/img-table-usage-2-4.png" class="img-responsive" alt="button">
+                    <img src="images/wmk/component/img-popup-usage-2-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>Don’t use popups that take up a lot of screen real estate. And don’t make the popup appear again and again even after the user closes it.</p>
+
+
+                    </div>
                   </div>
                 </div>
 
 
+
+
+
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>3. Responsive Solution for Mobile Tables</h3>
-                    <p>Sometimes no matter how optimized we arrange a table we just cannot fit all the essential data. In this case on screens with a table, a hint appears until user touches anywhere on the screen.
-
-When in portrait mode, if there is a table a hint will always appear so users know that they can scroll. The hint disappears after the user touch anywhere on the screen.
-
-There are two types of hints:</p>
-                  </div>
-
-                  <div class="col-xs-12">
-                    <h4>1) Scroll Hint</h4>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-table-usage-3-1.png" class="img-responsive" alt="button">
+                    <h3>3. Full page popup</h3>
+                    <p>ส่วนใหญ่จะใช้กับหน้าที่ต้องการแสดงตาราง หรือแสดงค่าที่ให้ User อ่าน</p>
                   </div>
 
 
                   <div class="col-xs-12">
-                    <h4>2) Rotate Hint</h4>
+                    <img src="images/wmk/component/img-popup-usage-3.png" class="img-responsive" alt="button">
                   </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-table-usage-3-2.png" class="img-responsive" alt="button">
-                  </div>
+                  
                 </div>
               </section>
               <!-- End of Article -->
