@@ -7805,7 +7805,8 @@ a:focus {
   font-size: 14px;
 }
 .article .color-box {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .article .color-box .color {
   width: 100%;
