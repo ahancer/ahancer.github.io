@@ -7804,50 +7804,61 @@ a:focus {
 .article .gallery .gallery-item p {
   font-size: 14px;
 }
-.article .color-box {
+.article .typo-box .color {
+  width: 100%;
+  height: 250px;
+}
+.article .typo-box h1 {
+  font-size: 36px;
+  position: absolute;
+}
+.article .typo-box h2 {
+  font-size: 30px;
+}
+.color-box {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.article .color-box .color {
+.color-box .color {
   width: 100%;
   height: 150px;
 }
-.article .color-box .border {
+.color-box .border {
   border: #FAFAFA 2px solid;
 }
-.article .color-box .description {
+.color-box .description {
   padding: 15px;
   font-size: 14px;
   background: #FAFAFA;
 }
-.article .color-box .description h3 {
+.color-box .description h3 {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-.article .color-box .description .hex {
+.color-box .description .hex {
   display: inline-block;
   margin-right: 15px;
 }
-.article .color-box .description .rgb {
+.color-box .description .rgb {
   display: inline-block;
 }
-.article .color-box .description .color-box-small {
+.color-box .description .color-box-small {
   display: inline-block;
   width: 14px;
   height: 14px;
   margin-bottom: -1px;
   margin-left: 15px;
 }
-.article .color-box .description .usage {
+.color-box .description .usage {
   margin-top: 10px;
 }
-.article #overview img {
+#overview img {
   margin: 40px 0px;
 }
-.article #spec p {
+#spec p {
   margin: 20px 0px;
 }
-.article #example .demo {
+#example .demo {
   margin: 0px;
   margin-right: 0;
   margin-left: 0;
@@ -7859,15 +7870,15 @@ a:focus {
   border-radius: 4px 4px 4px 4px;
   box-shadow: none;
 }
-.article #example .demo .btn,
-.article #example .demo .style-wmk .btn-primary,
-.article #example .demo .style-wmk .btn-primary-raised,
-.article #example .demo .style-wmk .btn-secondary,
-.article #example .demo .style-wmk .btn-tertiary,
-.article #example .demo .style-wmk .btn-ghost {
+#example .demo .btn,
+#example .demo .style-wmk .btn-primary,
+#example .demo .style-wmk .btn-primary-raised,
+#example .demo .style-wmk .btn-secondary,
+#example .demo .style-wmk .btn-tertiary,
+#example .demo .style-wmk .btn-ghost {
   margin-right: 5px;
 }
-.article #example .demo:after {
+#example .demo:after {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -7878,7 +7889,7 @@ a:focus {
   letter-spacing: 1px;
   content: "LIVE DEMO";
 }
-.article #example .highlight {
+#example .highlight {
   display: block;
   margin-top: -1px;
   margin-bottom: 30px;
@@ -7886,7 +7897,7 @@ a:focus {
   border: 1px solid #e1e1e8;
   border-radius: 0px 0px 4px 4px;
 }
-.article #example .highlight pre {
+#example .highlight pre {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -7903,51 +7914,51 @@ a:focus {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   overflow: auto;
 }
-.article #example .highlight pre code:first-child {
+#example .highlight pre code:first-child {
   display: inline-block;
   padding-right: 45px;
 }
-.article #example .highlight pre code {
+#example .highlight pre code {
   font-size: inherit;
   color: #333;
 }
-.article #example pre code {
+#example pre code {
   padding: 0;
   white-space: pre-wrap;
   background-color: transparent;
   border-radius: 0;
 }
-.article #example .nt {
+#example .nt {
   color: #2f6f9f;
 }
-.article #example .na {
+#example .na {
   color: #4f9fcf;
 }
-.article #example .s {
+#example .s {
   color: #d44950;
 }
-.article #usage .box {
+#usage .box {
   padding: 20px;
 }
-.article #usage .box h4 {
+#usage .box h4 {
   font-size: 16px;
   margin-bottom: 20px;
 }
-.article #usage .box h4 .glyphicon {
+#usage .box h4 .glyphicon {
   margin-right: 8px;
 }
-.article #usage .box-do {
+#usage .box-do {
   border-top: 4px solid #59b37f;
   background: #e3fcef;
 }
-.article #usage .box-do .glyphicon {
+#usage .box-do .glyphicon {
   color: #59b37f;
 }
-.article #usage .box-dont {
+#usage .box-dont {
   border-top: 4px solid #DE3B30;
   background: #FBEBE6;
 }
-.article #usage .box-dont .glyphicon {
+#usage .box-dont .glyphicon {
   color: #DE3B30;
 }
 /*---Overrided Bootstrap Components---*/
