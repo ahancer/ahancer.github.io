@@ -61,10 +61,10 @@
         <h3><a href="index.html">Components</a></h3>
         <ul class="nav nav-pills nav-stacked">
           <li><a href="component-button.html">Button</a></li>
-          <li><a href="component-tab.html">Tab</a></li>
+          <li class="active"><a href="component-tab.html">Tab</a></li>
           <li><a href="component-button-toggle.html">Button Toggle</a></li>
           <li><a href="component-dropdown.html">Dropdown</a></li>
-          <li class="active"><a href="component-input.html">Input Field</a></li>
+          <li><a href="component-input.html">Input Field</a></li>
           <li><a href="component-check-and-radio.html">Check and Radio</a></li>
           <li><a href="component-card.html">Card</a></li>
           <li><a href="component-table.html">Table</a></li>
@@ -79,38 +79,60 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Input</h1>
-                <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
-                <img src="images/wmk/component/img-input-overview.png" class="img-responsive" alt="button">
+                <h1>Tab</h1>
+                <p>Tab  จะเอาไว้จัดระเบียบข้อมูลที่มี level ของความสำคัญเท่า ๆ กันหรือใกล้เคียงกัน ให้ User สามารถเห็นได้ทันที</p>
+                <img src="images/wmk/component/img-tab-types.png" class="img-responsive" alt="button">
 
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Types</th>
+                      <th>Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Normal</th>
+                      <td>ใช้สำหรับจัดระเบียบกลุ่มข้อมูลที่เป็นส่วนประกอบในหน้านั้น และจะใช้กับ Background สีขาว</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Advanced</th>
+                      <td>ใช้สำหรับจัดระเบียบกลุ่มข้อมูลที่มี Level ของข้อมูลใหญ่กว่า Normal Tab  และจะใช้กับ Background ที่มีสี เพื่อเน้นให้ Tab นั้นเด่นชัดขึ้น</td>
+                    </tr>
+
+                  </tbody>
+                </table>
 
               </section>
               <section id="spec" class="article-section">
                 <h2>Spec</h2>
                 <div class="row">
                   <div class="col-xs-6">
-                    <p>Text Fields (no Icon)</p>
-                    <img src="images/wmk/component/img-input-spec-1.png" class="img-responsive" alt="button">
+                    <p>Normal Tab</p>
+                    <img src="images/wmk/component/img-tab-spec-1.png" class="img-responsive" alt="button">
+                  </div>
+                </div>
+
+                <div class="row">
+
+
+                  <div class="col-xs-6">
+                    <p>Advanced Tab (no Icon)</p>
+                    <img src="images/wmk/component/img-tab-spec-2.png" class="img-responsive" alt="button">
                   </div>
                   <div class="col-xs-6">
-                    <p>Text Fields (with Icon)</p>
-                    <img src="images/wmk/component/img-input-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <p>Text Fields (with Info)</p>
-                    <img src="images/wmk/component/img-input-spec-3.png" class="img-responsive" alt="button">
+                    <p>Advanced Tab (with Icon)</p>
+                    <img src="images/wmk/component/img-tab-spec-3.png" class="img-responsive" alt="button">
                   </div>
                 </div>
               </section>
-
-
               <section id="example" class="article-section">
                 <h2>Example</h2>
                 <p>
                   The following HTML code is based off the <a href="#">Ahancer Seed</a>
                 </p>
 
-                <h3>Text Fields</h3>
+                <h3>Primary Button</h3>
                 <div class="demo style-wmk">
                   <button type="button" class="btn btn-primary">ตกลง</button>
                   <button type="button" class="btn btn-primary"><img src="images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
@@ -124,63 +146,52 @@
                   </pre>
                 </figure> -->
 
-                <h3>Text Fields (with Info)</h3>
+                <h3>Secondary Button</h3>
                 <div class="demo style-wmk">
                   <button type="button" class="btn btn-secondary">ยกเลิก</button>
                   <button type="button" class="btn btn-secondary"><img src="images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
                 </div>
 
-                <h3>Text Fields (Error)</h3>
+                <h3>Tertiary Button</h3>
                 <div class="demo style-wmk">
                   <button type="button" class="btn btn-tertiary">ยกเลิก</button>
                   <button type="button" class="btn btn-tertiary"><img src="images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
                 </div>
+
+                <h3>Ghost Button</h3>
+                <div class="demo style-wmk">
+                  <button type="button" class="btn btn-ghost">ยกเลิก</button>
+                  <button type="button" class="btn btn-ghost"><img src="images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                </div>
+
+
               </section>
 
               <section id="usage" class="article-section">
                 <h2>Usage</h2>
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>1. Always Use Labels</h3>
-                    <p>การมี Label จะช่วยให้ User รู้ว่าต้องใส่อะไรลงไปในนั้น</p>
+                    <h3>1. Normal Tab</h3>
+                    <p>ใช้สำหรับจัดระเบียบกลุ่มข้อมูลที่เป็นส่วนประกอบในหน้านั้น และใช้บนพื้นสีขาว เช่นในหน้า  Consolidate port </p>
                   </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-input-usage-1.png" class="img-responsive" alt="button">
+                  <div class="col-xs-12">
+                    <img src="images/wmk/component/img-tab-usage-1.png" class="img-responsive" alt="button">
                   </div>
                 </div>
 
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>2. Always Use Placeholder Texts</h3>
-                    <p>ใช้ในกรณีที่ไม่มี Label หรือต้องการขยายรายละเอียดเกี่ยวกับ Text fields นั้น เช่น กล่อง Search ทำ</p>
+                    <h3>2. Advanced Tab</h3>
+                    <p>ใช้สำหรับจัดระเบียบกลุ่มข้อมูลที่มี Level ของข้อมูลใหญ่กว่า Normal Tab และอยู่บนพื้นสี เช่น หน้า Bond Info, Fund Info</p>
                   </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-input-usage-2.png" class="img-responsive" alt="button">
-                  </div>
-                </div>
-
-
-                <div class="row">
                   <div class="col-xs-12">
-                    <h3>3. Left Align Field</h3>
-                    <p>ใช้สำหรับ text field ทั่วไปที่ต้องการให้ User กรอกข้อมูล เช่น หน้าสร้างแผนการลงทุนำ</p>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-input-usage-3.png" class="img-responsive" alt="button">
+                    <img src="images/wmk/component/img-tab-usage-2.png" class="img-responsive" alt="button">
                   </div>
                 </div>
 
 
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h3>4. Right Align Field</h3>
-                    <p>ใช้กับการกรอกข้อมูลพวกตัวเลข ที่ต้องมีการเปรียบเทียบ เช่น หน้าตั้งสัดส่วนการลงทุน</p>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-input-usage-4.png" class="img-responsive" alt="button">
-                  </div>
-                </div>
+
               </section>
               <!-- End of Article -->
 
@@ -192,7 +203,7 @@
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">Overview</a>
+                              <a href="#overview">Type</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>
