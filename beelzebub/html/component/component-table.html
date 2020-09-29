@@ -81,8 +81,10 @@
               <section id="overview" class="article-section">
                 <h1>Table</h1>
                 <p>Tables enable users to easily scan, understand, analyze, compare, and act upon the information within them.</p>
-                <img src="../../images/wmk/component/img-table-overview1.png" class="img-responsive" alt="button">
-                <img src="../../images/wmk/component/img-table-overview2.png" class="img-responsive" alt="button">
+                <br>
+                <h2>Types</h2>
+                <img src="../../images/wmk/component/img-table-types.png" class="img-responsive" alt="button">
+
                 <table class="table">
                   <thead>
                     <tr>
@@ -92,16 +94,22 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Cell with Navigate</th>
-                      <td>Cells with a caret “>” makes the whole cell serves as a button that leads to more detailed content (can lead to a popup or a new page).</td>
+                      <th scope="row">Table with Data Only</th>
+                      <td>ตารางทั่วไปที่แสดงข้อมูลเป็นตัวเลข และหัวตารางสามารถทำการ sort ข้อมูลในแต่ละ column ของตารางได้</td>
                     </tr>
                     <tr>
-                      <th scope="row">Cell with Accordion</th>
-                      <td>Cells with Accordions open up a cell below to reveal more information.</td>
+                      <th scope="row">Table with Navigate</th>
+                      <td>ตารางที่มีเครื่องหมาย “>” อยู่ที่ท้ายตาราง ของแต่ละแถว เพื่อให้ user รู้ว่า สามารถกดใน
+แถวนั้น เพื่อไปอ่านข้อมูลเพิ่มเติมผ่าน popup, new tab หรือการเปลี่ยนหน้า</td>
                     </tr>
                     <tr>
-                      <th scope="row">Cell with Multiple</th>
-                      <td>Cells can also have dropdowns, input fields, and icon buttons</td>
+                      <th scope="row">Table with Accordion</th>
+                      <td>ตารางที่มีเครื่อหมาย “v” อยู่ที่ท้ายตารางของแต่ละแถว เพื่อให้ user รู้ว่า สามารถกดใน
+แถวนั้น เพื่ออ่านข้อมูลเพิ่มเติม ที่ expand ออกมาจาก row นั้นๆ</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Table with Multiple </th>
+                      <td>ตารางที่มีการใช้งานที่หลากหลายอยู่ใน 1 แถว เช่น dropdown, input fields หรือ button ต่างๆ</td>
                     </tr>
                   </tbody>
                 </table>
@@ -113,21 +121,14 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <p>Normal Cell (50px Height)</p>
+                    <p>ตารางแบบอ่านค่าอย่างเดียว ไม่สามารถ input ข้อมูลได้ (50px Height)</p>
                     <img src="../../images/wmk/component/img-table-spec-1.png" class="img-responsive" alt="button">
                   </div>
                   <div class="col-xs-12">
-                    <p>Cell with Text Field (60px Height)</p>
+                    <p>ตารางที่มีตัว input เช่น input fields (60px Height)</p>
                     <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
                   </div>
-                  <div class="col-xs-12">
-                    <p>Numeric Alignment</p>
-                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-12">
-                    <p>Text Alignment</p>
-                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
-                  </div>
+
 
                 </div>
               </section>
@@ -160,25 +161,46 @@
                 <h2>Usage</h2>
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>1. Have one Primary action per screen</h3>
-                    <p>ในทุก ๆ หน้าควรจะมี Primary Button เพียงอันเดียว เพื่อแสดงให้เห็นถึง Action ที่สำคัญที่สุดที่ต้องการให้ User ทำ</p>
+                    <h3>1. ตัวเลขที่บอกปริมาณ ให้จัดชิดขวา</h3>
+                    <p>ตัวเลขต่างๆ ที่บ่งบอกถึงปริมาณ ต้องจัดชิดขวา (Right Align) เพื่อให้สามารถเปรียบเทียบได้ และกรณีที่บางตัวมีทศนิยม
+ทุกตัวควรมีทศนิยมเหมือนกัน (หากเป็นจำนวนเต็มให้ใส่ .00)</p>
+                    <img src="../../images/wmk/component/img-table-usage-1.png" class="img-responsive" alt="button">
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <br>
+                    <h3>2. จัดชิดซ้ายเสมอ</h3>
+                    <p>หากไม่ใช่ข้อมูลที่ต้องเปรียบเทียบปริมาณ ให้จัดชิดซ้าย (Left Align) เสมอ</p>
+                    <img src="../../images/wmk/component/img-table-usage-2.png" class="img-responsive" alt="button">
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <br>
+                    <h3>3. หัวตาราง ควรเป็นคำสั้นๆ</h3>
+                    <p>การทำให้ตัวตารางเป็นคำสั้นๆ จะทำให้ไม่กินพื้นที่ตาราง และข้อมูลดูไม่แน่น ช่วยให้ user อ่านง่ายและเร็วขึ้น </p>
                   </div>
                   <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-1-do.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-table-usage-3-do.png" class="img-responsive" alt="button">
                     <div class="box box-do">
                       <h4>
                         <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
                       </h4>
-                      <p>lorem</p>
+                      <p>ใช้ Radio สำหรับให้  User เลือกเพียง 1 ข้อเท่านั้น</p>
                     </div>
                   </div>
                   <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-1-dont.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-table-usage-3-dont.png" class="img-responsive" alt="button">
                     <div class="box box-dont">
                       <h4>
                         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
                       </h4>
-                      <p>lorem</p>
+                      <p>ห้ามใช้ Radio ในการให้ User เลือกตัวเลือกมากกว่า 1 ข้อ</p>
                     </div>
                   </div>
                 </div>
@@ -186,55 +208,45 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>2. Some Examples of Screens with Tables include:</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Fund Detail</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-1.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Bond List</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-2.png" class="img-responsive" alt="button">
                     <br>
-
-                  </div>
-
-                  <div class="col-xs-6">
-                    <h4>Fund Display</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-3.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Consol Report</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-4.png" class="img-responsive" alt="button">
-                  </div>
+                    <h3>4. ตัวอย่างการใช้ตารางในรูปแบบต่างๆ</h3>
+                    </div>
+                    <div class="col-xs-6">
+                      <p>Fund Detail</p>
+                      <img src="../../images/wmk/component/img-table-usage-4-1.png" class="img-responsive" alt="button">
+                    </div>
+                    <div class="col-xs-6">
+                      <p>Bond List</p>
+                      <img src="../../images/wmk/component/img-table-usage-4-2.png" class="img-responsive" alt="button">
+                    </div>
+                    <div class="col-xs-6">
+                      <p>Fund Display</p>
+                      <img src="../../images/wmk/component/img-table-usage-4-3.png" class="img-responsive" alt="button">
+                    </div>
+                    <div class="col-xs-6">
+                      <p>Consol Report</p>
+                      <img src="../../images/wmk/component/img-table-usage-4-3.png" class="img-responsive" alt="button">
+                    </div>
                 </div>
-
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>3. Responsive Solution for Mobile Tables</h3>
-                    <p>Sometimes no matter how optimized we arrange a table we just cannot fit all the essential data. In this case on screens with a table, a hint appears until user touches anywhere on the screen.
+                    <br>
+                    <h3>5. ใช้ Hints เมื่อต้องการให้ user เปลี่ยนโทรศัพท์เป็นแนวนอน เพื่อดูตารางทั้งหมด</h3>
+                    <p>ในบางครั้งต่อให้เราปรับตารางเยอะขนาดไหน ข้อมูลที่ต้องแสดงก็อาจจะใส่ในหน้าจอโทรศัพท์ได้ไม่หมด ในกรณีนี้เราเลือกที่จะให้ user หมุนโทรศัพท์เป็นแนวนอน เพื่อแสดงตารางทั้งหมด ผ่าน hint ที่เด้งขึ้นมา เมื่อ user เข้ามาถึงหน้านั้น</p>
+                    <p>โดย Hint จะแบ่งออกเป็น 2 ประเภท</p>
+                    </div>
+                    <div class="col-xs-12">
 
-When in portrait mode, if there is a table a hint will always appear so users know that they can scroll. The hint disappears after the user touch anywhere on the screen.
+                      <img src="../../images/wmk/component/img-table-usage-5-1.png" class="img-responsive" alt="button">
+                    </div>
+                    <div class="col-xs-12">
+                      <br>
+                      <img src="../../images/wmk/component/img-table-usage-5-2.png" class="img-responsive" alt="button">
+                    </div>
 
-There are two types of hints:</p>
-                  </div>
-
-                  <div class="col-xs-12">
-                    <h4>1) Scroll Hint</h4>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-3-1.png" class="img-responsive" alt="button">
-                  </div>
-
-
-                  <div class="col-xs-12">
-                    <h4>2) Rotate Hint</h4>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-3-2.png" class="img-responsive" alt="button">
-                  </div>
                 </div>
+
               </section>
               <!-- End of Article -->
 
@@ -246,7 +258,7 @@ There are two types of hints:</p>
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">Overview</a>
+                              <a href="#overview">Types</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>

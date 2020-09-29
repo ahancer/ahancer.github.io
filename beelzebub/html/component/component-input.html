@@ -79,12 +79,44 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Input</h1>
-                <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
-                <img src="../../images/wmk/component/img-input-overview.png" class="img-responsive" alt="button">
+                <h1>Input Field</h1>
+                <p>เป็นส่วนที่ให้ user สามารถกรอกข้อมูลที่จำเป็นให้กับระบบโดยการพิมพ์ บางครั้งอาจจะเรียกว่า Textbox หรือ Text field</p>
 
+                  <br>
+                  <h2>Stage</h2>
+                  <img src="../../images/wmk/component/img-input-stage.png" class="img-responsive" alt="button">
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Types</th>
+                        <th>Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Normal</th>
+                        <td>สถานะปกติ พร้อมให้ user ทำการกรอกข้อมูล</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Active</th>
+                        <td>สถานะกำลังใช้งาน เมื่อ user กำลังกรอกข้อมูล</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Error</th>
+                        <td>สถานะ Error เกิดขึ้นเมื่อ user กรอกข้อมูลไม่ตรงตามที่กำหนด</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Disable</th>
+                        <td>สถานะไม่พร้อมใช้งาน และ user ไม่สามารถใช้งานหรือกรอกข้อมูลได้</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
               </section>
+
+
+
               <section id="spec" class="article-section">
                 <h2>Spec</h2>
                 <div class="row">
@@ -99,6 +131,10 @@
                   <div class="col-xs-6">
                     <p>Text Fields (with Info)</p>
                     <img src="../../images/wmk/component/img-input-spec-3.png" class="img-responsive" alt="button">
+                  </div>
+                  <div class="col-xs-6">
+                    <p>Text Fields (Error)</p>
+                    <img src="../../images/wmk/component/img-input-spec-4.png" class="img-responsive" alt="button">
                   </div>
                 </div>
               </section>
@@ -141,8 +177,8 @@
                 <h2>Usage</h2>
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>1. Always Use Labels</h3>
-                    <p>การมี Label จะช่วยให้ User รู้ว่าต้องใส่อะไรลงไปในนั้น</p>
+                    <h3>1. Labels คือสิ่งสำคัญ</h3>
+                    <p>Labels ทำหน้าที่เป็นคำสั่งที่บอกให้ User รู้ว่าต้องกรอกอะไรลงใน Input Field นั้น</p>
                   </div>
                   <div class="col-xs-6">
                     <img src="../../images/wmk/component/img-input-usage-1.png" class="img-responsive" alt="button">
@@ -152,8 +188,8 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>2. Always Use Placeholder Texts</h3>
-                    <p>ใช้ในกรณีที่ไม่มี Label หรือต้องการขยายรายละเอียดเกี่ยวกับ Text fields นั้น เช่น กล่อง Search ทำ</p>
+                    <h3>2. ใช้ Placeholder Text เพื่อขยายความให้ชัด </h3>
+                    <p>ใช้ในกรณีที่ไม่มี Label หรือต้องการขยายรายละเอียดเกี่ยวกับ Text fields นั้น เช่น กล่อง Search</p>
                   </div>
                   <div class="col-xs-6">
                     <img src="../../images/wmk/component/img-input-usage-2.png" class="img-responsive" alt="button">
@@ -163,8 +199,8 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>3. Left Align Field</h3>
-                    <p>ใช้สำหรับ text field ทั่วไปที่ต้องการให้ User กรอกข้อมูล เช่น หน้าสร้างแผนการลงทุนำ</p>
+                    <h3>3. ใช้ Field จัดชิดซ้าย (Left-Align) สำหรับข้อมูลทั่วไป</h3>
+                    <p>ใช้สำหรับ text field ทั่วไป เช่น หน้าสร้างแผนการลงทุน </p>
                   </div>
                   <div class="col-xs-6">
                     <img src="../../images/wmk/component/img-input-usage-3.png" class="img-responsive" alt="button">
@@ -174,8 +210,8 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>4. Right Align Field</h3>
-                    <p>ใช้กับการกรอกข้อมูลพวกตัวเลข ที่ต้องมีการเปรียบเทียบ เช่น หน้าตั้งสัดส่วนการลงทุน</p>
+                    <h3>4. ใช้ Field จัดชิดขวา (Right-Align) เมื่อต้องการเปรียบเทียบ</h3>
+                    <p>ใช้กับการกรอกข้อมูลพวกตัวเลข ที่ต้องมีการเปรียบเทียบค่าในช่องที่กรอกข้อมูล เช่น หน้าตั้งสัดส่วนการลงทุน</p>
                   </div>
                   <div class="col-xs-6">
                     <img src="../../images/wmk/component/img-input-usage-4.png" class="img-responsive" alt="button">
@@ -192,7 +228,7 @@
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">Overview</a>
+                              <a href="#overview">Stage</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>
