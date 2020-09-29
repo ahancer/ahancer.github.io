@@ -16,7 +16,7 @@
 
     <title>Beelzebub Design System</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 
 <!--This is Google Analytics-->
     <script>
@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo" class="logo-image">WealthMagik Design System</a>
+        <a class="navbar-brand" href="#"><img src="../../images/logo.svg" alt="logo" class="logo-image">WealthMagik Design System</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -62,14 +62,14 @@
         <ul class="nav nav-pills nav-stacked">
           <li><a href="component-button.html">Button</a></li>
           <li><a href="component-tab.html">Tab</a></li>
-          <li class="active"><a href="component-button-toggle.html">Button Toggle</a></li>
+          <li><a href="component-button-toggle.html">Button Toggle</a></li>
           <li><a href="component-dropdown.html">Dropdown</a></li>
           <li><a href="component-input.html">Input Field</a></li>
           <li><a href="component-check-and-radio.html">Check and Radio</a></li>
           <li><a href="component-card.html">Card</a></li>
           <li><a href="component-table.html">Table</a></li>
-          <li><a href="component-popup.html">Popup</a></li>
-          <li><a href="component-search.html">search</a></li>
+          <li class="active"><a href="component-popup.html">Popup</a></li>
+          <li><a href="component-search.html">Search</a></li>
         </ul>
       </div>
       <div class="content">
@@ -79,10 +79,9 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Button Toggle</h1>
-                <p>These group buttons are are single selection and work similar to radio-buttons. There are two-state and three-state button toggles.</p>
-                <h2>State</h2>
-                <img src="images/wmk/component/img-button-toggle-state.png" class="img-responsive" alt="button">
+                <h1>Popup</h1>
+                <p>A popup (also known as an overlay) is a window or dialog that appears on top of the page content allowing users quick access to information if they choose to.</p>
+                <img src="../../images/wmk/component/img-popup-overview.png" class="img-responsive" alt="button">
 
                 <table class="table">
                   <thead>
@@ -93,12 +92,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Active</th>
-                      <td>เมื่อทำการกดเลือก ปุ่มจะกลายเป็น Active Button</td>
+                      <th scope="row">Full page</th>
+                      <td>ใช้กับหน้าที่ต้องการแสดงตาราง หรือแสดงค่าที่ให้ User อ่าน</td>
                     </tr>
                     <tr>
                       <th scope="row">Normal</th>
-                      <td>Button Toggle ปกติโดยยังไม่กด จะอยู่ใน Stage Normal</td>
+                      <td>ใช้กับหน้าที่ข้อมูลไม่เยอะ เช่น หน้ากรอกฟอร์ม หรือหน้าที่ต้องการให้ User ยืนยัน</td>
                     </tr>
                   </tbody>
                 </table>
@@ -107,25 +106,33 @@
 
               <section id="spec" class="article-section">
                 <h2>Spec</h2>
+
                 <div class="row">
                   <div class="col-xs-12">
-                    <img src="images/wmk/component/img-button-toggle-spec-1.png" class="img-responsive" alt="button">
+                    <p>Full page popup</p>
+                    <img src="../../images/wmk/component/img-popup-spec-1.png" class="img-responsive" alt="button">
                   </div>
+                  <div class="col-xs-12">
+                    <p>Normal popup</p>
+                    <img src="../../images/wmk/component/img-popup-spec-2.png" class="img-responsive" alt="button">
+                  </div>
+
+
                 </div>
               </section>
+
+
               <section id="example" class="article-section">
                 <h2>Example</h2>
                 <p>
                   The following HTML code is based off the <a href="#">Ahancer Seed</a>
                 </p>
 
-                <h3>Two-State Toggle</h3>
+                <h3>Full page popup</h3>
                 <div class="demo style-wmk">
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary">Left</button>
-                    <button type="button" class="btn btn-secondary">Middle</button>
-                    <button type="button" class="btn btn-secondary">Right</button>
-                  </div>
+                  <button type="button" class="btn btn-primary">ตกลง</button>
+                  <button type="button" class="btn btn-primary"><img src="../../images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                  <button type="button" class="btn btn-primary-raised"><img src="../../images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
                 </div>
                 <!-- <figure class="highlight">
                   <pre>
@@ -134,60 +141,92 @@
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary-raised"</span><span class="nt">&gt;</span>Primary Button<span class="nt">&lt;/button&gt;</span></code>
                   </pre>
                 </figure> -->
-
-                <h3>Three-State Toggle</h3>
+                <h3>Normal popup</h3>
                 <div class="demo style-wmk">
-                  <div class="btn-group">
-                      <button>ซื้อ</button>
-                      <button>ขาย</button>
-                      <button>สับเปลี่ยน</button>
-                  </div>
+                  <button type="button" class="btn btn-primary">ตกลง</button>
+                  <button type="button" class="btn btn-primary"><img src="../../images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                  <button type="button" class="btn btn-primary-raised"><img src="../../images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
                 </div>
-              </section>
 
+              </section>
 
               <section id="usage" class="article-section">
                 <h2>Usage</h2>
-                <p></p>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <br>
-                      <p>1. ใช้สำหรับเลือกการแสดงผล content ในแต่ละหัวข้อ (คล้าย Tab) แต่จะมีความสำคัญน้อยกว่า Tab </p>
-                    <img src="images/wmk/component/img-button-toggle-usage-1.png" class="img-responsive" alt="button">
-                </div>
 
-                <div class="col-xs-12">
-                  <br>
-                    <p>2. สามารถเพิ่มตัวเลือกได้ตั้งแต่ 2 เมนูขึ้นไป (แต่ไม่ควรเกิน 4 เมนู)</p>
-                      <img src="images/wmk/component/img-button-toggle-usage-2.png" class="img-responsive" alt="button">
-                </div>
-              </div>
                 <div class="row">
                   <div class="col-xs-12">
-                    <br>
-                    <p>3. กรณีมี Default Active ควรอยู่ด้านซ้ายสุดเสมอ</p>
+                    <h3>1. Contextually Relevant and Non-intrusive Popups</h3>
+                    <p>Repeated popups displayed after the user enter can be really bothersome and intrusive.</p>
                   </div>
                   <div class="col-xs-6">
-                    <img src="images/wmk/component/img-button-toggle-usage-3-do.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-popup-usage-1-do.png" class="img-responsive" alt="button">
                     <div class="box box-do">
                       <h4>
                         <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
                       </h4>
-                      <p>Default Active เมนูอยู่ด้านซ้ายสุด</p>
+                      <p>Give users some time and space to complete their tasks after logging into their account and don’t show popups right away. It’s acceptable to eventually present helpful new features after some time has gone by, but only if the user’s task is enhanced or further supported by the content presented or by the new functionality.</p>
                     </div>
                   </div>
                   <div class="col-xs-6">
-                    <img src="images/wmk/component/img-button-toggle-usage-3-dont.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-table-usage-1-dont.png" class="img-responsive" alt="button">
                     <div class="box box-dont">
                       <h4>
                         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
                       </h4>
-                      <p>Default Active เมนูอยู่ที่อันอื่น ไม่ใช่เมนูด้านซ้ายสุด</p>
+                      <p>Don’t use popups that take up a lot of screen real estate. And don’t make the popup appear again and again even after the user closes it.</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
                     </div>
                   </div>
                 </div>
 
 
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>2. Showing multiple popups one after another</h3>
+
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-popup-usage-2-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>If a popup is needed show only one at a time.  Even better, don’t show critical information in a popup, since people tend to close them without reading. </p>
+
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-popup-usage-2-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>Don’t use popups that take up a lot of screen real estate. And don’t make the popup appear again and again even after the user closes it.</p>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>3. Full page popup</h3>
+                    <p>ส่วนใหญ่จะใช้กับหน้าที่ต้องการแสดงตาราง หรือแสดงค่าที่ให้ User อ่าน</p>
+                  </div>
+
+
+                  <div class="col-xs-12">
+                    <img src="../../images/wmk/component/img-popup-usage-3.png" class="img-responsive" alt="button">
+                  </div>
+
+                </div>
               </section>
               <!-- End of Article -->
 
@@ -199,7 +238,7 @@
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">State</a>
+                              <a href="#overview">Overview</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>
@@ -223,9 +262,9 @@
 
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
 
   </body>
 </html>

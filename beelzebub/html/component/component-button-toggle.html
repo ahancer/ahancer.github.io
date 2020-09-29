@@ -16,7 +16,7 @@
 
     <title>Beelzebub Design System</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 
 <!--This is Google Analytics-->
     <script>
@@ -40,13 +40,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo" class="logo-image">WealthMagik Design System</a>
+        <a class="navbar-brand" href="#"><img src="../../images/logo.svg" alt="logo" class="logo-image">WealthMagik Design System</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Foundation</a></li>
+          <li><a href="../../index.html">Foundation</a></li>
           <li class="active"><a href="components.html">Components</a></li>
-          <li><a href="resources.html">Resources</a></li>
+          <li><a href="../../resources.html">Resources</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a>v1.01 by Ahancer</a></li>
@@ -62,14 +62,14 @@
         <ul class="nav nav-pills nav-stacked">
           <li><a href="component-button.html">Button</a></li>
           <li><a href="component-tab.html">Tab</a></li>
-          <li><a href="component-button-toggle.html">Button Toggle</a></li>
+          <li class="active"><a href="component-button-toggle.html">Button Toggle</a></li>
           <li><a href="component-dropdown.html">Dropdown</a></li>
           <li><a href="component-input.html">Input Field</a></li>
           <li><a href="component-check-and-radio.html">Check and Radio</a></li>
-          <li class="active"><a href="component-card.html">Card</a></li>
+          <li><a href="component-card.html">Card</a></li>
           <li><a href="component-table.html">Table</a></li>
           <li><a href="component-popup.html">Popup</a></li>
-          <li><a href="component-search.html">search</a></li>
+          <li><a href="component-search.html">Search</a></li>
         </ul>
       </div>
       <div class="content">
@@ -79,9 +79,10 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Cards</h1>
-                <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
-                <img src="images/wmk/component/img-card-overview.png" class="img-responsive" alt="button">
+                <h1>Button Toggle</h1>
+                <p>These group buttons are are single selection and work similar to radio-buttons. There are two-state and three-state button toggles.</p>
+                <h2>State</h2>
+                <img src="../../images/wmk/component/img-button-toggle-state.png" class="img-responsive" alt="button">
 
                 <table class="table">
                   <thead>
@@ -92,44 +93,39 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">General</th>
-                      <td>ใช้สำหรับ element ใน page</td>
+                      <th scope="row">Active</th>
+                      <td>เมื่อทำการกดเลือก ปุ่มจะกลายเป็น Active Button</td>
                     </tr>
                     <tr>
-                      <th scope="row">Pop up</th>
-                      <td>ใช้สำหรับ pop up หรือ  dropdown list ที่ต้องการให้เด่นมากชึ้น </td>
+                      <th scope="row">Normal</th>
+                      <td>Button Toggle ปกติโดยยังไม่กด จะอยู่ใน Stage Normal</td>
                     </tr>
                   </tbody>
                 </table>
-
               </section>
+
+
               <section id="spec" class="article-section">
                 <h2>Spec</h2>
                 <div class="row">
-                  <div class="col-xs-6">
-                    <p>General Card</p>
-                    <img src="images/wmk/component/img-card-spec-1.png" class="img-responsive" alt="button">
+                  <div class="col-xs-12">
+                    <img src="../../images/wmk/component/img-button-toggle-spec-1.png" class="img-responsive" alt="button">
                   </div>
-                  <div class="col-xs-6">
-                    <p>Popup Card</p>
-                    <img src="images/wmk/component/img-card-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-
                 </div>
               </section>
-
-
               <section id="example" class="article-section">
                 <h2>Example</h2>
                 <p>
                   The following HTML code is based off the <a href="#">Ahancer Seed</a>
                 </p>
 
-                <h3>General Card</h3>
+                <h3>Two-State Toggle</h3>
                 <div class="demo style-wmk">
-                  <button type="button" class="btn btn-primary">ตกลง</button>
-                  <button type="button" class="btn btn-primary"><img src="images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
-                  <button type="button" class="btn btn-primary-raised"><img src="images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                  </div>
                 </div>
                 <!-- <figure class="highlight">
                   <pre>
@@ -139,37 +135,58 @@
                   </pre>
                 </figure> -->
 
-                <h3>Popup Card</h3>
+                <h3>Three-State Toggle</h3>
                 <div class="demo style-wmk">
-                  <button type="button" class="btn btn-secondary">ยกเลิก</button>
-                  <button type="button" class="btn btn-secondary"><img src="images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
+                  <div class="btn-group">
+                      <button>ซื้อ</button>
+                      <button>ขาย</button>
+                      <button>สับเปลี่ยน</button>
+                  </div>
                 </div>
-
-
               </section>
+
 
               <section id="usage" class="article-section">
                 <h2>Usage</h2>
+                <p></p>
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>1. General Card</h3>
-                    <p>ใช้สำหรับ element ที่เป็น Card ทั้งหมดในหน้านั้น </p>
+                    <br>
+                      <p>1. ใช้สำหรับเลือกการแสดงผล content ในแต่ละหัวข้อ (คล้าย Tab) แต่จะมีความสำคัญน้อยกว่า Tab </p>
+                    <img src="../../images/wmk/component/img-button-toggle-usage-1.png" class="img-responsive" alt="button">
+                </div>
+
+                <div class="col-xs-12">
+                  <br>
+                    <p>2. สามารถเพิ่มตัวเลือกได้ตั้งแต่ 2 เมนูขึ้นไป (แต่ไม่ควรเกิน 4 เมนู)</p>
+                      <img src="../../images/wmk/component/img-button-toggle-usage-2.png" class="img-responsive" alt="button">
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <br>
+                    <p>3. กรณีมี Default Active ควรอยู่ด้านซ้ายสุดเสมอ</p>
                   </div>
                   <div class="col-xs-6">
-                    <img src="images/wmk/component/img-card-usage-1.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-button-toggle-usage-3-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>Default Active เมนูอยู่ด้านซ้ายสุด</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-button-toggle-usage-3-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>Default Active เมนูอยู่ที่อันอื่น ไม่ใช่เมนูด้านซ้ายสุด</p>
+                    </div>
                   </div>
                 </div>
 
-
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h3>2. Pop up Card</h3>
-                    <p>ใช้สำหรับ dropdown list หรือ Infomation ที่ต้องการให้เด่นขึ้นมาเพื่อให้ User สามารถมองเห็นได้อย่างชัดเจนำ</p>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="images/wmk/component/img-card-usage-2.png" class="img-responsive" alt="button">
-                  </div>
-                </div>
 
               </section>
               <!-- End of Article -->
@@ -182,7 +199,7 @@
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">Overview</a>
+                              <a href="#overview">State</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>
@@ -206,9 +223,9 @@
 
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
 
   </body>
 </html>
