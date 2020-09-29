@@ -7335,9 +7335,13 @@ a:focus {
 }
 .article .gallery .gallery-item {
   margin-top: 30px;
+  border: 1px solid #E0E0E0;
 }
-.article .gallery .gallery-item p {
-  font-size: 14px;
+.article .gallery .gallery-item h3 {
+  margin: 15px;
+}
+.article .gallery .gallery-item:hover {
+  box-shadow: 0px 4px 8px 0px rgba(58, 61, 68, 0.13);
 }
 .article .typo-box .color {
   width: 100%;
