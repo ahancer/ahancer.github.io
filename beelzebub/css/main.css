@@ -7334,8 +7334,7 @@ a:focus {
   border-bottom: 1px solid #E0E0E0;
 }
 .article .gallery .gallery-item {
-  margin-top: 80px;
-  border: 2px solid #E0E0E0;
+  margin-top: 30px;
 }
 .article .gallery .gallery-item p {
   font-size: 14px;
