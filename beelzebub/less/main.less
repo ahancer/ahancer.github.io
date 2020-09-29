@@ -11,6 +11,7 @@ To compile:
 @import "https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600&display=swap";
 @import "_variables.less";
 @import "_mixins.less";
+@import "../wmk-template/less/main.less";
 
 /*---Reset Default Setting---*/
 body{
@@ -462,113 +463,7 @@ a:hover, a:focus{
 }
 
 
-/*---WMK Style---*/
 
-.color-wmk-theme-50{background: @color-wmk-theme-50;}
-.color-wmk-theme-100{background: @color-wmk-theme-100;}
-.color-wmk-theme-200{background: @color-wmk-theme-200;}
-.color-wmk-theme-300{background: @color-wmk-theme-300;}
-.color-wmk-theme-400{background: @color-wmk-theme-400;}
-.color-wmk-theme-primary{background: @color-wmk-theme-primary;}
-.color-wmk-theme-600{background: @color-wmk-theme-600;}
-.color-wmk-theme-700{background: @color-wmk-theme-700;}
-.color-wmk-theme-inactive{background: @color-wmk-theme-inactive;}
-
-.color-wmk-white{background: @color-wmk-white;}
-.color-wmk-grey-0{background: @color-wmk-grey-0;}
-.color-wmk-grey-1{background: @color-wmk-grey-1;}
-.color-wmk-grey-2{background: @color-wmk-grey-2;}
-.color-wmk-grey-3{background: @color-wmk-grey-3;}
-.color-wmk-black{background: @color-wmk-black;}
-
-.color-status-green{background: @color-status-green;}
-.color-status-red{background: @color-status-red;}
-.color-status-error{background: @color-status-error;}
-
-.color-port-purple{background:@color-port-purple;}
-.color-port-orange{background:@color-port-orange;}
-.color-port-pink{background:@color-port-pink;}
-.color-port-yellow{background:@color-port-yellow;}
-
-.color-gadient-light-blue{background:@color-gadient-light-blue;}
-.color-gadient-primary-blue{background:@color-gadient-primary-blue;}
-.color-gadient-green{background:@color-gadient-green;}
-.color-gadient-yellow{background:@color-gadient-yellow;}
-.color-gadient-orange{background:@color-gadient-orange;}
-.color-gadient-navy-blue{background:@color-gadient-navy-blue;}
-.color-gadient-purple{background:@color-gadient-purple;}
-
-.color-gadient-green-1{background:@color-gadient-green-1;}
-.color-gadient-green-2{background:@color-gadient-green-2;}
-.color-gadient-yellow-1{background:@color-gadient-yellow-1;}
-.color-gadient-yellow-2{background:@color-gadient-yellow-2;}
-.color-gadient-orange-1{background:@color-gadient-orange-1;}
-.color-gadient-orange-2{background:@color-gadient-orange-2;}
-.color-gadient-navy-1{background:@color-gadient-navy-1;}
-.color-gadient-navy-2{background:@color-gadient-navy-2;}
-.color-gadient-purple-1{background:@color-gadient-purple-1;}
-.color-gadient-purple-2{background:@color-gadient-purple-2;}
-
-.color-chart-blue{background:@color-chart-blue;}
-.color-chart-yellow{background:@color-chart-yellow;}
-.color-chart-red{background:@color-chart-red;}
-.color-chart-purple{background:@color-chart-purple;}
-.color-chart-orange{background:@color-chart-orange;}
-.color-chart-turquoise{background:@color-chart-turquoise;}
-.color-chart-pink{background:@color-chart-pink;}
-
-
-
-.style-wmk{
-  .btn{
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: @font-wmk-primary;
-    font-weight: 500;
-    padding: 10px 16px 9px 16px;
-    min-width: 90px;
-    .icon{
-      vertical-align:middle;
-      margin-left: -4px;
-      margin-top: -4px;
-      margin-right: 8px;
-      width: 18px;
-      height: 18px;
-    }
-  }
-
-
-  .btn-primary {
-    &:extend(.btn all);
-    .button-variant(@color-wmk-white, @color-wmk-theme-600, @color-wmk-theme-600);
-    /* Font,Background,Border */
-  }
-  .btn-primary-raised {
-    &:extend(.btn all);
-    .button-variant(@color-wmk-white, @color-wmk-theme-600, @color-wmk-theme-600);
-    /* Font,Background,Border */
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px 0 rgba(0, 0, 0, 0.02);
-  }
-  .btn-secondary {
-    &:extend(.btn all);
-    .button-variant(@color-wmk-theme-primary, @color-wmk-white, @color-wmk-grey-1);
-    /* Font,Background,Border */
-  }
-  .btn-tertiary {
-    &:extend(.btn all);
-    .button-variant(@color-wmk-black, @color-wmk-white, @color-wmk-grey-1);
-    /* Font,Background,Border */
-  }
-  .btn-ghost {
-    &:extend(.btn all);
-    background: none;
-    border: 0px;
-    /* Font,Background,Border */
-  }
-
-
-
-}
 
 
 

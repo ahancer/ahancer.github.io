@@ -1,0 +1,72 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600&display=swap";
+@import "_mixins.less";
+@import "_variables.less";
+
+/*---General Setting---*/
+body{
+}
+.banner{
+  padding: 100px 0px;
+}
+
+
+/*---WMK Style---*/
+
+.style-wmk{
+  .btn{
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: @font-wmk-primary;
+    font-weight: 500;
+    padding: 10px 16px 9px 16px;
+    min-width: 90px;
+    .icon{
+      vertical-align:middle;
+      margin-left: -4px;
+      margin-top: -4px;
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+
+  .btn-primary {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-white, @color-wmk-theme-600, @color-wmk-theme-600);
+    /* Font,Background,Border */
+  }
+  .btn-primary-raised {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-white, @color-wmk-theme-600, @color-wmk-theme-600);
+    /* Font,Background,Border */
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px 0 rgba(0, 0, 0, 0.02);
+  }
+  .btn-secondary {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-theme-primary, @color-wmk-white, @color-wmk-grey-1);
+    /* Font,Background,Border */
+  }
+  .btn-tertiary {
+    &:extend(.btn all);
+    .button-variant(@color-wmk-black, @color-wmk-white, @color-wmk-grey-1);
+    /* Font,Background,Border */
+  }
+  .btn-ghost {
+    &:extend(.btn all);
+    background: none;
+    border: 0px;
+    /* Font,Background,Border */
+  }
+
+}
