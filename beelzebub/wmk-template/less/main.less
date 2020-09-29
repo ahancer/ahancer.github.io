@@ -11,14 +11,44 @@ To compile:
 @import "https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600&display=swap";
 @import "_mixins.less";
 @import "_variables.less";
+@font-face {
+    font-family: 'ThaiSansNeue';
+    src: url('../font/ThaiSansNeue-Bold.ttf') format('truetype');
+}
+
 
 /*---General Setting---*/
-body{
-}
 .banner{
   padding: 100px 0px;
 }
 
+body{
+  font-family: @font-wmk-primary;
+  font-size: 16px;
+}
+h1{
+  font-family: 'ThaiSansNeue';
+  font-size: 36px;
+}
+
+h2{
+  font-family: 'ThaiSansNeue';
+  font-size: 30px;
+}
+
+h3{
+  font-family: @font-wmk-primary;
+  font-size: 24px;
+}
+
+h4{
+  font-family: @font-wmk-primary;
+  font-size: 18px;
+}
+small{
+  font-family: @font-wmk-primary;
+  font-size: 14px;
+}
 
 /*---WMK Style---*/
 

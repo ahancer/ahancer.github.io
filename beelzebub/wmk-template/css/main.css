@@ -7704,9 +7704,37 @@ button.close {
 .color-chart-pink {
   background: #D449AE;
 }
+@font-face {
+  font-family: 'ThaiSansNeue';
+  src: url('../font/ThaiSansNeue-Bold.ttf') format('truetype');
+}
 /*---General Setting---*/
 .banner {
   padding: 100px 0px;
+}
+body {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: 'ThaiSansNeue';
+  font-size: 36px;
+}
+h2 {
+  font-family: 'ThaiSansNeue';
+  font-size: 30px;
+}
+h3 {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 24px;
+}
+h4 {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 18px;
+}
+small {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 14px;
 }
 /*---WMK Style---*/
 .style-wmk .btn,
