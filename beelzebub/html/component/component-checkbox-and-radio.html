@@ -65,9 +65,9 @@
           <li><a href="component-button-toggle.html">Button Toggle</a></li>
           <li><a href="component-dropdown.html">Dropdown</a></li>
           <li><a href="component-input.html">Input Field</a></li>
-          <li><a href="component-checkbox-and-radio.html">Checkbox and Radio</a></li>
+          <li class="active"><a href="component-checkbox-and-radio.html">Checkbox and Radio</a></li>
           <li><a href="component-card.html">Card</a></li>
-          <li class="active"><a href="component-table.html">Table</a></li>
+          <li><a href="component-table.html">Table</a></li>
           <li><a href="component-popup.html">Popup</a></li>
           <li><a href="component-search.html">Search</a></li>
         </ul>
@@ -79,11 +79,11 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Table</h1>
+                <h1>Checkbox and Radio</h1>
                 <p>ช่วยให้ user สามารถกรอกข้อมูลเข้าระบบด้วยการเลือก จากตัวเลือกที่กำหนด แบ่งเป็น 2 ส่วนคือ checkboxbox (เลือกได้ทีละหลายตัวเลือก) และ Radio (เลือกได้ทีละ 1 ตัวเลือก)</p>
                 <h2>Type</h2>
-                <img src="../../images/wmk/component/img-table-overview1.png" class="img-responsive" alt="button">
-                <img src="../../images/wmk/component/img-table-overview2.png" class="img-responsive" alt="button">
+                <img src="../../images/wmk/component/img-checkbox-and-radio-types.png" class="img-responsive" alt="button">
+
                 <table class="table">
                   <thead>
                     <tr>
@@ -93,16 +93,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Cell with Navigate</th>
-                      <td>Cells with a caret “>” makes the whole cell serves as a button that leads to more detailed content (can lead to a popup or a new page).</td>
+                      <th scope="row">Checkboxes</th>
+                      <td>ใช้เมื่อมี Action ที่ User สามารถเลือกตัวเลือกได้มากกว่า 1 อัน</td>
                     </tr>
                     <tr>
-                      <th scope="row">Cell with Accordion</th>
-                      <td>Cells with Accordions open up a cell below to reveal more information.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Cell with Multiple</th>
-                      <td>Cells can also have dropdowns, input fields, and icon buttons</td>
+                      <th scope="row">Radio</th>
+                      <td>ใช้เมื่อมี Action ที่ User สามารถเลือกตัวเลือก ได้เพียงอันเดียว</td>
                     </tr>
                   </tbody>
                 </table>
@@ -113,21 +109,13 @@
                 <h2>Spec</h2>
 
                 <div class="row">
-                  <div class="col-xs-12">
-                    <p>Normal Cell (50px Height)</p>
-                    <img src="../../images/wmk/component/img-table-spec-1.png" class="img-responsive" alt="button">
+                  <div class="col-xs-6">
+                    <p>Checkboxes</p>
+                    <img src="../../images/wmk/component/img-checkbox-and-radio-spec-1.png" class="img-responsive" alt="button">
                   </div>
-                  <div class="col-xs-12">
-                    <p>Cell with Text Field (60px Height)</p>
-                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-12">
-                    <p>Numeric Alignment</p>
-                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-12">
-                    <p>Text Alignment</p>
-                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
+                  <div class="col-xs-6">
+                    <p>Radio</p>
+                    <img src="../../images/wmk/component/img-checkbox-and-radio-spec-2.png" class="img-responsive" alt="button">
                   </div>
 
                 </div>
@@ -159,83 +147,46 @@
 
               <section id="usage" class="article-section">
                 <h2>Usage</h2>
+
+
+
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>1. Have one Primary action per screen</h3>
-                    <p>ในทุก ๆ หน้าควรจะมี Primary Button เพียงอันเดียว เพื่อแสดงให้เห็นถึง Action ที่สำคัญที่สุดที่ต้องการให้ User ทำ</p>
+                    <h3>1. Checkboxes</h3>
+                    <p>ใช้เมื่อมี Action ที่ User สามารถเลือก Choices ได้มากกว่า 1 ข้อ</p>
+                  </div>
+                  <div class="col-xs-12">
+
+                    <img src="../../images/wmk/component/img-checkbox-and-radio-usage-1.png" class="img-responsive" alt="button">
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>2. Radio</h3>
+                    <p>ใช้เมื่อมี Action ที่ User สามารถเลือก Choices ได้มากกว่า 1 ข้อ</p>
                   </div>
                   <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-1-do.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-checkbox-and-radio-usage-2-do.png" class="img-responsive" alt="button">
                     <div class="box box-do">
                       <h4>
                         <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
                       </h4>
-                      <p>lorem</p>
+                      <p>ใช้ Radio สำหรับให้  User เลือกเพียง 1 ข้อเท่านั้น</p>
                     </div>
                   </div>
                   <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-1-dont.png" class="img-responsive" alt="button">
+                    <img src="../../images/wmk/component/img-checkbox-and-radio-usage-2-dont.png" class="img-responsive" alt="button">
                     <div class="box box-dont">
                       <h4>
                         <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
                       </h4>
-                      <p>lorem</p>
+                      <p>ห้ามใช้ Radio ในการให้ User เลือกตัวเลือกมากกว่า 1 ข้อ</p>
                     </div>
                   </div>
                 </div>
 
-
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h3>2. Some Examples of Screens with Tables include:</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Fund Detail</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-1.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Bond List</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-2.png" class="img-responsive" alt="button">
-                    <br>
-
-                  </div>
-
-                  <div class="col-xs-6">
-                    <h4>Fund Display</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-3.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <h4>Consol Report</h4>
-                    <img src="../../images/wmk/component/img-table-usage-2-4.png" class="img-responsive" alt="button">
-                  </div>
-                </div>
-
-
-                <div class="row">
-                  <div class="col-xs-12">
-                    <h3>3. Responsive Solution for Mobile Tables</h3>
-                    <p>Sometimes no matter how optimized we arrange a table we just cannot fit all the essential data. In this case on screens with a table, a hint appears until user touches anywhere on the screen.
-
-When in portrait mode, if there is a table a hint will always appear so users know that they can scroll. The hint disappears after the user touch anywhere on the screen.
-
-There are two types of hints:</p>
-                  </div>
-
-                  <div class="col-xs-12">
-                    <h4>1) Scroll Hint</h4>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-3-1.png" class="img-responsive" alt="button">
-                  </div>
-
-
-                  <div class="col-xs-12">
-                    <h4>2) Rotate Hint</h4>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-table-usage-3-2.png" class="img-responsive" alt="button">
-                  </div>
-                </div>
               </section>
               <!-- End of Article -->
 
@@ -247,7 +198,7 @@ There are two types of hints:</p>
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">Overview</a>
+                              <a href="#overview">Types</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>
