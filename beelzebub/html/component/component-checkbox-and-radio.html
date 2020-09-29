@@ -44,9 +44,9 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="../../index.html">Foundation</a></li>
+          <li><a href="index.html">Foundation</a></li>
           <li class="active"><a href="components.html">Components</a></li>
-          <li><a href="../../resources.html">Resources</a></li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a>v1.01 by Ahancer</a></li>
@@ -60,14 +60,14 @@
       <div class="menubar">
         <h3><a href="index.html">Components</a></h3>
         <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="component-button.html">Button</a></li>
+          <li><a href="component-button.html">Button</a></li>
           <li><a href="component-tab.html">Tab</a></li>
           <li><a href="component-button-toggle.html">Button Toggle</a></li>
-          <li class="active"><a href="component-dropdown.html">Dropdown</a></li>
+          <li><a href="component-dropdown.html">Dropdown</a></li>
           <li><a href="component-input.html">Input Field</a></li>
           <li><a href="component-checkbox-and-radio.html">Checkbox and Radio</a></li>
           <li><a href="component-card.html">Card</a></li>
-          <li><a href="component-table.html">Table</a></li>
+          <li class="active"><a href="component-table.html">Table</a></li>
           <li><a href="component-popup.html">Popup</a></li>
           <li><a href="component-search.html">Search</a></li>
         </ul>
@@ -79,11 +79,11 @@
             <!-- Article -->
             <div class="article col-sm-12 col-md-11 col-lg-10">
               <section id="overview" class="article-section">
-                <h1>Dropdown</h1>
-                <p>Dropdown ช่วยให้ user สามารถเห็นและเลือกตัวเลือกต่างๆ ได้ในครั้งเดียว</p>
-                <h2>Types</h2>
-                <img src="../../images/wmk/component/img-dropdown-types.png" class="img-responsive" alt="button">
-
+                <h1>Table</h1>
+                <p>ช่วยให้ user สามารถกรอกข้อมูลเข้าระบบด้วยการเลือก จากตัวเลือกที่กำหนด แบ่งเป็น 2 ส่วนคือ checkboxbox (เลือกได้ทีละหลายตัวเลือก) และ Radio (เลือกได้ทีละ 1 ตัวเลือก)</p>
+                <h2>Type</h2>
+                <img src="../../images/wmk/component/img-table-overview1.png" class="img-responsive" alt="button">
+                <img src="../../images/wmk/component/img-table-overview2.png" class="img-responsive" alt="button">
                 <table class="table">
                   <thead>
                     <tr>
@@ -93,45 +93,54 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Single Select</th>
-                      <td>ให้ user เลือกตัวเลือกแบบทีละอัน</td>
+                      <th scope="row">Cell with Navigate</th>
+                      <td>Cells with a caret “>” makes the whole cell serves as a button that leads to more detailed content (can lead to a popup or a new page).</td>
                     </tr>
                     <tr>
-                      <th scope="row">Multi Select</th>
-                      <td>ให้ user เลือกของแบบหลายตัวเลือกได้ (Multiple Choices)</td>
+                      <th scope="row">Cell with Accordion</th>
+                      <td>Cells with Accordions open up a cell below to reveal more information.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cell with Multiple</th>
+                      <td>Cells can also have dropdowns, input fields, and icon buttons</td>
                     </tr>
                   </tbody>
                 </table>
-
               </section>
+
+
               <section id="spec" class="article-section">
                 <h2>Spec</h2>
-                <div class="row">
 
-                    <div class="col-xs-12">
-                    <p>ขนาดของ drodpown  ที่เล็กที่สุดไม่ควรต่ำกว่า 115px และไม่เกิน 300px</p>
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-dropdown-spec-1.png" class="img-responsive" alt="button">
-                  </div>
-                  <div class="col-xs-6">
-                    <img src="../../images/wmk/component/img-dropdown-spec-2.png" class="img-responsive" alt="button">
-                  </div>
-                </div>
                 <div class="row">
-                  <div class="col-xs-6">
-                    <p>กรณีที่เป็น Multi-select dropdown ขนาดของ Icon ด้านหน้าจะมีขนาด 18x18px</p>
-                    <img src="../../images/wmk/component/img-dropdown-spec-2.png" class="img-responsive" alt="button">
+                  <div class="col-xs-12">
+                    <p>Normal Cell (50px Height)</p>
+                    <img src="../../images/wmk/component/img-table-spec-1.png" class="img-responsive" alt="button">
                   </div>
+                  <div class="col-xs-12">
+                    <p>Cell with Text Field (60px Height)</p>
+                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
+                  </div>
+                  <div class="col-xs-12">
+                    <p>Numeric Alignment</p>
+                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
+                  </div>
+                  <div class="col-xs-12">
+                    <p>Text Alignment</p>
+                    <img src="../../images/wmk/component/img-table-spec-2.png" class="img-responsive" alt="button">
+                  </div>
+
                 </div>
               </section>
+
+
               <section id="example" class="article-section">
                 <h2>Example</h2>
                 <p>
                   The following HTML code is based off the <a href="#">Ahancer Seed</a>
                 </p>
 
-                <h3>Primary Button</h3>
+                <h3>Table with Sorting</h3>
                 <div class="demo style-wmk">
                   <button type="button" class="btn btn-primary">ตกลง</button>
                   <button type="button" class="btn btn-primary"><img src="../../images/wmk/component/icon/icon-button-Add(white).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
@@ -145,49 +154,88 @@
                   </pre>
                 </figure> -->
 
-                <h3>Secondary Button</h3>
-                <div class="demo style-wmk">
-                  <button type="button" class="btn btn-secondary">ยกเลิก</button>
-                  <button type="button" class="btn btn-secondary"><img src="../../images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
-                </div>
-
-                <h3>Tertiary Button</h3>
-                <div class="demo style-wmk">
-                  <button type="button" class="btn btn-tertiary">ยกเลิก</button>
-                  <button type="button" class="btn btn-tertiary"><img src="../../images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
-                </div>
-
-                <h3>Ghost Button</h3>
-                <div class="demo style-wmk">
-                  <button type="button" class="btn btn-ghost">ยกเลิก</button>
-                  <button type="button" class="btn btn-ghost"><img src="../../images/wmk/component/icon/icon-button-Add(blue).svg" alt="icon" class="icon">เพิ่มกองทุน</button>
-                </div>
-
 
               </section>
 
               <section id="usage" class="article-section">
                 <h2>Usage</h2>
-                <p>การใช้ Dropdown จะเข้ามาช่วยในกรณีที่ user ต้องเลือกและระบบมีตัวเลือกให้เยอะ ซึ่งการที่จะวาง ตัวเลือกทั้งหมดออกมาเป็น list จะทำให้กินพื้นที่หน้าจอเยอะเกินไป Dropdown จะเข้ามาเป็นตัวช่วยที่จะรวมตัวเลือกเหล่านั้นให้อยู่ในอันเดียว ซึ่งจะทำให้ user สามารถใช้งานตัวเลือกเหล่านั้นได้ง่ายขึ้น</p>
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>เมื่อไหร่ที่ควรใช้ Dropdown ?</h3>
-                    <p>- มีตัวเลือกให้ user เลือกมาก และมีพื้นที่หน้าจอแสดงผลน้อย ทำให้ user ใช้งานลำบาก เช่น บน screensize ของมือถือ</p>
-                    <p>- User ต้องทำการเลือกตัวเลือก เพื่อใช้งานบางสิ่งในพื้นที่หน้าจอเดียวกัน ซึ่งไม่มีที่ให้แสดงตัวเลือกแบบ List</p>
+                    <h3>1. Have one Primary action per screen</h3>
+                    <p>ในทุก ๆ หน้าควรจะมี Primary Button เพียงอันเดียว เพื่อแสดงให้เห็นถึง Action ที่สำคัญที่สุดที่ต้องการให้ User ทำ</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-table-usage-1-do.png" class="img-responsive" alt="button">
+                    <div class="box box-do">
+                      <h4>
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>DO
+                      </h4>
+                      <p>lorem</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-table-usage-1-dont.png" class="img-responsive" alt="button">
+                    <div class="box box-dont">
+                      <h4>
+                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>DON'T
+                      </h4>
+                      <p>lorem</p>
+                    </div>
                   </div>
                 </div>
 
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>เมื่อไหร่ที่<u>ไม่ควรใช้</u> Dropdown ?</h3>
-                    <p>- กรณีมีพื้นที่หน้าจอเยอะ และมีตัวเลือกเพียงเล็กน้อย (เช่น 2-3 ตัวเลือก)</p>
-                    <p>- กรณีตัวเลือกแต่ละอันสำคัญ และจำเป็นต้องเลือก เพื่อทำ action ต่อไปที่เป็น action หลัก </p>
+                    <h3>2. Some Examples of Screens with Tables include:</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <h4>Fund Detail</h4>
+                    <img src="../../images/wmk/component/img-table-usage-2-1.png" class="img-responsive" alt="button">
+                  </div>
+                  <div class="col-xs-6">
+                    <h4>Bond List</h4>
+                    <img src="../../images/wmk/component/img-table-usage-2-2.png" class="img-responsive" alt="button">
+                    <br>
+
+                  </div>
+
+                  <div class="col-xs-6">
+                    <h4>Fund Display</h4>
+                    <img src="../../images/wmk/component/img-table-usage-2-3.png" class="img-responsive" alt="button">
+                  </div>
+                  <div class="col-xs-6">
+                    <h4>Consol Report</h4>
+                    <img src="../../images/wmk/component/img-table-usage-2-4.png" class="img-responsive" alt="button">
                   </div>
                 </div>
 
 
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>3. Responsive Solution for Mobile Tables</h3>
+                    <p>Sometimes no matter how optimized we arrange a table we just cannot fit all the essential data. In this case on screens with a table, a hint appears until user touches anywhere on the screen.
 
+When in portrait mode, if there is a table a hint will always appear so users know that they can scroll. The hint disappears after the user touch anywhere on the screen.
+
+There are two types of hints:</p>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <h4>1) Scroll Hint</h4>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-table-usage-3-1.png" class="img-responsive" alt="button">
+                  </div>
+
+
+                  <div class="col-xs-12">
+                    <h4>2) Rotate Hint</h4>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../../images/wmk/component/img-table-usage-3-2.png" class="img-responsive" alt="button">
+                  </div>
+                </div>
               </section>
               <!-- End of Article -->
 
@@ -199,7 +247,7 @@
                     <h4>CONTENT</h4>
                       <ul id="sidebar" class="nav nav-stacked">
                           <li>
-                              <a href="#overview">Type</a>
+                              <a href="#overview">Overview</a>
                           </li>
                           <li>
                               <a href="#spec">Spec</a>
@@ -220,7 +268,6 @@
       </div>
     </div>
     <!-- End of Body Container -->
-
 
 
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
