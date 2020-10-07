@@ -16,7 +16,6 @@
 
 <title>Beelzebub Design System</title>
 <link rel="icon" type="image/png" href="../../favicon.png">
-<link rel="stylesheet" href="../../wmk-template/css/main.css">
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../wmk-template/css/main.css">
 
@@ -90,18 +89,21 @@
                     <div class="typo-box">
 
                       <table class="typo-table">
-                        <tbody class="color color-wmk-grey-1">
-                        <tr>
-                          <td class="typo-header"><h1>Heading 1</h1></td>
-                          <td class="typo-detail">
-                            Font: ThaiSans Neue
-                            <br>Font Weight: Bold
-                            <br>Font size:  36px
-                          </td>
-                          <td rowspan="2"class="typo-desc">Heading 1-2 จะใช้เป็น Font ThaiSans Neue ที่ไม่มีหัว จะเหมาะกับการใช้เป็น Title ของ Section ที่ต้องการให้เห็นชัดเจน และควรใช้กับข้อความสั้นๆ เนื่องจากตัวอักษรประเภทไม่มีหัว จะอ่านยาก</td>
-                        </tr>
+                        <tbody class="color color-wmk-grey-0">
+                          <tr>
+                            <tr>
+                              <td class="typo-header"><h1>Heading 1</h1></td>
+                              <td class="typo-detail">
+                                Font: ThaiSans Neue
+                                <br>Font Weight: Bold
+                                <br>Font size:  36px
+                              </td>
+                              <td rowspan="2"class="typo-desc">Heading 1-2 จะใช้เป็น Font ThaiSans Neue ที่ไม่มีหัว จะเหมาะกับการใช้เป็น Title ของ Section ที่ต้องการให้เห็นชัดเจน และควรใช้กับข้อความสั้นๆ เนื่องจากตัวอักษรประเภทไม่มีหัว จะอ่านยาก</td>
+                            </tr>
+                          </tr>
 
-                        <tr>
+
+                        <tr class="border-bottom">
                           <td class="typo-header"><h2>Heading 2</h2></td>
                           <td class="typo-detail">
                             Font: ThaiSans Neue
@@ -110,7 +112,7 @@
                           </td>
                         </tr>
 
-                        <tr class="line">
+                        <tr>
                           <td class="typo-header"><h3>Heading 3</h3></td>
                           <td class="typo-detail">
                             Font: Sarabun
@@ -133,7 +135,7 @@
                       </table>
 
                     </div>
-          
+
                 </div>
               </div>
 
@@ -146,54 +148,191 @@
                   Content Text ใช้สำหรับแสดงเนื้อหาต่างๆ ในหน้าจอ โดยแบ่งเป็น Body และ Caption Text
                 </p>
 
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="typo-box">
-                    <div class="color color-wmk-grey-1">
+
+                <table class="typo-table">
+                  <tbody class="color color-wmk-grey-0">
+
+
+                      <tr class="border-bottom">
+                        <td class="typo-header"><p>Body</p></td>
+                        <td class="typo-detail">
+                          Font: Sarabun
+                          <br>Font Weight: Medium
+                          <br>Font size:  16px
+                        </td>
+                        <td class="typo-desc"> ใช้เป็น Font ปกติที่ใช้สำหรับ content ส่วนใหญ่ของหน้า</td>
+                      </tr>
+
+                      <tr>
+                        <td class="typo-header"><small>Small</small></td>
+                        <td class="typo-detail">
+                          Font: Sarabun
+                          <br>Font Weight: Medium
+                          <br>Font size:  14px
+                        </td>
+                        <td class="typo-desc"> ใช้สำหรับเนื้อหาที่สำคัญน้อยที่สุด แต่ต้องการให้มีอยู่ในหน้า</td>
+                      </tr>
 
 
 
 
-                    </div>
-                  </div>
-                </div>
-              </div>
 
 
+
+
+
+</table>
               </section>
 
 
 
-              <section id="neutral" class="article-section">
-                <h2>Neutral</h2>
+              <section id="color" class="article-section">
+                <h2>Color</h2>
+
                 <div class="row">
                   <div class="col-xs-4">
-                    <div class="color-box">
-                      <div class="color color-wmk-white border">
+                    <div class="color-box-typo">
+                      <div class="color color-wmk-black">
                       </div>
                       <div class="description">
-                        <h3>White</h3>
+                        <h3>Black</h3>
                         <div class="hex">
-                          <strong>HEX:</strong> #FFFFFF
+                          <strong>HEX:</strong> #2B3549
                         </div>
                         <div class="rgb">
-                          <span><strong>RGB:</strong> 255, 255, 255</span>
-                        </div>
-                        <div class="usage">
-                           ใช้สำหรับพื้นหลังของหน้า
+                          <span><strong>RGB:</strong> 43, 53, 73</span>
                         </div>
 
                       </div>
 
                   </div>
                 </div>
-
                   <div class="col-xs-8">
                     <h4><strong>Primary Text Color</strong></h4>
-                    <p>สีหลักสำหรับ Text ในทุกๆ ขนาด</p>
+                    <small>สีหลักสำหรับ Text ในทุกๆ ขนาด</small>
                   </div>
+                </div>
 
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="color-box-typo">
+                      <div class="color color-wmk-grey-3">
+                      </div>
+                      <div class="description">
+                        <h3>Grey 3</h3>
+                        <div class="hex">
+                          <strong>HEX:</strong> #758093
+                        </div>
+                        <div class="rgb">
+                          <span><strong>RGB:</strong> 117, 128, 147</span>
+                        </div>
 
+                      </div>
+
+                  </div>
+                </div>
+                  <div class="col-xs-8">
+                    <h4><strong>Secondary Text Color</strong></h4>
+                    <small>ใช้สำหรับ
+                      <br>- Body Text ในกรณีที่ต้องการให้ความสำคัญลดลง (Sub-body)
+                      <br>- Disable Text</sma;;>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="color-box-typo">
+                      <div class="color color-wmk-theme-primary">
+                      </div>
+                      <div class="description">
+                        <h3>Blue 500 (Primary)</h3>
+                        <div class="hex">
+                          <strong>HEX:</strong> #03A9F4
+                        </div>
+                        <div class="rgb">
+                          <span><strong>RGB:</strong> 3, 169, 244</span>
+                        </div>
+
+                      </div>
+
+                  </div>
+                </div>
+                  <div class="col-xs-8">
+                    <h4><strong>Link Text Color</strong></h4>
+                    <small>ใช้สำหรับ Text-Link เท่านั้น</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="color-box-typo">
+                      <div class="color color-status-green">
+                      </div>
+                      <div class="description">
+                        <h3>Green</h3>
+                        <div class="hex">
+                          <strong>HEX:</strong> #00BC91
+                        </div>
+                        <div class="rgb">
+                          <span><strong>RGB:</strong> 0, 188, 145</span>
+                        </div>
+
+                      </div>
+
+                  </div>
+                </div>
+                  <div class="col-xs-8">
+                    <h4><strong>Positive Value Text</strong></h4>
+                    <small>ใช้สำหรับ Text ที่สื่อถึงทางบวก เช่น ตัวเลขที่เพิ่มขึ้นในทางที่ดี</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="color-box-typo">
+                      <div class="color color-status-red">
+                      </div>
+                      <div class="description">
+                        <h3>Red</h3>
+                        <div class="hex">
+                          <strong>HEX:</strong> #EF5350
+                        </div>
+                        <div class="rgb">
+                          <span><strong>RGB:</strong> 239, 83, 80</span>
+                        </div>
+
+                      </div>
+
+                  </div>
+                </div>
+                  <div class="col-xs-8">
+                    <h4><strong>Negative Value Text</strong></h4>
+                    <small>ใช้สำหรับ Text ที่สื่อถึงทางลบ เช่น ตัวเลขที่เพิ่มขึ้นในทางที่แย่ลง</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="color-box-typo">
+                      <div class="color color-status-error">
+                      </div>
+                      <div class="description">
+                        <h3>Error Red</h3>
+                        <div class="hex">
+                          <strong>HEX:</strong> #B00020
+                        </div>
+                        <div class="rgb">
+                          <span><strong>RGB:</strong> 176, 0 , 32</span>
+                        </div>
+
+                      </div>
+
+                  </div>
+                </div>
+                  <div class="col-xs-8">
+                    <h4><strong>Error Text</strong></h4>
+                    <small>ใช้สำหรับ Error Message เช่น error message ของ input field</small>
+                  </div>
                 </div>
 
 

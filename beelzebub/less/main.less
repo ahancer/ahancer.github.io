@@ -267,17 +267,48 @@ a:hover, a:focus{
     }
   }
 
-  .typo-box{
-    .color{
-      width: 100%;
-      height: 250px;
-    }
+
+
 
 
 }
 
-
-
+.color-box-typo{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  .color{
+    width: 100%;
+    height: 150px;
+  }
+  .border{
+    border: @color-grey-0 2px solid;
+  }
+  .description{
+    padding: 15px;
+    font-size: 14px;
+    background: @color-grey-0;
+    h3{
+      margin-top: 0px;
+      margin-bottom: 15px;
+    }
+    .hex{
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .rgb{
+      display: inline-block;
+    }
+    .color-box-small{
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-bottom: -1px;
+      margin-left: 15px;
+    }
+    .usage{
+      margin-top: 10px;
+    }
+  }
 }
 
   .color-box{
@@ -460,13 +491,23 @@ a:hover, a:focus{
 }
 
 .typo-table{
+
   height: auto;
   padding: 30px;
 
   tbody{
-    tr{
+    padding: 50px;
+    h1,h2,h3,h4 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 
-      padding: 100px;
+  .border-bottom {
+    border-bottom: 1px solid @color-grey-1;
+
+  }
+    tr{
+      padding: 50px;
       td{
         vertical-align: top;
         padding: 20px;
@@ -479,18 +520,17 @@ a:hover, a:focus{
       }
       .typo-detail{
         padding-top: 10px;
-        width: 220px;
+        width: 250px;
       }
       .typo-desc{
 
         padding-top: 10px;
         line-height: 155%;
       }
-      .line {
-        border-bottom: 2px solid red;
+
+      .border-bottom {
+        border-bottom: 1px solid black;
       }
-
-
     }
   }
   }
