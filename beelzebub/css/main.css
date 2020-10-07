@@ -7507,6 +7507,33 @@ a:focus {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.typo-table {
+  height: auto;
+  padding: 30px;
+}
+.typo-table tbody tr {
+  padding: 100px;
+}
+.typo-table tbody tr td {
+  vertical-align: top;
+  padding: 20px;
+}
+.typo-table tbody tr .typo-header {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 200px;
+}
+.typo-table tbody tr .typo-detail {
+  padding-top: 10px;
+  width: 220px;
+}
+.typo-table tbody tr .typo-desc {
+  padding-top: 10px;
+  line-height: 155%;
+}
+.typo-table tbody tr .line {
+  border-bottom: 2px solid red;
+}
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 /* Only Medium devices (MD) */
