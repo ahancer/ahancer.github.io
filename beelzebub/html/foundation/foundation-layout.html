@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Facebook OG -->
+    <meta property="fb:app_id"             content="" />
+    <meta property="og:url"                content=""/>
+    <meta property="og:type"               content=""/>
+    <meta property="og:title"              content=""/>
+    <meta property="og:description"        content=""/>
+    <meta property="og:image"              content=""/>
+<!-- Facebook OG ENDS -->
+
+    <title>Beelzebub Design System</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="../../wmk-template/css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+<!--This is Google Analytics-->
+    <script>
+    </script>
+<!--END of Google Analytics-->
+
+<!-- Facebook Pixel Code -->
+    <script>
+    </script>
+<!-- End Facebook Pixel Code -->
+
+</head>
+  <body>
+
+    <!-- Top Nav -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Beelzebub</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../../images/logo.svg" alt="logo" class="logo-image">WealthMagik Design System</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li  class="active"><a href="../.index.html">Foundation</a></li>
+          <li><a href="html/component/components.html">Components</a></li>
+          <li><a href="html/resources/resources.html">Resources</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a>v1.01 by Ahancer</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Top Nav -->
+
+    <!-- Body Container -->
+    <div class="body-container">
+      <div class="menubar">
+        <h3><a href="index.html">Foundation</a></h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="../../index.html">Design Principle</a></li>
+          <li><a href="foundation-color.html">Color</a></li>
+          <li><a href="foundation-typography.html">Typography</a></li>
+          <li class="active"><a href="foundation-layout.html">Layout</a></li>
+          <li><a href="#">Spacing</a></li>
+          <li><a href="#">Icon</a></li>
+          <li><a href="#">Illustraion</a></li>
+          <li><a href="#">Logo</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+
+            <!-- Article -->
+            <div class="article col-sm-12 col-md-11 col-lg-10">
+              <section id="overview" class="article-section">
+                <h1>Layout</h1>
+                <p>
+                Layout หรือการจัดแบ่งหน้าจอ มีส่วนช่วยให้ user สามารถใช้งาน component ต่างๆ บนหน้าจอได้ถูกต้อง และรวดเร็วยิ่งขึ้น โดยการจัด Layout จะคำนึงถึงขนาดหน้าจอ, ของบนหน้าจอ และระยะห่างระหว่างของนั้นๆ
+                </p>
+                <h2>Overviews</h2>
+                <p>ใช้ Responsive Layout Grid จะปรับะขนาดตามแต่ละ size ของหน้าจอ เพื่อให้สามารถแสดงผลในหน้าจอที่หลากหลายได้ โดยตัว Layout จะมีส่วนประกอบดังนี้</p>
+                <img src="../../images/wmk/foundation/img-foundation-layout-overview-1.png" class="img-responsive" alt="button">
+                <br>
+
+              </section>
+
+
+              <section id="1-region" class="article-section">
+
+                <h2>One Region Layout</h2>
+                <p>คือ Layout ที่ทั้งหน้ามีพื้นที่เดียว ใช้ในหน้าส่วนใหญ่ของเว็ปไซต์</p>
+                <img src="../../images/wmk/foundation/img-foundation-layout-1-region-1.png" class="img-responsive" alt="button">
+                <img src="../../images/wmk/foundation/img-foundation-layout-1-region-2.png" class="img-responsive" alt="button">
+
+                <br>
+              </section>
+
+
+              <section id="2-region" class="article-section">
+
+                <h2>Two Regions Layout</h2>
+                <p>เป็น Layout ที่พื้นที่ในหน้าถูกแบ่งเป็น 2 ส่วน
+                  <br>1. Left Panel จะถูก Fixed ไว้ด้านซ้ายมือและขนาดเท่าเดิมอยู่ตลอด
+                  <br>2. Content จะถูกวางด้วย Reponsive Layout 12 Column</p>
+                <img src="../../images/wmk/foundation/img-foundation-layout-2-region-1.png" class="img-responsive" alt="button">
+                <img src="../../images/wmk/foundation/img-foundation-layout-2-region-2.png" class="img-responsive" alt="button">
+
+                <br>
+              </section>
+
+              <section id="breakpoint" class="article-section">
+
+                <h2>Breakpoint</h2>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Mobile Portrait</th>
+                      <th>Mobile Landscape</th>
+                      <th>Tablet</th>
+                      <th>Desktop</th>
+                      <th>Large Desktop</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Screen Width</th>
+                      <td>0-575px</td>
+                      <td>576-767px</td>
+                      <td>768-1279px</td>
+                      <td>1280-1480px</td>
+                      <td>1481px+</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <img src="../../images/wmk/foundation/img-foundation-layout-breakoint-1.png" class="img-responsive" alt="button">
+
+                <br>
+              </section>
+            </div>
+              <!-- End of Article -->
+
+            <!--Lift -->
+                <div class="col-sm-12 col-md-1 col-lg-2 lift ">
+                  <nav class="col-xs-3 lift-items nav nav-pills nav-stacked bs-docs-sidebar ">
+                    <h4>CONTENT</h4>
+                      <ul id="sidebar" class="nav nav-stacked">
+                          <li>
+                              <a href="#overview">Overviews</a>
+                          </li>
+                          <li>
+                              <a href="#1-region">One Region Layout</a>
+                          </li>
+                          <li>
+                              <a href="#2-region">Two Regions Layout</a>
+                          </li>
+                          <li>
+                              <a href="#breakpoint">Breakpoint</a>
+                          </li>
+
+
+                      </ul>
+                  </nav>
+          </div>
+
+            <!--End of Lift -->
+
+        </div>
+      </div>
+    </div>
+    <!-- End of Body Container -->
+
+
+
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+  </body>
+</html>
