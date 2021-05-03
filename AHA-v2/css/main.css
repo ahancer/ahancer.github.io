@@ -7280,8 +7280,10 @@ h1 {
   font-family: 'Poppins';
   font-size: 80px;
   font-weight: 700;
-  line-height: 11px;
+  line-height: 112px;
   letter-spacing: 1.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 h2 {
   font-family: 'Poppins';
@@ -7289,6 +7291,8 @@ h2 {
   font-weight: 700;
   line-height: 56px;
   letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 h3 {
   font-family: 'Poppins';
@@ -7296,6 +7300,8 @@ h3 {
   font-weight: 600;
   line-height: 48px;
   letter-spacing: 0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 h4 {
   font-family: 'Poppins';
@@ -7303,6 +7309,8 @@ h4 {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 small {
   font-family: 'Poppins';
@@ -7382,10 +7390,9 @@ a:active {
   color: #ffffff;
   background-color: #393939;
   border-color: #393939;
-  font-size: 24px;
-  padding: 12px;
-  min-width: 200px;
-  border-radius: 6px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 22px;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -7480,11 +7487,16 @@ fieldset[disabled] .btn-primary.active {
   color: #393939;
   background-color: #ffffff;
 }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .btn-primary {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .btn-primary {
-    padding: 8px;
     font-size: 16px;
-    min-width: 124px;
+    padding: 12px 24px;
   }
 }
 /*---Banner Wrapper---*/
@@ -7518,9 +7530,14 @@ fieldset[disabled] .btn-primary.active {
     width: 200px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   .cloud-wrapper {
-    width: 120px;
+    width: 240px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cloud-wrapper {
+    width: 200px;
   }
 }
 .cloud-1 {
@@ -7567,43 +7584,54 @@ fieldset[disabled] .btn-primary.active {
 .banner .navigation .logo {
   width: 48px;
 }
-.banner .hero-message {
-  padding-top: 80px;
-}
-.banner .hero-message h1 {
-  margin-bottom: 40px;
-}
 .banner .hero-message .btn-primary {
-  margin-top: 32px;
+  margin-top: 48px;
 }
 @media only screen and (min-width: 1441px) {
   .banner {
     height: 720px;
     background-size: cover;
   }
+  .banner .hero-message {
+    padding-top: 80px;
+  }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
   .banner {
-    height: 600px;
-    background-size: contain;
-  }
-  .banner .hero-message {
-    padding-top: 120px;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .banner {
-    height: 480px;
+    height: 640px;
     background-size: contain;
   }
   .banner .hero-message {
     padding-top: 80px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   .banner {
-    height: 480px;
-    background-size: 140%;
+    height: 600px;
+    background-size: contain;
+  }
+  .banner .hero-message {
+    padding-top: 64px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .banner {
+    height: 640px;
+    background-size: contain;
+  }
+  .banner h4 {
+    margin-top: 8px;
+  }
+  .banner .hero-message {
+    text-align: center;
+    padding-top: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 516px;
+    background-image: url("../images/hero-mobile.png");
+    background-size: contain;
   }
   .banner .navigation {
     padding-top: 16px;
@@ -7612,11 +7640,14 @@ fieldset[disabled] .btn-primary.active {
     width: 32px;
   }
   .banner .hero-message {
-    padding-top: 80px;
+    padding-top: 40px;
     text-align: center;
   }
+  .banner .hero-message h4 {
+    margin-top: 8px;
+  }
   .banner .hero-message .btn-primary {
-    margin-top: 16px;
+    margin-top: 32px;
   }
 }
 /*---Content---*/
@@ -7638,6 +7669,7 @@ section h2 {
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   section {
     padding-top: 64px;
+    padding-bottom: 64px;
   }
   section p {
     margin-bottom: 24px;
@@ -7646,9 +7678,22 @@ section h2 {
     margin-bottom: 24px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   section {
     padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  section p {
+    margin-top: 16px;
+  }
+  section h2 {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   section p {
     margin-top: 16px;
@@ -7663,6 +7708,7 @@ section h2 {
   text-align: left;
 }
 .collaboration p {
+  margin-top: 8px;
   color: #ffffff;
 }
 .collaboration h2 {
@@ -7671,6 +7717,11 @@ section h2 {
 .collaboration img {
   margin-top: 40px;
   border-radius: 16px;
+}
+@media only screen and (max-width: 992px) {
+  .collaboration {
+    text-align: center;
+  }
 }
 /*---Section: Our Works---*/
 .works .row {
@@ -7684,7 +7735,7 @@ section h2 {
   text-align: left;
 }
 .works .work-item h3 {
-  margin-bottom: 0px;
+  margin-top: 16px;
 }
 .works .work-item p {
   margin-top: 8px;
@@ -7692,12 +7743,37 @@ section h2 {
 .works .work-item img {
   border-radius: 16px;
 }
-/*---Section: Our Works---*/
+@media only screen and (max-width: 992px) {
+  .works .row {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .works .work-item {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .works .work-item {
+    text-align: center;
+  }
+}
+/*---Section: Clients---*/
 .clients {
   background: #f9f8f6;
 }
 .clients img {
   margin-top: 56px;
+}
+@media only screen and (max-width: 768px) {
+  .clients img {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/*---Section: Team---*/
+.team img {
+  border-radius: 16px;
 }
 /*---Section: Contact Us---*/
 .contact {
@@ -7714,24 +7790,40 @@ section h2 {
   margin-bottom: -200px;
   animation: MoveUpDown 2s ease infinite;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   .contact .balloon {
-    width: 230px;
-    margin-left: 140px;
-    margin-bottom: -160px;
-    animation: MoveUpDown 1.5s ease infinite;
+    width: 320px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact {
+    text-align: center;
+  }
+  .contact .balloon {
+    width: 280px;
+    margin-left: 0px;
+    margin-top: 32px;
   }
 }
 /*---Footer---*/
 footer {
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 80px;
   background: #EDE7D6;
+  font-size: 16px;
+  line-height: 24px;
+}
+footer strong {
+  margin-bottom: 8px;
+  display: block;
 }
 @media only screen and (max-width: 768px) {
-  footer a,
-  footer p {
+  footer {
     font-size: 14px;
+  }
+  footer strong {
+    margin-top: 40px;
   }
 }
 /*---Page: Work Detail---*/
@@ -7752,71 +7844,100 @@ footer {
 }
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
+@media only screen and (min-width: 1441px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: block;
+  }
+}
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: block;
+  }
   body {
     font-size: 22px;
     line-height: 32px;
   }
-  h1 {
-    font-size: 80px;
-  }
-  h2 {
-    font-size: 48px;
-  }
-  h3 {
-    font-size: 32px;
-  }
-  h4 {
-    font-size: 24px;
-  }
 }
 /* Only Medium devices (MD) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: block;
+  }
   body {
     font-size: 18px;
     line-height: 28px;
   }
   h1 {
     font-size: 64px;
+    line-height: 96px;
   }
   h2 {
     font-size: 38px;
+    line-height: 52px;
   }
   h3 {
     font-size: 28px;
+    line-height: 38px;
   }
   h4 {
     font-size: 20px;
+    line-height: 32px;
   }
 }
 /* Only Small devices (SM) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  .mobile-only {
+    display: none;
+  }
+  .desktop-only {
+    display: block;
+  }
   body {
     font-size: 16px;
     line-height: 26px;
   }
   h1 {
     font-size: 64px;
+    line-height: 78px;
   }
   h2 {
     font-size: 32px;
+    line-height: 48px;
   }
   h3 {
     font-size: 20px;
+    line-height: 30px;
   }
   h4 {
     font-size: 18px;
+    line-height: 28px;
   }
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
   body {
     font-size: 16px;
     line-height: 26px;
   }
   h1 {
     font-size: 36px;
+    line-height: 46px;
   }
   h2 {
     font-size: 24px;
@@ -7824,6 +7945,7 @@ footer {
   }
   h3 {
     font-size: 20px;
+    line-height: 30px;
   }
   h4 {
     font-size: 18px;

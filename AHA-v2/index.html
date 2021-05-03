@@ -8,7 +8,7 @@
 
   <!-- Facebook OG -->
   <meta property="fb:app_id" content="" />
-  <meta property="og:url" content="" />
+  <meta property="og:url" content="https://ahancer.com/" />
   <meta property="og:type" content="" />
   <meta content="Ahancer is a UX/UI Design Agency based in Thailand." name="description">
   <meta content="Ahancer UX/UI Design Agency" property="og:title">
@@ -60,10 +60,10 @@
 <body>
 
   <div class="banner-wrapper">
-    <div class="banner">
+    <div class="banner" id="topSection">
       <div class="container">
         <div class="navigation">
-          <a href="#"><img src="images/logo.svg" alt="logo" class="logo"></a>
+          <a href="#"><img src="images/logo.svg" alt="Ahancer Logo" class="logo"></a>
         </div>
         <div class="hero-message">
           <h1>We're Ahancer!</h1>
@@ -90,12 +90,13 @@
     <section class="services">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-lg-10 col-lg-offset-1">
-            <h2>Help you build a User-First Mindset</h2>
+          <div class="col-sm-12 col-sm-offset-0 col-lg-10 col-lg-offset-1">
+            <h2>Build User-First Mindset</h2>
             <p>
-              A good product always evolving. Through our Discovery and Design service we help you shape your product in the right direction.
+              A good product is always evolving. We help you shape your product in the right direction though our discovery and design services.
             </p>
-            <img src="images/img-process.png" alt="our process" class="img-responsive">
+            <img src="images/img-process.png" alt="Ahancer Services" class="img-responsive desktop-only">
+            <img src="images/img-process-mobile.png" alt="Ahancer Services" class="img-responsive mobile-only">
           </div>
         </div>
       </div>
@@ -112,7 +113,7 @@
             </p>
           </div>
           <div class="col-lg-12">
-            <img src="images/img-collaborate.jpg" class="img-responsive" alt="collaboration">
+            <img src="images/img-collaborate.jpg" class="img-responsive" alt="Collaboration">
           </div>
         </div>
       </div>
@@ -121,36 +122,28 @@
     <section class="works">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-lg-12 col-lg-offset-0">
+          <div class="col-sm-12">
             <h2>Our Works</h2>
             <div class="row">
-              <div class="col-lg-6 work-item">
-                <a href="work-finansia.html">
-                  <img src="images/img-work-finansia.png" alt="our work" class="img-responsive">
+              <div class="col-sm-6 work-item">
+                  <img src="images/img-work-finansia.png" alt="Finansia" class="img-responsive">
                   <h3>Make stock trading easy</h3>
                   <p>Finansia Hero - Stock Brokerage</p>
-                </a>
               </div>
-              <div class="col-lg-6 work-item">
-                <a href="#">
-                  <img src="images/img-work-meb.png" alt="our work" class="img-responsive">
+              <div class="col-sm-6 work-item">
+                  <img src="images/img-work-meb.png" alt="MEB" class="img-responsive">
                   <h3>Improve browsing UX</h3>
                   <p>Meb - Ebook Platform</p>
-                </a>
               </div>
-              <div class="col-lg-6 work-item">
-                <a href="#">
-                  <img src="images/img-work-assetplus.png" alt="our work" class="img-responsive">
+              <div class="col-sm-6 work-item">
+                  <img src="images/img-work-assetplus.png" alt="Asset Plus" class="img-responsive">
                   <h3>Simplify fund investment</h3>
                   <p>Asset Plus - Mutual Fund</p>
-                </a>
               </div>
-              <div class="col-lg-6 work-item">
-                <a href="#">
-                  <img src="images/img-work-tipinsure.png" alt="our work" class="img-responsive">
+              <div class="col-sm-6 work-item">
+                  <img src="images/img-work-tipinsure.png" alt="Tip Insure" class="img-responsive">
                   <h3>User friendly insurance</h3>
                   <p>Tip Insure - Online Insurance</p>
-                </a>
               </div>
             </div>
           </div>
@@ -161,9 +154,10 @@
     <section class="clients">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-lg-10 col-lg-offset-1">
+          <div class="col-sm-12 col-lg-10 col-lg-offset-1">
             <h2>We also worked with</h2>
-            <img src="images/img-client-logos.png" class="img-responsive" alt="our clients">
+            <img src="images/img-client-logos.png" class="img-responsive desktop-only" alt="our clients">
+            <img src="images/img-client-logos-mobile.png" class="img-responsive mobile-only" alt="our clients">
           </div>
         </div>
       </div>
@@ -172,7 +166,7 @@
     <section class="team" id="teamSection">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-lg-10 col-lg-offset-1">
+          <div class="col-sm-12 col-lg-10 col-lg-offset-1">
             <h2>Meet your team partner</h2>
             <p>
               Four strong but mighty. You can count on us to help you navigate the complexities of creating a great user experience.
@@ -186,15 +180,19 @@
     <section class="contact">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-lg-5 col-lg-offset-1">
-            <h2>Get in touch with our CEO</h2>
+          <div class="col-sm-6 col-lg-5 col-lg-offset-1">
+            <h2>Get in touch</h2>
             <p>
               Whether you need to create a new product from scratch or improve a product, I'm here to help you.
             </p>
-            <button type="button" name="button" class="btn btn-primary">natt@ahancer.com</button>
+            <a href="mailto:natt@ahancer.com">
+              <button type="button" name="button" class="btn btn-primary">natt@ahancer.com</button>
+            </a>
           </div>
-          <div class="col-lg-6">
-            <img src="images/img-contact-us.png" alt="contact us" class="balloon">
+          <div class="col-sm-6 col-lg-6">
+            <a href="#topSection">
+              <img src="images/img-contact-us.png" alt="contact us" class="balloon">
+            </a>
           </div>
         </div>
       </div>
@@ -204,31 +202,29 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 col-sm-offset-1">
-          <p>
-            <strong>Our Office</strong><br>
+        <div class="col-sm-4 col-lg-4 col-lg-offset-1">
+            <strong>Our Office</strong>
             Ahancer Co., Ltd.<br>
             68/2 Ranong 2 Road,<br>
             Thanon Nakorn Chai Sri,<br>
             Dusit, Bangkok 10300<br><br>
             <a href="https://goo.gl/maps/S1XQXHuyyp82" target="_blank"><i class="fa fa-map"></i> View on Google Map</a>
-          </p>
         </div>
-        <div class="col-sm-6">
-          <strong>Our Blog</strong><br>
-          <a href="https://medium.com/thaigovdesign/%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-7e80a6bbaae8">
-            จะทำให้แม่ค้าออนไลน์เข้าใจเรื่องภาษี?
-          </a><br>
-          <a href="https://medium.com/thaigovdesign/%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94-cititzen-centric-design-%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-3b16514a1574">
-            จะทำให้เกิด Cititzen-Centric Design ได้อย่างไร?
-          </a><br>
-          <a href="https://medium.com/thaigovdesign/%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3-user-test-%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%99%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%88%E0%B8%B0%E0%B8%9E%E0%B8%AD-6ebeb97417a9">
-            ต้องทำ User Test กี่คนถึงจะพอ?
-          </a><br>
-          <a href="https://blog.uxacademy.in.th/%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-ux-design-1d189c2d2823">
-            เหนือกว่า UX Design
-          </a><br><br>
-          <a href="https://blog.uxacademy.in.th/" target="_blank">Show More <i class="fa fa-arrow-right"></i></a>
+        <div class="col-sm-8 col-lg-7">
+            <strong>Our Blog</strong>
+            <a href="https://medium.com/thaigovdesign/%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-7e80a6bbaae8">
+              จะทำให้แม่ค้าออนไลน์เข้าใจเรื่องภาษี?
+            </a><br>
+            <a href="https://medium.com/thaigovdesign/%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94-cititzen-centric-design-%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-3b16514a1574">
+              จะทำให้เกิด Cititzen-Centric Design ได้อย่างไร?
+            </a><br>
+            <a href="https://medium.com/thaigovdesign/%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3-user-test-%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%99%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%88%E0%B8%B0%E0%B8%9E%E0%B8%AD-6ebeb97417a9">
+              ต้องทำ User Test กี่คนถึงจะพอ?
+            </a><br>
+            <a href="https://blog.uxacademy.in.th/%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-ux-design-1d189c2d2823">
+              เหนือกว่า UX Design
+            </a><br><br>
+            <a href="https://blog.uxacademy.in.th/" target="_blank">Show More <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
