@@ -179,23 +179,23 @@ a, a:hover, a:focus, a:active{
     background-size: cover;
   }
   @media only screen and (min-width: 1201px) and (max-width: 1440px) {
-    height: 520px;
+    height: 600px;
     background-size: contain;
     .hero-message{
-      padding-top: 64px;
+      padding-top: 120px;
     }
   }
   @media only screen and (min-width: 993px) and (max-width: 1200px) {
     height: 480px;
     background-size: contain;
     .hero-message{
-      padding-top: 56px;
+      padding-top: 80px;
     }
   }
   @media only screen and (max-width: 992px) {
     height: 480px;
-    background-size: 180%;
-    background-position: right bottom;
+    background-size: 140%;
+  //background-position: right bottom;
     .navigation{
       padding-top: 16px;
       .logo{
@@ -203,7 +203,7 @@ a, a:hover, a:focus, a:active{
       }
     }
     .hero-message{
-      padding-top: 8px;
+      padding-top: 80px;
       text-align: center;
       .btn-primary{
         margin-top: 16px;
@@ -310,6 +310,16 @@ section{
     margin-bottom: -200px;
     animation: MoveUpDown 2s ease infinite;
   }
+
+  @media only screen and (max-width: 768px) {
+    .balloon{
+      width: 230px;
+      margin-left: 140px;
+      margin-bottom: -160px;
+      animation: MoveUpDown 1.5s ease infinite;
+    }
+
+  }
 }
 
 /*---Footer---*/
@@ -317,6 +327,12 @@ footer{
   padding-top: 160px;
   padding-bottom: 80px;
   background: #EDE7D6;
+
+  @media only screen and (max-width: 768px) {
+    a,p{
+      font-size: 14px;
+    }
+  }
 }
 
 /*---Page: Work Detail---*/
@@ -346,56 +362,78 @@ footer{
 /* Only Large devices (LG) */
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
   body{
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 32px;
   }
   h1{
-    font-size: 64px;
+    font-size: 80px;
   }
   h2{
     font-size: 48px;
+  }
+  h3{
+    font-size: 32px;
+  }
+  h4{
+    font-size: 24px;
   }
 }
 /* Only Medium devices (MD) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   body{
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
   }
   h1{
-    font-size: 56px;
+    font-size: 64px;
   }
   h2{
-    font-size: 40px;
+    font-size: 38px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 20px;
   }
 }
 /* Only Small devices (SM) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   body{
     font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
+    line-height: 26px;
   }
   h1{
-    font-size: 56px;
+    font-size: 64px;
   }
   h2{
-    font-size: 40px;
+    font-size: 32px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 18px;
   }
 }
 /* Only Extra Small devices (XS) */
 @media only screen and (max-width: 768px) {
   body{
     font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
+    line-height: 26px;
   }
   h1{
     font-size: 36px;
-    font-weight: 600
   }
   h2{
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 18px;
+    line-height: 28px;
   }
 }
