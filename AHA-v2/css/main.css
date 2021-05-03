@@ -7661,12 +7661,17 @@ section h2 {
 /*---Section: Collaboration---*/
 .collaboration {
   background: #393939;
+  text-align: left;
 }
 .collaboration p {
   color: #ffffff;
 }
 .collaboration h2 {
   color: #ffffff;
+}
+.collaboration img {
+  margin-top: 40px;
+  border-radius: 16px;
 }
 /*---Section: Our Works---*/
 .works .row {
@@ -7685,15 +7690,36 @@ section h2 {
 .works .work-item p {
   margin-top: 8px;
 }
+.works .work-item img {
+  border-radius: 16px;
+}
+/*---Section: Our Works---*/
+.clients {
+  background: #f9f8f6;
+}
+.clients img {
+  margin-top: 56px;
+}
 /*---Section: Contact Us---*/
 .contact {
+  padding-top: 40px;
+  text-align: left;
   background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
+}
+.contact h2 {
+  margin-top: 40px;
+}
+.contact .balloon {
+  width: 400px;
+  margin-left: 56px;
+  margin-bottom: -200px;
+  animation: MoveUpDown 2s ease infinite;
 }
 /*---Footer---*/
 footer {
-  padding-top: 80px;
+  padding-top: 160px;
   padding-bottom: 80px;
-  background: #f9f8f6;
+  background: #EDE7D6;
 }
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
