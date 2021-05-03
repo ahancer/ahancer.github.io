@@ -7269,39 +7269,47 @@ button.close {
 }
 /*---General Setting---*/
 body {
+  color: #393939;
   font-family: 'Poppins';
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
 }
 h1 {
-  color: #393939;
   font-family: 'Poppins';
-  font-size: 72px;
+  font-size: 80px;
   font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 1.5px;
 }
 h2 {
-  color: #393939;
   font-family: 'Poppins';
   font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 1px;
 }
 h3 {
-  color: #393939;
   font-family: 'Poppins';
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.5px;
 }
 h4 {
-  color: #393939;
   font-family: 'Poppins';
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.5px;
 }
-h5 {
-  color: #F16F78;
+small {
   font-family: 'Poppins';
-  font-weight: 300;
-  font-size: 12px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.8px;
 }
 a,
 a:hover,
@@ -7479,7 +7487,7 @@ fieldset[disabled] .btn-primary.active {
     min-width: 124px;
   }
 }
-/*---Banner---*/
+/*---Banner Wrapper---*/
 .banner-wrapper {
   background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
   position: relative;
@@ -7561,6 +7569,9 @@ fieldset[disabled] .btn-primary.active {
 }
 .banner .hero-message {
   padding-top: 80px;
+}
+.banner .hero-message h1 {
+  margin-bottom: 40px;
 }
 .banner .hero-message .btn-primary {
   margin-top: 32px;
