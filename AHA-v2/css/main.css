@@ -7274,14 +7274,6 @@ body {
   line-height: 36px;
   font-weight: 300;
 }
-.navbar-inverse {
-  background-color: #ffffff;
-  border-color: #000000;
-}
-.logo-image {
-  width: 24px;
-  height: 24px;
-}
 h1 {
   color: #393939;
   font-family: 'Poppins';
@@ -7297,8 +7289,8 @@ h2 {
 h3 {
   color: #393939;
   font-family: 'Poppins';
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 600;
 }
 h4 {
   color: #393939;
@@ -7311,162 +7303,71 @@ h5 {
   font-weight: 300;
   font-size: 12px;
 }
-.banner-wrapper {
-  background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
-  position: relative;
-  overflow: hidden;
+a,
+a:hover,
+a:focus,
+a:active {
+  color: #393939 !important;
 }
-/*---Cloud---*/
-.cloud-wrapper {
-  position: absolute;
-  z-index: 1;
-  animation: slide 60s linear infinite;
+/*---Change BS 15 > 16px---*/
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
-.cloud-wrapper .cloud-image {
-  width: 100%;
-  animation: MoveUpDown 1s ease infinite;
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
-@media only screen and (min-width: 1441px) {
-  .cloud-wrapper {
-    width: 320px;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-  .cloud-wrapper {
-    width: 240px;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .cloud-wrapper {
-    width: 200px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .cloud-wrapper {
-    width: 120px;
-  }
-}
-.cloud-1 {
-  top: 10px;
-  right: -160px;
-}
-.cloud-2 {
-  top: 120px;
-  right: 500px;
-}
-.cloud-3 {
-  top: 10px;
-  right: 1000px;
-}
-@keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-2400px, 0, 0);
-  }
-}
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-/*---Hero Banner---*/
-.banner {
-  display: block;
-  position: relative;
-  z-index: 9;
-  background-image: url("../images/hero.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-.banner .navigation {
-  padding-top: 24px;
-}
-.banner .navigation .logo {
-  width: 48px;
-}
-.banner .hero-message {
-  padding-top: 80px;
-}
-.banner .hero-message .btn-primary {
-  margin-top: 32px;
-}
-@media only screen and (min-width: 1441px) {
-  .banner {
-    height: 720px;
-    background-size: cover;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-  .banner {
-    height: 520px;
-    background-size: contain;
-  }
-  .banner .hero-message {
-    padding-top: 64px;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .banner {
-    height: 480px;
-    background-size: contain;
-  }
-  .banner .hero-message {
-    padding-top: 56px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .banner {
-    height: 480px;
-    background-size: 180%;
-    background-position: right bottom;
-  }
-  .banner .navigation {
-    padding-top: 16px;
-  }
-  .banner .navigation .logo {
-    width: 32px;
-  }
-  .banner .hero-message {
-    padding-top: 8px;
-    text-align: center;
-  }
-  .banner .hero-message .btn-primary {
-    margin-top: 16px;
-  }
-}
-/*---Content---*/
-.content {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  text-align: center;
-}
-.content p {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .content {
-    padding-top: 64px;
-  }
-  .content p {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .content {
-    padding-top: 48px;
-  }
-  .content p {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+.row {
+  margin-left: -16px;
+  margin-right: -16px;
 }
 /*---Button---*/
 .btn-primary {
@@ -7577,6 +7478,194 @@ fieldset[disabled] .btn-primary.active {
     font-size: 16px;
     min-width: 124px;
   }
+}
+/*---Banner---*/
+.banner-wrapper {
+  background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
+  position: relative;
+  overflow: hidden;
+}
+/*---Banner: Cloud---*/
+.cloud-wrapper {
+  position: absolute;
+  z-index: 1;
+  animation: slide 60s linear infinite;
+}
+.cloud-wrapper .cloud-image {
+  width: 100%;
+  animation: MoveUpDown 1s ease infinite;
+}
+@media only screen and (min-width: 1441px) {
+  .cloud-wrapper {
+    width: 320px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .cloud-wrapper {
+    width: 240px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .cloud-wrapper {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .cloud-wrapper {
+    width: 120px;
+  }
+}
+.cloud-1 {
+  top: 10px;
+  right: -160px;
+}
+.cloud-2 {
+  top: 120px;
+  right: 500px;
+}
+.cloud-3 {
+  top: 10px;
+  right: 1000px;
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2400px, 0, 0);
+  }
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+/*---Banner: Hero Banner---*/
+.banner {
+  display: block;
+  position: relative;
+  z-index: 9;
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.banner .navigation {
+  padding-top: 24px;
+}
+.banner .navigation .logo {
+  width: 48px;
+}
+.banner .hero-message {
+  padding-top: 80px;
+}
+.banner .hero-message .btn-primary {
+  margin-top: 32px;
+}
+@media only screen and (min-width: 1441px) {
+  .banner {
+    height: 720px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .banner {
+    height: 520px;
+    background-size: contain;
+  }
+  .banner .hero-message {
+    padding-top: 64px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .banner {
+    height: 480px;
+    background-size: contain;
+  }
+  .banner .hero-message {
+    padding-top: 56px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .banner {
+    height: 480px;
+    background-size: 180%;
+    background-position: right bottom;
+  }
+  .banner .navigation {
+    padding-top: 16px;
+  }
+  .banner .navigation .logo {
+    width: 32px;
+  }
+  .banner .hero-message {
+    padding-top: 8px;
+    text-align: center;
+  }
+  .banner .hero-message .btn-primary {
+    margin-top: 16px;
+  }
+}
+/*---Content---*/
+.content {
+  text-align: center;
+}
+/*---Section---*/
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+section p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+section h2 {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  section {
+    padding-top: 64px;
+  }
+  section p {
+    margin-bottom: 24px;
+  }
+  section h2 {
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  section {
+    padding-top: 48px;
+  }
+  section p {
+    margin-top: 16px;
+  }
+  section h2 {
+    margin-bottom: 16px;
+  }
+}
+/*---Section: Collaboration---*/
+.collaboration {
+  background: #393939;
+}
+.collaboration p {
+  color: #ffffff;
+}
+.collaboration h2 {
+  color: #ffffff;
+}
+/*---Section: Our Works---*/
+.works .work-item {
+  text-align: left;
+}
+.works .work-item h3 {
+  margin-bottom: 0px;
+}
+.works .work-item p {
+  margin-top: 8px;
 }
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
