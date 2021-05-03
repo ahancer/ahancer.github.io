@@ -7701,12 +7701,8 @@ section h2 {
 }
 /*---Section: Contact Us---*/
 .contact {
-  padding-top: 40px;
   text-align: left;
   background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
-}
-.contact h2 {
-  margin-top: 40px;
 }
 .contact .balloon {
   width: 400px;
@@ -7715,10 +7711,14 @@ section h2 {
   animation: MoveUpDown 2s ease infinite;
 }
 @media only screen and (max-width: 768px) {
+  .contact {
+    text-align: center;
+  }
   .contact .balloon {
     width: 230px;
-    margin-left: 140px;
-    margin-bottom: -160px;
+    margin-top: 24px;
+    margin-left: -10px;
+    margin-bottom: -200px;
     animation: MoveUpDown 1.5s ease infinite;
   }
 }
@@ -7727,12 +7727,6 @@ footer {
   padding-top: 160px;
   padding-bottom: 80px;
   background: #EDE7D6;
-}
-@media only screen and (max-width: 768px) {
-  footer a,
-  footer p {
-    font-size: 14px;
-  }
 }
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
@@ -7812,5 +7806,13 @@ footer {
   h4 {
     font-size: 18px;
     line-height: 28px;
+  }
+  footer strong {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  footer a,
+  footer p {
+    font-size: 14px;
   }
 }
