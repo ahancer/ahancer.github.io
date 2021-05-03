@@ -7721,6 +7721,22 @@ footer {
   padding-bottom: 80px;
   background: #EDE7D6;
 }
+/*---Page: Work Detail---*/
+.page-work-detail img {
+  border-radius: 16px;
+}
+.page-work-detail .navigation {
+  padding-top: 24px;
+}
+.page-work-detail .navigation .logo {
+  width: 48px;
+}
+.page-work-detail .navigation .close {
+  opacity: 1;
+}
+.page-work-detail .content {
+  text-align: left;
+}
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
 /* Only Large devices (LG) */

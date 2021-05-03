@@ -21,14 +21,39 @@
   <link rel="stylesheet" href="css/main.css">
 
   <!--This is Google Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154886105-1"></script>
   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154886105-1');
   </script>
   <!--END of Google Analytics-->
 
   <!-- Facebook Pixel Code -->
-  <script>
-  </script>
+      <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '1150987724951528');
+      fbq('track', "PageView");
+
+      // Lead
+      // Track when a user expresses interest in your offering (ex. form submission, sign up for trial, landing on pricing page)
+      fbq('track', 'Lead');
+
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1150987724951528&ev=PageView&noscript=1"
+      /></noscript>
   <!-- End Facebook Pixel Code -->
+
+  <!-- Google Vertification -->
+    <meta name="google-site-verification" content="LYINhUG3wM0wircq39r2HqY2huo36MycwYZtEpBjM1g" />
 
 </head>
 
@@ -100,7 +125,7 @@
             <h2>Our Works</h2>
             <div class="row">
               <div class="col-lg-6 work-item">
-                <a href="#">
+                <a href="work-finansia.html">
                   <img src="images/img-work-finansia.png" alt="our work" class="img-responsive">
                   <h3>Make stock trading easy</h3>
                   <p>Finansia Hero - Stock Brokerage</p>
@@ -208,6 +233,9 @@
       </div>
     </div>
   </footer>
+
+
+
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
