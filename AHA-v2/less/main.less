@@ -66,8 +66,8 @@ a, a:hover, a:focus, a:active{
   padding-right: 16px;
 }
 .row {
-    margin-left: -16px;
-    margin-right: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 /*---Button---*/
@@ -251,7 +251,14 @@ section{
 }
 /*---Section: Our Works---*/
 .works{
+  .row{
+    margin-left: -32px;
+    margin-right: -32px;
+  }
   .work-item{
+    margin-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     text-align: left;
     h3{
       margin-bottom: 0px;
@@ -261,8 +268,17 @@ section{
     }
   }
 }
+/*---Section: Contact Us---*/
+.contact{
+  background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
+}
 
-
+/*---Footer---*/
+footer{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: @color-grey2;
+}
 
 
 /*---Responsive---*/

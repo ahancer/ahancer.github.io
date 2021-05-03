@@ -7658,7 +7658,14 @@ section h2 {
   color: #ffffff;
 }
 /*---Section: Our Works---*/
+.works .row {
+  margin-left: -32px;
+  margin-right: -32px;
+}
 .works .work-item {
+  margin-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
   text-align: left;
 }
 .works .work-item h3 {
@@ -7666,6 +7673,16 @@ section h2 {
 }
 .works .work-item p {
   margin-top: 8px;
+}
+/*---Section: Contact Us---*/
+.contact {
+  background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
+}
+/*---Footer---*/
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f9f8f6;
 }
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
