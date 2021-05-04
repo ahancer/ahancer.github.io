@@ -7782,6 +7782,10 @@ section h2 {
 }
 .contact .balloon {
   width: 400px;
+  height: 549px;
+  background-image: url("../images/img-contact-us.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-left: 56px;
   margin-bottom: -200px;
   animation: MoveUpDown 2s ease infinite;
@@ -7789,6 +7793,7 @@ section h2 {
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .contact .balloon {
     width: 320px;
+    height: 439px;
     margin-left: 0px;
   }
 }
@@ -7798,7 +7803,9 @@ section h2 {
   }
   .contact .balloon {
     width: 280px;
-    margin-left: 0px;
+    height: 385px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 32px;
   }
 }
@@ -7823,9 +7830,6 @@ footer strong {
   }
 }
 /*---Page: Work Detail---*/
-.page-work-detail img {
-  border-radius: 16px;
-}
 .page-work-detail .navigation {
   padding-top: 24px;
 }
@@ -7833,10 +7837,53 @@ footer strong {
   width: 48px;
 }
 .page-work-detail .navigation .close {
+  margin-top: 4px;
   opacity: 1;
 }
-.page-work-detail .content {
+.page-work-detail .work-detail {
   text-align: left;
+}
+.page-work-detail .work-detail .main-image {
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.page-work-detail .work-detail h3 {
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+.page-work-detail .work-detail p {
+  margin-top: 16px;
+}
+.page-work-detail .work-detail .support-image {
+  border-radius: 8px;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .page-work-detail .navigation {
+    padding-top: 16px;
+  }
+  .page-work-detail .navigation .logo {
+    width: 32px;
+  }
+  .page-work-detail .navigation .close {
+    margin-top: -2px;
+  }
+  .page-work-detail .work-detail {
+    padding-top: 24px;
+  }
+  .page-work-detail .work-detail .main-image {
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .page-work-detail .work-detail h3 {
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  .page-work-detail .work-detail p {
+    margin-top: 8px;
+  }
 }
 /*---Responsive---*/
 /* Only Extra Large devices (XL) */
