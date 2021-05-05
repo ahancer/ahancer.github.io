@@ -7729,7 +7729,7 @@ section h2 {
   margin-right: -32px;
 }
 .works .work-item {
-  margin-top: 32px;
+  padding-top: 32px;
   padding-left: 32px;
   padding-right: 32px;
   text-align: left;
