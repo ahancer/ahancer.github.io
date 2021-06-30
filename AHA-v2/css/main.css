@@ -8232,6 +8232,7 @@ footer strong {
   margin-bottom: 8px;
 }
 .page-service-detail .service-detail p {
+  display: inline-block;
   color: #666665;
 }
 .page-service-detail .service-detail .process {
@@ -8327,6 +8328,9 @@ footer strong {
   .page-service-detail .service-detail p {
     display: inline-block;
     color: #666665;
+  }
+  .page-service-detail .service-detail .hide-content p {
+    display: none;
   }
   .page-service-detail .service-detail .process p {
     display: none;
