@@ -173,7 +173,6 @@ a:hover {
     padding: 12px 24px;
   }
 }
-
 /*---Banner Wrapper---*/
 .banner-wrapper {
   background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
@@ -737,6 +736,7 @@ footer {
   }
 }
 // Page: Service Detail
+
 .page-service-detail {
   .navigation {
     padding-top: 24px;
@@ -755,17 +755,18 @@ footer {
     text-align: left;
   }
 
-  .service-detail {
+  .service-description {
     text-align: left;
+    padding-bottom: 32px;
 
     .main-image {
       border-radius: 16px;
-      margin-top: 24px;
-      margin-bottom: 24px;
+      margin-top: 32px;
+      margin-bottom: 32px;
     }
 
     h2 {
-      margin-top: 32px;
+      margin-top: 16px;
       margin-bottom: 16px;
     }
 
@@ -775,48 +776,79 @@ footer {
     }
 
     p {
+      margin-top: 16px;
+      margin-bottom: 16px;
       display: inline-block;
       color: #666665;
     }
 
-    .process {
-      margin-top: 0;
-      padding-top: 32px;
-      padding-left: 32px;
-      padding-right: 32px;
-      > p {
+    .hide-content {
+      p {
         display: inline-block;
       }
     }
+  }
 
-    .key-method {
+  .process {
+    text-align: left;
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    p {
+      display: inline-block;
+    }
+
+    .process-item {
+      padding-top: 32px;
+      padding-left: 0;
+      padding-right: 16px;
+    }
+  }
+
+  .key-method {
+    text-align: left;
+
+    .media {
+      margin-top: 0;
+      padding-top: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+    }
+
+    h3 {
+      margin-top: 32px;
+    }
+
+    h4 {
+      margin-top: 0;
+    }
+
+    p {
+      display: inline-block;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    img {
+      padding-right: 16px;
+    }
+  }
+
+  .works{
+    h3{
       text-align: left;
-
-      .media {
-        margin-top: 0;
-        padding-top: 32px;
-        padding-left: 32px;
-        padding-right: 32px;
+    }
+    .work-item{
+      h3{
+        text-align: center;
       }
-
-      h3 {
-        margin-top: 32px;
-      }
-
-      h4 {
-        margin-top: 0;
-      }
-
-      p {
-        margin-top: 8px;
-        margin-bottom: 0;
-      }
-
-      img {
-        padding-right: 16px;
+      p{
+        text-align: center;
       }
     }
   }
+
   @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .navigation {
       padding-top: 16px;
@@ -827,33 +859,6 @@ footer {
 
       .close {
         margin-top: -2px;
-      }
-    }
-
-    .service-detail {
-      padding-top: 24px;
-
-      .main-image {
-        border-radius: 8px;
-        margin-top: 24px;
-        margin-bottom: 24px;
-      }
-
-      h3 {
-        margin-top: 16px;
-        margin-bottom: 4px;
-      }
-
-      h4 {
-        margin-top: 16px;
-        margin-bottom: 16px;
-        color: #393939;
-      }
-
-      p {
-        display: block;
-        color: #666665;
-        font-size: 14px;
       }
     }
   }
@@ -870,17 +875,18 @@ footer {
       }
     }
 
-    .service-detail {
+    .service-description {
       text-align: left;
+      padding-bottom: 32px;
 
       .main-image {
         border-radius: 16px;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        margin-top: 32px;
+        margin-bottom: 32px;
       }
 
       h2 {
-        margin-top: 32px;
+        margin-top: 16px;
         margin-bottom: 16px;
       }
 
@@ -890,70 +896,68 @@ footer {
       }
 
       p {
+        margin-top: 16px;
+        margin-bottom: 16px;
         display: inline-block;
         color: #666665;
       }
 
-      .hide-content{
-        p{
-          display: none;
-        }
-      }
-
-      .process {
+      .hide-content {
         p {
           display: none;
         }
       }
+    }
 
-      .key-method {
-        text-align: left;
+    .process {
+      text-align: left;
+      padding-bottom: 32px;
+      padding-top: 32px;
 
-        .media {
-          margin-top: 0;
-          padding-top: 16px;
-          margin-left: auto;
-          margin-right: auto;
+      p {
+        display: none;
+      }
 
-          .media > .pull-left,
-          .media-left {
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
-          }
+      .process-item {
+        padding-top: 32px;
+        padding-left: 0;
+        padding-right: 16px;
+      }
+    }
 
-          .media-body {
-            display: inline;
-            padding-top: 16px;
-            .media-heading{
-              padding-top: 16px;
-            }
-          }
+    .key-method {
+      text-align: left;
 
-          .media-object {
-            justify-content: center;
-            width: 140px;
-            padding-right: 0px;
-          }
+      .media {
+        margin-top: 0;
+        padding-top: 32px;
+        padding-left: 16px;
+        padding-right: 48px;
+
+        .media-body,
+        .media-left,
+        .media-right {
+          display: inline-block;
+
         }
+      }
 
-        h3 {
-          margin-top: 40px;
-        }
+      h3 {
+        margin-top: 32px;
+      }
 
-        h4 {
-          margin-top: 0;
-        }
+      h4 {
+        margin-top: 16px;;
+      }
 
-        p {
-          display: none;
-          margin-top: 8px;
-          margin-bottom: 0;
-        }
+      p {
+        display: none;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
 
-        img {
-          padding-right: 16px;
-        }
+      img {
+        padding-right: 16px;
       }
     }
   }
