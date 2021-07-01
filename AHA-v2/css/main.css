@@ -8227,42 +8227,43 @@ footer strong {
   margin-top: 4px;
   opacity: 1;
 }
+.page-service-detail h2 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
 .page-service-detail h3 {
   text-align: left;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.page-service-detail p {
+  color: #666665;
 }
 .page-service-detail .service-description {
   text-align: left;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 .page-service-detail .service-description .main-image {
   border-radius: 16px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.page-service-detail .service-description h2 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.page-service-detail .service-description h3 {
-  margin-top: 40px;
-  margin-bottom: 8px;
-}
 .page-service-detail .service-description p {
   margin-top: 16px;
   margin-bottom: 16px;
   display: inline-block;
-  color: #666665;
 }
 .page-service-detail .service-description .hide-content p {
   display: inline-block;
 }
 .page-service-detail .process {
   text-align: left;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .page-service-detail .process p {
   display: inline-block;
+  color: #666665;
 }
 .page-service-detail .process .process-item {
   padding-top: 32px;
@@ -8271,15 +8272,8 @@ footer strong {
 }
 .page-service-detail .key-method {
   text-align: left;
-}
-.page-service-detail .key-method .media {
-  margin-top: 0;
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.page-service-detail .key-method h3 {
-  margin-top: 32px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .page-service-detail .key-method h4 {
   margin-top: 0;
@@ -8291,6 +8285,17 @@ footer strong {
 }
 .page-service-detail .key-method img {
   padding-right: 16px;
+}
+.page-service-detail .key-method .media-item .media {
+  margin-top: 0;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+}
+.page-service-detail .works {
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .page-service-detail .works h3 {
   text-align: left;
@@ -8324,70 +8329,53 @@ footer strong {
   }
   .page-service-detail .service-description {
     text-align: left;
-    padding-bottom: 32px;
-  }
-  .page-service-detail .service-description .main-image {
-    border-radius: 16px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-  .page-service-detail .service-description h2 {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  .page-service-detail .service-description h3 {
-    margin-top: 40px;
-    margin-bottom: 8px;
-  }
-  .page-service-detail .service-description p {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    display: inline-block;
-    color: #666665;
+    padding-bottom: 24px;
   }
   .page-service-detail .service-description .hide-content p {
     display: none;
   }
   .page-service-detail .process {
     text-align: left;
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   .page-service-detail .process p {
     display: none;
   }
   .page-service-detail .process .process-item {
-    padding-top: 32px;
+    padding-top: 16px;
     padding-left: 0;
     padding-right: 16px;
   }
+  .page-service-detail .process .process-item img {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
   .page-service-detail .key-method {
     text-align: left;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
-  .page-service-detail .key-method .media {
-    margin-top: 0;
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-right: 48px;
+  .page-service-detail .key-method .media img {
+    padding-right: 16px;
+    width: 100%;
   }
   .page-service-detail .key-method .media .media-body,
   .page-service-detail .key-method .media .media-left,
   .page-service-detail .key-method .media .media-right {
     display: inline-block;
-  }
-  .page-service-detail .key-method h3 {
-    margin-top: 32px;
+    width: 100%;
   }
   .page-service-detail .key-method h4 {
-    margin-top: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   .page-service-detail .key-method p {
     display: none;
-    margin-top: 8px;
-    margin-bottom: 0;
   }
-  .page-service-detail .key-method img {
-    padding-right: 16px;
+  .page-service-detail .works {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 /*---Pre-Load---*/
