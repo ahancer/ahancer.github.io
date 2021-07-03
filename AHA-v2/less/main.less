@@ -762,9 +762,12 @@ footer {
     }
   }
 }
-// Page: Service Detail
+/*---Page: Service Detail---*/
 
 .page-service-detail {
+  .content{
+    text-align: left;
+  }
   .navigation {
     padding-top: 24px;
 
@@ -778,36 +781,30 @@ footer {
     }
   }
 
-  h2 {
-    margin-top: 8px;
-    margin-bottom: 16px;
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-
-  h3{
-    text-align: left;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  p{
-    color: #666665;
-  }
-
 
   .service-description {
-    text-align: left;
-    padding-bottom: 40px;
+    padding-top: 80px;
 
-    .main-image {
-      border-radius: 16px;
-      margin-top: 32px;
+    h4{
+      color: @color-subtext;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 56px;
+      margin-top: 8px;
       margin-bottom: 32px;
     }
 
     p {
-      margin-top: 16px;
-      margin-bottom: 16px;
       display: inline-block;
+      margin-top: 0px;
+      font-size: 18px;
+      line-height: 28px;
+      color: @color-subtext;
     }
 
     .hide-content {
@@ -817,35 +814,35 @@ footer {
     }
   }
 
-  .process {
-    text-align: left;
-    padding-bottom: 40px;
-    padding-top: 40px;
-
-    p {
-      display: inline-block;
-      color: #666665;
-    }
-
+  .service-process {
     .process-item {
       padding-top: 32px;
       padding-left: 0;
-      padding-right: 16px;
+      padding-right: 32px;
+      h4{
+        font-weight: 600;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 16px;
+        color: @color-subtext;
+      }
     }
   }
 
-  .key-method {
-    text-align: left;
-    padding-bottom: 40px;
-    padding-top: 40px;
-
+  .service-key-methods {
     h4 {
+      font-weight: 600;
       margin-top: 0;
     }
 
     p {
       display: inline-block;
-      margin-top: 8px;
+      margin-top: 0px;
+      font-size: 18px;
+      line-height: 28px;
+      color: @color-subtext;
       margin-bottom: 0;
     }
 
@@ -865,20 +862,8 @@ footer {
     }
   }
 
-  .works{
-    padding-bottom: 40px;
-    padding-top: 40px;
-    h3{
-      text-align: left;
-    }
-    .work-item{
-      h3{
-        text-align: center;
-      }
-      p{
-        text-align: center;
-      }
-    }
+  .service-case-studies {
+    padding-bottom: 80px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -977,6 +962,8 @@ footer {
 
   }
 }
+
+
 /*---Pre-Load---*/
 /*----------------------- Preloader -----------------------*/
 body.preloader-site {

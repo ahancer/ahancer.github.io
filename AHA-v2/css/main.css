@@ -8244,6 +8244,10 @@ footer strong {
     margin-top: 8px;
   }
 }
+/*---Page: Service Detail---*/
+.page-service-detail .content {
+  text-align: left;
+}
 .page-service-detail .navigation {
   padding-top: 24px;
 }
@@ -8254,84 +8258,70 @@ footer strong {
   margin-top: 4px;
   opacity: 1;
 }
-.page-service-detail h2 {
-  margin-top: 8px;
-  margin-bottom: 16px;
-}
-.page-service-detail h3 {
-  text-align: left;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.page-service-detail p {
-  color: #666665;
-}
-.page-service-detail .service-description {
-  text-align: left;
+.page-service-detail section {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
-.page-service-detail .service-description .main-image {
-  border-radius: 16px;
-  margin-top: 32px;
+.page-service-detail .service-description {
+  padding-top: 80px;
+}
+.page-service-detail .service-description h4 {
+  color: #666666;
+}
+.page-service-detail .service-description h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 8px;
   margin-bottom: 32px;
 }
 .page-service-detail .service-description p {
-  margin-top: 16px;
-  margin-bottom: 16px;
   display: inline-block;
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #666666;
 }
 .page-service-detail .service-description .hide-content p {
   display: inline-block;
 }
-.page-service-detail .process {
-  text-align: left;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-.page-service-detail .process p {
-  display: inline-block;
-  color: #666665;
-}
-.page-service-detail .process .process-item {
+.page-service-detail .service-process .process-item {
   padding-top: 32px;
   padding-left: 0;
-  padding-right: 16px;
+  padding-right: 32px;
 }
-.page-service-detail .key-method {
-  text-align: left;
-  padding-bottom: 40px;
-  padding-top: 40px;
+.page-service-detail .service-process .process-item h4 {
+  font-weight: 600;
 }
-.page-service-detail .key-method h4 {
+.page-service-detail .service-process .process-item p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 16px;
+  color: #666666;
+}
+.page-service-detail .service-key-methods h4 {
+  font-weight: 600;
   margin-top: 0;
 }
-.page-service-detail .key-method p {
+.page-service-detail .service-key-methods p {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #666666;
   margin-bottom: 0;
 }
-.page-service-detail .key-method img {
+.page-service-detail .service-key-methods img {
   padding-right: 16px;
 }
-.page-service-detail .key-method .media-item .media {
+.page-service-detail .service-key-methods .media-item .media {
   margin-top: 0;
   padding-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 32px;
 }
-.page-service-detail .works {
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-.page-service-detail .works h3 {
-  text-align: left;
-}
-.page-service-detail .works .work-item h3 {
-  text-align: center;
-}
-.page-service-detail .works .work-item p {
-  text-align: center;
+.page-service-detail .service-case-studies {
+  padding-bottom: 80px;
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .page-service-detail .navigation {
