@@ -522,7 +522,7 @@ section {
   background: linear-gradient(0deg, #F9F8F6 0%, rgba(249, 248, 246, 0) 100%);
   a{
     .service-card{
-      margin: 16px;
+      margin: 32px 16px 16px 16px;
       padding: 40px 40px 24px 40px;
       background: @color-white;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
@@ -534,14 +534,38 @@ section {
       }
       h3{
         margin-top: 0px;
-        margin-bottom: 16px;
+        margin-bottom: 0px;
+      }
+      p{
+        margin-top: 16px;
       }
     }
   }
   a:hover{
+    text-decoration: none !important;
     .service-card{
-      p{
-        text-decoration: none !important;
+      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 992px)  {
+    a{
+      .service-card{
+        margin: 32px 0px;
+        border-radius: 16px;
+        p{
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    a{
+      .service-card{
+        margin: 0px 16px 8px 16px;
+        border-radius: 16px;
+        p{
+          margin-bottom: 16px;
+        }
       }
     }
   }
@@ -562,7 +586,7 @@ section {
 
     h3 {
       margin-top: 16px;
-      text-align: center;
+      text-align: left;
     }
 
     p {
@@ -587,12 +611,15 @@ section {
   @media only screen and (max-width: 768px) {
     .work-item {
       text-align: center;
+      h3{
+        text-align: center;
+      }
     }
   }
 }
 /*---Section: Clients---*/
 .clients {
-  background: @color-grey2;
+  background: #f9f8f6;
 
   img {
     margin-top: 56px;
