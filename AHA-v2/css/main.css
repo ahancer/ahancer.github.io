@@ -8275,14 +8275,10 @@ footer strong {
   margin-bottom: 32px;
 }
 .page-service-detail .service-description p {
-  display: inline-block;
   margin-top: 0px;
   font-size: 18px;
   line-height: 28px;
   color: #666666;
-}
-.page-service-detail .service-description .hide-content p {
-  display: inline-block;
 }
 .page-service-detail .service-process .process-item {
   padding-top: 32px;
@@ -8290,6 +8286,7 @@ footer strong {
   padding-right: 32px;
 }
 .page-service-detail .service-process .process-item h4 {
+  line-height: 36px;
   font-weight: 600;
 }
 .page-service-detail .service-process .process-item p {
@@ -8298,30 +8295,34 @@ footer strong {
   margin-top: 16px;
   color: #666666;
 }
-.page-service-detail .service-key-methods h4 {
-  font-weight: 600;
-  margin-top: 0;
+.page-service-detail .service-key-methods .method-item {
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
-.page-service-detail .service-key-methods p {
-  display: inline-block;
+.page-service-detail .service-key-methods .method-item .method-item-image img {
+  border-radius: 8px;
+}
+.page-service-detail .service-key-methods .method-item .method-item-text h4 {
+  font-weight: 600;
+}
+.page-service-detail .service-key-methods .method-item .method-item-text p {
   margin-top: 0px;
   font-size: 18px;
   line-height: 28px;
   color: #666666;
   margin-bottom: 0;
 }
-.page-service-detail .service-key-methods img {
-  padding-right: 16px;
-}
-.page-service-detail .service-key-methods .media-item .media {
-  margin-top: 0;
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-}
 .page-service-detail .service-case-studies {
   padding-bottom: 80px;
+}
+.page-service-detail .services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: #f9f8f6;
+}
+.page-service-detail .services .active {
+  box-shadow: none;
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .page-service-detail .navigation {
@@ -8344,55 +8345,39 @@ footer strong {
   .page-service-detail .navigation .close {
     margin-top: -2px;
   }
-  .page-service-detail .service-description {
-    text-align: left;
-    padding-bottom: 24px;
-  }
-  .page-service-detail .service-description .hide-content p {
-    display: none;
-  }
-  .page-service-detail .process {
-    text-align: left;
+  .page-service-detail section {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .page-service-detail .process p {
-    display: none;
+  .page-service-detail .service-description h1 {
+    margin-bottom: 32px;
   }
-  .page-service-detail .process .process-item {
-    padding-top: 16px;
-    padding-left: 0;
-    padding-right: 16px;
+  .page-service-detail .service-process .process-item {
+    text-align: center;
+    padding-right: 8px;
+    padding-left: 8px;
   }
-  .page-service-detail .process .process-item img {
-    margin-top: 16px;
-    margin-bottom: 16px;
+  .page-service-detail .service-process .process-item img {
+    margin: auto;
   }
-  .page-service-detail .key-method {
-    text-align: left;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .page-service-detail .service-process .process-item h4 {
+    font-weight: 400;
+    line-height: 26px;
   }
-  .page-service-detail .key-method .media img {
-    padding-right: 16px;
-    width: 100%;
+  .page-service-detail .service-key-methods .method-item {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0px;
   }
-  .page-service-detail .key-method .media .media-body,
-  .page-service-detail .key-method .media .media-left,
-  .page-service-detail .key-method .media .media-right {
-    display: inline-block;
-    width: 100%;
-  }
-  .page-service-detail .key-method h4 {
+  .page-service-detail .service-key-methods .method-item .method-item-text h4 {
     margin-top: 8px;
-    margin-bottom: 8px;
+    font-weight: 400;
   }
-  .page-service-detail .key-method p {
-    display: none;
-  }
-  .page-service-detail .works {
-    padding-top: 24px;
+  .page-service-detail .service-case-studies {
     padding-bottom: 24px;
+  }
+  .page-service-detail .contact {
+    padding-top: 64px;
   }
 }
 /*---Pre-Load---*/

@@ -800,17 +800,10 @@ footer {
     }
 
     p {
-      display: inline-block;
       margin-top: 0px;
       font-size: 18px;
       line-height: 28px;
       color: @color-subtext;
-    }
-
-    .hide-content {
-      p {
-        display: inline-block;
-      }
     }
   }
 
@@ -820,6 +813,7 @@ footer {
       padding-left: 0;
       padding-right: 32px;
       h4{
+        line-height: 36px;
         font-weight: 600;
       }
       p {
@@ -832,32 +826,26 @@ footer {
   }
 
   .service-key-methods {
-    h4 {
-      font-weight: 600;
-      margin-top: 0;
-    }
 
-    p {
-      display: inline-block;
-      margin-top: 0px;
-      font-size: 18px;
-      line-height: 28px;
-      color: @color-subtext;
-      margin-bottom: 0;
-    }
-
-    img {
-      padding-right: 16px;
-
-    }
-
-    .media-item{
-      .media {
-        margin-top: 0;
-        padding-top: 32px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 32px;
+    .method-item{
+      margin-top: 32px;
+      margin-bottom: 16px;
+      .method-item-image{
+        img{
+          border-radius: 8px;
+        }
+      }
+      .method-item-text{
+        h4 {
+          font-weight: 600;
+        }
+        p {
+          margin-top: 0px;
+          font-size: 18px;
+          line-height: 28px;
+          color: @color-subtext;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -866,14 +854,22 @@ footer {
     padding-bottom: 80px;
   }
 
+  .services{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    background: #f9f8f6;
+    .active{
+      box-shadow: none;
+    }
+  }
+
   @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .navigation {
       padding-top: 16px;
-
       .logo {
         width: 32px;
       }
-
       .close {
         margin-top: -2px;
       }
@@ -883,81 +879,60 @@ footer {
 
     .navigation {
       padding-top: 16px;
-
       .logo {
         width: 32px;
       }
-
       .close {
         margin-top: -2px;
       }
     }
 
+    section {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
     .service-description {
-      text-align: left;
-      padding-bottom: 24px;
-
-      .hide-content {
-        p {
-          display: none;
-        }
+      h1{
+        margin-bottom: 32px;
       }
     }
 
-    .process {
-      text-align: left;
-      padding-top: 24px;
-      padding-bottom: 24px;
-      p {
-        display: none;
-      }
-
-      .process-item {
-        padding-top: 16px;
-        padding-left: 0;
-        padding-right: 16px;
-
+    .service-process{
+      .process-item{
+        text-align: center;
+        padding-right: 8px;
+        padding-left: 8px;
         img{
-          margin-top: 16px;
-          margin-bottom: 16px;
+          margin: auto;
+        }
+        h4{
+          font-weight: 400;
+          line-height: 26px;
         }
       }
     }
 
-    .key-method {
-      text-align: left;
-      padding-top: 24px;
-      padding-bottom: 24px;
-
-      .media {
-        img{
-          padding-right: 16px;
-          width: 100%;
-        }
-        .media-body,
-        .media-left,
-        .media-right {
-          display: inline-block;
-              width: 100%;
+    .service-key-methods {
+      .method-item{
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 0px;
+        .method-item-text{
+          h4 {
+            margin-top: 8px;
+            font-weight: 400;
+          }
         }
       }
-
-
-      h4 {
-        margin-top: 8px;
-        margin-bottom: 8px;
-      }
-
-      p {
-        display: none;
-      }
-
-
     }
 
-    .works{
-      padding-top: 24px;
+    .service-case-studies{
       padding-bottom: 24px;
+    }
+
+    .contact{
+      padding-top: 64px;
     }
 
   }
