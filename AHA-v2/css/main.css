@@ -8356,15 +8356,31 @@ footer strong {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .page-service-detail .service-description {
+    padding-top: 48px;
+  }
+  .page-service-detail .service-description h4 {
+    font-size: 16px;
+  }
   .page-service-detail .service-description h1 {
-    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+  .page-service-detail .service-description p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .page-service-detail .service-process {
+    padding-bottom: 0px;
   }
   .page-service-detail .service-process .process-item {
     text-align: center;
     padding-top: 16px;
     padding-right: 8px;
     padding-left: 8px;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
   }
   .page-service-detail .service-process .process-item img {
     margin: auto;
