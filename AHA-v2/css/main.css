@@ -7372,7 +7372,7 @@ body {
   font-size: 22px;
   line-height: 32px;
   font-weight: 400;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.1px;
 }
 h1 {
   font-family: 'Poppins';
@@ -8023,7 +8023,11 @@ section h2 {
   height: auto;
 }
 /*---Section: Introduction---*/
+.intro {
+  background: #E9E4D6;
+}
 .intro img {
+  width: 470px;
   margin: auto;
 }
 /*---Seciton: Our Services---*/
@@ -8279,7 +8283,7 @@ footer strong {
 }
 .page-service-detail .service-description img {
   margin: auto;
-  margin-top: 64px;
+  margin-top: 48px;
   margin-bottom: 16px;
   width: 800px;
 }
@@ -8371,6 +8375,9 @@ footer strong {
   .page-service-detail .service-description p {
     font-size: 16px;
     line-height: 26px;
+  }
+  .page-service-detail .service-description img {
+    margin-top: 32px;
   }
   .page-service-detail .service-process {
     padding-bottom: 0px;
