@@ -9,6 +9,6 @@ $(document).ready(function($) {
 });
 
 $(window).on('load', function () {
-	$('.preloader-wrapper').delay(800).fadeOut();
-	$('body').delay(800).removeClass('preloader-site');
+	$('.preloader-wrapper').delay(200).fadeOut();
+	$('body').delay(200).removeClass('preloader-site');
 });
