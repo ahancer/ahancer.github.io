@@ -175,7 +175,7 @@ a:hover {
 }
 
 /*---Navigation---*/
-.home-navigation{
+.navigation-wrapper{
   position: absolute;
   top: 0px;
   right: 0px;
@@ -260,6 +260,7 @@ a:hover {
       }
     }
     .navbar-collapse{
+      overflow-x: hidden;
       border: 0px;
       background: @color-white;
       border-radius: 8px;
@@ -350,14 +351,6 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center bottom;
 
-  .navigation {
-    padding-top: 24px;
-
-    .logo {
-      width: 48px;
-    }
-  }
-
   .hero-message {
     .btn-primary {
       margin-top: 48px;
@@ -404,14 +397,6 @@ a:hover {
     height: 516px;
     background-image: url("../images/hero-mobile.png");
     background-size: contain;
-
-    .navigation {
-      padding-top: 16px;
-
-      .logo {
-        width: 32px;
-      }
-    }
 
     .hero-message {
       padding-top: 136px;
@@ -792,18 +777,6 @@ footer {
 }
 /*---Page: Work Detail---*/
 .page-work-detail {
-  .navigation {
-    padding-top: 24px;
-
-    .logo {
-      width: 48px;
-    }
-
-    .close {
-      margin-top: 4px;
-      opacity: 1;
-    }
-  }
 
   .work-detail {
     text-align: left;
@@ -850,20 +823,9 @@ footer {
     }
   }
   @media only screen and (max-width: 768px) {
-    .navigation {
-      padding-top: 16px;
-
-      .logo {
-        width: 32px;
-      }
-
-      .close {
-        margin-top: -2px;
-      }
-    }
 
     .work-detail {
-      padding-top: 24px;
+      padding-top: 80px;
 
       .main-image {
         border-radius: 8px;
@@ -892,18 +854,6 @@ footer {
   .content{
     text-align: left;
   }
-  .navigation {
-    padding-top: 24px;
-
-    .logo {
-      width: 48px;
-    }
-
-    .close {
-      margin-top: 4px;
-      opacity: 1;
-    }
-  }
 
   section {
     padding-top: 40px;
@@ -911,7 +861,7 @@ footer {
   }
 
   .service-description {
-    padding-top: 80px;
+    padding-top: 152px;
     padding-bottom: 0px;
     h4{
       color: @color-subtext;
@@ -1000,28 +950,7 @@ footer {
     }
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .navigation {
-      padding-top: 16px;
-      .logo {
-        width: 32px;
-      }
-      .close {
-        margin-top: -2px;
-      }
-    }
-  }
   @media only screen and (max-width: 768px) {
-
-    .navigation {
-      padding-top: 16px;
-      .logo {
-        width: 32px;
-      }
-      .close {
-        margin-top: -2px;
-      }
-    }
 
     section {
       padding-top: 24px;
@@ -1029,7 +958,7 @@ footer {
     }
 
     .service-description {
-      padding-top: 48px;
+      padding-top: 80px;
       h4{
           font-size: 16px;
       }
