@@ -8474,6 +8474,24 @@ footer strong {
     padding-top: 64px;
   }
 }
+/*---Page: Blog ---*/
+.page-service-detail .blogs {
+  padding-top: 0px;
+}
+.page-service-detail .blogs .work-item p {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .page-service-detail .blogs .work-item {
+    padding-top: 0px;
+  }
+  .page-service-detail .blogs .work-item p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
 /*---Pre-Load---*/
 /*----------------------- Preloader -----------------------*/
 body.preloader-site {
