@@ -8297,6 +8297,15 @@ footer strong {
 .page-work-detail .work-detail p a {
   text-decoration: underline;
 }
+.page-work-detail .work-detail ul,
+.page-work-detail .work-detail ol {
+  margin-top: none;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 32px;
+  padding-inline-start: 20px;
+  color: #666666;
+}
 .page-work-detail .work-detail .how-might-we {
   text-align: center;
   background: #f9f8f6;
