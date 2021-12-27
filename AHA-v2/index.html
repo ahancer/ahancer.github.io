@@ -10,7 +10,7 @@
   <meta property="fb:app_id" content="" />
   <meta property="og:url" content="https://ahancer.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Ahancer UX Design Partner" >
+  <meta property="og:title" content="Ahancer UX Design Partner">
   <meta property="og:description" content="Ahancer is a UX/UI Design Agency based in Thailand.">
   <meta property="og:image" content="https://ahancer.com/images/ahancer-og.png">
   <!-- Facebook OG ENDS -->
@@ -23,7 +23,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154886105-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-154886105-1');
@@ -31,37 +34,47 @@
   <!--END of Google Analytics-->
 
   <!-- Facebook Pixel Code -->
-      <script>
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-      fbq('init', '1150987724951528');
-      fbq('track', "PageView");
+    fbq('init', '1150987724951528');
+    fbq('track', "PageView");
 
-      // Lead
-      // Track when a user expresses interest in your offering (ex. form submission, sign up for trial, landing on pricing page)
-      fbq('track', 'Lead');
-
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1150987724951528&ev=PageView&noscript=1"
-      /></noscript>
+    // Lead
+    // Track when a user expresses interest in your offering (ex. form submission, sign up for trial, landing on pricing page)
+    fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1150987724951528&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 
   <!-- Google Vertification -->
-    <meta name="google-site-verification" content="LYINhUG3wM0wircq39r2HqY2huo36MycwYZtEpBjM1g" />
+  <meta name="google-site-verification" content="LYINhUG3wM0wircq39r2HqY2huo36MycwYZtEpBjM1g" />
 
 </head>
 
 <body>
   <!-- Pre-Loader -->
   <div class="preloader-wrapper">
-      <div class="preloader">
-          <img src="images/loading.gif" width="80px" alt="loading...">
-      </div>
+    <div class="preloader">
+      <img src="images/loading.gif" width="80px" alt="loading...">
+    </div>
   </div>
 
   <div class="navigation-wrapper" id="topSection">
@@ -246,7 +259,7 @@
                   <p>Asset Plus - Mutual Fund</p>
                 </a>
               </div>
-              <div class="col-sm-6 work-item"  id="workFinansia">
+              <div class="col-sm-6 work-item" id="workFinansia">
                 <a href="work-finansia.html">
                   <img src="images/img-work-finansia.png" alt="Finansia" class="img-responsive">
                   <h3>Make stock trading easy</h3>
@@ -301,9 +314,36 @@
             <p>
               Whether you need to create a new product from scratch or improve one, I'm here to help you.
             </p>
-            <a href="mailto:natt@ahancer.com" class="smooth-scroll">
+            <!-- <a href="mailto:natt@ahancer.com" class="smooth-scroll">
               <button type="button" name="button" class="btn btn-primary">natt@ahancer.com</button>
-            </a>
+            </a> -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactUs">
+              Contact Us
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Nice to meet you!</h3>
+                    <p>Get in touch using the form below</p>
+                  </div>
+
+                  <form action="https://formsubmit.co/nan@ahancer.com" method="POST">
+                    <input type="hidden" name="_subject" value="New emaillll!">
+                    <input type="text" placeholder="name" name="name" required>
+                    <input type="email" placeholder="email" name="email" required>
+                    <button type="submit" class="button btn-primary">Submit</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <div class="col-sm-6 col-lg-6">
             <a href="#topSection" class="smooth">
@@ -319,29 +359,31 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-lg-4 col-lg-offset-1">
-            <strong>Our Office</strong>
-            Ahancer Co., Ltd.<br>
-            68/2 Ranong 2 rd.,
-            Thanon Nakorn Chai Sri,
-            Dusit, Bangkok, Thailand 10300<br>
-            Call: 086-9918080<br><br>
-            <a href="https://goo.gl/maps/S1XQXHuyyp82" target="_blank">View on Google Map <i class="fa fa-arrow-right"></i></a>
+          <strong>Our Office</strong>
+          Ahancer Co., Ltd.<br>
+          68/2 Ranong 2 rd.,
+          Thanon Nakorn Chai Sri,
+          Dusit, Bangkok, Thailand 10300<br>
+          Call: 086-9918080<br><br>
+          <a href="https://goo.gl/maps/S1XQXHuyyp82" target="_blank">View on Google Map <i class="fa fa-arrow-right"></i></a>
         </div>
         <div class="col-sm-8 col-lg-7">
-            <strong>Our Blog</strong>
-            <a href="https://medium.com/thaigovdesign/%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-7e80a6bbaae8">
-              จะทำให้แม่ค้าออนไลน์เข้าใจเรื่องภาษี?
-            </a><br>
-            <a href="https://medium.com/thaigovdesign/%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94-cititzen-centric-design-%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-3b16514a1574">
-              สร้าง Cititzen-Centric Design ให้ภาครัฐ
-            </a><br>
-            <a href="https://medium.com/thaigovdesign/%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3-user-test-%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%99%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%88%E0%B8%B0%E0%B8%9E%E0%B8%AD-6ebeb97417a9">
-              ต้องทำ User Test กี่คนถึงจะพอ?
-            </a><br>
-            <a href="https://blog.uxacademy.in.th/%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-ux-design-1d189c2d2823">
-              เหนือกว่า UX Design
-            </a><br><br>
-            <a href="https://blog.uxacademy.in.th/" target="_blank">Show More <i class="fa fa-arrow-right"></i></a>
+          <strong>Our Blog</strong>
+          <a
+            href="https://medium.com/thaigovdesign/%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-7e80a6bbaae8">
+            จะทำให้แม่ค้าออนไลน์เข้าใจเรื่องภาษี?
+          </a><br>
+          <a
+            href="https://medium.com/thaigovdesign/%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%B0%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94-cititzen-centric-design-%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%81%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3-3b16514a1574">
+            สร้าง Cititzen-Centric Design ให้ภาครัฐ
+          </a><br>
+          <a href="https://medium.com/thaigovdesign/%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3-user-test-%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%99%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%88%E0%B8%B0%E0%B8%9E%E0%B8%AD-6ebeb97417a9">
+            ต้องทำ User Test กี่คนถึงจะพอ?
+          </a><br>
+          <a href="https://blog.uxacademy.in.th/%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-ux-design-1d189c2d2823">
+            เหนือกว่า UX Design
+          </a><br><br>
+          <a href="https://blog.uxacademy.in.th/" target="_blank">Show More <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

@@ -7710,6 +7710,23 @@ fieldset[disabled] .btn-secondary.active {
     padding: 12px 24px;
   }
 }
+/*---Modal---*/
+.modal p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.modal .modal-content {
+  padding: 48px;
+}
+.modal .modal-content .modal-header {
+  padding: 0px;
+}
+.modal .modal-content .modal-body {
+  padding: 0px;
+}
+.modal .modal-content .modal-footer {
+  padding: 0px;
+}
 /*---Navigation---*/
 .navigation-wrapper {
   position: absolute;
