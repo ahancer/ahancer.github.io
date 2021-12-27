@@ -173,101 +173,133 @@ a:hover {
     padding: 12px 24px;
   }
 }
-
 /*---Modal---*/
-.modal{
-  p{
+.modal {
+  p {
     margin-top: 16px;
     margin-bottom: 16px;
   }
-  .modal-content{
+
+  .modal-content {
     padding: 48px;
 
-    .modal-header{
-      padding: 0px;
+    .modal-header {
+      padding: 0;
     }
-    .modal-body{
-      padding: 0px;
+
+    .modal-body {
+      padding: 0;
     }
-    .modal-footer{
-      padding: 0px;
+
+    .modal-footer {
+      padding: 0;
     }
   }
 }
 
+input {
+  height: 48px;
+  border-color: #E0E0E0;
+}
 
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: normal;
+}
 
-
-
-
+.form-group {
+    margin-bottom: 24px;
+    margin-top: 24px; 
+}
 /*---Navigation---*/
-.navigation-wrapper{
+.navigation-wrapper {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 100%;
   z-index: 999;
 }
-.navbar{
+
+.navbar {
   margin-top: 24px;
   background: none;
-  border-radius: 0px;
-  border: 0px;
+  border-radius: 0;
+  border: 0;
   min-height: 48px;
-  .navbar-brand{
-    padding: 0px;
+
+  .navbar-brand {
+    padding: 0;
     height: 44px;
-    .logo{
+
+    .logo {
       height: 44px;
     }
   }
-  .navbar-collapse{
-    padding: 0px;
+
+  .navbar-collapse {
+    padding: 0;
   }
-  .navbar-nav > li{
+
+  .navbar-nav > li {
     margin-left: 32px;
-    a{
+
+    a {
       background: none;
       font-size: 16px;
-      padding: 16px 0px 8px 0px;
+      padding: 16px 0 8px;
       color: @color-subtext;
     }
-    > .dropdown-menu{
-      padding: 8px 0px;
-      border: 0px;
+
+    > .dropdown-menu {
+      padding: 8px 0;
+      border: 0;
       border-radius: 4px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-      li{
-        a{
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
+
+      li {
+        a {
           padding: 8px 16px;
         }
       }
-      li:hover{
-        a{
+
+      li:hover {
+        a {
           color: @color-primary;
         }
       }
     }
   }
-  .navbar-nav > .open > a{
+
+  .navbar-nav > .open > a {
     color: @color-black !important;
   }
-  .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+
+  .navbar-nav > .open > a,
+  .navbar-nav > .open > a:focus,
+  .navbar-nav > .open > a:hover {
     background: none;
   }
-  .navbar-nav > li.active{
-    a{
+
+  .navbar-nav > li.active {
+    a {
       background: none;
     }
   }
-  .navbar-toggle:hover, .navbar-toggle:focus{
+
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
     background: none;
   }
-  .navbar-toggle{
-    margin: 0px;
-    border: 0px;
-    padding: 8px 0px 8px 8px;
-    .icon-bar{
+
+  .navbar-toggle {
+    margin: 0;
+    border: 0;
+    padding: 8px 0 8px 8px;
+
+    .icon-bar {
       background-color: @color-subtext;
       width: 24px;
     }
@@ -276,32 +308,34 @@ a:hover {
   .navbar-toggle .icon-bar + .icon-bar {
     margin-top: 5px;
   }
-
   @media only screen and (max-width: 767px) {
     margin-top: 16px;
-    .navbar-brand{
-      padding: 0px;
-      .logo{
+
+    .navbar-brand {
+      padding: 0;
+
+      .logo {
         height: 32px;
       }
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
       overflow-x: hidden;
-      border: 0px;
+      border: 0;
       background: @color-white;
       border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
     }
-    .navbar-nav > li{
-      > .dropdown-menu{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        box-shadow: 0px 0px 0px;
+
+    .navbar-nav > li {
+      > .dropdown-menu {
+        padding-top: 0;
+        padding-bottom: 0;
+        box-shadow: 0 0 0;
       }
     }
   }
 }
-
 /*---Banner Wrapper---*/
 .banner-wrapper {
   background: linear-gradient(180deg, #F2EDDD 0%, #DBD3BF 100%);
@@ -620,67 +654,73 @@ section {
 /*---Section: Introduction---*/
 .intro {
   background: #E9E4D6;
-  img{
+
+  img {
     width: 470px;
     margin: auto;
   }
 }
-
 /*---Seciton: Our Services---*/
-.services{
+.services {
   background: linear-gradient(0deg, #F9F8F6 0%, rgba(249, 248, 246, 0) 100%);
-  a{
-    .service-card{
-      margin: 32px 16px 16px 16px;
-      padding: 40px 40px 24px 40px;
+
+  a {
+    .service-card {
+      margin: 32px 16px 16px;
+      padding: 40px 40px 24px;
       background: @color-white;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
       border-radius: 24px;
-      img{
+
+      img {
         width: 96px;
         height: 96px;
-        margin: auto;
-        margin-bottom: 24px;
+        margin: auto auto 24px;
       }
-      h3{
-        margin-top: 0px;
-        margin-bottom: 0px;
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0;
       }
-      p{
+
+      p {
         margin-top: 16px;
       }
     }
   }
-  a:hover{
+
+  a:hover {
     text-decoration: none !important;
-    .service-card{
+
+    .service-card {
       box-shadow: 0 16px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
     }
   }
-  @media only screen and (min-width: 769px) and (max-width: 992px)  {
-    a{
-      .service-card{
-        margin: 32px 0px;
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    a {
+      .service-card {
+        margin: 32px 0;
         border-radius: 16px;
-        p{
+
+        p {
           margin-bottom: 16px;
         }
       }
     }
   }
   @media only screen and (max-width: 768px) {
-    a{
-      .service-card{
-        margin: 0px 16px 8px 16px;
+    a {
+      .service-card {
+        margin: 0 16px 8px;
         border-radius: 16px;
-        p{
+
+        p {
           margin-bottom: 16px;
         }
       }
     }
   }
 }
-
 /*---Section: Our Works---*/
 .works {
   .row {
@@ -721,7 +761,8 @@ section {
   @media only screen and (max-width: 768px) {
     .work-item {
       text-align: center;
-      h3{
+
+      h3 {
         text-align: center;
       }
     }
@@ -803,7 +844,6 @@ footer {
 }
 /*---Page: Work Detail---*/
 .page-work-detail {
-
   .work-detail {
     text-align: left;
 
@@ -812,9 +852,11 @@ footer {
       margin-top: 40px;
       margin-bottom: 40px;
     }
-    hr{
-      margin: 40px 0px;
+
+    hr {
+      margin: 40px 0;
     }
+
     h3 {
       margin-top: 48px;
       margin-bottom: 8px;
@@ -825,12 +867,14 @@ footer {
       font-size: 18px;
       line-height: 28px;
       color: @color-subtext;
-      a{
+
+      a {
         text-decoration: underline;
       }
     }
 
-    ul, ol{
+    ol,
+    ul {
       margin-top: none;
       font-size: 18px;
       line-height: 28px;
@@ -839,27 +883,29 @@ footer {
       color: @color-subtext;
     }
 
-    .how-might-we{
+    .how-might-we {
       text-align: center;
       background: @color-grey2;
-      padding: 32px 32px 8px 32px;
-      margin: 16px 0px;
+      padding: 32px 32px 8px;
+      margin: 16px 0;
       border-radius: 16px;
-      p{
+
+      p {
         margin-top: 8px;
       }
     }
-    .content-image{
+
+    .content-image {
       margin-top: 32px;
       margin-bottom: 32px;
     }
+
     .support-image {
       border-radius: 8px;
       margin-top: 40px;
     }
   }
   @media only screen and (max-width: 768px) {
-
     .work-detail {
       padding-top: 80px;
 
@@ -877,7 +923,8 @@ footer {
       p {
         margin-top: 8px;
       }
-      .content-image{
+
+      .content-image {
         margin-top: 16px;
         margin-bottom: 16px;
       }
@@ -885,9 +932,8 @@ footer {
   }
 }
 /*---Page: Service Detail---*/
-
 .page-service-detail {
-  .content{
+  .content {
     text-align: left;
   }
 
@@ -898,10 +944,12 @@ footer {
 
   .service-description {
     padding-top: 152px;
-    padding-bottom: 0px;
-    h4{
+    padding-bottom: 0;
+
+    h4 {
       color: @color-subtext;
     }
+
     h1 {
       font-size: 48px;
       line-height: 56px;
@@ -910,19 +958,16 @@ footer {
     }
 
     p {
-      margin-top: 0px;
+      margin-top: 0;
       font-size: 18px;
       line-height: 28px;
       color: @color-subtext;
     }
 
-    img{
-      margin: auto;
-      margin-top: 48px;
-      margin-bottom: 16px;
+    img {
+      margin: 48px auto 16px;
       width: 800px;
     }
-
   }
 
   .service-process {
@@ -930,14 +975,17 @@ footer {
       padding-top: 32px;
       padding-left: 0;
       padding-right: 32px;
-      img{
+
+      img {
         width: 96px;
         margin-bottom: 8px;
       }
-      h4{
+
+      h4 {
         line-height: 36px;
         font-weight: 600;
       }
+
       p {
         font-size: 18px;
         line-height: 28px;
@@ -948,19 +996,21 @@ footer {
   }
 
   .service-key-methods {
-
-    .method-item{
+    .method-item {
       margin-top: 32px;
       margin-bottom: 16px;
-      .method-item-image{
-        img{
+
+      .method-item-image {
+        img {
           border-radius: 8px;
         }
       }
-      .method-item-text{
+
+      .method-item-text {
         h4 {
           font-weight: 600;
         }
+
         p {
           margin-top: 4px;
           font-size: 18px;
@@ -976,18 +1026,17 @@ footer {
     padding-bottom: 80px;
   }
 
-  .services{
+  .services {
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
     background: #f9f8f6;
-    .active{
+
+    .active {
       box-shadow: none;
     }
   }
-
   @media only screen and (max-width: 768px) {
-
     section {
       padding-top: 24px;
       padding-bottom: 24px;
@@ -995,36 +1044,40 @@ footer {
 
     .service-description {
       padding-top: 80px;
-      h4{
-          font-size: 16px;
+
+      h4 {
+        font-size: 16px;
       }
-      h1{
+
+      h1 {
         font-size: 32px;
         line-height: 40px;
         margin-top: 4px;
         margin-bottom: 24px;
       }
-      p{
+
+      p {
         font-size: 16px;
         line-height: 26px;
       }
-      img{
+
+      img {
         margin-top: 32px;
       }
     }
 
-    .service-process{
-      padding-bottom: 0px;
-      .process-item{
+    .service-process {
+      padding-bottom: 0;
+
+      .process-item {
         text-align: center;
-        padding-top: 16px;
-        padding-right: 8px;
-        padding-left: 8px;
-        padding-bottom: 24px;
-        img{
+        padding: 16px 8px 24px;
+
+        img {
           margin: auto;
         }
-        h4{
+
+        h4 {
           font-weight: 400;
           line-height: 26px;
         }
@@ -1032,11 +1085,12 @@ footer {
     }
 
     .service-key-methods {
-      .method-item{
+      .method-item {
         text-align: center;
         margin-top: 32px;
-        margin-bottom: 0px;
-        .method-item-text{
+        margin-bottom: 0;
+
+        .method-item-text {
           h4 {
             margin-top: 8px;
             font-weight: 400;
@@ -1045,30 +1099,30 @@ footer {
       }
     }
 
-    .service-case-studies{
+    .service-case-studies {
       padding-bottom: 24px;
     }
 
-    .contact{
+    .contact {
       padding-top: 64px;
     }
-
   }
 }
-
 /*---Page: Blog ---*/
-.page-service-detail{
-  .blogs{
-    padding-top: 0px;
-    .work-item{
-      p{
+.page-service-detail {
+  .blogs {
+    padding-top: 0;
+
+    .work-item {
+      p {
         margin-top: 16px;
         text-align: center;
         font-weight: 600;
       }
       @media only screen and (max-width: 768px) {
-        padding-top: 0px;
-        p{
+        padding-top: 0;
+
+        p {
           font-size: 18px;
           margin-bottom: 40px;
         }
@@ -1076,7 +1130,6 @@ footer {
     }
   }
 }
-
 /*---Pre-Load---*/
 /*----------------------- Preloader -----------------------*/
 body.preloader-site {

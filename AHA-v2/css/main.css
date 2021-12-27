@@ -7719,38 +7719,53 @@ fieldset[disabled] .btn-secondary.active {
   padding: 48px;
 }
 .modal .modal-content .modal-header {
-  padding: 0px;
+  padding: 0;
 }
 .modal .modal-content .modal-body {
-  padding: 0px;
+  padding: 0;
 }
 .modal .modal-content .modal-footer {
-  padding: 0px;
+  padding: 0;
+}
+input {
+  height: 48px;
+  border-color: #E0E0E0;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.form-group {
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 /*---Navigation---*/
 .navigation-wrapper {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 100%;
   z-index: 999;
 }
 .navbar {
   margin-top: 24px;
   background: none;
-  border-radius: 0px;
-  border: 0px;
+  border-radius: 0;
+  border: 0;
   min-height: 48px;
 }
 .navbar .navbar-brand {
-  padding: 0px;
+  padding: 0;
   height: 44px;
 }
 .navbar .navbar-brand .logo {
   height: 44px;
 }
 .navbar .navbar-collapse {
-  padding: 0px;
+  padding: 0;
 }
 .navbar .navbar-nav > li {
   margin-left: 32px;
@@ -7758,14 +7773,14 @@ fieldset[disabled] .btn-secondary.active {
 .navbar .navbar-nav > li a {
   background: none;
   font-size: 16px;
-  padding: 16px 0px 8px 0px;
+  padding: 16px 0 8px;
   color: #666666;
 }
 .navbar .navbar-nav > li > .dropdown-menu {
-  padding: 8px 0px;
-  border: 0px;
+  padding: 8px 0;
+  border: 0;
   border-radius: 4px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
 }
 .navbar .navbar-nav > li > .dropdown-menu li a {
   padding: 8px 16px;
@@ -7777,21 +7792,21 @@ fieldset[disabled] .btn-secondary.active {
   color: #393939 !important;
 }
 .navbar .navbar-nav > .open > a,
-.navbar .navbar-nav > .open > a:hover,
-.navbar .navbar-nav > .open > a:focus {
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav > .open > a:hover {
   background: none;
 }
 .navbar .navbar-nav > li.active a {
   background: none;
 }
-.navbar .navbar-toggle:hover,
-.navbar .navbar-toggle:focus {
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:hover {
   background: none;
 }
 .navbar .navbar-toggle {
-  margin: 0px;
-  border: 0px;
-  padding: 8px 0px 8px 8px;
+  margin: 0;
+  border: 0;
+  padding: 8px 0 8px 8px;
 }
 .navbar .navbar-toggle .icon-bar {
   background-color: #666666;
@@ -7805,22 +7820,22 @@ fieldset[disabled] .btn-secondary.active {
     margin-top: 16px;
   }
   .navbar .navbar-brand {
-    padding: 0px;
+    padding: 0;
   }
   .navbar .navbar-brand .logo {
     height: 32px;
   }
   .navbar .navbar-collapse {
     overflow-x: hidden;
-    border: 0px;
+    border: 0;
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
   }
   .navbar .navbar-nav > li > .dropdown-menu {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 0 0;
   }
 }
 /*---Banner Wrapper---*/
@@ -8136,8 +8151,8 @@ section h2 {
   background: linear-gradient(0deg, #F9F8F6 0%, rgba(249, 248, 246, 0) 100%);
 }
 .services a .service-card {
-  margin: 32px 16px 16px 16px;
-  padding: 40px 40px 24px 40px;
+  margin: 32px 16px 16px;
+  padding: 40px 40px 24px;
   background: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 24px;
@@ -8145,12 +8160,11 @@ section h2 {
 .services a .service-card img {
   width: 96px;
   height: 96px;
-  margin: auto;
-  margin-bottom: 24px;
+  margin: auto auto 24px;
 }
 .services a .service-card h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .services a .service-card p {
   margin-top: 16px;
@@ -8163,7 +8177,7 @@ section h2 {
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .services a .service-card {
-    margin: 32px 0px;
+    margin: 32px 0;
     border-radius: 16px;
   }
   .services a .service-card p {
@@ -8172,7 +8186,7 @@ section h2 {
 }
 @media only screen and (max-width: 768px) {
   .services a .service-card {
-    margin: 0px 16px 8px 16px;
+    margin: 0 16px 8px;
     border-radius: 16px;
   }
   .services a .service-card p {
@@ -8299,7 +8313,7 @@ footer strong {
   margin-bottom: 40px;
 }
 .page-work-detail .work-detail hr {
-  margin: 40px 0px;
+  margin: 40px 0;
 }
 .page-work-detail .work-detail h3 {
   margin-top: 48px;
@@ -8314,8 +8328,8 @@ footer strong {
 .page-work-detail .work-detail p a {
   text-decoration: underline;
 }
-.page-work-detail .work-detail ul,
-.page-work-detail .work-detail ol {
+.page-work-detail .work-detail ol,
+.page-work-detail .work-detail ul {
   margin-top: none;
   font-size: 18px;
   line-height: 28px;
@@ -8326,8 +8340,8 @@ footer strong {
 .page-work-detail .work-detail .how-might-we {
   text-align: center;
   background: #f9f8f6;
-  padding: 32px 32px 8px 32px;
-  margin: 16px 0px;
+  padding: 32px 32px 8px;
+  margin: 16px 0;
   border-radius: 16px;
 }
 .page-work-detail .work-detail .how-might-we p {
@@ -8372,7 +8386,7 @@ footer strong {
 }
 .page-service-detail .service-description {
   padding-top: 152px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 .page-service-detail .service-description h4 {
   color: #666666;
@@ -8384,15 +8398,13 @@ footer strong {
   margin-bottom: 32px;
 }
 .page-service-detail .service-description p {
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 18px;
   line-height: 28px;
   color: #666666;
 }
 .page-service-detail .service-description img {
-  margin: auto;
-  margin-top: 48px;
-  margin-bottom: 16px;
+  margin: 48px auto 16px;
   width: 800px;
 }
 .page-service-detail .service-process .process-item {
@@ -8468,14 +8480,11 @@ footer strong {
     margin-top: 32px;
   }
   .page-service-detail .service-process {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
   .page-service-detail .service-process .process-item {
     text-align: center;
-    padding-top: 16px;
-    padding-right: 8px;
-    padding-left: 8px;
-    padding-bottom: 24px;
+    padding: 16px 8px 24px;
   }
   .page-service-detail .service-process .process-item img {
     margin: auto;
@@ -8487,7 +8496,7 @@ footer strong {
   .page-service-detail .service-key-methods .method-item {
     text-align: center;
     margin-top: 32px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .page-service-detail .service-key-methods .method-item .method-item-text h4 {
     margin-top: 8px;
@@ -8502,7 +8511,7 @@ footer strong {
 }
 /*---Page: Blog ---*/
 .page-service-detail .blogs {
-  padding-top: 0px;
+  padding-top: 0;
 }
 .page-service-detail .blogs .work-item p {
   margin-top: 16px;
@@ -8511,7 +8520,7 @@ footer strong {
 }
 @media only screen and (max-width: 768px) {
   .page-service-detail .blogs .work-item {
-    padding-top: 0px;
+    padding-top: 0;
   }
   .page-service-detail .blogs .work-item p {
     font-size: 18px;
