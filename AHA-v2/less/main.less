@@ -197,6 +197,7 @@ a:hover {
 
   label {
     display: inline-block;
+    text-align: left;
     max-width: 100%;
     margin-bottom: 8px;
     margin-top: 24px;
@@ -232,6 +233,16 @@ a:hover {
       padding: 0px;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .modal-header{
+      text-align: left;
+    }
+    .modal-body{
+      text-align: left;
+    }
+  }
+
 }
 /*---Navigation---*/
 .navigation-wrapper {

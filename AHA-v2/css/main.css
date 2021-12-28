@@ -7729,6 +7729,7 @@ fieldset[disabled] .btn-secondary.active {
 }
 .modal-contactus label {
   display: inline-block;
+  text-align: left;
   max-width: 100%;
   margin-bottom: 8px;
   margin-top: 24px;
@@ -7756,6 +7757,14 @@ fieldset[disabled] .btn-secondary.active {
   text-align: left;
   margin-top: 24px;
   padding: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .modal-contactus .modal-header {
+    text-align: left;
+  }
+  .modal-contactus .modal-body {
+    text-align: left;
+  }
 }
 /*---Navigation---*/
 .navigation-wrapper {
