@@ -324,7 +324,7 @@
             </button>
 
             <!-- Modal -->
-            <div class="modal fade modal-contactus" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal fade modal-contactus" id="contactUs" tabindex="-1" role="dialog"  aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -335,26 +335,37 @@
                   <div class="modal-body">
                     <form action="https://formsubmit.co/nan@ahancer.com" method="POST">
 
+                      <input type="hidden" name="_cc" value="natt@ahancer.com">
                       <input type="hidden" name="_subject" value="AHA GOT NEW EMAIL!!">
                       <input type="hidden" name="_next" value="https://ahancer.github.io/AHA-v2/thanks.html">
 
-                        <label>My name is</label>
-                        <input type="text" placeholder="name" class="form-control" name="name" required>
+                      <label>My name is</label>
+                      <input type="text" placeholder="name" class="form-control" name="name" required>
 
-                        <label>My email address is</label>
-                        <input type="email" placeholder="name" class="form-control" name="email" required>
+                      <label>My email address is</label>
+                      <input type="email" placeholder="name" class="form-control" name="email" required>
 
-                        <label>Phone</label>
-                        <input type="text" placeholder="phone" class="form-control" name="phone" required>
+                      <label>Phone</label>
+                      <input type="text" placeholder="phone" class="form-control" name="phone" required>
 
-                        <label>About my project</label>
-                        <input type="text" placeholder="Tell us about your project" class="form-control" name="project" required>
+                      <label>About my project</label>
+                      <input placeholder="Please tell us a little bit about your project" class="form-control" name="message" required>
 
-                        <label>When I want to start my project</label>
-                        <input type="text" placeholder="What's time you want to start?" class="form-control" name="start" required>
+                      <label>When I want to start my project</label>
+                      <select name="start" class="form-control">
+                        <option value="volvo">As soon as possible</option>
+                        <option value="saab">Within 1 month</option>
+                        <option value="opel">Within 2 months</option>
+                        <option value="audi">I’m Flexible</option>
+                      </select>
 
-                        <button type="submit" class="button btn-primary">Submit</button>
+                      <button type="submit" class="button btn-primary">Submit</button>
                     </form>
+                  </div>
+                  <div class="modal-footer">
+                    <h5>Or <a href="mailto:natt@ahancer.com" class="smooth-scroll">
+                      natt@ahancer.com
+                    </a>,or call me at (+66)086-991-8080</h5>
                   </div>
 
 
