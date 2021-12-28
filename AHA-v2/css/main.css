@@ -7711,8 +7711,14 @@ fieldset[disabled] .btn-secondary.active {
   }
 }
 /*---Contact Modal---*/
-.modal-contactus h3 {
-  color: red;
+.modal-contactus textarea {
+  height: 120px;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+  border-color: #E0E0E0;
+  border-radius: 4px;
+  margin-bottom: 24px;
 }
 .modal-contactus .form-control {
   height: 48px;
@@ -7725,8 +7731,13 @@ fieldset[disabled] .btn-secondary.active {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 8px;
+  margin-top: 24px;
   font-size: 18px;
   font-weight: normal;
+}
+.modal-contactus h5 {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .modal-contactus p {
   margin-top: 16px;
@@ -7742,7 +7753,9 @@ fieldset[disabled] .btn-secondary.active {
   padding: 0;
 }
 .modal-contactus .modal-content .modal-footer {
-  padding: 0;
+  text-align: left;
+  margin-top: 24px;
+  padding: 0px;
 }
 /*---Navigation---*/
 .navigation-wrapper {
