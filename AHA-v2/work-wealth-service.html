@@ -175,9 +175,78 @@
             <p>
               Whether you need to create a new product from scratch or improve one, I'm here to help you.
             </p>
-            <a href="mailto:natt@ahancer.com">
-              <button type="button" name="button" class="btn btn-primary">natt@ahancer.com</button>
-            </a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactUs">
+              Contact Us
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade modal-contactus" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/icon-modal-close.svg" class="img-responsive">
+                  </button>
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="contactLabel">Nice to meet you!</h3>
+                    <p>Let’s get in touch using the form below or email me at
+                      <a href="mailto:natt@ahancer.com" class="smooth-scroll">natt@ahancer.com</a>
+                    </p>
+                  </div>
+
+                  <div class="modal-body">
+                    <form action="https://formsubmit.co/nan@ahancer.com" method="POST">
+
+                      <!-- <input type="hidden" name="_cc" value="natt@ahancer.com"> -->
+                      <input type="hidden" name="_subject" value="AHA GOT NEW EMAIL!!">
+
+                      <!-- Don't forget to change link before Lunch -->
+                      <input type="hidden" name="_next" value="https://ahancer.github.io/AHA-v2/thanks.html">
+
+                      <div class="form-group">
+                        <label>My name </label>
+                        <input type="text" class="form-control" name="Name" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label>My email address </label>
+                        <input type="email" class="form-control" name="Email" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label>My Phone Number</label>
+                        <input type="text" class="form-control" name="Phone" required>
+                      </div>
+
+
+                      <div class="form-group">
+                        <label>When I want to start my project</label>
+                        <select name="Start Date" class="form-control">
+                          <option value="As soon as possible">As soon as possible</option>
+                          <option value="Within 1 month" selected>Within 1 month</option>
+                          <option value="Within 2 months">Within 2 months</option>
+                          <option value="I’m Flexible">I’m Flexible</option>
+                        </select>
+                      </div>
+
+
+                      <div class="form-group last-form">
+                        <label>About my project</label>
+                        <textarea class="form-control" rows="5" placeholder="Please tell us a little bit about your project" name="Message" required></textarea>
+                      </div>
+
+
+
+                      <button type="submit" class="button btn-primary">Submit</button>
+                    </form>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="col-sm-6 col-lg-6">
             <a href="#topSection" class="smooth">
