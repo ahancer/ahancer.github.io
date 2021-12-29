@@ -330,7 +330,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <img src="images/icon-modal-close.svg" class="img-responsive">
                   </button>
                   <div class="modal-header">
                     <h3>Nice to meet you!</h3>
@@ -352,26 +352,41 @@
 
                       <div class="form-group">
                         <label>My name </label>
-                        <input type="text"  class="form-control" name="name" required>
+                        <input type="text" class="form-control" name="Name" required>
                       </div>
 
 
-                      <label>My email address </label>
-                      <input type="email" class="form-control" name="email" required>
 
-                      <label>My Phone Number</label>
-                      <input type="text" class="form-control" name="phone" required>
+                      <div class="form-group">
+                        <label>My email address </label>
+                        <input type="email" class="form-control" name="Email" required>
+                      </div>
 
-                      <label>When I want to start my project</label>
-                      <select name="start" class="form-control">
-                        <option value="As soon as possible">As soon as possible</option>
-                        <option value="Within 1 month" selected>Within 1 month</option>
-                        <option value="Within 2 months">Within 2 months</option>
-                        <option value="I’m Flexible">I’m Flexible</option>
-                      </select>
+                      <div class="form-group">
+                        <label>My Phone Number</label>
+                        <input type="text" class="form-control" name="Phone" required>
 
-                      <label>About my project</label>
-                      <textarea class="form-control" rows="5" placeholder="Please tell us a little bit about your project" name="message" required></textarea>
+                      </div>
+
+
+                      <div class="form-group">
+
+                        <label>When I want to start my project</label>
+                        <select name="Start Date" class="form-control">
+                          <option value="As soon as possible">As soon as possible</option>
+                          <option value="Within 1 month" selected>Within 1 month</option>
+                          <option value="Within 2 months">Within 2 months</option>
+                          <option value="I’m Flexible">I’m Flexible</option>
+                        </select>
+                      </div>
+
+
+                      <div class="form-group last-form">
+                        <label>About my project</label>
+                        <textarea class="form-control" rows="5" placeholder="Please tell us a little bit about your project" name="Message" required></textarea>
+
+                      </div>
+
 
 
                       <button type="submit" class="button btn-primary">Submit</button>

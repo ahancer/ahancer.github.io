@@ -7711,6 +7711,16 @@ fieldset[disabled] .btn-secondary.active {
   }
 }
 /*---Contact Modal---*/
+.modal-contactus .close {
+  opacity: 100%;
+}
+.modal-contactus .form-group {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.modal-contactus .last-form {
+  margin-bottom: 48px;
+}
 .modal-contactus textarea {
   width: 100%;
   height: 120px;
@@ -7736,7 +7746,6 @@ fieldset[disabled] .btn-secondary.active {
   text-align: left;
   max-width: 100%;
   margin-bottom: 8px;
-  margin-top: 24px;
   font-size: 18px;
   font-weight: normal;
 }
@@ -7761,15 +7770,46 @@ fieldset[disabled] .btn-secondary.active {
 .modal-contactus .modal-content .modal-footer {
   text-align: left;
   margin-top: 24px;
-  padding: 0px;
+  padding: 0;
 }
 @media only screen and (max-width: 768px) {
+  .modal-contactus .modal-content {
+    padding: 24px;
+  }
+  .modal-contactus .img-responsive {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  .modal-contactus .form-group {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .modal-contactus .last-form {
+    margin-bottom: 40px;
+  }
+  .modal-contactus .form-control {
+    font-size: 14px;
+    padding: 8px;
+    border-color: #E0E0E0;
+  }
   .modal-contactus .modal-header {
     text-align: left;
     border-bottom: none;
   }
   .modal-contactus .modal-body {
     text-align: left;
+  }
+  .modal-contactus label {
+    font-size: 16px;
+  }
+  .modal-contactus input {
+    width: 100%;
+    height: 40px;
+  }
+  .modal-contactus select {
+    width: 100%;
+    height: 40px;
   }
 }
 /*---Navigation---*/
