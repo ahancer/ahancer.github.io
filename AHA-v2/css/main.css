@@ -7711,6 +7711,9 @@ fieldset[disabled] .btn-secondary.active {
   }
 }
 /*---Contact Modal---*/
+.modal-contactus .button {
+  width: 240px;
+}
 .modal-contactus .close {
   opacity: 100%;
   cursor: pointer;
@@ -7764,7 +7767,7 @@ fieldset[disabled] .btn-secondary.active {
   margin-bottom: 16px;
 }
 .modal-contactus .modal-content {
-  padding: 48px;
+  padding: 48px 48px 56px 48px;
 }
 .modal-contactus .modal-content .modal-header {
   padding: 0;
@@ -7779,8 +7782,11 @@ fieldset[disabled] .btn-secondary.active {
   padding: 0;
 }
 @media only screen and (max-width: 768px) {
+  .modal-contactus .button {
+    width: 50%;
+  }
   .modal-contactus .modal-content {
-    padding: 24px;
+    padding: 24px 24px 40px 24px;
   }
   .modal-contactus .img-responsive {
     display: block width: 20px;
@@ -7791,7 +7797,7 @@ fieldset[disabled] .btn-secondary.active {
     margin-bottom: 16px;
   }
   .modal-contactus .last-form {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
   .modal-contactus .form-control {
     font-size: 14px;
