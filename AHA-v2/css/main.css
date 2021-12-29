@@ -7713,6 +7713,7 @@ fieldset[disabled] .btn-secondary.active {
 /*---Contact Modal---*/
 .modal-contactus .close {
   opacity: 100%;
+  cursor: pointer;
 }
 .modal-contactus .form-group {
   margin-top: 24px;
@@ -7777,8 +7778,8 @@ fieldset[disabled] .btn-secondary.active {
     padding: 24px;
   }
   .modal-contactus .img-responsive {
-    display: block;
-    width: 20px;
+    display: block
+      width: 20px;
     height: 20px;
   }
   .modal-contactus .form-group {

@@ -132,11 +132,10 @@
         <div class="hero-message">
           <h1>We're Ahancer!</h1>
           <h4>Your Partner for UX Design</h4>
-          <a href="#teamSection" class="smooth">
-            <button type="button" name="button" class="btn btn-primary">Let's Team Up</button>
+
+          <button type="button" name="button" class="btn btn-primary" data-toggle="modal" data-target="#contactUs">Let's Team Up</button>
 
 
-          </a>
         </div>
       </div>
     </div>
@@ -326,15 +325,14 @@
             </button>
 
             <!-- Modal -->
-            <div class="modal fade modal-contactus" id="contactUs" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal fade modal-contactus" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <img src="images/icon-modal-close.svg" class="img-responsive">
                   </button>
                   <div class="modal-header">
-                    <h3>Nice to meet you!</h3>
-
+                    <h3 class="modal-title" id="contactLabel">Nice to meet you!</h3>
                     <p>Let’s get in touch using the form below or email me at
                       <a href="mailto:natt@ahancer.com" class="smooth-scroll">natt@ahancer.com</a>
                     </p>
@@ -349,13 +347,10 @@
                       <!-- Don't forget to change link before Lunch -->
                       <input type="hidden" name="_next" value="https://ahancer.github.io/AHA-v2/thanks.html">
 
-
                       <div class="form-group">
                         <label>My name </label>
                         <input type="text" class="form-control" name="Name" required>
                       </div>
-
-
 
                       <div class="form-group">
                         <label>My email address </label>
@@ -365,12 +360,10 @@
                       <div class="form-group">
                         <label>My Phone Number</label>
                         <input type="text" class="form-control" name="Phone" required>
-
                       </div>
 
 
                       <div class="form-group">
-
                         <label>When I want to start my project</label>
                         <select name="Start Date" class="form-control">
                           <option value="As soon as possible">As soon as possible</option>
@@ -384,7 +377,6 @@
                       <div class="form-group last-form">
                         <label>About my project</label>
                         <textarea class="form-control" rows="5" placeholder="Please tell us a little bit about your project" name="Message" required></textarea>
-
                       </div>
 
 
@@ -392,7 +384,6 @@
                       <button type="submit" class="button btn-primary">Submit</button>
                     </form>
                   </div>
-
 
 
 
