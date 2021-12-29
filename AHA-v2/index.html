@@ -134,6 +134,8 @@
           <h4>Your Partner for UX Design</h4>
           <a href="#teamSection" class="smooth">
             <button type="button" name="button" class="btn btn-primary">Let's Team Up</button>
+
+
           </a>
         </div>
       </div>
@@ -333,20 +335,28 @@
                   <div class="modal-header">
                     <h3>Nice to meet you!</h3>
 
-                    <p>Get in touch using the form below</p>
+                    <p>Let’s get in touch using the form below or email me at
+                      <a href="mailto:natt@ahancer.com" class="smooth-scroll">natt@ahancer.com</a>
+                    </p>
                   </div>
 
                   <div class="modal-body">
                     <form action="https://formsubmit.co/nan@ahancer.com" method="POST">
 
-                      <input type="hidden" name="_cc" value="natt@ahancer.com">
+                      <!-- <input type="hidden" name="_cc" value="natt@ahancer.com"> -->
                       <input type="hidden" name="_subject" value="AHA GOT NEW EMAIL!!">
+
+                      <!-- Don't forget to change link before Lunch -->
                       <input type="hidden" name="_next" value="https://ahancer.github.io/AHA-v2/thanks.html">
 
-                      <label>My name is</label>
-                      <input type="text"  class="form-control" name="name" required>
 
-                      <label>My email address is</label>
+                      <div class="form-group">
+                        <label>My name </label>
+                        <input type="text"  class="form-control" name="name" required>
+                      </div>
+
+
+                      <label>My email address </label>
                       <input type="email" class="form-control" name="email" required>
 
                       <label>My Phone Number</label>
@@ -361,17 +371,13 @@
                       </select>
 
                       <label>About my project</label>
-                      <textarea placeholder="Please tell us a little bit about your project" name="message" required></textarea>
+                      <textarea class="form-control" rows="5" placeholder="Please tell us a little bit about your project" name="message" required></textarea>
 
 
                       <button type="submit" class="button btn-primary">Submit</button>
                     </form>
                   </div>
-                  <div class="modal-footer">
-                    <h5>Or email me at
-                      <a href="mailto:natt@ahancer.com" class="smooth-scroll">natt@ahancer.com</a>
-                    </h5>
-                  </div>
+
 
 
 

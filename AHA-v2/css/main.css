@@ -7712,15 +7712,19 @@ fieldset[disabled] .btn-secondary.active {
 }
 /*---Contact Modal---*/
 .modal-contactus textarea {
-  height: 120px;
-  font-size: 16px;
-  padding: 12px;
   width: 100%;
-  border-color: #E0E0E0;
-  border-radius: 4px;
-  margin-bottom: 24px;
+  height: 120px;
+}
+.modal-contactus input {
+  height: 48px;
+  width: 240px;
 }
 .modal-contactus .form-control {
+  font-size: 16px;
+  padding: 12px;
+  border-color: #E0E0E0;
+}
+.modal-contactus select {
   height: 48px;
   font-size: 16px;
   padding: 12px;
@@ -7749,6 +7753,7 @@ fieldset[disabled] .btn-secondary.active {
 }
 .modal-contactus .modal-content .modal-header {
   padding: 0;
+  border-bottom: none;
 }
 .modal-contactus .modal-content .modal-body {
   padding: 0;
@@ -7761,6 +7766,7 @@ fieldset[disabled] .btn-secondary.active {
 @media only screen and (max-width: 768px) {
   .modal-contactus .modal-header {
     text-align: left;
+    border-bottom: none;
   }
   .modal-contactus .modal-body {
     text-align: left;
