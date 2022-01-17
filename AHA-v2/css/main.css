@@ -7719,8 +7719,8 @@ fieldset[disabled] .btn-secondary.active {
   cursor: pointer;
 }
 .modal-contactus .form-group {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 0px;
+  margin-bottom: 32px;
 }
 .modal-contactus .last-form {
   margin-bottom: 48px;
@@ -7731,7 +7731,7 @@ fieldset[disabled] .btn-secondary.active {
 }
 .modal-contactus input {
   height: 48px;
-  width: 240px;
+  width: 360px;
 }
 .modal-contactus .form-control {
   font-size: 16px;
@@ -7742,7 +7742,7 @@ fieldset[disabled] .btn-secondary.active {
   height: 48px;
   font-size: 16px;
   padding: 12px;
-  width: 240px;
+  width: 280px;
   border-color: #E0E0E0;
   background: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+") no-repeat;
   background-position-x: 98%;
@@ -7763,8 +7763,11 @@ fieldset[disabled] .btn-secondary.active {
   margin-bottom: 24px;
 }
 .modal-contactus p {
-  margin-top: 16px;
+  margin-top: 12px;
   margin-bottom: 16px;
+}
+.modal-contactus p a {
+  font-weight: bold;
 }
 .modal-contactus .modal-content {
   padding: 48px 48px 56px 48px;
