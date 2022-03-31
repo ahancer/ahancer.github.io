@@ -7379,7 +7379,7 @@ h1 {
   font-size: 80px;
   font-weight: 700;
   line-height: 112px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -8000,6 +8000,10 @@ fieldset[disabled] .btn-secondary.active {
   background-image: url("../images/hero.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+.banner .hero-message .typed-cursor {
+  font-weight: 100;
+  margin-left: 4px;
 }
 .banner .hero-message .btn-primary {
   margin-top: 48px;
