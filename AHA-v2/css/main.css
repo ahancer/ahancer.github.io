@@ -7360,6 +7360,29 @@ button.close {
   font-weight: 900;
   src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v40/-F6pfjtqLzI2JPCgQBnw7HFQei0q1A.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansthai/v14/iJWnBXeUZi_OHPqn4wq6hQ2_hbJ1xyN9wd43SofNWcd1MKVQt_So_9CdU5RtpzE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansthai/v14/iJWnBXeUZi_OHPqn4wq6hQ2_hbJ1xyN9wd43SofNWcd1MKVQt_So_9CdU3NqpzE.ttf) format('truetype');
+}
 /*---General Setting---*/
 body {
   height: 100%;
@@ -7375,7 +7398,7 @@ body {
   letter-spacing: 0.1px;
 }
 h1 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Noto Sans Thai', 'Noto Sans JP';
   font-size: 80px;
   font-weight: 700;
   line-height: 112px;
@@ -8001,6 +8024,9 @@ fieldset[disabled] .btn-secondary.active {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+.banner .hero-message h1 {
+  letter-spacing: 0px;
+}
 .banner .hero-message .typed-cursor {
   font-weight: 100;
   margin-left: 4px;
@@ -8236,7 +8262,8 @@ section h2 {
 }
 /*---Seciton: Our Services---*/
 .services {
-  background: linear-gradient(0deg, #F9F8F6 0%, rgba(249, 248, 246, 0) 100%);
+  padding-top: 40px;
+  background: #E9E4D6;
 }
 .services a .service-card {
   margin: 32px 16px 16px;

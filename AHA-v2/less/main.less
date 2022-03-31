@@ -8,6 +8,7 @@ To compile:
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swapi";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Noto+Sans+Thai:wght@400;700&display=swap";
 @import "_variables.less";
 @import "_mixins.less";
 /*---General Setting---*/
@@ -26,7 +27,7 @@ body {
 }
 
 h1 {
-  font-family: @font-primary;
+  font-family: @font-primary,'Noto Sans Thai','Noto Sans JP';
   font-size: 80px;
   font-weight: 700;
   line-height: 112px;
@@ -516,6 +517,9 @@ a:hover {
   background-position: center bottom;
 
   .hero-message {
+    h1{
+      letter-spacing: 0px;
+    }
     .typed-cursor {
       font-weight: 100;
       margin-left: 4px;
@@ -770,7 +774,8 @@ section {
 }
 /*---Seciton: Our Services---*/
 .services {
-  background: linear-gradient(0deg, #F9F8F6 0%, rgba(249, 248, 246, 0) 100%);
+  padding-top: 40px;
+  background: #E9E4D6;
 
   a {
     .service-card {
