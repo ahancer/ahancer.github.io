@@ -18,6 +18,16 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/main.css">
 
+    <style type="text/css" media="screen">
+      h1{
+        font-size: 28px;
+        color: #000000;
+      }
+      .btn-default{
+        width: 100%;
+        font-weight: bold;
+      }
+    </style>
 <!--This is Google Analytics-->
     <script>
     </script>
@@ -30,39 +40,41 @@
 
 </head>
   <body>
-    <div class="container">
-      <h2>Welcome to the Eye Hotel</h2>
-      <img src="images/hotel-image.jpg" class="img-responsive" alt="Our hotel located on a tropical island">
 
-      <h3><img src="images/icon-book-now.svg" alt=""> Book Now</h3>
-      <form action="/action_page.php">
+    <div class="container">
+      <h1>Welcome to the Eye Hotel</h1>
+      <img src="images/hotel-image.jpg" class="img-responsive" alt="A beautiful hotel located on a tropical island">
+
+      <h3><img src="images/icon-book-now.svg"> Book Now</h3>
+
+      <form>
         <div class="form-group">
-          <label for="email">Your Name:</label>
-          <input type="text" class="form-control" id="name">
+          <label for="name">Your Name:</label>
+          <input type="text" class="form-control" id="name" aria-label="Enter Your Name and Lastname">
         </div>
        <div class="form-group">
          <label for="email">Your Email:</label>
-         <input type="email" class="form-control" id="email">
+         <input type="email" class="form-control" id="email" aria-label="Enter Your Email Address">
        </div>
 
         <div class="form-group">
-         <label for="date">Select Available Date:</label>
+         <label for="date">How many room do you want to book?</label>
          <select class="form-control" id="sel1">
-           <option>26th September 2022</option>
-           <option>27th September 2022</option>
-           <option>28th September 2022</option>
-           <option>29th September 2022</option>
+           <option>1 room</option>
+           <option>2 rooms</option>
+           <option>3 rooms</option>
+           <option>4 rooms</option>
          </select>
         </div>
 
-        <hr>
+        <hr aria-hidden="true">
 
-       <button type="submit" class="btn btn-secondary">Submit</button>
+       <button type="submit" class="btn btn-default">Submit</button>
       </form>
 
       <br><br>
 
-      <small>Version: 0.0</small>
+      <small aria-hidden="true">Version: 0.1</small>
     </div>
 
 
