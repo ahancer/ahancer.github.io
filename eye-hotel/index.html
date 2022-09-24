@@ -22,6 +22,7 @@
       h1{
         font-size: 28px;
         color: #000000;
+        font-weight: bold;
       }
       .btn-default{
         width: 100%;
@@ -45,9 +46,10 @@
       <h1>Welcome to the Eye Hotel</h1>
       <img src="images/hotel-image.jpg" class="img-responsive" alt="A beautiful hotel located on a tropical island">
 
-      <h3><img src="images/icon-book-now.svg"> Book Now</h3>
+      <h3><img src="images/icon-book-now.svg" alt=""> Book Now</h3>
 
       <form>
+
         <div class="form-group">
           <label for="name">Your Name:</label>
           <input type="text" class="form-control" id="name" aria-label="Enter Your Name and Lastname">
@@ -56,25 +58,25 @@
          <label for="email">Your Email:</label>
          <input type="email" class="form-control" id="email" aria-label="Enter Your Email Address">
        </div>
-
-        <div class="form-group">
-         <label for="date">How many room do you want to book?</label>
-         <select class="form-control" id="sel1">
-           <option>1 room</option>
-           <option>2 rooms</option>
-           <option>3 rooms</option>
-           <option>4 rooms</option>
+       <div class="form-group">
+         <label for="room">Room Type:</label>
+         <select class="form-control" id="room">
+           <option>Select Room Type</option>
+           <option>Standard Room for 2 People</option>
+           <option>Standard Room for 4 People</option>
+           <option>Pool Villa for 2 People</option>
          </select>
         </div>
 
         <hr aria-hidden="true">
 
        <button type="submit" class="btn btn-default">Submit</button>
+
       </form>
 
-      <br><br>
+      <br>
 
-      <small aria-hidden="true">Version: 0.1</small>
+      <small aria-hidden="true">Version: 2.0</small>
     </div>
 
 
