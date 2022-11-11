@@ -8502,6 +8502,47 @@ footer strong {
     margin-bottom: 16px;
   }
 }
+/*---Page: Package---*/
+.page-package .col-right-padding {
+  padding-right: 40px;
+}
+.page-package .col-bottom-padding {
+  padding-bottom: 40px;
+}
+.page-package small {
+  font-size: 18px;
+  color: #666666;
+}
+.page-package ul li {
+  margin-bottom: 4px;
+}
+.page-package .package-intro {
+  text-align: left;
+  background: #f9f8f6;
+}
+.page-package .package-intro h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.page-package .package-intro h2 {
+  font-weight: 400;
+  font-size: 36px;
+}
+.page-package .package-intro p {
+  margin-bottom: 0px;
+}
+.page-package .package-intro .package-intro-image {
+  margin: auto;
+  margin-top: 48px;
+}
+.page-package .package-detail {
+  text-align: left;
+}
+.page-package .package-detail h4 {
+  font-weight: 500;
+}
 /*---Page: Service Detail---*/
 .page-service-detail .content {
   text-align: left;
