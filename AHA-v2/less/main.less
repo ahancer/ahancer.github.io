@@ -786,9 +786,9 @@ section {
       border-radius: 24px;
 
       img {
-        width: 96px;
-        height: 96px;
-        margin: auto auto 24px;
+        width: 128px;
+        height: 128px;
+        margin: auto auto 16px;
       }
 
       h3 {
@@ -802,11 +802,17 @@ section {
     }
   }
 
-  a:hover {
+  a:hover, a:active, a:focus {
     text-decoration: none !important;
 
     .service-card {
       box-shadow: 0 16px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.04);
+    }
+    h3{
+      text-decoration: none !important;
+    }
+    p{
+      text-decoration: none !important;
     }
   }
   @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -1034,7 +1040,6 @@ footer {
   @media only screen and (max-width: 768px) {
     .work-detail {
       padding-top: 80px;
-
       .main-image {
         border-radius: 8px;
         margin-top: 32px;
@@ -1061,13 +1066,16 @@ footer {
 .page-package{
   .col-right-padding{
     padding-right: 40px;
+    @media only screen and (min-width: 0px) and (max-width: 992px) {
+      padding-right: 16px;
+    }
   }
   .col-bottom-padding{
     padding-bottom: 40px;
   }
   small{
     font-size: 18px;
-    color: @color-subtext;
+    color: @color-black;
   }
   ul{
     li{
@@ -1077,10 +1085,11 @@ footer {
   .package-intro{
     text-align: left;
     background: @color-grey2;
+    padding-bottom: 0px;
     h1{
       font-size: 48px;
       line-height: 56px;
-      margin-top: 40px;
+      margin-top: 56px;
       margin-bottom: 0px;
     }
     h2{
@@ -1091,14 +1100,58 @@ footer {
       margin-bottom: 0px;
     }
     .package-intro-image{
-      margin: auto;
-      margin-top: 48px;
+      margin-top: 96px;
+      max-height: 320px;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      text-align: center;
+      h1{
+        margin-top: 64px;
+      }
+      .package-intro-image{
+        margin:auto;
+        margin-top: 40px;
+        max-height: 240px;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      h1{
+        margin-top: 40px;
+        line-height: 48px;
+        font-size: 28px;
+      }
+      h2{
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .package-intro-image{
+        margin:auto;
+        margin-top: 40px;
+        max-height: 220px;
+      }
     }
   }
   .package-detail{
     text-align: left;
+    padding-bottom: 0px;
+    h3{
+      margin-bottom: 8px;
+    }
     h4{
       font-weight: 500;
+    }
+    ul{
+      color: @color-subtext;
+      font-size: 18px;
+      margin-bottom: 16px;
+      padding-left: 20px;
+      line-height: 28px;
+    }
+    .price-tag{
+      margin-top: -8px;
+      @media only screen and (min-width: 0px) and (max-width: 992px) {
+        margin-top: 0px;
+      }
     }
   }
 }
