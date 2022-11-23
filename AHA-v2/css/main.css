@@ -8456,6 +8456,7 @@ footer strong {
   color: #666666;
 }
 .page-work-detail .work-detail p a {
+  color: #666666;
   text-decoration: underline;
 }
 .page-work-detail .work-detail ol,
@@ -8472,6 +8473,16 @@ footer strong {
   color: #393939;
   font-size: 18px;
   font-weight: 600;
+}
+.page-work-detail .work-detail strong {
+  color: #393939;
+  font-weight: 600;
+  font-size: 22px;
+}
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .page-work-detail .work-detail strong {
+    font-size: 20px;
+  }
 }
 .page-work-detail .work-detail .how-might-we {
   text-align: center;
@@ -8521,6 +8532,62 @@ footer strong {
 }
 .page-work-detail .work-item p {
   margin-top: 8px;
+}
+.page-work-detail .oneportal-concept-ui {
+  background: #BFDFED;
+  margin-bottom: 48px;
+  padding-top: 32px;
+  border-radius: 12px;
+}
+.page-work-detail .oneportal-concept-ui .oneportal-concept-ui-image {
+  padding-left: 48px;
+  padding-right: 0px;
+}
+.page-work-detail .oneportal-concept-ui .oneportal-concept-ui-text {
+  padding-top: 64px;
+  padding-right: 64px;
+}
+.page-work-detail .oneportal-concept-ui .oneportal-concept-ui-text ul {
+  margin-top: 16px;
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .page-work-detail .oneportal-concept-ui .oneportal-concept-ui-image {
+    padding-left: 32px;
+  }
+  .page-work-detail .oneportal-concept-ui .oneportal-concept-ui-text {
+    padding-top: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .page-work-detail .oneportal-concept-ui {
+    background: #ffffff;
+    padding-top: 0px;
+    margin-bottom: 8px;
+  }
+  .page-work-detail .oneportal-concept-ui .oneportal-concept-ui-image {
+    background: #BFDFED;
+    padding: 0px 16px;
+    margin: 0px 16px;
+    border-radius: 8px;
+  }
+  .page-work-detail .oneportal-concept-ui .oneportal-concept-ui-image img {
+    width: 300px;
+    padding-top: 40px;
+    margin: auto;
+  }
+  .page-work-detail .oneportal-concept-ui .oneportal-concept-ui-text {
+    padding-top: 24px;
+    padding-right: 16px;
+  }
+}
+.page-work-detail .caption {
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+  margin-top: 16px;
+}
+.page-work-detail .caption a {
+  color: #666666;
 }
 @media only screen and (max-width: 768px) {
   .page-work-detail .work-detail {
