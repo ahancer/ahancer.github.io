@@ -8467,6 +8467,12 @@ footer strong {
   padding-inline-start: 20px;
   color: #666666;
 }
+.page-work-detail .work-detail label {
+  font-family: 'Poppins';
+  color: #393939;
+  font-size: 18px;
+  font-weight: 600;
+}
 .page-work-detail .work-detail .how-might-we {
   text-align: center;
   background: #f9f8f6;
@@ -8476,6 +8482,27 @@ footer strong {
 }
 .page-work-detail .work-detail .how-might-we p {
   margin-top: 8px;
+}
+.page-work-detail .work-detail .story-board {
+  padding-top: 8px;
+}
+.page-work-detail .work-detail .story-board p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .page-work-detail .work-detail .story-board {
+    padding: 0px 8px;
+  }
+  .page-work-detail .work-detail .story-board p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .page-work-detail .work-detail .story-board .col-xs-6 {
+    padding: 0px 8px;
+  }
 }
 .page-work-detail .work-detail .content-image {
   margin-top: 32px;

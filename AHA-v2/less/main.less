@@ -1003,6 +1003,13 @@ footer {
       color: @color-subtext;
     }
 
+    label{
+      font-family: @font-primary;
+      color: @color-black;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
     .how-might-we {
       text-align: center;
       background: @color-grey2;
@@ -1012,6 +1019,26 @@ footer {
 
       p {
         margin-top: 8px;
+      }
+    }
+
+    .story-board{
+      padding-top: 8px;
+      p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+      }
+      @media only screen and (max-width: 768px) {
+        padding: 0px 8px;
+        p{
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 24px;
+        }
+        .col-xs-6{
+          padding: 0px 8px;
+        }
       }
     }
 
