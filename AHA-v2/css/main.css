@@ -8494,6 +8494,38 @@ footer strong {
 .page-work-detail .work-detail .how-might-we p {
   margin-top: 8px;
 }
+.page-work-detail .work-detail .turnpro-feedback img {
+  height: 116px;
+  margin: 40px auto 16px auto;
+}
+.page-work-detail .work-detail .turnpro-feedback h4 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.page-work-detail .work-detail .turnpro-feedback p {
+  margin-bottom: 16px;
+}
+.page-work-detail .work-detail .turnpro-feedback .fss-feedback {
+  background: #FFEEE4;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+.page-work-detail .work-detail .turnpro-feedback .user-feedback {
+  background: #EBF1FA;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .page-work-detail .work-detail .turnpro-feedback h4 {
+    font-size: 20px;
+  }
+  .page-work-detail .work-detail .turnpro-feedback .col-sm-6:nth-child(2) {
+    margin-top: 64px;
+  }
+}
 .page-work-detail .work-detail .story-board {
   padding-top: 8px;
 }
