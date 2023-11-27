@@ -1,0 +1,30 @@
+name: kanji_prototype
+description: Dev Prototype for Kanji App.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^1.10.19
+  supabase_auth_ui: ^0.2.1
+  intl: ^0.18.1
+  flutterflow_ui: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_rating_bar: ^4.0.1
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: MaterialIcons
+      fonts:
+        - asset: fonts/MaterialIcons-Regular.otf
+  assets:
+    - assets/images/
