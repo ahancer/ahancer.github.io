@@ -254,7 +254,7 @@ class _HomeState extends State<Home> {
                                               children: [
                                                 Text('Level ${myLevel}', style: TextStyle(fontSize: 20)),
                                                 const SizedBox(width: 4.0),
-                                                Icon(Icons.arrow_forward_ios, size: 16,),
+                                                Icon(Icons.arrow_forward_ios, size: 14,),
                                               ],
                                             ),
                                             const SizedBox(height: 8.0),
@@ -332,35 +332,32 @@ class _HomeState extends State<Home> {
                         color: Colors.white,
                         width: double.infinity,
                         child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 if(countReadyKanjis() > 0) Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text('${countReadyKanjis()} words', style: TextStyle(fontSize: 36),),
-                                    const SizedBox(width: 2.0),
-                                    Transform.scale(
-                                      scale: 0.7,
-                                      child: Container(
-                                        decoration: BoxDecoration( 
-                                          color: const Color.fromARGB(255, 242, 247, 247),
-                                          borderRadius: BorderRadius.circular(34),
-                                        ),
-                                        child: Transform.scale(
-                                          scale: 1.2,
-                                          child: IconButton(
-                                            icon: const Icon(Icons.refresh),
-                                            color: const Color.fromARGB(255, 164, 173, 173),
-                                            onPressed: () {
-                                              Navigator.pushReplacement(
-                                                context,
-                                                PageRouteBuilder(
-                                                  pageBuilder: (context, animation1, animation2) => Home(),
-                                                  transitionDuration: Duration.zero,
-                                                ),
-                                              );
-                                            },
+                                    const SizedBox(width: 8.0),
+                                    InkWell(
+                                      hoverColor: Colors.transparent,
+                                      splashColor: Colors.transparent, 
+                                      highlightColor: Colors.transparent, 
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                          context,
+                                          PageRouteBuilder(
+                                            pageBuilder: (context, animation1, animation2) => Home(),
+                                            transitionDuration: Duration.zero,
                                           ),
+                                        );
+                                      },
+                                      child: const SizedBox(
+                                        width: 28,
+                                        height: 28,
+                                        child: Image(
+                                          image: AssetImage('assets/images/button_refresh.png'),
+                                          fit: BoxFit.fill,
                                         ),
                                       ),
                                     ),
@@ -369,23 +366,29 @@ class _HomeState extends State<Home> {
                                 else Text('Please come back in...'),
                                 const SizedBox(height: 4.0),
                                 if(countReadyKanjis() <= 0) Text(waitTimeList[0].toString(), style: TextStyle(fontSize: 32),),
-                                if(countReadyKanjis() > 0) Text('Ready to Reivew', style: TextStyle(fontSize: 16),),
+                                if(countReadyKanjis() > 0) Text('Ready to Review', style: TextStyle(fontSize: 16),),
                                 if(countReadyKanjis() > 0) const SizedBox(height: 20.0),
-                                const SizedBox(height: 4.0),
-                                if(countReadyKanjis() > 0) Transform.scale(
-                                  scale: 2.5,
-                                  child: IconButton(
-                                    icon: const Icon(Icons.play_circle_fill),
-                                    color: const Color.fromARGB(255, 245, 128, 170),
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(builder: (context) => MyExam(UserID: userid.toString(),)),
-                                      );
-                                    },
+                                if(countReadyKanjis() > 0) InkWell(
+                                  hoverColor: Colors.transparent,
+                                  splashColor: Colors.transparent, 
+                                  highlightColor: Colors.transparent, 
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => MyExam(UserID: userid.toString(),)),
+                                    );
+                                  },
+                                  child: const SizedBox(
+                                    width: 68,
+                                    height: 68,
+                                    child: Image(
+                                      image: AssetImage('assets/images/button_play.png'),
+                                      fit: BoxFit.fill,
+                                    ),
                                   ),
                                 ),
-                                const SizedBox(height: 120.0),
+
+                                const SizedBox(height: 80.0),
                                 Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Container(
@@ -423,7 +426,6 @@ class _HomeState extends State<Home> {
                                     ),
                                     ),
                                   ),
-                                  const SizedBox(height: 24.0),
                               ],
                             ),
                       )
