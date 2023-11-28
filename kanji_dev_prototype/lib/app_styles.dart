@@ -66,16 +66,16 @@ class Styles {
 //--------App Color---------//
 class AppColors {
   static MaterialColor primaryColor =
-      MaterialColor(0xff69D2CC, const <int, Color>{
-    50: const Color(0xff69d2cc),
-    100: const Color(0xff5fbdb8),
-    200: const Color(0xff54a8a3),
-    300: const Color(0xff4a938f),
-    400: const Color(0xff3f7e7a),
-    500: const Color(0xff356966),
-    600: const Color(0xff2a5452),
-    700: const Color(0xff1f3f3d),
-    800: const Color(0xff152a29),
-    900: const Color(0xff0a1514)
+      MaterialColor(0xff38B2AC, const <int, Color>{
+    50: const Color(0xff38b2ac),
+    100: const Color(0xff32a09b),
+    200: const Color(0xff2d8e8a),
+    300: const Color(0xff277d78),
+    400: const Color(0xff226b67),
+    500: const Color(0xff1c5956),
+    600: const Color(0xff164745),
+    700: const Color(0xff113534),
+    800: const Color(0xff0b2422),
+    900: const Color(0xff061211)
   });
 }
