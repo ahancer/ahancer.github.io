@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kanji_prototype/app_data.dart';
+import 'package:kanji_prototype/app_styles.dart';
 import 'package:kanji_prototype/deck.dart';
 import 'package:kanji_prototype/home.dart';
 import 'package:kanji_prototype/utility.dart';
@@ -37,12 +38,13 @@ class _MyLevelState extends State<MyLevel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styles.bgGray0,
       appBar: AppBar(
-         title: const Text('My Level'),
+         title: Text('My Level', style: Styles.H2.copyWith(color: Styles.textColorWhite),),
          automaticallyImplyLeading: false,
          actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.close),
+              icon: const Icon(Icons.close, color: Colors.white,),
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
@@ -81,73 +83,117 @@ class _MyLevelState extends State<MyLevel> {
                 return Column(
                   children: [
                     const SizedBox(height: 24.0),
-                    Text('Level: ${myLevel} (Exp: ${myExp}/${expCap})', style: TextStyle(fontSize: 20),),
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: LinearProgressIndicator(
-                        value: progress, // Current progress
-                        backgroundColor: Colors.grey[300], // Background color of the progress bar
-                        color: Colors.blue, // Color of the progress indicator
-                        minHeight: 16, // Height of the progress bar
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(onPressed: resetLevel, child: Text('Reset Level')),
-                        const SizedBox(width: 16.0),
-                        TextButton(onPressed: () => skipLevel(myLevel), child: Text('Skip Level')),
-                      ],
-                    ),
-                    const SizedBox(height: 8.0),
-                    Expanded(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: ListView.builder(
-                          itemCount: chapterData.length,
-                          itemBuilder: (context, index) {
-                            
-                            final chapterId = chapterData[index]['chapter_id'];
-                            final isUnlocked = chapterId <= myLevel;
-                            final chapterLenght = chapterData[index]['chapter_lenght'];
-                            final isCurrentLevel = chapterId == myLevel;
-
-                            return GestureDetector(
-                              onTap: isUnlocked ? () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => LearnDeck(
-                                      ChapterTitle:chapterData[index]['chapter_name'],
-                                      ChapterID: chapterId,
-                                      UserID: widget.userID,
-                                      ChapterLenght: chapterLenght,
-                                    ),
-                                  ),
-                                );
-                              } : () {
-                                // Provide feedback to the user that the chapter is locked.
-                              },
-                              child: Column(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  ListTile(
-                                    title: Text('Lv.' + chapterId.toString() + ' ' + chapterData[index]['chapter_name'],style: const TextStyle(fontSize: 16)),
-                                    subtitle: Text(isUnlocked ? '$chapterLenght Words' : 'Locked'),
-                                    tileColor: isUnlocked ? Colors.white : const Color.fromARGB(255, 187, 187, 187),
-                                    shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                        color: isCurrentLevel ? Colors.blue : const Color.fromARGB(255, 187, 187, 187),
-                                        width: 1,
-                                      ),
-                                      borderRadius: BorderRadius.circular(5),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 8.0),
+                                  Text('Level ${myLevel}', style: Styles.title,),
+                                  Expanded(child: Text('${myExp}/${expCap}', style: Styles.small,textAlign: TextAlign.right,)),
                                 ],
                               ),
-                            );
-                          },
+                              const SizedBox(height: 8.0),
+                              LinearProgressIndicator(
+                                borderRadius: BorderRadius.circular(28),
+                                value: progress, // Current progress
+                                backgroundColor: Styles.bgGray1, // Background color of the progress bar
+                                color: Styles.bgAccent, // Color of the progress indicator
+                                minHeight: 16, // Height of the progress bar
+                              ),
+                            ],
                           ),
+                        )
+                      ),
+                    ),
+                    const SizedBox(height: 24.0),
+                    //For Debug Mode Only
+                    // Padding(
+                    //   padding: const EdgeInsets.all(8.0),
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.center,
+                    //     children: [
+                    //       TextButton(onPressed: resetLevel, child: Text('Reset Level', style: Styles.small.copyWith(color: Styles.textColorPink),)),
+                    //       const SizedBox(width: 16.0),
+                    //       TextButton(onPressed: () => skipLevel(myLevel), child: Text('Skip Level', style: Styles.small.copyWith(color: Styles.textColorPink))),
+                    //     ],
+                    //   ),
+                    // ),
+
+                    //Chapter List
+                    Expanded(
+                        child: ListView.builder(
+                        itemCount: chapterData.length,
+                        itemBuilder: (context, index) {
+                          
+                          final chapterId = chapterData[index]['chapter_id'];
+                          final isUnlocked = chapterId <= myLevel;
+                          final chapterLenght = chapterData[index]['chapter_lenght'];
+                          final isCurrentLevel = chapterId == myLevel;
+
+                          return GestureDetector(
+                            onTap: isUnlocked ? () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => LearnDeck(
+                                    ChapterTitle:chapterData[index]['chapter_name'],
+                                    ChapterID: chapterId,
+                                    UserID: widget.userID,
+                                    ChapterLenght: chapterLenght,
+                                  ),
+                                ),
+                              );
+                            } : () {
+                              // Provide feedback to the user that the chapter is locked.
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              child: Column(
+                                children: [
+                                  if (isUnlocked) ListTile(
+                                    title: Padding(
+                                      padding: const EdgeInsets.only(bottom: 4),
+                                      child: Text('Chapter $chapterId',style: Styles.subBody.copyWith(color: Styles.textColorGreen)),
+                                    ),
+                                    subtitle: Text(chapterData[index]['chapter_name'], style: Styles.title.copyWith(color: Styles.textColorPrimary),),
+                                    contentPadding: const EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 10),
+                                    tileColor: Colors.white,
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                        color: isCurrentLevel ? Styles.bgPrimary : Colors.white,
+                                        width: 1,
+                                      ),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
+                                  if (!isUnlocked) ListTile(
+                                    title: Padding(
+                                      padding: const EdgeInsets.only(bottom: 4),
+                                      child: Text('Chapter $chapterId',style: Styles.subBody.copyWith(color: Styles.textColorSecondary)),
+                                    ),
+                                    subtitle: Text(chapterData[index]['chapter_name'] + ' - Unlock Level ' + chapterId.toString(), style: Styles.title.copyWith(color: Styles.textColorSecondary)),
+                                    tileColor: Styles.bgGray2,
+                                    contentPadding: const EdgeInsets.only(left: 16, right: 16, top: 12, bottom: 10),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
                         ),
                     ),
                   ],
