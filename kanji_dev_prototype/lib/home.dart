@@ -332,7 +332,7 @@ class _HomeState extends State<Home> {
                         color: Colors.white,
                         width: double.infinity,
                         child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 if(countReadyKanjis() > 0) Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -365,9 +365,37 @@ class _HomeState extends State<Home> {
                                 ) 
                                 else Text('Please come back in...'),
                                 const SizedBox(height: 4.0),
-                                if(countReadyKanjis() <= 0) Text(waitTimeList[0].toString(), style: TextStyle(fontSize: 32),),
+                                if(countReadyKanjis() <= 0) Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(waitTimeList[0].toString(), style: TextStyle(fontSize: 32),),
+                                    const SizedBox(width: 8.0),
+                                    InkWell(
+                                      hoverColor: Colors.transparent,
+                                      splashColor: Colors.transparent, 
+                                      highlightColor: Colors.transparent, 
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                          context,
+                                          PageRouteBuilder(
+                                            pageBuilder: (context, animation1, animation2) => Home(),
+                                            transitionDuration: Duration.zero,
+                                          ),
+                                        );
+                                      },
+                                      child: const SizedBox(
+                                        width: 28,
+                                        height: 28,
+                                        child: Image(
+                                          image: AssetImage('assets/images/button_refresh.png'),
+                                          fit: BoxFit.fill,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                                 if(countReadyKanjis() > 0) Text('Ready to Review', style: TextStyle(fontSize: 16),),
-                                if(countReadyKanjis() > 0) const SizedBox(height: 20.0),
+                                const SizedBox(height: 20.0),
                                 if(countReadyKanjis() > 0) InkWell(
                                   hoverColor: Colors.transparent,
                                   splashColor: Colors.transparent, 
@@ -426,6 +454,7 @@ class _HomeState extends State<Home> {
                                     ),
                                     ),
                                   ),
+                                  const SizedBox(height: 48.0),
                               ],
                             ),
                       )
