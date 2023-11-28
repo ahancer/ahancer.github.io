@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterflow_ui/flutterflow_ui.dart';
 import 'package:kanji_prototype/app_styles.dart';
+import 'package:kanji_prototype/arcade.dart';
 import 'package:kanji_prototype/exam.dart';
 import 'package:kanji_prototype/level.dart';
 import 'package:kanji_prototype/my_kanji.dart';
@@ -422,39 +423,51 @@ class _HomeState extends State<Home> {
                                 const SizedBox(height: 80.0),
                                 Padding(
                                   padding: const EdgeInsets.all(16.0),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(34),
-                                      color: const Color.fromARGB(255, 242, 247, 247),
-                                    ),
-                                    height: 68,
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        children: <Widget>[
-                                          Expanded(
-                                            // First inner container
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(26),
-                                                color: const Color.fromARGB(255, 105, 210, 204),
-                                              ),
-                                              child: Center(
-                                                child: Text('Review', style: Styles.textButton),
-                                              ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            // Second inner container
-                                            child: Container(
-                                              child: Center(
-                                                child: Text('Arcade', style: Styles.textButton),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(34),
+                                        color: Styles.bgGray0,
                                       ),
-                                    ),
+                                      height: 68,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          children: <Widget>[
+                                            Expanded(
+                                              // First inner container
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.circular(26),
+                                                  color: Styles.bgAccent,
+                                                ),
+                                                child: Center(
+                                                  child: Text('Review', style: Styles.textButton),
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              // Second inner container
+                                              child: InkWell(
+                                                hoverColor: Colors.transparent,
+                                                splashColor: Colors.transparent, 
+                                                highlightColor: Colors.transparent, 
+                                                onTap: () {
+                                                  Navigator.pushReplacement(
+                                                    context,
+                                                    PageRouteBuilder(
+                                                      pageBuilder: (context, animation1, animation2) => Arcade(),
+                                                      transitionDuration: Duration.zero,
+                                                    ),
+                                                  );
+                                                },
+                                                child: Center(
+                                                  child: Text('Arcade', style: Styles.textButton),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                   ),
                                   const SizedBox(height: 48.0),

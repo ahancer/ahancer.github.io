@@ -1,13 +1,5 @@
-<<<<<<< Updated upstream
-2023/11/28-10:14:56.671 b903 Reusing MANIFEST /private/var/folders/g1/g9wkq88j08bdswp220n9fds40000gn/T/flutter_tools.hMF6EA/flutter_tools_chrome_device.wJQv1z/Default/shared_proto_db/MANIFEST-000001
-2023/11/28-10:14:56.672 b903 Recovering log #7
-2023/11/28-10:14:56.673 b903 Reusing old log /private/var/folders/g1/g9wkq88j08bdswp220n9fds40000gn/T/flutter_tools.hMF6EA/flutter_tools_chrome_device.wJQv1z/Default/shared_proto_db/000007.log 
-2023/11/28-10:14:56.674 b903 Delete type=0 #4
-2023/11/28-10:14:56.674 b903 Delete type=0 #3
-=======
-2023/11/28-10:21:01.439 a203 Reusing MANIFEST /private/var/folders/g7/dsljk7dx3hs0r5b0lc770ndc0000gn/T/flutter_tools.7KjgHK/flutter_tools_chrome_device.H8nKbx/Default/shared_proto_db/MANIFEST-000001
-2023/11/28-10:21:01.443 a203 Recovering log #7
-2023/11/28-10:21:01.477 a203 Reusing old log /private/var/folders/g7/dsljk7dx3hs0r5b0lc770ndc0000gn/T/flutter_tools.7KjgHK/flutter_tools_chrome_device.H8nKbx/Default/shared_proto_db/000007.log 
-2023/11/28-10:21:01.478 a203 Delete type=0 #4
-2023/11/28-10:21:01.478 a203 Delete type=0 #3
->>>>>>> Stashed changes
+2023/11/28-15:38:52.953 a607 Reusing MANIFEST /private/var/folders/g7/dsljk7dx3hs0r5b0lc770ndc0000gn/T/flutter_tools.D5WQyX/flutter_tools_chrome_device.VQRl7M/Default/shared_proto_db/MANIFEST-000001
+2023/11/28-15:38:52.958 a607 Recovering log #7
+2023/11/28-15:38:52.969 a607 Reusing old log /private/var/folders/g7/dsljk7dx3hs0r5b0lc770ndc0000gn/T/flutter_tools.D5WQyX/flutter_tools_chrome_device.VQRl7M/Default/shared_proto_db/000007.log 
+2023/11/28-15:38:52.970 a607 Delete type=0 #4
+2023/11/28-15:38:52.970 a607 Delete type=0 #3
