@@ -254,7 +254,7 @@ class _LearnDeckState extends State<LearnDeck> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
-                          left: 16, right: 16, top: 64, bottom: 24),
+                          left: 24, right: 24, top: 64, bottom: 40),
                       child: Container(
                         width: 320,
                         height: 440,
