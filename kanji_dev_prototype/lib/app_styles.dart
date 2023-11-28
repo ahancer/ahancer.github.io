@@ -20,11 +20,11 @@ class Styles {
   static Color linePrimary = const Color(0xff69D2CC);
 
 //-Text-//
-  static Color textPrimary = const Color(0xff191C1C);
-  static Color textSecondary = const Color(0xffA4ADAD);
-  static Color textWhite = const Color(0xffffffff);
-  static Color textHighlight = const Color(0xff38B2AC);
-  static Color textPink = const Color(0xffF3397C);
+  static Color textColorPrimary = const Color(0xff191C1C);
+  static Color textColorSecondary = const Color(0xffA4ADAD);
+  static Color textColorWhite = const Color(0xffffffff);
+  static Color textColorGreen = const Color(0xff38B2AC);
+  static Color textColorPink = const Color(0xffF3397C);
 
 //--------Font Style---------//
 //-EN-//
@@ -35,7 +35,7 @@ class Styles {
       GoogleFonts.nunito(fontSize: 24, fontWeight: FontWeight.bold);
 
 //button
-  static TextStyle button =
+  static TextStyle textButton =
       GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.bold);
 
 //body
