@@ -341,7 +341,7 @@ class _ReviewState extends State<Review> {
                           left: 16, right: 16, top: 64, bottom: 24),
                       child: Container(
                         width: 320,
-                        height: 400,
+                        height: 360,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -386,7 +386,6 @@ class _ReviewState extends State<Review> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            SizedBox(height: 56),
                           ],
                         ),
                       ),
