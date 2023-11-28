@@ -67,6 +67,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styles.bgGray0,
       // appBar: AppBar(
       //   title: Text(username.toString()),
       //   automaticallyImplyLeading: false,
@@ -92,7 +93,7 @@ class _HomeState extends State<Home> {
       //       )
       //     ],
       //   ),
-        backgroundColor: Styles.bgGray0,
+        
 
         body: FutureBuilder<List<Map<String, dynamic>>>(
         future: _myKanjisFuture,
@@ -263,8 +264,8 @@ class _HomeState extends State<Home> {
                                               child: LinearProgressIndicator(
                                                 borderRadius: BorderRadius.circular(28),
                                                 value: progress, // Current progress
-                                                backgroundColor: const Color.fromARGB(255, 234, 241, 241), // Background color of the progress bar
-                                                color: const Color.fromARGB(255, 105, 210, 204), // Color of the progress indicator
+                                                backgroundColor: Styles.bgGray1, // Background color of the progress bar
+                                                color: Styles.bgAccent, // Color of the progress indicator
                                                 minHeight: 16, // Height of the progress bar
                                               ),
                                             ),

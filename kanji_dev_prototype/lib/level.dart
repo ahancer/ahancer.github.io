@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kanji_prototype/app_data.dart';
+import 'package:kanji_prototype/app_styles.dart';
 import 'package:kanji_prototype/deck.dart';
 import 'package:kanji_prototype/home.dart';
 import 'package:kanji_prototype/utility.dart';
@@ -37,6 +38,7 @@ class _MyLevelState extends State<MyLevel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styles.bgGray0,
       appBar: AppBar(
          title: const Text('My Level'),
          automaticallyImplyLeading: false,
@@ -81,14 +83,28 @@ class _MyLevelState extends State<MyLevel> {
                 return Column(
                   children: [
                     const SizedBox(height: 24.0),
-                    Text('Level: ${myLevel} (Exp: ${myExp}/${expCap})', style: TextStyle(fontSize: 20),),
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: LinearProgressIndicator(
-                        value: progress, // Current progress
-                        backgroundColor: Colors.grey[300], // Background color of the progress bar
-                        color: Colors.blue, // Color of the progress indicator
-                        minHeight: 16, // Height of the progress bar
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            children: [
+                              Text('Level: ${myLevel} (Exp: ${myExp}/${expCap})', style: TextStyle(fontSize: 20),),
+                              LinearProgressIndicator(
+                                value: progress, // Current progress
+                                backgroundColor: Colors.grey[300], // Background color of the progress bar
+                                color: Colors.blue, // Color of the progress indicator
+                                minHeight: 16, // Height of the progress bar
+                              ),
+                            ],
+                          ),
+                        )
                       ),
                     ),
                     Row(
@@ -136,7 +152,7 @@ class _MyLevelState extends State<MyLevel> {
                                     tileColor: isUnlocked ? Colors.white : const Color.fromARGB(255, 187, 187, 187),
                                     shape: RoundedRectangleBorder(
                                       side: BorderSide(
-                                        color: isCurrentLevel ? Colors.blue : const Color.fromARGB(255, 187, 187, 187),
+                                        color: isCurrentLevel ? Colors.blue : Colors.white,
                                         width: 1,
                                       ),
                                       borderRadius: BorderRadius.circular(5),
