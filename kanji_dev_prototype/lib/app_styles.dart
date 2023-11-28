@@ -12,8 +12,8 @@ class Styles {
 
 //-BG BTN-//
   static Color bgAccent = const Color(0xff69D2CC);
-  static Color bgEasyBTN = const Color(0xffF580AA);
-  static Color bgHardBTN = const Color(0xffDB557D);
+  static Color bgEasyBTN = const Color(0xff38B2AC);
+  static Color bgHardBTN = const Color(0xffF580AA);
 
 //-Line-//
   static Color lineGray = const Color(0xffDFE7E7);
