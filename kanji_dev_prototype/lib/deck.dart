@@ -48,13 +48,17 @@ class _LearnDeckState extends State<LearnDeck> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Styles.bgGray0,
         appBar: AppBar(
           toolbarHeight: 60,
           title: Text(widget.ChapterTitle,
               style: Styles.H2.copyWith(color: Styles.textColorWhite)),
           automaticallyImplyLeading: false,
           leading: IconButton(
-            icon: Icon(Icons.arrow_back, color: Styles.bgWhite,),
+            icon: Icon(
+              Icons.arrow_back,
+              color: Styles.bgWhite,
+            ),
             onPressed: () {
               Navigator.pop(context);
             },
@@ -167,7 +171,7 @@ class _LearnDeckState extends State<LearnDeck> {
                                             color: Styles.textColorSecondary,
                                             size: 16,
                                           ),
-                                          SizedBox(width: 6.0),
+                                          SizedBox(width: 4.0),
                                           Text('x$kanjiScore',
                                               style: Styles.subBody.copyWith(
                                                   color: Styles
@@ -249,12 +253,12 @@ class _LearnDeckState extends State<LearnDeck> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(24.0),
+                      padding: const EdgeInsets.only(
+                          left: 24, right: 24, top: 64, bottom: 40),
                       child: Container(
-                        width: 400,
+                        width: 320,
+                        height: 440,
                         child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Row(
@@ -264,14 +268,16 @@ class _LearnDeckState extends State<LearnDeck> {
                                   character,
                                   style: Styles.jpMedium,
                                 ),
-                                SizedBox(height: 12),
+                                SizedBox(width: 16),
                                 Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       reading,
                                       style: Styles.subTitle,
                                     ),
+                                    SizedBox(height: 4),
                                     Text(
                                       meaning,
                                       style: Styles.H2,
@@ -280,22 +286,37 @@ class _LearnDeckState extends State<LearnDeck> {
                                 )
                               ],
                             ),
-                            Divider(color: Colors.grey[300]),
+                            // Divider(color: Colors.grey[300]),
                             SizedBox(height: 16),
                             Image.asset(
                               'assets/images/hint-$id.png',
-                              height: 100,
+                              height: 200,
                               fit: BoxFit.contain,
                             ),
                             SizedBox(height: 8),
-                            Text(
-                              hint,
-                              style: TextStyle(fontSize: 14),
-                              textAlign: TextAlign.center,
+                            SizedBox(
+                              height: 40,
+                              child: Text(
+                                hint,
+                                style: Styles.body,
+                                textAlign: TextAlign.center,
+                              ),
                             ),
-                            SizedBox(height: 40),
+
+                            SizedBox(height: 56),
                             TextButton(
-                              child: Text("Next Kanji"),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text("Next Kanji",
+                                      style: Styles.body.copyWith(
+                                          color: Styles.textColorGreen)),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Styles.textColorGreen,
+                                  )
+                                ],
+                              ),
                               onPressed: () {
                                 if (id < thisChapter.last['kanji_id']) {
                                   updateKanjiDetails(id + 1);
