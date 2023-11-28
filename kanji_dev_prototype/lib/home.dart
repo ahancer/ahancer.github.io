@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterflow_ui/flutterflow_ui.dart';
+import 'package:kanji_prototype/app_styles.dart';
 import 'package:kanji_prototype/exam.dart';
 import 'package:kanji_prototype/level.dart';
 import 'package:kanji_prototype/my_kanji.dart';
@@ -91,7 +92,7 @@ class _HomeState extends State<Home> {
       //       )
       //     ],
       //   ),
-        backgroundColor: const Color.fromARGB(255, 242, 247, 247),
+        backgroundColor: Styles.bgGray0,
 
         body: FutureBuilder<List<Map<String, dynamic>>>(
         future: _myKanjisFuture,
@@ -252,9 +253,9 @@ class _HomeState extends State<Home> {
                                           children: [
                                             Row(
                                               children: [
-                                                Text('Level ${myLevel}', style: TextStyle(fontSize: 20)),
+                                                Text('Level ${myLevel}', style: Styles.subTitle),
                                                 const SizedBox(width: 4.0),
-                                                Icon(Icons.arrow_forward_ios, size: 14,),
+                                                const Icon(Icons.arrow_forward_ios, size: 14,),
                                               ],
                                             ),
                                             const SizedBox(height: 8.0),
@@ -303,9 +304,9 @@ class _HomeState extends State<Home> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    const Text('Total Learned', style: TextStyle(fontSize: 14),),
+                                    Text('Total Learned', style: Styles.small,),
                                     const SizedBox(height: 2.0),
-                                    Text('$myKanjiCount words', style: TextStyle(fontSize: 16),),
+                                    Text('$myKanjiCount words', style: Styles.body,),
                                   ],
                                 ),
                               )
@@ -316,17 +317,17 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     
-                  
-                    
-                    
                     const SizedBox(height: 24.0),
-
+                    
+                    //Alien Image
                     const Image(
                       image: AssetImage('assets/images/img-chapter-0.png'),
                       alignment: Alignment.center,
                       width: double.infinity,
                       fit: BoxFit.fill,
                     ),
+
+                    //Timer Content
                     Expanded(
                       child: Container(
                         color: Colors.white,
@@ -337,7 +338,7 @@ class _HomeState extends State<Home> {
                                 if(countReadyKanjis() > 0) Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text('${countReadyKanjis()} words', style: TextStyle(fontSize: 36),),
+                                    Text('${countReadyKanjis()} words', style: Styles.H1,),
                                     const SizedBox(width: 8.0),
                                     InkWell(
                                       hoverColor: Colors.transparent,
@@ -363,12 +364,12 @@ class _HomeState extends State<Home> {
                                     ),
                                   ],
                                 ) 
-                                else Text('Please come back in...'),
-                                const SizedBox(height: 4.0),
+                                else Text('Please come back in...', style: Styles.body,),
+                                const SizedBox(height: 2.0),
                                 if(countReadyKanjis() <= 0) Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(waitTimeList[0].toString(), style: TextStyle(fontSize: 32),),
+                                    Text(waitTimeList[0].toString(), style: Styles.H1,),
                                     const SizedBox(width: 8.0),
                                     InkWell(
                                       hoverColor: Colors.transparent,
@@ -436,16 +437,16 @@ class _HomeState extends State<Home> {
                                                 borderRadius: BorderRadius.circular(26),
                                                 color: const Color.fromARGB(255, 105, 210, 204),
                                               ),
-                                              child: const Center(
-                                                child: Text('Review', style: TextStyle(fontSize: 18)),
+                                              child: Center(
+                                                child: Text('Review', style: Styles.button),
                                               ),
                                             ),
                                           ),
                                           Expanded(
                                             // Second inner container
                                             child: Container(
-                                              child: const Center(
-                                                child: Text('Arcade', style: TextStyle(fontSize: 18)),
+                                              child: Center(
+                                                child: Text('Arcade', style: Styles.button),
                                               ),
                                             ),
                                           ),
