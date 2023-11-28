@@ -29,38 +29,39 @@ class Styles {
 //--------Font Style---------//
 //-EN-//
 //Header
-  static TextStyle H1 =
-      GoogleFonts.nunito(fontSize: 36, fontWeight: FontWeight.bold);
-  static TextStyle H2 =
-      GoogleFonts.nunito(fontSize: 24, fontWeight: FontWeight.bold);
+  static TextStyle H1 = GoogleFonts.nunito(
+      fontSize: 36, fontWeight: FontWeight.bold, height: 1.1);
+  static TextStyle H2 = GoogleFonts.nunito(
+      fontSize: 24, fontWeight: FontWeight.bold, height: 1.16);
 
 //button
-  static TextStyle textButton =
-      GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.bold);
+  static TextStyle textButton = GoogleFonts.nunito(
+      fontSize: 18, fontWeight: FontWeight.bold, height: 1.5);
 
 //body
-  static TextStyle title =
-      GoogleFonts.nunito(fontSize: 22, fontWeight: FontWeight.w400);
-  static TextStyle subTitle =
-      GoogleFonts.nunito(fontSize: 20, fontWeight: FontWeight.w400);
-  static TextStyle body =
-      GoogleFonts.nunito(fontSize: 16, fontWeight: FontWeight.w400);
-  static TextStyle subBody =
-      GoogleFonts.nunito(fontSize: 14, fontWeight: FontWeight.w400);
-  static TextStyle small =
-      GoogleFonts.nunito(fontSize: 12, fontWeight: FontWeight.w400);
+  static TextStyle title = GoogleFonts.nunito(
+      fontSize: 22, fontWeight: FontWeight.w400, height: 1.18);
+  static TextStyle subTitle = GoogleFonts.nunito(
+      fontSize: 20, fontWeight: FontWeight.w400, height: 1.2);
+  static TextStyle body = GoogleFonts.nunito(
+      fontSize: 16, fontWeight: FontWeight.w400, height: 1.12);
+  static TextStyle subBody = GoogleFonts.nunito(
+      fontSize: 14, fontWeight: FontWeight.w400, height: 1.14);
+  static TextStyle small = GoogleFonts.nunito(
+      fontSize: 12, fontWeight: FontWeight.w400, height: 1.16);
   static TextStyle link = GoogleFonts.nunito(
       fontSize: 12,
       fontWeight: FontWeight.w400,
-      decoration: TextDecoration.underline);
+      decoration: TextDecoration.underline,
+      height: 1.16);
 
 //----JP----//
-  static TextStyle jpLarge =
-      GoogleFonts.mukta(fontSize: 128, fontWeight: FontWeight.normal);
-  static TextStyle jpMedium =
-      GoogleFonts.mukta(fontSize: 64, fontWeight: FontWeight.normal);
-  static TextStyle jpSmall =
-      GoogleFonts.mukta(fontSize: 32, fontWeight: FontWeight.normal);
+  static TextStyle jpLarge = GoogleFonts.mukta(
+      fontSize: 128, fontWeight: FontWeight.normal, height: 1.1);
+  static TextStyle jpMedium = GoogleFonts.mukta(
+      fontSize: 64, fontWeight: FontWeight.normal, height: 1.25);
+  static TextStyle jpSmall = GoogleFonts.mukta(
+      fontSize: 32, fontWeight: FontWeight.normal, height: 1.3);
 }
 
 //--------App Color---------//
