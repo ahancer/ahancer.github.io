@@ -1350,6 +1350,8 @@ file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/.dart_tool/flutte
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/.dart_tool/flutter_build/8c581452690aa353dfab5131ce0776ec/web_plugin_registrant.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/.dart_tool/package_config.json
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/app_data.dart
+file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/app_styles.dart
+file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/arcade.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/constants.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/deck.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/exam.dart
@@ -1357,6 +1359,9 @@ file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/exam_result.d
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/home.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/level.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/main.dart
+file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/matching.dart
+file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/matching_lose.dart
+file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/matching_win.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/my_kanji.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/sign_in.dart
 file:///Users/aha-imac01/ahancer.github.io/kanji_dev_prototype/lib/update_password.dart
