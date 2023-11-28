@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
 2023/11/28-12:04:44.573 f403 Reusing MANIFEST /private/var/folders/g1/g9wkq88j08bdswp220n9fds40000gn/T/flutter_tools.eJv303/flutter_tools_chrome_device.MIxbMB/Default/shared_proto_db/metadata/MANIFEST-000001
 2023/11/28-12:04:44.573 f403 Recovering log #3
 2023/11/28-12:04:44.574 f403 Reusing old log /private/var/folders/g1/g9wkq88j08bdswp220n9fds40000gn/T/flutter_tools.eJv303/flutter_tools_chrome_device.MIxbMB/Default/shared_proto_db/metadata/000003.log 
+=======
+2023/11/28-11:40:20.536 8507 Reusing MANIFEST /private/var/folders/g7/dsljk7dx3hs0r5b0lc770ndc0000gn/T/flutter_tools.2iJe0u/flutter_tools_chrome_device.ptibkN/Default/shared_proto_db/metadata/MANIFEST-000001
+2023/11/28-11:40:20.536 8507 Recovering log #3
+2023/11/28-11:40:20.537 8507 Reusing old log /private/var/folders/g7/dsljk7dx3hs0r5b0lc770ndc0000gn/T/flutter_tools.2iJe0u/flutter_tools_chrome_device.ptibkN/Default/shared_proto_db/metadata/000003.log 
+>>>>>>> Stashed changes

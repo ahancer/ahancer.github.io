@@ -305,8 +305,9 @@ class _HomeState extends State<Home> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+                                    const SizedBox(height: 4.0),
                                     Text('Total Learned', style: Styles.small.copyWith(color: Styles.textColorSecondary),),
-                                    const SizedBox(height: 2.0),
+                                    const SizedBox(height: 4.0),
                                     Text('$myKanjiCount words', style: Styles.body,),
                                   ],
                                 ),
