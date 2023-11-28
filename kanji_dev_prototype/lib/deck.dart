@@ -52,6 +52,13 @@ class _LearnDeckState extends State<LearnDeck> {
           toolbarHeight: 60,
           title: Text(widget.ChapterTitle,
               style: Styles.H2.copyWith(color: Styles.textColorWhite)),
+          automaticallyImplyLeading: false,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Styles.bgWhite,),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.delete, color: Styles.textColorWhite),
