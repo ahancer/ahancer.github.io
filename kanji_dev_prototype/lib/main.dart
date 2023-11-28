@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanji_prototype/app_styles.dart';
 import 'package:supabase_auth_ui/supabase_auth_ui.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import './home.dart';
@@ -10,7 +11,8 @@ void main() async {
 
   await Supabase.initialize(
     url: 'https://ltlgpkvbizdjzniuwvui.supabase.co',
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx0bGdwa3ZiaXpkanpuaXV3dnVpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYyMzc0MzgsImV4cCI6MjAxMTgxMzQzOH0.MxZ_SDg55mh6EdYTUErRQ2b5T98p0GiyI_v6c6dTXCw',
+    anonKey:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx0bGdwa3ZiaXpkanpuaXV3dnVpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYyMzc0MzgsImV4cCI6MjAxMTgxMzQzOH0.MxZ_SDg55mh6EdYTUErRQ2b5T98p0GiyI_v6c6dTXCw',
   );
 
   runApp(const MyApp());
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Kanji Demo',
       theme: ThemeData(
-        primarySwatch:Colors.blueGrey,
+        primarySwatch: AppColors.primaryColor,
         inputDecorationTheme: const InputDecorationTheme(
           border: OutlineInputBorder(),
         ),
@@ -44,10 +46,7 @@ class MyApp extends StatelessWidget {
             body: Center(
               child: Text(
                 'Not Found',
-                style: TextStyle(
-                  fontSize: 42,
-                  fontWeight: FontWeight.bold
-                ),
+                style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
               ),
             ),
           ),

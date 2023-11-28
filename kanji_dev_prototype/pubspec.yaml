@@ -13,6 +13,7 @@ dependencies:
   supabase_auth_ui: ^0.2.1
   intl: ^0.18.1
   flutterflow_ui: ^0.2.0
+  google_fonts: ^4.0.3
 
 dev_dependencies:
   flutter_test:
