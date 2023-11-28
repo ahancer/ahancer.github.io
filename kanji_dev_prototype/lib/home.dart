@@ -305,7 +305,7 @@ class _HomeState extends State<Home> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text('Total Learned', style: Styles.small,),
+                                    Text('Total Learned', style: Styles.small.copyWith(color: Styles.textColorSecondary),),
                                     const SizedBox(height: 2.0),
                                     Text('$myKanjiCount words', style: Styles.body,),
                                   ],
@@ -439,7 +439,7 @@ class _HomeState extends State<Home> {
                                                 color: const Color.fromARGB(255, 105, 210, 204),
                                               ),
                                               child: Center(
-                                                child: Text('Review', style: Styles.button),
+                                                child: Text('Review', style: Styles.textButton),
                                               ),
                                             ),
                                           ),
@@ -447,7 +447,7 @@ class _HomeState extends State<Home> {
                                             // Second inner container
                                             child: Container(
                                               child: Center(
-                                                child: Text('Arcade', style: Styles.button),
+                                                child: Text('Arcade', style: Styles.textButton),
                                               ),
                                             ),
                                           ),
