@@ -33,6 +33,11 @@ class _MatchingGameState extends State<MatchingGame> {
       'meaning':'River',
       'matching':'default'
     },
+    {
+      'character': '山',
+      'meaning': 'Mountain',
+      'matching':'default'
+    },
   ];
 
   late List<Map<String, String>> characterData;
@@ -79,7 +84,7 @@ class _MatchingGameState extends State<MatchingGame> {
                 ),
                 Row(
                   children: [
-                    Icon(Icons.favorite, color: Styles.textColorPink),
+                    Icon(Icons.favorite, color: Styles.bgHardBTN),
                     Text(' x $heart', style: Styles.subTitle,),
                     const SizedBox(width: 8.0),
                   ],
@@ -120,8 +125,8 @@ class _MatchingGameState extends State<MatchingGame> {
                         padding: const EdgeInsets.only(left: 32, top: 16, right: 8, bottom: 0),
                         child: ListTile(
                           title: Padding(
-                            padding: const EdgeInsets.all(32.0),
-                            child: Center(child: Text(characterData[index]['character'].toString(), style: Styles.title)),
+                            padding: const EdgeInsets.symmetric(vertical:32.0),
+                            child: Center(child: Text(characterData[index]['character'].toString(), style: Styles.subTitle)),
                           ),
                           onTap: onTapAction,
                           tileColor: tileColor,
@@ -160,8 +165,8 @@ class _MatchingGameState extends State<MatchingGame> {
                         padding: const EdgeInsets.only(left: 8, top: 16, right: 32, bottom: 0),
                         child: ListTile(
                           title: Padding(
-                            padding: const EdgeInsets.all(32.0),
-                            child: Center(child: Text(meaningData[index]['meaning'].toString(), style: Styles.title)),
+                            padding: const EdgeInsets.symmetric(vertical:32.0),
+                            child: Center(child: Text(meaningData[index]['meaning'].toString(), style: Styles.subTitle)),
                           ),
                           onTap: onTapAction,
                           tileColor: tileColor,
@@ -233,7 +238,7 @@ class _MatchingGameState extends State<MatchingGame> {
          // Show a Snackbar for incorrect match
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            backgroundColor: Styles.textColorPink,
+            backgroundColor: Styles.bgHardBTN,
             content: Text('Incorrect! Heart -1.', style: Styles.title,),
             duration: Duration(seconds: 1),
           ),

@@ -420,7 +420,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
 
-                                const SizedBox(height: 80.0),
+                                const SizedBox(height: 64.0),
                                 Padding(
                                   padding: const EdgeInsets.all(16.0),
                                     child: Container(

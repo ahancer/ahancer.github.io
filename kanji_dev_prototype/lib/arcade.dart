@@ -48,7 +48,7 @@ class Arcade extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 80.0),
+          const SizedBox(height: 64.0),
           Padding(
             padding: const EdgeInsets.all(16.0),
               child: Container(
