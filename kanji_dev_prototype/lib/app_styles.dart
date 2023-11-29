@@ -28,19 +28,19 @@ class Styles {
 //--------Font Style---------//
 //-EN-//
   static TextStyle H1 =
-      TextStyle(fontSize: 36, fontWeight: FontWeight.w700, height: 1.1);
+      TextStyle(fontSize: 36, fontWeight: FontWeight.bold, height: 1.1);
   static TextStyle H2 =
-      TextStyle(fontSize: 24, fontWeight: FontWeight.w700, height: 1.16);
+      TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 1.16);
   static TextStyle textButton =
       TextStyle(fontSize: 18, fontWeight: FontWeight.w700, height: 1.8);
   static TextStyle title =
-      TextStyle(fontSize: 22, fontWeight: FontWeight.w500, height: 1.18);
+      TextStyle(fontSize: 22, fontWeight: FontWeight.w600, height: 1.18);
 
   static TextStyle subTitle =
       TextStyle(fontSize: 20, fontWeight: FontWeight.w500, height: 1.2);
 
   static TextStyle body =
-      TextStyle(fontSize: 16, fontWeight: FontWeight.w500, height: 1.12);
+      TextStyle(fontSize: 16, fontWeight: FontWeight.w500, height: 1.2);
 
   static TextStyle subBody =
       TextStyle(fontSize: 14, fontWeight: FontWeight.w500, height: 1.14);
