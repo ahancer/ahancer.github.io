@@ -209,37 +209,51 @@ class _MatchingGameState extends State<MatchingGame> {
   }
 
   void checkMatch() {
-    if (selectedCharacter == selectedMeaning) {
-      // It's a match
-      characterData[selectedCharacterIndex]['matching'] = 'correct';
-      meaningData[selectedMeaningIndex]['matching'] = 'correct';
-      countCorrect = countCorrect +1;
-      print('Match found!');
-      if (countCorrect == matchingData.length){
-        //You Win
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => MatchingWin()),
+    setState(() {
+      if (selectedCharacter == selectedMeaning) {
+        // It's a match
+        characterData[selectedCharacterIndex]['matching'] = 'correct';
+        meaningData[selectedMeaningIndex]['matching'] = 'correct';
+        countCorrect++;
+        print('Match found!');
+
+        if (countCorrect == matchingData.length) {
+          // You Win
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => MatchingWin()),
+          );
+        }
+      } else {
+        // Not a match
+        characterData[selectedCharacterIndex]['matching'] = 'default';
+        meaningData[selectedMeaningIndex]['matching'] = 'default';
+        heart--;
+
+         // Show a Snackbar for incorrect match
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Styles.textColorPink,
+            content: Text('Incorrect! Heart -1.', style: Styles.title,),
+            duration: Duration(seconds: 1),
+          ),
         );
+
+        print('Not a match.');
+        if (heart <= 0) {
+          // You Lose
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => MatchingLose()),
+          );
+        }
       }
-    } else {
-      // Not a match
-      characterData[selectedCharacterIndex]['matching'] = 'default';
-      meaningData[selectedMeaningIndex]['matching'] = 'default';
-      heart = heart - 1;
-      print('Not a match.');
-      if (heart <= 0){
-        //You Lose
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => MatchingLose()),
-        );
-      }
-    }
-    // Reset selections
-    selectedCharacter = "N/A";
-    selectedMeaning = "N/A";
-    selectedCharacterIndex = -1;
-    selectedMeaningIndex = -1;
-  }
+
+      // Reset selections
+      selectedCharacter = "N/A";
+      selectedMeaning = "N/A";
+      selectedCharacterIndex = -1;
+      selectedMeaningIndex = -1;
+    });
+}
 }
