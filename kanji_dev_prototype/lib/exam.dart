@@ -247,10 +247,11 @@ class _ExamQuestionState extends State<ExamQuestion> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(
-                                      'Hard',
-                                      style: Styles.textButton.copyWith(
-                                          color: Styles.textColorWhite),
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Text('Hard',
+                                          style: Styles.textButton.copyWith(
+                                              color: Styles.textColorWhite)),
                                     ),
                                   ],
                                 ),
@@ -299,13 +300,14 @@ class _ExamQuestionState extends State<ExamQuestion> {
                               child: Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text('Easy',
-                                        style: Styles.textButton.copyWith(
-                                            color: Styles.textColorWhite)),
-                                    SizedBox(
-                                      height: 4.0,
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Text('Easy',
+                                          style: Styles.textButton.copyWith(
+                                              color: Styles.textColorWhite)),
                                     ),
                                   ],
                                 ),

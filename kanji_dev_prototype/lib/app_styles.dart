@@ -36,22 +36,22 @@ class Styles {
 
 //button
   static TextStyle textButton = GoogleFonts.nunito(
-      fontSize: 18, fontWeight: FontWeight.bold, height: 1.5);
+      fontSize: 18, fontWeight: FontWeight.bold, height: 1.8);
 
 //body
   static TextStyle title = GoogleFonts.nunito(
-      fontSize: 22, fontWeight: FontWeight.w400, height: 1.18);
+      fontSize: 22, fontWeight: FontWeight.w500, height: 1.18);
   static TextStyle subTitle = GoogleFonts.nunito(
-      fontSize: 20, fontWeight: FontWeight.w400, height: 1.2);
+      fontSize: 20, fontWeight: FontWeight.w500, height: 1.2);
   static TextStyle body = GoogleFonts.nunito(
-      fontSize: 16, fontWeight: FontWeight.w400, height: 1.12);
+      fontSize: 16, fontWeight: FontWeight.w500, height: 1.12);
   static TextStyle subBody = GoogleFonts.nunito(
-      fontSize: 14, fontWeight: FontWeight.w400, height: 1.14);
+      fontSize: 14, fontWeight: FontWeight.w500, height: 1.14);
   static TextStyle small = GoogleFonts.nunito(
-      fontSize: 12, fontWeight: FontWeight.w400, height: 1.16);
+      fontSize: 12, fontWeight: FontWeight.w500, height: 1.16);
   static TextStyle link = GoogleFonts.nunito(
       fontSize: 12,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w500,
       decoration: TextDecoration.underline,
       height: 1.16);
 
