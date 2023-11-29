@@ -14,8 +14,6 @@ dependencies:
   intl: ^0.18.1
   flutterflow_ui: ^0.2.0
 
-  audioplayers: ^5.2.1
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
