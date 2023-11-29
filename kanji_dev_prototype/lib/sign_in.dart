@@ -16,16 +16,16 @@ class SignUp extends StatelessWidget {
       backgroundColor: Styles.bgGray0,
       appBar: AppBar(
         title: Text(
-          '漢字 Prototype 5.6',
+          '漢字 Prototype 5.7',
           style: Styles.H2.copyWith(color: Styles.textColorWhite),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 80, right: 80, top: 32),
+        padding: const EdgeInsets.all(32),
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 24.0,
-          crossAxisSpacing: 24.0,
+          mainAxisSpacing: 16.0,
+          crossAxisSpacing: 16.0,
           children: [
             ElevatedButton(
               onPressed: () async {
@@ -47,10 +47,10 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-1.png',
-                    height: 72,
-                    width: 72,
+                    height: 96,
+                    width: 96,
                   ),
-                  SizedBox(height: 24),
+                  SizedBox(height: 16),
                   Text(
                     'Natt',
                     style: Styles.body,
@@ -78,10 +78,10 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-2.png',
-                    height: 72,
-                    width: 72,
+                    height: 96,
+                    width: 96,
                   ),
-                  SizedBox(height: 24),
+                  SizedBox(height: 16),
                   Text(
                     'Noon',
                     style: Styles.body,
@@ -109,10 +109,10 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-3.png',
-                    height: 72,
-                    width: 72,
+                    height: 96,
+                    width: 96,
                   ),
-                  SizedBox(height: 24),
+                  SizedBox(height: 16),
                   Text(
                     'Dalad',
                     style: Styles.body,
@@ -140,10 +140,10 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-4.png',
-                    height: 72,
-                    width: 72,
+                    height: 96,
+                    width: 96,
                   ),
-                  SizedBox(height: 24),
+                  SizedBox(height: 16),
                   Text(
                     'Nan',
                     style: Styles.body,

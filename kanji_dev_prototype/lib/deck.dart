@@ -303,28 +303,38 @@ class _LearnDeckState extends State<LearnDeck> {
                               ),
                             ),
 
-                            SizedBox(height: 56),
-                            TextButton(
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text("Next Kanji",
-                                      style: Styles.body.copyWith(
-                                          color: Styles.textColorGreen)),
-                                  Icon(
-                                    Icons.arrow_forward,
-                                    color: Styles.textColorGreen,
-                                  )
-                                ],
-                              ),
-                              onPressed: () {
-                                if (id < thisChapter.last['kanji_id']) {
-                                  updateKanjiDetails(id + 1);
-                                } else {
-                                  updateKanjiDetails(id - chapterLenght + 1);
-                                }
-                              },
+                            SizedBox(
+                              height: 56,
+                              width: 160,
                             ),
+
+                            SizedBox(
+                              width: 140,
+                              height: 40, // Set the desired width
+                              child: TextButton(
+                                onPressed: () {
+                                  if (id < thisChapter.last['kanji_id']) {
+                                    updateKanjiDetails(id + 1);
+                                  } else {
+                                    updateKanjiDetails(id - chapterLenght + 1);
+                                  }
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Next Kanji",
+                                      style: Styles.body.copyWith(
+                                          color: Styles.textColorGreen),
+                                    ),
+                                    Icon(
+                                      Icons.arrow_forward,
+                                      color: Styles.textColorGreen,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
