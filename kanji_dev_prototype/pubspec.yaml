@@ -28,5 +28,13 @@ flutter:
     - family: MaterialIcons
       fonts:
         - asset: fonts/MaterialIcons-Regular.otf
+    - family: Nunito
+      fonts:
+        - asset: fonts/Nunito-VariableFont_wght.ttf
+    - family: Mukta
+      fonts:
+        - asset: fonts/Mukta-Regular.ttf
+        - asset: fonts/Mukta-Bold.ttf
+          weight: 700
   assets:
     - assets/images/
