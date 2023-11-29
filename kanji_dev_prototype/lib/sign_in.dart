@@ -5,8 +5,6 @@ import 'package:kanji_prototype/home.dart';
 import 'package:supabase_auth_ui/supabase_auth_ui.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import 'constants.dart';
-
 final supabase = Supabase.instance.client;
 
 class SignUp extends StatelessWidget {

@@ -13,7 +13,7 @@ dependencies:
   supabase_auth_ui: ^0.2.1
   intl: ^0.18.1
   flutterflow_ui: ^0.2.0
-  google_fonts: ^4.0.3
+
   audioplayers: ^5.2.1
 
 dev_dependencies:
@@ -35,6 +35,5 @@ flutter:
       fonts:
         - asset: fonts/Mukta-Regular.ttf
         - asset: fonts/Mukta-Bold.ttf
-          weight: 700
   assets:
     - assets/images/

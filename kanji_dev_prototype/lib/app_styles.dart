@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Styles {
 //--------Color Style---------//
@@ -28,40 +27,110 @@ class Styles {
 
 //--------Font Style---------//
 //-EN-//
-//Header
-  static TextStyle H1 = GoogleFonts.nunito(
-      fontSize: 36, fontWeight: FontWeight.w700, height: 1.1);
-  static TextStyle H2 = GoogleFonts.nunito(
-      fontSize: 24, fontWeight: FontWeight.w700, height: 1.16);
+  static TextStyle H1 = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 36,
+      fontWeight: FontWeight.bold,
+      height: 1.1);
+  static TextStyle H2 = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 24,
+      fontWeight: FontWeight.bold,
+      height: 1.16);
+  static TextStyle textButton = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
+      height: 1.8);
+  static TextStyle title = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+      height: 1.18);
 
-//button
-  static TextStyle textButton =
-      GoogleFonts.mukta(fontSize: 18, fontWeight: FontWeight.w700, height: 1.8);
+  static TextStyle subTitle = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      height: 1.2);
 
-//body
-  static TextStyle title = GoogleFonts.nunito(
-      fontSize: 22, fontWeight: FontWeight.w500, height: 1.18);
-  static TextStyle subTitle = GoogleFonts.nunito(
-      fontSize: 20, fontWeight: FontWeight.w500, height: 1.2);
-  static TextStyle body = GoogleFonts.nunito(
-      fontSize: 16, fontWeight: FontWeight.w500, height: 1.12);
-  static TextStyle subBody = GoogleFonts.nunito(
-      fontSize: 14, fontWeight: FontWeight.w500, height: 1.14);
-  static TextStyle small = GoogleFonts.nunito(
-      fontSize: 12, fontWeight: FontWeight.w500, height: 1.16);
-  static TextStyle link = GoogleFonts.nunito(
+  static TextStyle body = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+      height: 1.12);
+
+  static TextStyle subBody = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 14,
+      fontWeight: FontWeight.w700,
+      height: 1.14);
+
+  static TextStyle small = TextStyle(
+      fontFamily: 'Nunito',
       fontSize: 12,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
+      height: 1.16);
+  static TextStyle link = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
       decoration: TextDecoration.underline,
       height: 1.16);
 
-//----JP----//
-  static TextStyle jpLarge = GoogleFonts.mukta(
-      fontSize: 128, fontWeight: FontWeight.w400, height: 1.1);
-  static TextStyle jpMedium = GoogleFonts.mukta(
-      fontSize: 64, fontWeight: FontWeight.w400, height: 1.25);
-  static TextStyle jpSmall =
-      GoogleFonts.mukta(fontSize: 32, fontWeight: FontWeight.w400, height: 1.3);
+  static TextStyle jpLarge = TextStyle(
+      fontFamily: 'Mukta',
+      fontSize: 128,
+      fontWeight: FontWeight.w600,
+      height: 1.1);
+
+  static TextStyle jpMedium = TextStyle(
+      fontFamily: 'Mukta',
+      fontSize: 64,
+      fontWeight: FontWeight.w600,
+      height: 1.25);
+
+  static TextStyle jpSmall = TextStyle(
+      fontFamily: 'Mukta',
+      fontSize: 32,
+      fontWeight: FontWeight.w600,
+      height: 1.3);
+
+//Header
+//   static TextStyle H1 = GoogleFonts.nunito(
+//       fontSize: 36, fontWeight: FontWeight.w700, height: 1.1);
+//   static TextStyle H2 = GoogleFonts.nunito(
+//       fontSize: 24, fontWeight: FontWeight.w700, height: 1.16);
+
+// //button
+//   static TextStyle textButton =
+//       GoogleFonts.mukta(fontSize: 18, fontWeight: FontWeight.w700, height: 1.8);
+
+// //body
+//   static TextStyle title = GoogleFonts.nunito(
+//       fontSize: 22, fontWeight: FontWeight.w500, height: 1.18);
+//   static TextStyle subTitle = GoogleFonts.nunito(
+//       fontSize: 20, fontWeight: FontWeight.w500, height: 1.2);
+//   static TextStyle body = GoogleFonts.nunito(
+//       fontSize: 16, fontWeight: FontWeight.w500, height: 1.12);
+//   static TextStyle subBody = GoogleFonts.nunito(
+//       fontSize: 14, fontWeight: FontWeight.w500, height: 1.14);
+//   static TextStyle small = GoogleFonts.nunito(
+//       fontSize: 12, fontWeight: FontWeight.w500, height: 1.16);
+//   static TextStyle link = GoogleFonts.nunito(
+//       fontSize: 12,
+//       fontWeight: FontWeight.w500,
+//       decoration: TextDecoration.underline,
+//       height: 1.16);
+
+// //----JP----//
+//   static TextStyle jpLarge = GoogleFonts.mukta(
+//       fontSize: 128, fontWeight: FontWeight.w400, height: 1.1);
+//   static TextStyle jpMedium = GoogleFonts.mukta(
+//       fontSize: 64, fontWeight: FontWeight.w400, height: 1.25);
+//   static TextStyle jpSmall = GoogleFonts.mukta(
+//       fontSize: 32, fontWeight: FontWeight.normal, height: 1.3);
+// }
 }
 
 //--------App Color---------//
