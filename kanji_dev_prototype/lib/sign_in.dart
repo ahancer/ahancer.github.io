@@ -15,7 +15,7 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar('漢字 Prototype 5.3'),
+      appBar: appBar('漢字 Prototype 5.4'),
       body: ListView(
         padding: const EdgeInsets.all(24.0),
         children: [
