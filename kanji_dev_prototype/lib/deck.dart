@@ -94,12 +94,20 @@ class _LearnDeckState extends State<LearnDeck> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          fixedSize: Size(220, 64.0),
+                          backgroundColor: Styles.bgAccent,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(
+                                64.0), // Adjust the radius as needed
+                          ),
+                        ),
                         onPressed: () async {
                           await createNewKanji();
                         },
-                        child: const Text(
+                        child: Text(
                           'Unlock Chapter',
-                          style: TextStyle(fontSize: 32),
+                          style: Styles.textButton,
                         ),
                       ),
                     ],
