@@ -30,13 +30,13 @@ class Styles {
 //-EN-//
 //Header
   static TextStyle H1 = GoogleFonts.nunito(
-      fontSize: 36, fontWeight: FontWeight.bold, height: 1.1);
+      fontSize: 36, fontWeight: FontWeight.w700, height: 1.1);
   static TextStyle H2 = GoogleFonts.nunito(
-      fontSize: 24, fontWeight: FontWeight.bold, height: 1.16);
+      fontSize: 24, fontWeight: FontWeight.w700, height: 1.16);
 
 //button
-  static TextStyle textButton = GoogleFonts.nunito(
-      fontSize: 18, fontWeight: FontWeight.bold, height: 1.8);
+  static TextStyle textButton =
+      GoogleFonts.mukta(fontSize: 18, fontWeight: FontWeight.w700, height: 1.8);
 
 //body
   static TextStyle title = GoogleFonts.nunito(
@@ -57,11 +57,11 @@ class Styles {
 
 //----JP----//
   static TextStyle jpLarge = GoogleFonts.mukta(
-      fontSize: 128, fontWeight: FontWeight.normal, height: 1.1);
+      fontSize: 128, fontWeight: FontWeight.w400, height: 1.1);
   static TextStyle jpMedium = GoogleFonts.mukta(
-      fontSize: 64, fontWeight: FontWeight.normal, height: 1.25);
-  static TextStyle jpSmall = GoogleFonts.mukta(
-      fontSize: 32, fontWeight: FontWeight.normal, height: 1.3);
+      fontSize: 64, fontWeight: FontWeight.w400, height: 1.25);
+  static TextStyle jpSmall =
+      GoogleFonts.mukta(fontSize: 32, fontWeight: FontWeight.w400, height: 1.3);
 }
 
 //--------App Color---------//
