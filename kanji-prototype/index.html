@@ -31,14 +31,27 @@
 
   <title>Kanji</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 
   <style>
     @font-face {
       font-family: 'MaterialIcons';
-      font-family: 'Mukta', sans-serif;
-      font-family: 'Nunito', sans-serif;
       src: url('assets/fonts/MaterialIcons-Regular.otf');
-      src: url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Nunito:wght@400;700&display=swap');
+    }
+    @font-face {
+      font-family: 'Nunito', sans-serif;
+      src: url('assets/fonts/Nunito-VariableFont_wght.ttf');
+    }
+    @font-face {
+      font-family: 'Mukta', sans-serif;
+      src: url('assets/fonts/Mukta-Bold.ttf');
+      font-weight: bold;
+    }
+    @font-face {
+      font-family: 'Mukta', sans-serif;
+      src: url('assets/fonts/Mukta-Regular.ttf');
+      font-weight: normal;
     }
     
   </style>
@@ -46,7 +59,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1926287763";
+    const serviceWorkerVersion = "3200225048";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>

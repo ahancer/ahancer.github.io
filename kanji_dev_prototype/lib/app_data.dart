@@ -12,12 +12,12 @@ List<Map<String, dynamic>> chapterData = [
   },
   {
     'chapter_id':3,
-    'chapter_name':'People',
+    'chapter_name':'Body',
     'chapter_lenght':10,
   },
   {
     'chapter_id':4,
-    'chapter_name':'Body',
+    'chapter_name':'People',
     'chapter_lenght':10,
   },
   {
@@ -95,7 +95,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '日',
     'meaning': 'Sun',
-    'reading': 'Hi',
+    'reading': 'ニチ, ひ',
     'hint': 'พระอาทิตย์ (日) ขึ้นหลังภูเขา'
   },
   {
@@ -103,7 +103,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '月',
     'meaning': 'Moon',
-    'reading': 'Tsuki',
+    'reading': 'つき, ゲツ',
     'hint': 'พระจันทร์ (月) ครึ่งเสี้ยวตอนกลางคืน'
   },
   {
@@ -111,7 +111,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '土',
     'meaning': 'Soil',
-    'reading': 'Tsuchi',
+    'reading': 'つち',
     'hint': 'ดิน (土) มีต้นไม้ขึ้น'
   },
   {
@@ -119,7 +119,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '川',
     'meaning': 'River',
-    'reading': 'Kawa',
+    'reading': 'かわ',
     'hint': 'แม่น้ำ (川) ไหลเชี่ยว'
   },
   {
@@ -127,7 +127,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '山',
     'meaning': 'Mountain',
-    'reading': 'Yama',
+    'reading': 'やま, サン',
     'hint': 'ภูเขา (山) 3 ลูก ตั้งตระหง่าน'
   },
   {
@@ -135,7 +135,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '人',
     'meaning': 'Person',
-    'reading': 'Hito',
+    'reading': 'ひと, ジン',
     'hint': 'คน (人) กำลังก้าวขา'
   },
   {
@@ -143,7 +143,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '火',
     'meaning': 'Fire',
-    'reading': 'Hi',
+    'reading': 'ひ',
     'hint': 'ไฟ (火) กำลังลุกไหม้'
   },
   {
@@ -151,7 +151,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '水',
     'meaning': 'Water',
-    'reading': 'Mizu',
+    'reading': 'みず, スイ',
     'hint': 'น้ำ (水) หยดเป็นประกาย'
   },
   {
@@ -159,7 +159,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '木',
     'meaning': 'Tree',
-    'reading': 'Ki',
+    'reading': 'き',
     'hint': 'ต้นไม้ (木) แตกกิ่งก้าน'
   },
   {
@@ -167,7 +167,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 1,
     'character': '本',
     'meaning': 'Book',
-    'reading': 'Hon',
+    'reading': 'ホン',
     'hint': 'หนังสือ (本) ทำจากต้นไม้ (木) ที่โดนตัด'
   },
   //Chapter 2
@@ -176,47 +176,47 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 2,
     'character': '田',
     'meaning': 'Rice Field',
-    'reading': 'Ta',
-    'hint': 'ทุ่งนา (田) 4 ผืนเขียวขจี'
+    'reading': 'た',
+    'hint': 'ทุ่งนา (田) สี่ช่องเขียวขจี'
   },
   {
     'kanji_id': 202,
     'chapter_id': 2,
     'character': '石',
     'meaning': 'Stone',
-    'reading': 'Ishi',
-    'hint': 'ก้อนหิน (石) อยู่ใต้หน้าผา'
+    'reading': 'いし, セキ',
+    'hint': 'ก้อนหิน (石) ที่วางอยู่ใต้หน้าผา'
   },
   {
     'kanji_id': 203,
     'chapter_id': 2,
     'character': '米',
     'meaning': 'Rice',
-    'reading': 'Kome',
+    'reading': 'ベイ',
     'hint': 'ข้าว (米) ที่กำลังออกรวง'
   },
   {
     'kanji_id': 204,
     'chapter_id': 2,
-    'character': '力',
-    'meaning': 'Power',
-    'reading': 'Chikara',
-    'hint': 'มีพลัง (力) เพราะออกกำลังกาย'
+    'character': '刀',
+    'meaning': 'Sword',
+    'reading': 'かたな',
+    'hint': 'ดาบ (刀) ที่ปลายทู่'
   },
   {
     'kanji_id': 205,
     'chapter_id': 2,
-    'character': '刀',
-    'meaning': 'Sword',
-    'reading': 'Katana',
-    'hint': 'ดาบ (刀) ที่ปลายทู่'
+    'character': '力',
+    'meaning': 'Power',
+    'reading': 'リョク, ちから',
+    'hint': 'พลัง (力) = ดาบที่ (刀) มีพลังอยู่ตรงปลาย'
   },
   {
     'kanji_id': 206,
     'chapter_id': 2,
     'character': '分',
     'meaning': 'Minute',
-    'reading': 'Bun',
+    'reading': 'ブン',
     'hint': 'ดาบ (刀) ที่แบ่งครึ่ง (ハ)'
   },
   {
@@ -224,15 +224,15 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 2,
     'character': '今',
     'meaning': 'Now',
-    'reading': 'Ima',
-    'hint': 'ตอนนี้ (今) = ร้องเพลง ลา ลา ลา ในบ้าน'
+    'reading': 'いま',
+    'hint': 'ตอนนี้ (今) มีคนกำลังร้องเพลงในบ้าน'
   },
   {
     'kanji_id': 208,
     'chapter_id': 2,
     'character': '王',
     'meaning': 'King',
-    'reading': 'Ou',
+    'reading': 'オウ',
     'hint': 'ราชา (王) ใส่มงกุฎอันใหญ่'
   },
   {
@@ -240,7 +240,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 2,
     'character': '生',
     'meaning': 'Life, Birth',
-    'reading': 'Sei',
+    'reading': 'セイ',
     'hint': 'ชีวิต (生) ที่มีราชา (王) ปกป้อง'
   },
   {
@@ -248,170 +248,170 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 2,
     'character': '国',
     'meaning': 'Country',
-    'reading': 'Kuni',
+    'reading': 'くに',
     'hint': 'ประเทศ (国) มีราชา (王) เป็นศูนย์กลาง'
   },
   //Chapter 3
   {
     'kanji_id': 301,
     'chapter_id': 3,
-    'character': '男',
-    'meaning': 'Man',
-    'reading': 'Otoko',
-    'hint': 'ผู้ชาย (男) จะใช้แรง (力) อยู่กลางทุ่งนา (田)'
+    'character': '口',
+    'meaning': 'Mouth',
+    'reading': 'くち',
+    'hint': 'ปาก (口) อ้ากว้างรอกินขนม'
   },
   {
     'kanji_id': 302,
     'chapter_id': 3,
-    'character': '毎',
-    'meaning': 'Every',
-    'reading': 'Goto',
-    'hint': 'ทุกๆ (毎) คน (人) มารวมกัน กลางทุ่งนา (田)'
+    'character': '言',
+    'meaning': 'Say',
+    'reading': 'ゲン',
+    'hint': 'พูด (言) แล้วปาก (口) ขยับขึ้นลง'
   },
   {
     'kanji_id': 303,
     'chapter_id': 3,
-    'character': '女',
-    'meaning': 'Woman',
-    'reading': 'Onna',
-    'hint': 'ผู้หญิง (女) เต้นบัลเล่'
+    'character': '目',
+    'meaning': 'Eye',
+    'reading': 'め',
+    'hint': 'ตา (目) โตเป็นประกาย'
   },
   {
     'kanji_id': 304,
     'chapter_id': 3,
-    'character': '子',
-    'meaning': 'Child',
-    'reading': 'Ko',
-    'hint': 'เด็ก (子) กำลังนอน'
+    'character': '見',
+    'meaning': 'Look',
+    'reading': 'み-る',
+    'hint': 'มอง (見) = ตา (目) มีขา (儿)'
   },
   {
     'kanji_id': 305,
     'chapter_id': 3,
-    'character': '好',
-    'meaning': 'Like',
-    'reading': 'Suku',
-    'hint': 'ฉันชอบ (好) ผู้หญิง (女) และเด็ก (子)'
+    'character': '手',
+    'meaning': 'Hand',
+    'reading': 'て',
+    'hint': 'มือ (手) หันข้าง'
   },
   {
     'kanji_id': 306,
     'chapter_id': 3,
-    'character': '友',
-    'meaning': 'Friend',
-    'reading': 'Tomo',
-    'hint': 'เพื่อนผู้หญิง (女)'
+    'character': '心',
+    'meaning': 'Heart',
+    'reading': 'シン, こころ',
+    'hint': 'หัวใจ (心) สูบฉีดเลือด'
   },
   {
     'kanji_id': 307,
     'chapter_id': 3,
-    'character': '反',
-    'meaning': 'Oppose',
-    'reading': 'Tan',
-    'hint': 'ศัตรู (反) คือเพื่อน (友) ที่โดนตัดมือ'
+    'character': '思',
+    'meaning': 'Think',
+    'reading': 'シ',
+    'hint': 'คิด (思) = นา (田) อยู่บนใจ (心)'
   },
   {
     'kanji_id': 308,
     'chapter_id': 3,
-    'character': '父',
-    'meaning': 'Father',
-    'reading': 'Chichi',
-    'hint': 'พ่อ (父) อุ้มลูก'
+    'character': '耳',
+    'meaning': 'Ear',
+    'reading': 'みみ',
+    'hint': 'หู (耳) ด้านข้างที่ใส่ตุ้มหู'
   },
   {
     'kanji_id': 309,
     'chapter_id': 3,
-    'character': '母',
-    'meaning': 'Mother',
-    'reading': 'Haha',
-    'hint': 'แม่ (母) ทำข้าวกล่อง'
+    'character': '門',
+    'meaning': 'Gate',
+    'reading': 'モン',
+    'hint': 'ประตู (門) บานพับ'
   },
   {
     'kanji_id': 310,
     'chapter_id': 3,
-    'character': '自',
-    'meaning': 'Self',
-    'reading': 'Shi',
-    'hint': 'ตัวเอง (自) = ตา (目) มีเขา'
+    'character': '聞',
+    'meaning': 'Listen',
+    'reading': 'ブン',
+    'hint': 'ฟัง (聞) = หู (耳) กลางประตู (門)'
   },
   //Chapter 4
   {
     'kanji_id': 401,
     'chapter_id': 4,
-    'character': '口',
-    'meaning': 'Mouth',
-    'reading': 'Kuchi',
-    'hint': 'ปาก (口) อ้ากว้างรอกินขนม'
+    'character': '男',
+    'meaning': 'Man',
+    'reading': 'おとこ',
+    'hint': 'ผู้ชาย (男) จะใช้แรง (力) อยู่กลางทุ่งนา (田)'
   },
   {
     'kanji_id': 402,
     'chapter_id': 4,
-    'character': '言',
-    'meaning': 'Say',
-    'reading': 'Gen',
-    'hint': 'พูด (言) แล้วปาก (口) ขยับขึ้นลง'
+    'character': '毎',
+    'meaning': 'Every',
+    'reading': 'マイ',
+    'hint': 'ทุกๆ (毎) = คน (人) มือกว้างอยากจะครอบครองทุกๆ นา'
   },
   {
     'kanji_id': 403,
     'chapter_id': 4,
-    'character': '目',
-    'meaning': 'Eye',
-    'reading': 'Me',
-    'hint': 'ตา (目) โตเป็นประกาย'
+    'character': '女',
+    'meaning': 'Woman',
+    'reading': 'おんな',
+    'hint': 'ผู้หญิง (女) เต้นบัลเล่'
   },
   {
     'kanji_id': 404,
     'chapter_id': 4,
-    'character': '見',
-    'meaning': 'Look',
-    'reading': 'Mite',
-    'hint': 'มอง (見) = ตา (目) มีขา (儿)'
+    'character': '子',
+    'meaning': 'Child',
+    'reading': 'こ',
+    'hint': 'เด็ก (子) กำลังนอน'
   },
   {
     'kanji_id': 405,
     'chapter_id': 4,
-    'character': '手',
-    'meaning': 'Hand',
-    'reading': 'Te',
-    'hint': 'มือ (手) หันข้าง'
+    'character': '好',
+    'meaning': 'Like',
+    'reading': 'コウ, す-く',
+    'hint': 'ฉันชอบ (好) ผู้หญิง (女) และเด็ก (子)'
   },
   {
     'kanji_id': 406,
     'chapter_id': 4,
-    'character': '心',
-    'meaning': 'Heart',
-    'reading': 'Kokoro',
-    'hint': 'หัวใจ (心) สูบฉีดเลือด'
+    'character': '友',
+    'meaning': 'Friend',
+    'reading': 'とも',
+    'hint': 'เพื่อน (友) 2 คนเดินไปด้วยกัน'
   },
   {
     'kanji_id': 407,
     'chapter_id': 4,
-    'character': '思',
-    'meaning': 'Think',
-    'reading': 'Omo-u',
-    'hint': 'คิด (思) = นา (田) อยู่บนใจ (心)'
+    'character': '反',
+    'meaning': 'Oppose',
+    'reading': 'ハン',
+    'hint': 'ศัตรู (反) คือเพื่อน (友) ที่โดนตัดมือ'
   },
   {
     'kanji_id': 408,
     'chapter_id': 4,
-    'character': '耳',
-    'meaning': 'Ear',
-    'reading': 'Mimi',
-    'hint': 'หู (耳) หันข้าง'
+    'character': '父',
+    'meaning': 'Father',
+    'reading': 'ちち',
+    'hint': 'พ่อ (父) มีหนวดปากจู๋'
   },
   {
     'kanji_id': 409,
     'chapter_id': 4,
-    'character': '門',
-    'meaning': 'Gate',
-    'reading': 'Mon',
-    'hint': 'ประตู (門) บานพับ'
+    'character': '母',
+    'meaning': 'Mother',
+    'reading': 'はは',
+    'hint': 'แม่ (母) ทำข้าวกล่อง'
   },
   {
     'kanji_id': 410,
     'chapter_id': 4,
-    'character': '聞',
-    'meaning': 'Listen',
-    'reading': 'Ki-ku',
-    'hint': 'ฟัง (聞) = หู (耳) กลางประตู (門)'
+    'character': '自',
+    'meaning': 'Self',
+    'reading': 'シ',
+    'hint': 'ตัวเอง (自) = ตา (目) ที่ใช้มองตัวเอง'
   },
   //Chapter 5
   {
@@ -419,31 +419,31 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 5,
     'character': '大',
     'meaning': 'Big',
-    'reading': 'Okii',
-    'hint': 'ใหญ่ (大) = คนตัวโตยืนกางแขน'
+    'reading': 'おお, ダイ',
+    'hint': 'ใหญ่ (大) = คนยืนกางแขนตัวใหญ่'
   },
   {
     'kanji_id': 502,
     'chapter_id': 5,
     'character': '小',
     'meaning': 'Small',
-    'reading': 'Chisaii',
-    'hint': 'เล็ก (小) = คนตัวเล็กขาสั้น'
+    'reading': 'ショウ',
+    'hint': 'เล็ก (小) = คนแคระตัวเล็ก'
   },
   {
     'kanji_id': 503,
     'chapter_id': 5,
     'character': '少',
-    'meaning': 'Little',
-    'reading': 'Sukoshi',
-    'hint': 'น้อย (少) = ตัวเล็ก (小) ที่โดนหั่น'
+    'meaning': 'Few',
+    'reading': 'ショウ',
+    'hint': 'น้อย (少) = คนแคระ (小) โดนหั่นเป็นชิ้นเล็กชิ้นน้อย'
   },
   {
     'kanji_id': 504,
     'chapter_id': 5,
     'character': '古',
     'meaning': 'Old',
-    'reading': 'Furui',
+    'reading': 'ふる-い',
     'hint': 'เก่า (古) = ดาบเก่าที่ปักในหิน'
   },
   {
@@ -451,7 +451,7 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 5,
     'character': '元',
     'meaning': 'Origin',
-    'reading': 'Moto',
+    'reading': 'もと, ガン',
     'hint': 'จุดเริ่ม (元) สำหรับปล่อยตัววิ่งแข่ง'
   },
   {
@@ -459,15 +459,15 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 5,
     'character': '高',
     'meaning': 'Expensive, High',
-    'reading': 'Takai',
-    'hint': 'สูงและแพง (高)  = วัดบนภูเขา'
+    'reading': 'コウ, たか',
+    'hint': 'สูง,แพง (高) = ปราสาทที่แพงและสูงเสียดฟ้า'
   },
   {
     'kanji_id': 507,
     'chapter_id': 5,
     'character': '安',
     'meaning': 'Cheap',
-    'reading': 'Yasui',
+    'reading': 'やす',
     'hint': 'ราคาถูก (安) = ผู้หญิง (女) ใส่หมวก (宀)'
   },
   {
@@ -475,23 +475,23 @@ List<Map<String, dynamic>> kanjiData = [
     'chapter_id': 5,
     'character': '太',
     'meaning': 'Fat',
-    'reading': 'Futoi',
-    'hint': 'อ้วน (太) จนไม่มีเสื้อผ้าที่ใส่ได้'
+    'reading': 'タ, ふと',
+    'hint': 'อ้วน (太) จนกระดุมกางเกงหลุด'
   },
   {
     'kanji_id': 509,
     'chapter_id': 5,
     'character': '夕',
     'meaning': 'Evening',
-    'reading': 'Yu',
-    'hint': 'ตอนเย็น (夕) เห็นพระจันทร์ครึ่งเสี้ยว มีนกบินผ่าน'
+    'reading': 'ゆう',
+    'hint': 'ตอนเย็น(夕) เห็นพระจันทร์ครึ่งเสี้ยว มีนกบินผ่าน'
   },
   {
     'kanji_id': 510,
     'chapter_id': 5,
     'character': '多',
     'meaning': 'Many, Much',
-    'reading': 'Ta',
+    'reading': 'タ',
     'hint': 'เยอะ (多) = พระจันทร์หลายดวงบนท้องฟ้า'
   },
   //Chapter 6
