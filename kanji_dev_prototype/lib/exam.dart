@@ -193,7 +193,7 @@ class _ExamQuestionState extends State<ExamQuestion> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('(${thisKanji['reading']})',
+                                Text(thisKanji['reading'],
                                     style: Styles.subTitle),
                                 SizedBox(height: 4),
                                 Text(thisKanji['meaning'], style: Styles.H2),
