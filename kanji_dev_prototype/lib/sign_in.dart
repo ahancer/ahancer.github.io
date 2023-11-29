@@ -16,9 +16,14 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Styles.bgGray0,
-      appBar: appBar('漢字 Prototype 5.6'),
+      appBar: AppBar(
+        title: Text(
+          '漢字 Prototype 5.6',
+          style: Styles.H2.copyWith(color: Styles.textColorWhite),
+        ),
+      ),
       body: Padding(
-        padding: const EdgeInsets.all(32.0),
+        padding: const EdgeInsets.only(left: 80, right: 80, top: 32),
         child: GridView.count(
           crossAxisCount: 2,
           mainAxisSpacing: 24.0,
@@ -44,13 +49,13 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-1.png',
-                    height: 64,
-                    width: 64,
+                    height: 72,
+                    width: 72,
                   ),
                   SizedBox(height: 24),
                   Text(
                     'Natt',
-                    style: Styles.title,
+                    style: Styles.body,
                   ),
                 ],
               ),
@@ -75,13 +80,13 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-2.png',
-                    height: 64,
-                    width: 64,
+                    height: 72,
+                    width: 72,
                   ),
                   SizedBox(height: 24),
                   Text(
                     'Noon',
-                    style: Styles.subTitle,
+                    style: Styles.body,
                   ),
                 ],
               ),
@@ -106,13 +111,13 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-3.png',
-                    height: 64,
-                    width: 64,
+                    height: 72,
+                    width: 72,
                   ),
                   SizedBox(height: 24),
                   Text(
                     'Dalad',
-                    style: Styles.subTitle,
+                    style: Styles.body,
                   ),
                 ],
               ),
@@ -137,13 +142,13 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-alien-4.png',
-                    height: 64,
-                    width: 64,
+                    height: 72,
+                    width: 72,
                   ),
                   SizedBox(height: 24),
                   Text(
                     'Nan',
-                    style: Styles.subTitle,
+                    style: Styles.body,
                   ),
                 ],
               ),
