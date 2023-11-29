@@ -616,7 +616,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '天',
     'meaning': 'Heaven',
     'reading': 'テン, あま',
-    'hint': 'สวรรค์ (天) อยู่ข้างบนเมื่อยืนกางแขน แหงนหน้าขึ้น'
+    'hint': 'สวรรค์ (天) อยู่เหนือเมฆบนภูเขา'
   },
   {
     'kanji_id': 710,
@@ -633,7 +633,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '白',
     'meaning': 'White',
     'reading': 'しろ',
-    'hint': 'สีขาว (白) เหมือนกระดาษวาดภาพ'
+    'hint': 'สีขาว (白) ของกระดาษที่ใช้วาดภาพ'
   },
   {
     'kanji_id': 802,
@@ -657,7 +657,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '青',
     'meaning': 'Blue',
     'reading': 'あお',
-    'hint': 'สีฟ้า (青) = พู่กันจุ่มสีของท้องฟ้าบนจานสี'
+    'hint': 'สีฟ้า (青) = พู่กันจุ่มสีของท้องฟ้า'
   },
   {
     'kanji_id': 805,
@@ -665,7 +665,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '色',
     'meaning': 'Color',
     'reading': 'いろ',
-    'hint': 'สี (色) = จุ่มพู่กันลงบนจานสี'
+    'hint': 'สี (色) ที่อยู่ในจานสี'
   },
   {
     'kanji_id': 806,
@@ -714,7 +714,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '東',
     'meaning': 'East',
     'reading': 'ひがし',
-    'hint': 'ตะวันออก (東) มีพระอาทิตย์ (日) ขึ้นหลังต้นไม้ (木)'
+    'hint': 'ตะวันออก (東) = ตอนเช้าพระอาทิตย์ขึ้นหลังต้นไม้'
   },
   {
     'kanji_id': 903,
@@ -722,7 +722,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '西',
     'meaning': 'West',
     'reading': 'にし',
-    'hint': 'ตะวันตก (西) มีพระอาทิตย์ตกตรงประตู'
+    'hint': 'ตะวันตก (西) = ตอนเย็นพระอาทิตย์ตกที่ประตูวัด'
   },
   {
     'kanji_id': 904,
