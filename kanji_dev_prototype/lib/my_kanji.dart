@@ -193,7 +193,7 @@ class _ReviewState extends State<Review> {
                                 },
                                 child: Card(
                                   elevation:
-                                      1.0, // Adjust elevation for shadow effect as needed
+                                      0.0, // Adjust elevation for shadow effect as needed
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),

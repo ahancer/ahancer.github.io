@@ -16,12 +16,12 @@ class SignUp extends StatelessWidget {
       backgroundColor: Styles.bgGray0,
       appBar: AppBar(
         title: Text(
-          '漢字 Prototype 5.7',
+          '漢字 Prototype 5.8',
           style: Styles.H2.copyWith(color: Styles.textColorWhite),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(32),
+        padding: const EdgeInsets.symmetric(vertical:80, horizontal: 24),
         child: GridView.count(
           crossAxisCount: 2,
           mainAxisSpacing: 16.0,
@@ -29,7 +29,7 @@ class SignUp extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () async {
-                await loginSpecial('natt@ahancer.com', 'test123');
+                await loginSpecial('tester1@ahancer.com', 'test123');
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => Home()),
@@ -37,6 +37,7 @@ class SignUp extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Styles.bgWhite,
+                elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
                       16.0), // Adjust the radius as needed
@@ -50,9 +51,9 @@ class SignUp extends StatelessWidget {
                     height: 96,
                     width: 96,
                   ),
-                  SizedBox(height: 16),
+                  SizedBox(height: 8),
                   Text(
-                    'Natt',
+                    'Chita',
                     style: Styles.body,
                   ),
                 ],
@@ -60,7 +61,7 @@ class SignUp extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () async {
-                await loginSpecial('tester1@ahancer.com', 'test123');
+                await loginSpecial('natt@ahancer.com', 'test123');
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => Home()),
@@ -68,6 +69,7 @@ class SignUp extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Styles.bgWhite,
+                elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
                       16.0), // Adjust the radius as needed
@@ -81,9 +83,9 @@ class SignUp extends StatelessWidget {
                     height: 96,
                     width: 96,
                   ),
-                  SizedBox(height: 16),
+                  SizedBox(height: 8),
                   Text(
-                    'Noon',
+                    'Natt',
                     style: Styles.body,
                   ),
                 ],
@@ -99,6 +101,7 @@ class SignUp extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Styles.bgWhite,
+                elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
                       16.0), // Adjust the radius as needed
@@ -112,7 +115,7 @@ class SignUp extends StatelessWidget {
                     height: 96,
                     width: 96,
                   ),
-                  SizedBox(height: 16),
+                  SizedBox(height: 8),
                   Text(
                     'Dalad',
                     style: Styles.body,
@@ -130,6 +133,7 @@ class SignUp extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Styles.bgWhite,
+                elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
                       16.0), // Adjust the radius as needed
@@ -143,7 +147,7 @@ class SignUp extends StatelessWidget {
                     height: 96,
                     width: 96,
                   ),
-                  SizedBox(height: 16),
+                  SizedBox(height: 8),
                   Text(
                     'Nan',
                     style: Styles.body,
