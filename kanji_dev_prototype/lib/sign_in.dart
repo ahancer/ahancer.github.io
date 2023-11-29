@@ -16,7 +16,7 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Styles.bgGray0,
-      appBar: appBar('漢字 Prototype 5.4'),
+      appBar: appBar('漢字 Prototype 5.6'),
       body: Padding(
         padding: const EdgeInsets.all(32.0),
         child: GridView.count(
