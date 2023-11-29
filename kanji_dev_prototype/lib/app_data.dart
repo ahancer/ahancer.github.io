@@ -276,7 +276,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '思',
     'meaning': 'Think',
     'reading': 'シ',
-    'hint': 'คิด (思) = นา (田) อยู่บนใจ (心)'
+    'hint': 'คิด (思) ถึงนา (田) ด้วยใจ (心)'
   },
   {
     'kanji_id': 308,
@@ -341,7 +341,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '好',
     'meaning': 'Like',
     'reading': 'コウ, す-く',
-    'hint': 'ฉันชอบ (好) ผู้หญิง (女) และเด็ก (子)'
+    'hint': 'ชอบ (好) = ผู้หญิง (女) ชอบเด็ก (子)'
   },
   {
     'kanji_id': 406,
@@ -438,7 +438,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '安',
     'meaning': 'Cheap',
     'reading': 'やす',
-    'hint': 'ราคาถูก (安) = ผู้หญิง (女) ใส่หมวก (宀)'
+    'hint': 'ราคาถูก (安) = ผู้หญิง (女) ใส่หมวกราคาถูก'
   },
   {
     'kanji_id': 508,
