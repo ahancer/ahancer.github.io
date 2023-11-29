@@ -198,7 +198,7 @@ class _ReviewState extends State<Review> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   color: readyForReview == false
-                                      ? Styles.textColorSecondary
+                                      ? Styles.bgGray2
                                       : null,
                                   child: Container(
                                     child: Column(
