@@ -16,7 +16,7 @@ class SignUp extends StatelessWidget {
       backgroundColor: Styles.bgGray0,
       appBar: AppBar(
         title: Text(
-          '漢字 Prototype 6.3',
+          '漢字 Prototype 6.4',
           style: Styles.H2.copyWith(color: Styles.textColorWhite),
         ),
       ),

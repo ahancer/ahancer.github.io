@@ -130,11 +130,11 @@ class _MatchingGameState extends State<MatchingGame> {
                       }
 
                       return Padding(
-                        padding: const EdgeInsets.only(left: 32, top: 16, right: 8, bottom: 0),
+                        padding: const EdgeInsets.only(left: 16, top: 16, right: 8, bottom: 0),
                         child: ListTile(
                           title: Padding(
-                            padding: const EdgeInsets.symmetric(vertical:32.0),
-                            child: Center(child: Text(characterData[index]['character'].toString(), style: Styles.subTitle)),
+                            padding: const EdgeInsets.symmetric(vertical:24.0),
+                            child: Center(child: Text(characterData[index]['character'].toString(), style: Styles.H1.copyWith(fontWeight: FontWeight.w400))),
                           ),
                           onTap: onTapAction,
                           tileColor: tileColor,
@@ -170,7 +170,7 @@ class _MatchingGameState extends State<MatchingGame> {
                       } 
 
                       return Padding(
-                        padding: const EdgeInsets.only(left: 8, top: 16, right: 32, bottom: 0),
+                        padding: const EdgeInsets.only(left: 8, top: 16, right: 16, bottom: 0),
                         child: ListTile(
                           title: Padding(
                             padding: const EdgeInsets.symmetric(vertical:32.0),

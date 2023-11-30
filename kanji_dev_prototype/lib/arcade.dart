@@ -119,9 +119,9 @@ class _ArcadeState extends State<Arcade> {
               Text('Lets toast', style: Styles.H1,),
               Text('your memory!', style: Styles.H1,),
               const SizedBox(height: 32.0),
-              Text('Match Kanji words that you have ', style: Styles.subTitle,),
+              Text('Match Kanji words that you have ', style: Styles.body,),
               const SizedBox(height: 4.0),
-              Text('learned with their meanings.', style: Styles.subTitle,),
+              Text('learned with their meanings.', style: Styles.body,),
               const SizedBox(height: 40.0),
               InkWell(
                 hoverColor: Colors.transparent,
