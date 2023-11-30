@@ -6,6 +6,7 @@ import 'package:kanji_prototype/exam.dart';
 import 'package:kanji_prototype/level.dart';
 import 'package:kanji_prototype/my_kanji.dart';
 import 'package:kanji_prototype/utility.dart';
+import 'package:lottie/lottie.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class Home extends StatefulWidget {
@@ -359,12 +360,12 @@ class _HomeState extends State<Home> {
 
                         const SizedBox(height: 24.0),
 
-                        //Alien Image
-                        const Image(
-                          image: AssetImage('assets/images/img-chapter-0.png'),
+                        //Alien dookdik
+                        Lottie.asset(
+                          'assets/animations/animate-home-doodik.json',
+                          fit: BoxFit.fill,
                           alignment: Alignment.center,
                           width: double.infinity,
-                          fit: BoxFit.fill,
                         ),
 
                         //Timer Content
