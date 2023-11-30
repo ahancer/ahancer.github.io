@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:kanji_prototype/app_styles.dart';
 import 'package:kanji_prototype/arcade.dart';
 
-class MatchingLose extends StatelessWidget {
-  const MatchingLose({super.key});
+class MatchingLose extends StatefulWidget {
+  final String UserID;
 
+  const MatchingLose(
+  {super.key,
+    required this.UserID,
+  });
+
+  @override
+  State<MatchingLose> createState() => _MatchingLoseState();
+}
+
+class _MatchingLoseState extends State<MatchingLose> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +30,7 @@ class MatchingLose extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Arcade()),
+                  MaterialPageRoute(builder: (context) => Arcade(UserID: widget.UserID.toString()))
                 );
               },
             )
@@ -64,7 +74,7 @@ class MatchingLose extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Arcade()),
+                          MaterialPageRoute(builder: (context) => Arcade(UserID: widget.UserID.toString()))
                         );
                       },
                       child: Text(

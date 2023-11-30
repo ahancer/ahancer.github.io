@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:kanji_prototype/app_styles.dart';
 import 'package:kanji_prototype/arcade.dart';
 
-class MatchingWin extends StatelessWidget {
-  const MatchingWin({super.key});
+class MatchingWin extends StatefulWidget {
+  final String UserID;
 
+  const MatchingWin(
+  {super.key,
+    required this.UserID,
+  });
+
+  @override
+  State<MatchingWin> createState() => _MatchingWinState();
+}
+
+class _MatchingWinState extends State<MatchingWin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +30,7 @@ class MatchingWin extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Arcade()),
+                  MaterialPageRoute(builder: (context) => Arcade(UserID: widget.UserID.toString()))
                 );
               },
             )
@@ -64,7 +74,7 @@ class MatchingWin extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Arcade()),
+                          MaterialPageRoute(builder: (context) => Arcade(UserID: widget.UserID.toString()))
                         );
                       },
                       child: Text(

@@ -4,7 +4,14 @@ import 'package:kanji_prototype/matching_lose.dart';
 import 'package:kanji_prototype/matching_win.dart';
 
 class MatchingGame extends StatefulWidget {
-  const MatchingGame({super.key});
+  final String UserID;
+  final List<Map<String, String>> thisRound; 
+
+  const MatchingGame(
+    {super.key,
+      required this.UserID,
+      required this.thisRound,
+    });
 
   @override
   State<MatchingGame> createState() => _MatchingGameState();
@@ -12,33 +19,34 @@ class MatchingGame extends StatefulWidget {
 
 class _MatchingGameState extends State<MatchingGame> {
 
-  List<Map<String, String>> matchingData = [
-    {
-      'character':'日',
-      'meaning':'Sun',
-      'matching':'default'
-    },
-    {
-      'character':'月',
-      'meaning':'Moon',
-      'matching':'default'
-    },
-    {
-      'character':'土',
-      'meaning':'Soil',
-      'matching':'default'
-    },
-    {
-      'character':'川',
-      'meaning':'River',
-      'matching':'default'
-    },
-    {
-      'character': '山',
-      'meaning': 'Mountain',
-      'matching':'default'
-    },
-  ];
+  // Temp Data for Dry Run
+  // List<Map<String, String>> matchingData = [
+  //   {
+  //     'character':'日',
+  //     'meaning':'Sun',
+  //     'matching':'default'
+  //   },
+  //   {
+  //     'character':'月',
+  //     'meaning':'Moon',
+  //     'matching':'default'
+  //   },
+  //   {
+  //     'character':'土',
+  //     'meaning':'Soil',
+  //     'matching':'default'
+  //   },
+  //   {
+  //     'character':'川',
+  //     'meaning':'River',
+  //     'matching':'default'
+  //   },
+  //   {
+  //     'character': '山',
+  //     'meaning': 'Mountain',
+  //     'matching':'default'
+  //   },
+  // ];
 
   late List<Map<String, String>> characterData;
   late List<Map<String, String>> meaningData;
@@ -54,8 +62,8 @@ class _MatchingGameState extends State<MatchingGame> {
     super.initState();
 
     // Clone the original data into characterData and meaningData
-    characterData = List<Map<String, String>>.from(matchingData);
-    meaningData = List<Map<String, String>>.from(matchingData);
+    characterData = List<Map<String, String>>.from(widget.thisRound);
+    meaningData = List<Map<String, String>>.from(widget.thisRound);
 
     // Shuffle each list independently
     characterData.shuffle();
@@ -222,11 +230,11 @@ class _MatchingGameState extends State<MatchingGame> {
         countCorrect++;
         print('Match found!');
 
-        if (countCorrect == matchingData.length) {
+        if (countCorrect == widget.thisRound.length) {
           // You Win
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => MatchingWin()),
+            MaterialPageRoute(builder: (context) => MatchingWin(UserID: widget.UserID.toString(),)),
           );
         }
       } else {
@@ -249,7 +257,7 @@ class _MatchingGameState extends State<MatchingGame> {
           // You Lose
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => MatchingLose()),
+            MaterialPageRoute(builder: (context) => MatchingLose(UserID: widget.UserID.toString(),)),
           );
         }
       }

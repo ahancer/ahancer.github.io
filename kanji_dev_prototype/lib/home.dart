@@ -525,7 +525,7 @@ class _HomeState extends State<Home> {
                                                   pageBuilder: (context,
                                                           animation1,
                                                           animation2) =>
-                                                      Arcade(),
+                                                      Arcade(UserID: userid.toString(),),
                                                   transitionDuration:
                                                       Duration.zero,
                                                 ),
