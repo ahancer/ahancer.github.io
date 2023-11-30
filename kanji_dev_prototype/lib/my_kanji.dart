@@ -379,10 +379,9 @@ class _ReviewState extends State<Review> {
                             ),
                             SizedBox(height: 8),
                             SizedBox(
-                              height: 40,
                               child: Text(
                                 hint,
-                                style: Styles.body,
+                                style: Styles.textHint,
                                 textAlign: TextAlign.center,
                               ),
                             ),

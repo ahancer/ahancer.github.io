@@ -16,12 +16,12 @@ class SignUp extends StatelessWidget {
       backgroundColor: Styles.bgGray0,
       appBar: AppBar(
         title: Text(
-          '漢字 Prototype 6.0',
+          '漢字 Prototype 6.1',
           style: Styles.H2.copyWith(color: Styles.textColorWhite),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical:80, horizontal: 24),
+        padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
         child: GridView.count(
           crossAxisCount: 2,
           mainAxisSpacing: 16.0,

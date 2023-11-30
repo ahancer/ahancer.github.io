@@ -42,6 +42,9 @@ class Styles {
   static TextStyle body =
       TextStyle(fontSize: 16, fontWeight: FontWeight.w500, height: 1.2);
 
+  static TextStyle textHint =
+      TextStyle(fontSize: 16, fontWeight: FontWeight.w500, height: 1.6);
+
   static TextStyle subBody =
       TextStyle(fontSize: 14, fontWeight: FontWeight.w500, height: 1.14);
 

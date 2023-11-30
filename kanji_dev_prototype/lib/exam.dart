@@ -209,8 +209,11 @@ class _ExamQuestionState extends State<ExamQuestion> {
                         ),
                         const SizedBox(height: 12.0),
                         SizedBox(
-                          height: 40,
-                          child: Text(thisKanji['hint'], style: Styles.body),
+                          child: Text(
+                            thisKanji['hint'],
+                            style: Styles.textHint,
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                         SizedBox(height: 96.0),
                       ],

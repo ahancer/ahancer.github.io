@@ -303,17 +303,16 @@ class _LearnDeckState extends State<LearnDeck> {
                             ),
                             SizedBox(height: 8),
                             SizedBox(
-                              height: 40,
+                              height: 52,
                               child: Text(
                                 hint,
-                                style: Styles.body,
+                                style: Styles.textHint,
                                 textAlign: TextAlign.center,
                               ),
                             ),
 
                             SizedBox(
-                              height: 56,
-                              width: 160,
+                              height: 40,
                             ),
 
                             SizedBox(
