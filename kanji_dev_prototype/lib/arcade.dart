@@ -91,20 +91,7 @@ class _ArcadeState extends State<Arcade> {
           //If there is no data...
           return const Center(child:Text('Please Unlock Chapter 1'));
         } else {
-          //If there is data... shuffle and copy the first 5 character to thisRound
-          myKanji.shuffle;
-          for (int i = 0; i < thisRound.length; i++) {
-            if (i < thisRound.length) {
-
-              int theID = myKanji[i]['kanji_id'];
-              String character = kanjiData.firstWhere((k) => k['kanji_id'] == theID)['character'];
-              String meaning = kanjiData.firstWhere((k) => k['kanji_id'] == theID)['meaning'];
-
-              thisRound[i]['character'] = character;
-              thisRound[i]['meaning'] = meaning;
-            }
-          }
-
+          //If there is data... 
           return Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -128,6 +115,20 @@ class _ArcadeState extends State<Arcade> {
                 splashColor: Colors.transparent, 
                 highlightColor: Colors.transparent, 
                 onTap: () {
+                  //Shuffle and copy the first 5 character to thisRound
+                  myKanji.shuffle();
+                  for (int i = 0; i < thisRound.length; i++) {
+                    if (i < thisRound.length) {
+
+                      int theID = myKanji[i]['kanji_id'];
+                      String character = kanjiData.firstWhere((k) => k['kanji_id'] == theID)['character'];
+                      String meaning = kanjiData.firstWhere((k) => k['kanji_id'] == theID)['meaning'];
+
+                      thisRound[i]['character'] = character;
+                      thisRound[i]['meaning'] = meaning;
+                    }
+                  }
+
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => MatchingGame(UserID: widget.UserID.toString(), thisRound: thisRound,)),
