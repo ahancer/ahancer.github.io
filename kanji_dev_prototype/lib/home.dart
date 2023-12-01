@@ -404,7 +404,7 @@ class _HomeState extends State<Home> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8),
                                     child: Image.asset(
-                                      'assets/images/img-home-mascot.png',
+                                      'assets/images/img-mascot-a.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ).animateOnPageLoad(animationsMap[
