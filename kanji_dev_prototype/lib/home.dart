@@ -6,6 +6,7 @@ import 'package:kanji_prototype/exam.dart';
 import 'package:kanji_prototype/level.dart';
 import 'package:kanji_prototype/my_kanji.dart';
 import 'package:kanji_prototype/utility.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -64,6 +65,29 @@ class _HomeState extends State<Home> {
 
     return List<Map<String, dynamic>>.from(response);
   }
+
+  final animationsMap = {
+    'imageOnPageLoadAnimation': AnimationInfo(
+      loop: true,
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 24),
+          end: Offset(0, 0),
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 600.ms,
+          duration: 600.ms,
+          begin: Offset(0, -20),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -284,19 +308,19 @@ class _HomeState extends State<Home> {
                                                   const SizedBox(height: 8.0),
                                                   SizedBox(
                                                     child:
-                                                      LinearProgressIndicator(
-                                                        borderRadius:
-                                                            BorderRadius.circular(
-                                                                28),
-                                                        value:
-                                                            progress, // Current progress
-                                                        backgroundColor: Styles
-                                                            .bgGray1, // Background color of the progress bar
-                                                        color: Styles
-                                                            .bgAccent, // Color of the progress indicator
-                                                        minHeight:
-                                                            16, // Height of the progress bar
-                                                      ),
+                                                        LinearProgressIndicator(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              28),
+                                                      value:
+                                                          progress, // Current progress
+                                                      backgroundColor: Styles
+                                                          .bgGray1, // Background color of the progress bar
+                                                      color: Styles
+                                                          .bgAccent, // Color of the progress indicator
+                                                      minHeight:
+                                                          16, // Height of the progress bar
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -360,12 +384,35 @@ class _HomeState extends State<Home> {
 
                         const SizedBox(height: 24.0),
 
-                        //Alien dookdik
-                        Image.asset(
-                          'assets/animations/animate-home-dookdik.gif',
-                          fit: BoxFit.fill,
-                          alignment: Alignment.center,
-                          width: double.infinity,
+                        //Dookdik + Cloud
+                        Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/images/home-header-bg.png',
+                                width: MediaQuery.sizeOf(context).width,
+                                fit: BoxFit.fitWidth,
+                              ),
+                            ),
+                            Center(
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 48.0),
+                                child: SizedBox(
+                                  width: 180,
+                                  height: 180,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: Image.asset(
+                                      'assets/images/img-home-mascot.png',
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'imageOnPageLoadAnimation']!),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
 
                         //Timer Content
@@ -525,7 +572,9 @@ class _HomeState extends State<Home> {
                                                   pageBuilder: (context,
                                                           animation1,
                                                           animation2) =>
-                                                      Arcade(UserID: userid.toString(),),
+                                                      Arcade(
+                                                    UserID: userid.toString(),
+                                                  ),
                                                   transitionDuration:
                                                       Duration.zero,
                                                 ),
