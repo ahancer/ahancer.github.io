@@ -82,7 +82,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '土',
     'meaning': 'Soil',
     'reading': 'つち',
-    'hint': 'ดิน (土) มีต้นไม้ขึ้น'
+    'hint': 'ดิน (土) ที่มีต้นไม้ขึ้น'
   },
   {
     'kanji_id': 104,
@@ -292,7 +292,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '門',
     'meaning': 'Gate',
     'reading': 'モン',
-    'hint': 'ประตู (門) บานพับ'
+    'hint': 'ประตู (門) ของวัดแบบญี่ปุ่น'
   },
   {
     'kanji_id': 310,
@@ -541,7 +541,7 @@ List<Map<String, dynamic>> kanjiData = [
     'kanji_id': 610,
     'chapter_id': 6,
     'character': '住',
-    'meaning': 'Live, Resident',
+    'meaning': 'Live',
     'reading': 'ジュウ',
     'hint': 'อาศัย (住) = พระราชา (王) อาศัยอยู่ในวัง'
   },
@@ -771,7 +771,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '牛',
     'meaning': 'Cow',
     'reading': 'ギュウ, うし',
-    'hint': 'วัว (牛) เจาะหูกินหญ้า'
+    'hint': 'วัว (牛) หันหน้ามาหาเรา'
   },
   {
     'kanji_id': 1002,
@@ -779,7 +779,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '犬',
     'meaning': 'Dog',
     'reading': 'いぬ',
-    'hint': 'สุนัข (犬) มีลายแต้มขวาที่หน้า'
+    'hint': 'สุนัข (犬) ที่มีลายแต้มขวาที่หน้า'
   },
   {
     'kanji_id': 1003,
