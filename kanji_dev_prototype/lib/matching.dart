@@ -60,8 +60,8 @@ class _MatchingGameState extends State<MatchingGame> {
   int countCorrect = 0;
 
   Timer? _timer;
-  int _totalTime = 250; // 25 Seconds
-  int _remainingTime = 250;
+  int _totalTime = 150; // 15 Seconds
+  int _remainingTime = 150;
 
   @override
   void initState() {
@@ -151,7 +151,7 @@ class _MatchingGameState extends State<MatchingGame> {
 
           //Progress bar
           Padding(
-            padding: const EdgeInsets.only(top:0, bottom:16, left:24, right:24),
+            padding: const EdgeInsets.only(top:4, bottom:20, left:24, right:24),
             child: LinearProgressIndicator(
               borderRadius:
                   BorderRadius.circular(
@@ -175,14 +175,13 @@ class _MatchingGameState extends State<MatchingGame> {
               children: [
                 //Row 1: Character
                 Expanded(
-                  child: ListView.builder(
-                    itemCount: characterData.length,
-                    itemBuilder: (context, index) {
+                  child: Column(
+                    children: List.generate(characterData.length, (index) {
                       String matchingCharacterStatus = characterData[index]['matching'].toString();
-
+                
                       Color tileColor;
                       Function()? onTapAction;
-
+                
                       switch (matchingCharacterStatus) {
                         case 'correct':
                           tileColor = Styles.textColorGreen;
@@ -194,30 +193,36 @@ class _MatchingGameState extends State<MatchingGame> {
                           onTapAction = () => selectCharacter(characterData[index]['character'].toString(), index);
                           break;
                       }
-
+                
                       return Padding(
-                        padding: const EdgeInsets.only(left: 16, top: 16, right: 8, bottom: 0),
-                        child: ListTile(
-                          title: Padding(
-                            padding: const EdgeInsets.symmetric(vertical:24.0),
-                            child: Center(child: Text(characterData[index]['character'].toString(), style: Styles.H1.copyWith(fontWeight: FontWeight.w400))),
-                          ),
+                        padding:  const EdgeInsets.only(left: 24, top: 16, right: 8, bottom: 0),
+                        child: GestureDetector(
                           onTap: onTapAction,
-                          tileColor: tileColor,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
+                          child: Container(
+                            height: 100,
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              color: tileColor,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Center(
+                              child: Text(
+                                characterData[index]['character'].toString(),
+                                style: Styles.H1.copyWith(fontWeight: FontWeight.w400),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
                           ),
                         ),
                       );
-                    },
+                    }),
                   ),
                 ),
 
                 //Row 2: Meaning   
-                 Expanded(
-                  child: ListView.builder(
-                    itemCount: meaningData.length,
-                    itemBuilder: (context, index) {
+                Expanded(
+                  child: Column(
+                    children: List.generate(meaningData.length, (index) {
                       String matchingMeaningStatus = meaningData[index]['matching'].toString();
 
                       Color tileColor;
@@ -233,31 +238,35 @@ class _MatchingGameState extends State<MatchingGame> {
                           tileColor = index == selectedMeaningIndex ? Styles.bgGray2 : Colors.white;
                           onTapAction = () => selectMeaning(meaningData[index]['character'].toString(), index);
                           break;
-                      } 
+                      }
 
                       return Padding(
-                        padding: const EdgeInsets.only(left: 8, top: 16, right: 16, bottom: 0),
-                        child: ListTile(
-                          title: Padding(
-                            padding: const EdgeInsets.symmetric(vertical:32.0),
-                            child: Center(child: Text(meaningData[index]['meaning'].toString(), style: Styles.subTitle)),
-                          ),
-                          onTap: onTapAction,
-                          tileColor: tileColor,
-                          shape: RoundedRectangleBorder(
+                        padding: const EdgeInsets.only(left: 8, top: 16, right: 24, bottom: 0),
+                        child: Container(
+                          height: 100,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: tileColor,
                             borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: InkWell(
+                            onTap: onTapAction,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 32.0),
+                              child: Center(child: Text(meaningData[index]['meaning'].toString(), style: Styles.subTitle,textAlign: TextAlign.center,)),
+                            ),
                           ),
                         ),
                       );
-                    },
+                    }),
                   ),
                 ),
-              ],         
-            ),
-          ),
 
-        ],
-      ),
+              ]
+            ),
+          )
+        ]
+      )
     );
   }
 
