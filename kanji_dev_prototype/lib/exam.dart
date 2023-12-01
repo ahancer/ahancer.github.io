@@ -176,8 +176,9 @@ class _ExamQuestionState extends State<ExamQuestion> {
             ),
             Expanded(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                  const SizedBox(height: 56.0),
                   if (isMeaningVisible)
                     Column(
                       children: [
@@ -201,7 +202,7 @@ class _ExamQuestionState extends State<ExamQuestion> {
                             )
                           ],
                         ),
-                        const SizedBox(height: 56.0),
+                        const SizedBox(height: 16.0),
                         Image.asset(
                           'assets/images/hint-$currentKanjiID.png',
                           height: 200,
@@ -215,7 +216,7 @@ class _ExamQuestionState extends State<ExamQuestion> {
                             textAlign: TextAlign.center,
                           ),
                         ),
-                        SizedBox(height: 96.0),
+                        SizedBox(height: 72.0),
                       ],
                     ),
 
@@ -225,105 +226,107 @@ class _ExamQuestionState extends State<ExamQuestion> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         // Again Button
-                        Column(
-                          children: [
-                            ElevatedButton(
-                              onPressed: () async {
-                                await updateMyKanji(
-                                    0,
-                                    widget.thisExam[currentQuestionIndex]
-                                            ['learn_score'] *
-                                        0); //Add 0 min delay & learnScore x 0
-                                setState(() {
-                                  againList.add(thisKanji[
-                                      'character']); // Add the current Kanji to the againList
-                                  setNewIndex(context);
-                                  isMeaningVisible = false;
-                                });
-                              },
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Styles.bgHardBTN,
-                                fixedSize: Size(160, 56),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.all(8.0),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Align(
-                                      alignment: Alignment.center,
-                                      child: Text('Hard',
-                                          style: Styles.textButton.copyWith(
-                                              color: Styles.textColorWhite)),
-                                    ),
-                                  ],
+                        Expanded(
+                          child: Column(
+                            children: [
+                              ElevatedButton(
+                                onPressed: () async {
+                                  await updateMyKanji(
+                                      0,
+                                      widget.thisExam[currentQuestionIndex]
+                                              ['learn_score'] *
+                                          0); //Add 0 min delay & learnScore x 0
+                                  setState(() {
+                                    againList.add(thisKanji[
+                                        'character']); // Add the current Kanji to the againList
+                                    setNewIndex(context);
+                                    isMeaningVisible = false;
+                                  });
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Styles.bgHardBTN,
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.center,
+                                        child: Text('Hard',
+                                            style: Styles.textButton.copyWith(
+                                                color: Styles.textColorWhite)),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 12,
-                            ),
-                            SizedBox(
-                              child: Text(
-                                'Review Again',
-                                style: Styles.subBody
-                                    .copyWith(color: Styles.textColorSecondary),
+                              SizedBox(
+                                height: 12,
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                child: Text(
+                                  'Review Again',
+                                  style: Styles.subBody
+                                      .copyWith(color: Styles.textColorSecondary),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
 
                         const SizedBox(width: 16.0),
 
-                        Column(
-                          children: [
-                            ElevatedButton(
-                              onPressed: () async {
-                                //Add multiplier for Easy button calculated by the number of Stars
-                                await updateMyKanji(
-                                    easyDelayTime,
-                                    widget.thisExam[currentQuestionIndex]
-                                            ['learn_score'] +
-                                        1); //Add 1xMultipler day delay & learnScore +1
-                                setState(() {
-                                  easyList.add(thisKanji[
-                                      'character']); // Add the current Kanji to the easyList
-                                  easyStreakList.add(
+                        Expanded(
+                          child: Column(
+                            children: [
+                              ElevatedButton(
+                                onPressed: () async {
+                                  //Add multiplier for Easy button calculated by the number of Stars
+                                  await updateMyKanji(
+                                      easyDelayTime,
                                       widget.thisExam[currentQuestionIndex]
                                               ['learn_score'] +
-                                          1); //Add new streak recorder
-                                  setNewIndex(context);
-                                  isMeaningVisible = false;
-                                });
-                              },
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Styles.bgEasyBTN,
-                                fixedSize: Size(160, 56),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Align(
-                                      alignment: Alignment.center,
-                                      child: Text('Easy',
-                                          style: Styles.textButton.copyWith(
-                                              color: Styles.textColorWhite)),
-                                    ),
-                                  ],
+                                          1); //Add 1xMultipler day delay & learnScore +1
+                                  setState(() {
+                                    easyList.add(thisKanji[
+                                        'character']); // Add the current Kanji to the easyList
+                                    easyStreakList.add(
+                                        widget.thisExam[currentQuestionIndex]
+                                                ['learn_score'] +
+                                            1); //Add new streak recorder
+                                    setNewIndex(context);
+                                    isMeaningVisible = false;
+                                  });
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Styles.bgEasyBTN,
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.center,
+                                        child: Text('Easy',
+                                            style: Styles.textButton.copyWith(
+                                                color: Styles.textColorWhite)),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 12,
-                            ),
-                            Text(
-                                '+${getEaseText(widget.thisExam[currentQuestionIndex]['learn_score'])}',
-                                style: Styles.subBody.copyWith(
-                                    color: Styles.textColorSecondary)),
-                          ],
+                              SizedBox(
+                                height: 12,
+                              ),
+                              Text(
+                                  '+${getEaseText(widget.thisExam[currentQuestionIndex]['learn_score'])}',
+                                  style: Styles.subBody.copyWith(
+                                      color: Styles.textColorSecondary)),
+                            ],
+                          ),
                         ),
 
                         // Easy Button
@@ -335,11 +338,12 @@ class _ExamQuestionState extends State<ExamQuestion> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        SizedBox(height: 80),
                         Text(
                           thisKanji['character'],
                           style: Styles.jpLarge,
                         ),
-                        SizedBox(height: 120),
+                        SizedBox(height: 160),
                         ElevatedButton(
                           onPressed: () {
                             setState(() {

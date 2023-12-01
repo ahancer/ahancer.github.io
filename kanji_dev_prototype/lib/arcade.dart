@@ -109,7 +109,7 @@ class _ArcadeState extends State<Arcade> {
               Text('Match Kanji words that you have ', style: Styles.body,),
               const SizedBox(height: 4.0),
               Text('learned with their meanings.', style: Styles.body,),
-              const SizedBox(height: 40.0),
+              const SizedBox(height: 32.0),
               InkWell(
                 hoverColor: Colors.transparent,
                 splashColor: Colors.transparent, 
@@ -135,8 +135,8 @@ class _ArcadeState extends State<Arcade> {
                   );
                 },
                 child: const SizedBox(
-                  width: 68,
-                  height: 68,
+                  width: 64,
+                  height: 64,
                   child: Image(
                     image: AssetImage('assets/images/button_play.png'),
                     fit: BoxFit.fill,
@@ -144,7 +144,7 @@ class _ArcadeState extends State<Arcade> {
                 ),
               ),
         
-              const SizedBox(height: 64.0),
+              const SizedBox(height: 24.0),
               Padding(
                 padding: const EdgeInsets.all(16.0),
                   child: Container(
@@ -194,7 +194,7 @@ class _ArcadeState extends State<Arcade> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 48.0),
+                const SizedBox(height: 56.0),
             ],
           );
         }

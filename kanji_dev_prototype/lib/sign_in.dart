@@ -48,8 +48,8 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-mascot-a.png',
-                    height: 96,
-                    width: 96,
+                    height: 80,
+                    width: 80,
                   ),
                   SizedBox(height: 8),
                   Text(
@@ -80,8 +80,8 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-mascot-b.png',
-                    height: 96,
-                    width: 96,
+                    height: 80,
+                    width: 80,
                   ),
                   SizedBox(height: 8),
                   Text(
@@ -112,8 +112,8 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-mascot-c.png',
-                    height: 96,
-                    width: 96,
+                    height: 80,
+                    width: 80,
                   ),
                   SizedBox(height: 8),
                   Text(
@@ -144,8 +144,8 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/img-mascot-d.png',
-                    height: 96,
-                    width: 96,
+                    height: 80,
+                    width: 80,
                   ),
                   SizedBox(height: 8),
                   Text(

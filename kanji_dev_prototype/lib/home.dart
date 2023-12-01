@@ -75,14 +75,14 @@ class _HomeState extends State<Home> {
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0, 24),
+          begin: Offset(0, 10),
           end: Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 600.ms,
           duration: 600.ms,
-          begin: Offset(0, -20),
+          begin: Offset(0, -10),
           end: Offset(0, 0),
         ),
       ],
@@ -394,22 +394,19 @@ class _HomeState extends State<Home> {
                           ),
                         ),
 
-                        const SizedBox(height: 24.0),
+                        const SizedBox(height: 8.0),
 
                         //The Mascot
                         Stack(
                           children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.asset(
-                                'assets/images/home-header-bg.png',
-                                width: MediaQuery.sizeOf(context).width,
-                                fit: BoxFit.fitWidth,
-                              ),
+                            Image.asset(
+                              'assets/images/home-header-bg.png',
+                              width: MediaQuery.sizeOf(context).width,
+                              fit: BoxFit.fitWidth,
                             ),
                             Center(
                               child: Padding(
-                                padding: const EdgeInsets.only(top: 48.0),
+                                padding: const EdgeInsets.only(top: 32.0),
                                 child: SizedBox(
                                   width: 180,
                                   height: 180,
@@ -429,7 +426,7 @@ class _HomeState extends State<Home> {
 
                         //Timer Content
                         Expanded(
-                            child: Container(
+                        child: Container(
                           color: Colors.white,
                           width: double.infinity,
                           child: Column(
@@ -519,7 +516,7 @@ class _HomeState extends State<Home> {
                                   'Ready to Review',
                                   style: TextStyle(fontSize: 16),
                                 ),
-                              const SizedBox(height: 20.0),
+                              const SizedBox(height: 24.0),
                               if (countReadyKanjis() > 0)
                                 InkWell(
                                   hoverColor: Colors.transparent,
@@ -535,8 +532,8 @@ class _HomeState extends State<Home> {
                                     );
                                   },
                                   child: const SizedBox(
-                                    width: 68,
-                                    height: 68,
+                                    width: 64,
+                                    height: 64,
                                     child: Image(
                                       image: AssetImage(
                                           'assets/images/button_play.png'),
@@ -544,7 +541,7 @@ class _HomeState extends State<Home> {
                                     ),
                                   ),
                                 ),
-                              const SizedBox(height: 64.0),
+                              const SizedBox(height: 24.0),
                               Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Container(
@@ -603,7 +600,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                               ),
-                              const SizedBox(height: 48.0),
+                              const SizedBox(height: 56.0),
                             ],
                           ),
                         )),

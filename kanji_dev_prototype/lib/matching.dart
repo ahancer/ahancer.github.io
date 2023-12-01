@@ -199,7 +199,7 @@ class _MatchingGameState extends State<MatchingGame> {
                         child: GestureDetector(
                           onTap: onTapAction,
                           child: Container(
-                            height: 100,
+                            height: 80,
                             width: double.infinity,
                             decoration: BoxDecoration(
                               color: tileColor,
@@ -243,7 +243,7 @@ class _MatchingGameState extends State<MatchingGame> {
                       return Padding(
                         padding: const EdgeInsets.only(left: 8, top: 16, right: 24, bottom: 0),
                         child: Container(
-                          height: 100,
+                          height: 80,
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: tileColor,
@@ -251,10 +251,7 @@ class _MatchingGameState extends State<MatchingGame> {
                           ),
                           child: InkWell(
                             onTap: onTapAction,
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 32.0),
-                              child: Center(child: Text(meaningData[index]['meaning'].toString(), style: Styles.subTitle,textAlign: TextAlign.center,)),
-                            ),
+                            child: Center(child: Text(meaningData[index]['meaning'].toString(), style: Styles.subTitle,textAlign: TextAlign.center,)),
                           ),
                         ),
                       );
