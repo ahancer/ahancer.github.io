@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:kanji_prototype/app_styles.dart';
 import 'package:kanji_prototype/matching_lose.dart';
@@ -57,6 +59,10 @@ class _MatchingGameState extends State<MatchingGame> {
   int heart = 3;
   int countCorrect = 0;
 
+  Timer? _timer;
+  int _totalTime = 250; // 25 Seconds
+  int _remainingTime = 250;
+
   @override
   void initState() {
     super.initState();
@@ -68,10 +74,52 @@ class _MatchingGameState extends State<MatchingGame> {
     // Shuffle each list independently
     characterData.shuffle();
     meaningData.shuffle();
+      
+    //Start Timer
+    startTimer();
+  }
+
+  void startTimer() {
+  _remainingTime = _totalTime;
+  _timer = Timer.periodic(Duration(milliseconds: 100), (timer) {
+    if (_remainingTime > 0) {
+      setState(() {
+        _remainingTime--;
+      });
+    } else {
+      _timer?.cancel();
+      onTimerComplete();
+    }
+  });
+  }
+
+  void onTimerComplete() {
+    // Time out = You Lose
+    // Show a Snackbar for incorrect match
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: Styles.bgHardBTN,
+        content: Text('Time Out!', style: Styles.title,),
+        duration: Duration(seconds: 1),
+      ),
+    );
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => MatchingLose(UserID: widget.UserID.toString(),)),
+    );
+  }
+
+  @override
+    void dispose() {
+      _timer?.cancel();
+      super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    //Set value for progress bar
+    double progress = _remainingTime / _totalTime;
+
     return Scaffold(
       backgroundColor: Styles.bgGray1,
       body: Column(
@@ -98,6 +146,24 @@ class _MatchingGameState extends State<MatchingGame> {
                   ],
                 ),
               ],
+            ),
+          ),
+
+          //Progress bar
+          Padding(
+            padding: const EdgeInsets.only(top:0, bottom:16, left:24, right:24),
+            child: LinearProgressIndicator(
+              borderRadius:
+                  BorderRadius.circular(
+                      28),
+              value:
+                  progress, // Current progress
+              backgroundColor: Styles
+                  .bgGray2, // Background color of the progress bar
+              color: Styles
+                  .bgAccent, // Color of the progress indicator
+              minHeight:
+                  16, // Height of the progress bar
             ),
           ),
 

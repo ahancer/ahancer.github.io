@@ -284,19 +284,19 @@ class _HomeState extends State<Home> {
                                                   const SizedBox(height: 8.0),
                                                   SizedBox(
                                                     child:
-                                                        LinearProgressIndicator(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              28),
-                                                      value:
-                                                          progress, // Current progress
-                                                      backgroundColor: Styles
-                                                          .bgGray1, // Background color of the progress bar
-                                                      color: Styles
-                                                          .bgAccent, // Color of the progress indicator
-                                                      minHeight:
-                                                          16, // Height of the progress bar
-                                                    ),
+                                                      LinearProgressIndicator(
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                                28),
+                                                        value:
+                                                            progress, // Current progress
+                                                        backgroundColor: Styles
+                                                            .bgGray1, // Background color of the progress bar
+                                                        color: Styles
+                                                            .bgAccent, // Color of the progress indicator
+                                                        minHeight:
+                                                            16, // Height of the progress bar
+                                                      ),
                                                   ),
                                                 ],
                                               ),
