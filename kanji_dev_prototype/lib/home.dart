@@ -91,6 +91,18 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+
+    String mascotName = '';
+    if(username == 'tester1@ahancer.com'){
+      mascotName = 'img-mascot-a.png';
+    } else if (username == 'natt@ahancer.com'){
+      mascotName = 'img-mascot-b.png';
+    } else if (username == 'tester2@ahancer.com'){
+      mascotName = 'img-mascot-c.png';
+    } else {
+      mascotName = 'img-mascot-d.png';
+    }
+
     return Scaffold(
         backgroundColor: Styles.bgGray0,
         // appBar: AppBar(
@@ -384,7 +396,7 @@ class _HomeState extends State<Home> {
 
                         const SizedBox(height: 24.0),
 
-                        //Dookdik + Cloud
+                        //The Mascot
                         Stack(
                           children: [
                             ClipRRect(
@@ -404,7 +416,7 @@ class _HomeState extends State<Home> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8),
                                     child: Image.asset(
-                                      'assets/images/img-mascot-a.png',
+                                      'assets/images/$mascotName',
                                       fit: BoxFit.cover,
                                     ),
                                   ).animateOnPageLoad(animationsMap[

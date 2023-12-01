@@ -25358,7 +25358,7 @@ ajD:function ajD(a){this.a=a},
 ajE:function ajE(a){this.a=a},
 dM:function dM(a){this.a=a},
 S9:function S9(a,b){var _=this
-_.e=null
+_.e=_.d=null
 _.x=_.w=_.r=_.f=$
 _.y=a
 _.a=null
@@ -25366,7 +25366,8 @@ _.b=b
 _.c=null},
 akn:function akn(a,b){this.a=a
 this.b=b},
-akE:function akE(a){this.a=a},
+akE:function akE(a,b){this.a=a
+this.b=b},
 akw:function akw(a,b){this.a=a
 this.b=b},
 akv:function akv(a){this.a=a},
@@ -84694,9 +84695,16 @@ s=1
 break
 case 1:return A.I(q,r)}})
 return A.J($async$z0,r)},
-J(a){var s=this.f
+J(a){var s,r={}
+r.a=""
+s=this.d
+if(s==="tester1@ahancer.com")r.a="img-mascot-a.png"
+else if(s==="natt@ahancer.com")r.a="img-mascot-b.png"
+else if(s==="tester2@ahancer.com")r.a="img-mascot-c.png"
+else r.a="img-mascot-d.png"
+s=this.f
 s===$&&A.a()
-return A.i3(null,B.bj,A.pk(new A.akE(this),s,t.D))},
+return A.i3(null,B.bj,A.pk(new A.akE(r,this),s,t.D))},
 tw(){var s,r,q,p=this.r
 p===$&&A.a()
 s=p.length
@@ -84718,7 +84726,9 @@ return A.D(o.h2("my_kanjis").b3(0,A.A(["review_status","Ready"],p,p)).fc("kanji_
 case 2:return A.I(null,r)}})
 return A.J($async$l3,r)}}
 A.akn.prototype={
-$0(){this.a.e=this.b.a},
+$0(){var s=this.a,r=this.b
+s.d=r.z
+s.e=r.a},
 $S:0}
 A.akE.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=b.b
@@ -84726,7 +84736,7 @@ if(e==null)return B.c7
 s=b.c
 if(s!=null)return A.cI(A.ac("Error: "+A.h(s),f,f,f,f,f,f),f,f)
 s=J.a9(e)
-r=this.a
+r=this.b
 if(s.ga1(e))return A.cI(A.bs(A.b([A.ac("Hello AHA Team",f,f,f,f,f,f),B.ht,A.uU(B.Sw,new A.akw(r,a),f)],t.p),B.o,B.Q,B.l),f,f)
 else{e=s.dc(e)
 r.r=e
@@ -84749,7 +84759,7 @@ s=A.bV(12)
 k=t.p
 s=A.du(A.b([e,B.MZ,A.ct(f,A.iK(!1,!0,new A.b2(B.iJ,A.bs(A.b([B.bW,A.ac("Total Learned",f,f,f,$.r8().b6(B.bi),f,f),B.bW,A.ac(""+p+" words",f,f,f,$.ow(),f,f)],k),B.bx,B.Q,B.l),f),f,!0,f,f,B.w,B.w,f,f,f,f,f,new A.akz(r,a),f,B.w,f,f),B.n,f,f,new A.cs(B.i,f,f,s,f,f,B.a9),80,f,f,120)],k),B.o,B.B,B.l)
 e=A.ax6(A.bV(8),A.n3("assets/images/home-header-bg.png",B.zQ,f,A.bO(a,B.dq,t.w).w.a.a))
-j=A.ax6(A.bV(8),A.n3("assets/images/img-mascot-a.png",B.zP,f,f))
+j=A.ax6(A.bV(8),A.n3("assets/images/"+this.a.a,B.zP,f,f))
 i=r.y.h(0,"imageOnPageLoadAnimation")
 i.toString
 i=A.qu(B.du,A.b([e,A.cI(new A.b2(B.Dn,A.bf(A.aH2(j,i),180,180),f),f,f)],k),B.Z,B.cI)
@@ -85256,7 +85266,7 @@ A.anQ.prototype={
 $0(){A.cz(this.a,!1).e8()},
 $S:0}
 A.uB.prototype={
-J(a){var s,r,q,p=this,o=null,n=A.kQ(o,!0,o,o,o,A.ac("\u6f22\u5b57 Prototype 6.7",o,o,o,$.kN().b6(B.i),o,o),o),m=A.hi(o,o,B.i,o,o,o,0,o,o,o,o,o,o,o,o,new A.bz(A.bV(16),B.r),o,o,o,o),l=t.p
+J(a){var s,r,q,p=this,o=null,n=A.kQ(o,!0,o,o,o,A.ac("\u6f22\u5b57 Prototype 6.8",o,o,o,$.kN().b6(B.i),o,o),o),m=A.hi(o,o,B.i,o,o,o,0,o,o,o,o,o,o,o,o,new A.bz(A.bV(16),B.r),o,o,o,o),l=t.p
 m=A.fR(A.bs(A.b([A.n3("assets/images/img-mascot-a.png",o,96,96),A.bf(o,8,o),A.ac("Chita",o,o,o,$.ow(),o,o)],l),B.o,B.Q,B.l),new A.adl(p,a),m)
 s=A.hi(o,o,B.i,o,o,o,0,o,o,o,o,o,o,o,o,new A.bz(A.bV(16),B.r),o,o,o,o)
 s=A.fR(A.bs(A.b([A.n3("assets/images/img-mascot-b.png",o,96,96),A.bf(o,8,o),A.ac("Natt",o,o,o,$.ow(),o,o)],l),B.o,B.Q,B.l),new A.adm(p,a),s)
