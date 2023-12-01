@@ -14,6 +14,7 @@ dependencies:
   intl: ^0.18.1
   flutterflow_ui: ^0.2.0
   lottie: ^2.7.0
+  flutter_animate: ^4.1.1+1
 
 dev_dependencies:
   flutter_test:
@@ -30,4 +31,3 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/animations/animate-home-dookdik.gif
