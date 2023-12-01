@@ -47,7 +47,7 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/img-alien-1.png',
+                    'assets/images/img-mascot-a.png',
                     height: 96,
                     width: 96,
                   ),
@@ -79,7 +79,7 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/img-alien-2.png',
+                    'assets/images/img-mascot-b.png',
                     height: 96,
                     width: 96,
                   ),
@@ -111,7 +111,7 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/img-alien-3.png',
+                    'assets/images/img-mascot-c.png',
                     height: 96,
                     width: 96,
                   ),
@@ -143,7 +143,7 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/img-alien-4.png',
+                    'assets/images/img-mascot-d.png',
                     height: 96,
                     width: 96,
                   ),
