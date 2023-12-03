@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterflow_ui/flutterflow_ui.dart';
 import 'package:intl/intl.dart';
 import 'package:kanji_prototype/app_data.dart';
 import 'package:kanji_prototype/app_styles.dart';
