@@ -40,7 +40,9 @@ class _ReviewState extends State<Review> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Styles.bgGray0,
         appBar: AppBar(
+          backgroundColor: Theme.of(context).primaryColor,
           title: Text(
             'My Kanji',
             style: Styles.H2.copyWith(color: Styles.textColorWhite),
@@ -321,6 +323,8 @@ class _ReviewState extends State<Review> {
               }
 
               return Dialog(
+                backgroundColor: Colors.white,
+                surfaceTintColor: Colors.transparent, 
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0)),
                 child: Stack(

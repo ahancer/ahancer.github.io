@@ -65,6 +65,7 @@ class _MyExamState extends State<MyExam> {
             //If no Kanji for Exam
             return Scaffold(
                 appBar: AppBar(
+                  backgroundColor: Theme.of(context).primaryColor,
                   title: const Text('Come Back Later'),
                 ),
                 body: Center(
@@ -92,6 +93,7 @@ class _MyExamState extends State<MyExam> {
 
           return Scaffold(
             appBar: AppBar(
+              backgroundColor: Theme.of(context).primaryColor,
               title: Text(
                 'Review',
                 style: Styles.H2.copyWith(color: Styles.textColorWhite),
@@ -350,10 +352,6 @@ class _ExamQuestionState extends State<ExamQuestion> {
                               isMeaningVisible = true;
                             });
                           },
-                          child: Text(
-                            'Show Meaning',
-                            style: Styles.textButton,
-                          ),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Styles.bgAccent,
                             fixedSize: Size(200, 64.0),
@@ -361,6 +359,10 @@ class _ExamQuestionState extends State<ExamQuestion> {
                               borderRadius: BorderRadius.circular(
                                   64.0), // Adjust the radius as needed
                             ),
+                          ),
+                          child: Text(
+                            'Show Meaning',
+                            style: Styles.textButton.copyWith(color: Styles.textColorPrimary),
                           ),
                         )
                       ],

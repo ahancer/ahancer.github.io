@@ -19,6 +19,7 @@ class SignUp extends StatelessWidget {
           '漢字 Prototype 6.8',
           style: Styles.H2.copyWith(color: Styles.textColorWhite),
         ),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
@@ -27,133 +28,29 @@ class SignUp extends StatelessWidget {
           mainAxisSpacing: 16.0,
           crossAxisSpacing: 16.0,
           children: [
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('tester1@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-a.png',
-                    height: 80,
-                    width: 80,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Chita',
-                    style: Styles.body,
-                  ),
-                ],
-              ),
+            SpecialLoginButton(
+              email: 'tester1@ahancer.com',
+              password: 'test123',
+              mascotImage: 'assets/images/img-mascot-a.png',
+              mascotName: 'Chita',
             ),
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('natt@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-b.png',
-                    height: 80,
-                    width: 80,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Natt',
-                    style: Styles.body,
-                  ),
-                ],
-              ),
+            SpecialLoginButton(
+              email: 'natt@ahancer.com',
+              password: 'test123',
+              mascotImage: 'assets/images/img-mascot-b.png',
+              mascotName: 'Natt',
             ),
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('tester2@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-c.png',
-                    height: 80,
-                    width: 80,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Dalad',
-                    style: Styles.body,
-                  ),
-                ],
-              ),
+            SpecialLoginButton(
+              email: 'tester2@ahancer.com',
+              password: 'test123',
+              mascotImage: 'assets/images/img-mascot-c.png',
+              mascotName: 'Dalad',
             ),
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('tester3@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-d.png',
-                    height: 80,
-                    width: 80,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Nan',
-                    style: Styles.body,
-                  ),
-                ],
-              ),
+            SpecialLoginButton(
+              email: 'tester3@ahancer.com',
+              password: 'test123',
+              mascotImage: 'assets/images/img-mascot-d.png',
+              mascotName: 'Dalad',
             ),
           ],
         ),
@@ -268,8 +165,57 @@ class SignUp extends StatelessWidget {
       // ),
     );
   }
+}
 
-  Future<void> loginSpecial(String UserName, String Password) async {
-    await supabase.auth.signInWithPassword(email: UserName, password: Password);
+class SpecialLoginButton extends StatelessWidget {
+  final String email;
+  final String password;
+  final String mascotImage;
+  final String mascotName;
+
+  SpecialLoginButton({
+    required this.email,
+    required this.password,
+    required this.mascotImage,
+    required this.mascotName,
+  });
+
+  Future<void> loginSpecial(String email, String password) async {
+    await supabase.auth.signInWithPassword(email: email, password: password);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () async {
+        await loginSpecial(email, password);
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Home()),
+        );
+      },
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Styles.bgWhite,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16.0),
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            mascotImage,
+            height: 80,
+            width: 80,
+          ),
+          const SizedBox(height: 8),
+          Text(
+            mascotName,
+            style: Styles.body.copyWith(color: Styles.textColorPrimary),
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kanji_prototype/app_styles.dart';
 import 'package:supabase_auth_ui/supabase_auth_ui.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import './home.dart';
@@ -28,10 +27,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Kanji Demo',
       theme: ThemeData(
-        primarySwatch: AppColors.primaryColor,
-        inputDecorationTheme: const InputDecorationTheme(
-          border: OutlineInputBorder(),
-        ),
+        primaryColor: const Color(0xff38B2AC),
       ),
       initialRoute: '/',
       routes: {

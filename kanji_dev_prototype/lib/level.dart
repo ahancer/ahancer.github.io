@@ -40,6 +40,7 @@ class _MyLevelState extends State<MyLevel> {
     return Scaffold(
       backgroundColor: Styles.bgGray0,
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
          title: Text('My Level', style: Styles.H2.copyWith(color: Styles.textColorWhite),),
          automaticallyImplyLeading: false,
          actions: <Widget>[
