@@ -1,2 +1,32 @@
-2023/12/03-16:36:12.323 f303 Creating DB /private/var/folders/0k/jq45pssx2kv0gn15k9wpq5w40000gn/T/flutter_tools.Zt6dCs/flutter_tools_chrome_device.WBUYyq/Default/shared_proto_db since it was missing.
-2023/12/03-16:36:12.346 f303 Reusing MANIFEST /private/var/folders/0k/jq45pssx2kv0gn15k9wpq5w40000gn/T/flutter_tools.Zt6dCs/flutter_tools_chrome_device.WBUYyq/Default/shared_proto_db/MANIFEST-000001
+2023/12/03-16:37:54.263 ee03 Reusing MANIFEST /private/var/folders/0k/jq45pssx2kv0gn15k9wpq5w40000gn/T/flutter_tools.loIov7/flutter_tools_chrome_device.kimVo2/Default/shared_proto_db/MANIFEST-000001
+2023/12/03-16:37:54.263 ee03 Recovering log #3
+2023/12/03-16:37:54.264 ee03 Level-0 table #3: started
+2023/12/03-16:37:54.274 ee03 Level-0 table #3: 17781 bytes OK
+2023/12/03-16:37:54.274 ee03 Recovering log #4
+2023/12/03-16:37:54.275 ee03 Level-0 table #4: started
+2023/12/03-16:37:54.282 ee03 Level-0 table #4: 122202 bytes OK
+2023/12/03-16:37:54.282 ee03 Recovering log #7
+2023/12/03-16:37:54.283 ee03 Level-0 table #5: started
+2023/12/03-16:37:54.291 ee03 Level-0 table #5: 121820 bytes OK
+2023/12/03-16:37:54.291 ee03 Recovering log #10
+2023/12/03-16:37:54.292 ee03 Level-0 table #8: started
+2023/12/03-16:37:54.297 ee03 Level-0 table #8: 124168 bytes OK
+2023/12/03-16:37:54.297 ee03 Recovering log #13
+2023/12/03-16:37:54.298 ee03 Reusing old log /private/var/folders/0k/jq45pssx2kv0gn15k9wpq5w40000gn/T/flutter_tools.loIov7/flutter_tools_chrome_device.kimVo2/Default/shared_proto_db/000013.log 
+2023/12/03-16:37:54.307 ee03 Delete type=0 #7
+2023/12/03-16:37:54.307 ee03 Delete type=0 #4
+2023/12/03-16:37:54.307 ee03 Delete type=0 #10
+2023/12/03-16:37:54.307 ee03 Delete type=0 #3
+2023/12/03-16:37:54.307 ee03 Delete type=2 #14
+2023/12/03-16:37:54.307 ee03 Delete type=2 #11
+2023/12/03-16:37:54.308 8603 Compacting 4@0 + 0@1 files
+2023/12/03-16:37:54.318 8603 Generated table #14@0: 454 keys, 77204 bytes
+2023/12/03-16:37:54.318 8603 Compacted 4@0 + 0@1 files => 77204 bytes
+2023/12/03-16:37:54.326 8603 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/12/03-16:37:54.326 8603 Delete type=2 #3
+2023/12/03-16:37:54.326 8603 Delete type=2 #4
+2023/12/03-16:37:54.326 8603 Delete type=2 #5
+2023/12/03-16:37:54.326 8603 Delete type=2 #8
+2023/12/03-16:38:10.536 8603 Level-0 table #16: started
+2023/12/03-16:38:10.564 8603 Level-0 table #16: 126447 bytes OK
+2023/12/03-16:38:10.575 8603 Delete type=0 #13

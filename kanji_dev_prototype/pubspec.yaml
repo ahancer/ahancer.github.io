@@ -15,7 +15,6 @@ dependencies:
   flutterflow_ui: ^0.2.0
   lottie: ^2.7.0
   flutter_animate: ^4.1.1+1
-  google_fonts: ^4.0.3
 
 dev_dependencies:
   flutter_test:
@@ -26,6 +25,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   fonts:
+    - family: Murecho
+      fonts:
+        - asset: fonts/Murecho-Regular.ttf
     - family: MaterialIcons
       fonts:
         - asset: fonts/MaterialIcons-Regular.otf
