@@ -17,40 +17,49 @@ class SignUp extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           '漢字 Prototype 6.8',
-          style: Styles.H2.copyWith(color: Styles.textColorWhite),
+          style: Styles.jpSmall.copyWith(color: Styles.textColorWhite),
         ),
         backgroundColor: Theme.of(context).primaryColor,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-        child: GridView.count(
-          crossAxisCount: 2,
-          mainAxisSpacing: 16.0,
-          crossAxisSpacing: 16.0,
+        padding: const EdgeInsets.symmetric(vertical:24.0, horizontal: 24.0),
+
+        child: Column(
           children: [
-            SpecialLoginButton(
-              email: 'tester1@ahancer.com',
-              password: 'test123',
-              mascotImage: 'assets/images/img-mascot-a.png',
-              mascotName: 'Chita',
-            ),
-            SpecialLoginButton(
-              email: 'natt@ahancer.com',
-              password: 'test123',
-              mascotImage: 'assets/images/img-mascot-b.png',
-              mascotName: 'Natt',
-            ),
-            SpecialLoginButton(
-              email: 'tester2@ahancer.com',
-              password: 'test123',
-              mascotImage: 'assets/images/img-mascot-c.png',
-              mascotName: 'Dalad',
-            ),
-            SpecialLoginButton(
-              email: 'tester3@ahancer.com',
-              password: 'test123',
-              mascotImage: 'assets/images/img-mascot-d.png',
-              mascotName: 'Dalad',
+            Text('今, 言, 少, 空, 化, 灰, 豚', style: Styles.jpSmall,),
+            const SizedBox(height: 24),
+            Expanded(
+              child: GridView.count(
+                crossAxisCount: 2,
+                mainAxisSpacing: 16.0,
+                crossAxisSpacing: 16.0,
+                children: [
+                  SpecialLoginButton(
+                    email: 'tester1@ahancer.com',
+                    password: 'test123',
+                    mascotImage: 'assets/images/img-mascot-a.png',
+                    mascotName: 'Chita',
+                  ),
+                  SpecialLoginButton(
+                    email: 'natt@ahancer.com',
+                    password: 'test123',
+                    mascotImage: 'assets/images/img-mascot-b.png',
+                    mascotName: 'Natt',
+                  ),
+                  SpecialLoginButton(
+                    email: 'tester2@ahancer.com',
+                    password: 'test123',
+                    mascotImage: 'assets/images/img-mascot-c.png',
+                    mascotName: 'Dalad',
+                  ),
+                  SpecialLoginButton(
+                    email: 'tester3@ahancer.com',
+                    password: 'test123',
+                    mascotImage: 'assets/images/img-mascot-d.png',
+                    mascotName: 'Dalad',
+                  ),
+                ],
+              ),
             ),
           ],
         ),

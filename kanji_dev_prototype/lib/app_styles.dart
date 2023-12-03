@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Styles {
 //--------Color Style---------//
@@ -56,14 +57,19 @@ class Styles {
       decoration: TextDecoration.underline,
       height: 1.16);
 
-  static TextStyle jpLarge =
-      TextStyle(fontSize: 128, fontWeight: FontWeight.w500, height: 1.1);
+  static TextStyle jpLarge = GoogleFonts.murecho(
+       fontSize: 128, fontWeight: FontWeight.w400, height: 1.1);
 
-  static TextStyle jpMedium =
-      TextStyle(fontSize: 64, fontWeight: FontWeight.w500, height: 1.25);
-
-  static TextStyle jpSmall =
-      TextStyle(fontSize: 32, fontWeight: FontWeight.w500, height: 1.3);
+  // static TextStyle jpLarge =
+  //     TextStyle(fontSize: 128, fontWeight: FontWeight.w500, height: 1.1);
+  static TextStyle jpMedium = GoogleFonts.murecho(
+      fontSize: 64, fontWeight: FontWeight.w400, height: 1.25);
+  // static TextStyle jpMedium =
+  //     TextStyle(fontSize: 64, fontWeight: FontWeight.w500, height: 1.25);
+  static TextStyle jpSmall = GoogleFonts.murecho(
+      fontSize: 32, fontWeight: FontWeight.w400, height: 1.3);
+  // static TextStyle jpSmall =
+  //     TextStyle(fontSize: 32, fontWeight: FontWeight.w500, height: 1.3);
 
 //Header
 //   static TextStyle H1 = GoogleFonts.nunito(
