@@ -20,6 +20,7 @@ class SignUp extends StatelessWidget {
           style: Styles.jpSmall.copyWith(color: Styles.textColorWhite),
         ),
         backgroundColor: Theme.of(context).primaryColor,
+        automaticallyImplyLeading: false,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical:24.0, horizontal: 24.0),
