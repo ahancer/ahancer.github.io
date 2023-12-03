@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "31c60932cdd6d9fca85824a3256677fefe9d44a2cdb28c270f894f352c1ada50"
+build_start_time: [1701599912, 981172084]
+build_end_time: [1701599912, 996570110]
+inputs:
+  "/Users/nattphenjati/.pub-cache/hosted/pub.dev/rive_common-0.0.6/macos/Classes/RivePlugin.swift": !private [1698218282, 965240955]

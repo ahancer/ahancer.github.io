@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "global": "^4.4.0",
-    "glocal": "^0.2.0",
-    "less": "^3.10.3"
-  }
-}
