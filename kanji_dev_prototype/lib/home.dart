@@ -407,19 +407,25 @@ class _HomeState extends State<Home> {
                               fit: BoxFit.fitWidth,
                             ),
                             Center(
-                              child: Padding(
-                                padding: const EdgeInsets.only(top: 32.0),
-                                child: SizedBox(
-                                  width: 180,
-                                  height: 180,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(8),
-                                    child: Image.asset(
-                                      'assets/images/$mascotName',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ).animateOnPageLoad(animationsMap[
-                                      'imageOnPageLoadAnimation']!),
+                              child: GestureDetector(
+                                onTap: () {
+                                  // Show a dialog when the image is tapped
+                                  showFirstTutorial(context);
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 32.0),
+                                  child: SizedBox(
+                                    width: 180,
+                                    height: 180,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.asset(
+                                        'assets/images/$mascotName',
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ).animateOnPageLoad(animationsMap[
+                                        'imageOnPageLoadAnimation']!),
+                                  ),
                                 ),
                               ),
                             ),
