@@ -85337,7 +85337,7 @@ A.ao1.prototype={
 $0(){A.c5(this.a,!1).d_()},
 $S:0}
 A.uB.prototype={
-J(a){var s,r,q,p=this,o=null,n=A.kT(o,!0,o,o,o,A.a5("\u6f22\u5b57 Prototype 6.8",o,o,o,$.hQ().b6(B.i),o,o),o),m=A.a5("\u4eca, \u8a00, \u5c11, \u7a7a, \u5316, \u7070, \u8c5a",o,o,o,$.GS(),o,o),l=A.eN(o,o,B.i,o,o,o,0,o,o,o,o,o,o,o,o,new A.bh(A.bH(16),B.o),o,o,o,o),k=t.p
+J(a){var s,r,q,p=this,o=null,n=A.kT(o,!0,o,o,o,A.a5("\u6f22\u5b57 Prototype 6.9",o,o,o,$.hQ().b6(B.i),o,o),o),m=A.a5("\u4eca, \u8a00, \u5c11, \u7a7a, \u5316, \u7070, \u8c5a",o,o,o,$.GS(),o,o),l=A.eN(o,o,B.i,o,o,o,0,o,o,o,o,o,o,o,o,new A.bh(A.bH(16),B.o),o,o,o,o),k=t.p
 l=A.ez(A.bc(A.b([A.iK("assets/images/img-mascot-a.png",o,80,80),A.b2(o,8,o),A.a5("Chita",o,o,o,$.kQ(),o,o)],k),B.n,B.S,B.l),new A.adn(p,a),l)
 s=A.eN(o,o,B.i,o,o,o,0,o,o,o,o,o,o,o,o,new A.bh(A.bH(16),B.o),o,o,o,o)
 s=A.ez(A.bc(A.b([A.iK("assets/images/img-mascot-b.png",o,80,80),A.b2(o,8,o),A.a5("Natt",o,o,o,$.kQ(),o,o)],k),B.n,B.S,B.l),new A.ado(p,a),s)
