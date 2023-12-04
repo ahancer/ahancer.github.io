@@ -283,7 +283,7 @@ class _LearnDeckState extends State<LearnDeck> {
                                   children: [
                                     Text(
                                       reading,
-                                      style: Styles.subTitle,
+                                      style: Styles.textReading,
                                     ),
                                     SizedBox(height: 4),
                                     Text(

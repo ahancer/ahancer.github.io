@@ -1,62 +1,60 @@
-
 List<Map<String, dynamic>> chapterData = [
   {
-    'chapter_id':1,
-    'chapter_name':'Element',
-    'chapter_lenght':10,
+    'chapter_id': 1,
+    'chapter_name': 'Element',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':2,
-    'chapter_name':'Kingdom',
-    'chapter_lenght':10,
+    'chapter_id': 2,
+    'chapter_name': 'Kingdom',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':3,
-    'chapter_name':'Body',
-    'chapter_lenght':10,
+    'chapter_id': 3,
+    'chapter_name': 'Body',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':4,
-    'chapter_name':'People',
-    'chapter_lenght':10,
+    'chapter_id': 4,
+    'chapter_name': 'People',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':5,
-    'chapter_name':'Portion',
-    'chapter_lenght':10,
+    'chapter_id': 5,
+    'chapter_name': 'Portion',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':6,
-    'chapter_name':'Direction',
-    'chapter_lenght':10,
+    'chapter_id': 6,
+    'chapter_name': 'Direction',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':7,
-    'chapter_name':'Rural',
-    'chapter_lenght':10,
+    'chapter_id': 7,
+    'chapter_name': 'Rural',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':8,
-    'chapter_name':'Color',
-    'chapter_lenght':9,
+    'chapter_id': 8,
+    'chapter_name': 'Color',
+    'chapter_lenght': 9,
   },
   {
-    'chapter_id':9,
-    'chapter_name':'Explore',
-    'chapter_lenght':8,
+    'chapter_id': 9,
+    'chapter_name': 'Explore',
+    'chapter_lenght': 8,
   },
   {
-    'chapter_id':10,
-    'chapter_name':'Animal',
-    'chapter_lenght':9,
+    'chapter_id': 10,
+    'chapter_name': 'Animal',
+    'chapter_lenght': 9,
   },
   {
-    'chapter_id':11,
-    'chapter_name':'Coming Soon',
-    'chapter_lenght':7,
+    'chapter_id': 11,
+    'chapter_name': 'Coming Soon',
+    'chapter_lenght': 7,
   },
 ];
-
 
 List<Map<String, dynamic>> kanjiData = [
   //Chapter 1
@@ -824,10 +822,10 @@ List<Map<String, dynamic>> kanjiData = [
   {
     'kanji_id': 1008,
     'chapter_id': 10,
-    'character': '豕',
+    'character': '豚',
     'meaning': 'Pig',
     'reading': 'ぶた',
-    'hint': 'หมู (豕) ที่นอนข้างรางอาหาร'
+    'hint': 'หมู (豚) ที่นอนข้างรางอาหาร'
   },
   {
     'kanji_id': 1009,

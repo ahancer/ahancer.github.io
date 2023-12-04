@@ -195,7 +195,7 @@ class _ExamQuestionState extends State<ExamQuestion> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(thisKanji['reading'],
-                                    style: Styles.subTitle),
+                                    style: Styles.textReading),
                                 SizedBox(height: 4),
                                 Text(thisKanji['meaning'], style: Styles.H2),
                               ],
@@ -267,8 +267,8 @@ class _ExamQuestionState extends State<ExamQuestion> {
                               SizedBox(
                                 child: Text(
                                   'Review Again',
-                                  style: Styles.subBody
-                                      .copyWith(color: Styles.textColorSecondary),
+                                  style: Styles.subBody.copyWith(
+                                      color: Styles.textColorSecondary),
                                 ),
                               ),
                             ],
@@ -305,7 +305,8 @@ class _ExamQuestionState extends State<ExamQuestion> {
                                 child: Padding(
                                   padding: EdgeInsets.all(8.0),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Align(

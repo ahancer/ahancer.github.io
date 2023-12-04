@@ -21,10 +21,13 @@ class SignUp extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical:24.0, horizontal: 24.0),
+        padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 24.0),
         child: Column(
           children: [
-            Text('今, 言, 少, 空, 化, 灰, 豚', style: Styles.jpSmall,),
+            Text(
+              '今, 言, 少, 空, 化, 灰, 豚',
+              style: Styles.jpSmall,
+            ),
             const SizedBox(height: 24),
             Expanded(
               child: GridView.count(

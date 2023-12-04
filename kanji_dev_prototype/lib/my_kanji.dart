@@ -359,7 +359,7 @@ class _ReviewState extends State<Review> {
                                   children: [
                                     Text(
                                       reading,
-                                      style: Styles.subTitle,
+                                      style: Styles.textReading,
                                     ),
                                     SizedBox(height: 4),
                                     Text(

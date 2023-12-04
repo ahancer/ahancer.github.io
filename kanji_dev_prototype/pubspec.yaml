@@ -27,7 +27,10 @@ flutter:
   fonts:
     - family: NotoSansJP
       fonts:
-        - asset: fonts/NotoSansJP-Medium.ttf
+        - asset: fonts/NotoSansJP-Regular.ttf
+    - family: Nunito
+      fonts:
+        - asset: fonts/Nunito-Medium.ttf
     - family: MaterialIcons
       fonts:
         - asset: fonts/MaterialIcons-Regular.otf
