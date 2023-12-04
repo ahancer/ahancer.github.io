@@ -733,8 +733,10 @@ class _HomeState extends State<Home> {
                         Text('SRS Learning', style: Styles.H2),
                         SizedBox(height: 24),
                         Text(
-                            'จำคันจิง่ายขึ้น ด้วยการต่อเติมคำ ให้กลายเป็นคำใหม่เพิ่มขึ้นเรื่อยๆ พร้อมกับรูปวาดที่จะช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
-                            textAlign: TextAlign.center),
+                          'Spaced Repetition System (SRS)เป็นระบบที่จะช่วยให้เราจำศัพท์ได้ดียิ่งขึ้นโดยการนำศัพท์ที่คุณจำไปแล้วกลับมาให้คุณทวนอีกครั้งในระยะเวลาที่เหมาะสม',
+                          textAlign: TextAlign.center,
+                          style: Styles.body,
+                        ),
                         SizedBox(height: 24),
                         Expanded(
                             child: Column(
@@ -812,8 +814,10 @@ class _HomeState extends State<Home> {
                         Text('and Picture', style: Styles.H2),
                         SizedBox(height: 16),
                         Text(
-                            'จำคันจิง่ายขึ้น ด้วยการต่อเติมคำให้กลายเป็นคำใหม่เพิ่มขึ้นเรื่อยๆ พร้อมกับรูปวาดที่จะช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
-                            textAlign: TextAlign.center),
+                          'จำคันจิง่ายขึ้นด้วยการต่อเติมคำให้กลายเป็นคำใหม่เพิ่มขึ้นเรื่อยๆพร้อมกับรูปวาดที่จะช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
+                          textAlign: TextAlign.center,
+                          style: Styles.body,
+                        ),
                         SizedBox(height: 20),
                         Expanded(
                             child: Column(
