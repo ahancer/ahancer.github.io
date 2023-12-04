@@ -627,6 +627,7 @@ class _HomeState extends State<Home> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
+            backgroundColor: Styles.bgGray0,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0)),
             child: Stack(
@@ -644,20 +645,22 @@ class _HomeState extends State<Home> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                      left: 24, right: 24, top: 64, bottom: 40),
+                      left: 24, right: 24, top: 64, bottom: 32),
                   child: Container(
                     width: 320,
-                    height: 440,
+                    height: 448,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('Welcome to', style: Styles.H2),
                         Text('AHA Kanji', style: Styles.H2),
                         SizedBox(height: 24),
-                        Text('More fun and cuter way'),
-                        Text('to remember N5 Kanji'),
-                        SizedBox(height: 24),
+                        Text(
+                          'เราจะมาช่วยให้คุณจดจำคันจิระดับ N5 ได้ดียิ่งขึ้น!ผ่านวิธีการจำสนุก ๆ ไม่น่าเบื่อเหมือนเคย',
+                          textAlign: TextAlign.center,
+                          style: Styles.body,
+                        ),
+                        SizedBox(height: 16),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -705,6 +708,7 @@ class _HomeState extends State<Home> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
+            backgroundColor: Styles.bgGray0,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0)),
             child: Stack(
@@ -725,19 +729,18 @@ class _HomeState extends State<Home> {
                       left: 24, right: 24, top: 64, bottom: 40),
                   child: Container(
                     width: 320,
-                    height: 440,
+                    height: 448,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('SRS Learning', style: Styles.H2),
                         SizedBox(height: 24),
                         Text(
-                          'Spaced Repetition System (SRS)เป็นระบบที่จะช่วยให้เราจำศัพท์ได้ดียิ่งขึ้นโดยการนำศัพท์ที่คุณจำไปแล้วกลับมาให้คุณทวนอีกครั้งในระยะเวลาที่เหมาะสม',
+                          'Spaced Repetition System (SRS) จะช่วยให้จำศัพท์ได้ดียิ่งขึ้น โดยนำคำที่จำไปแล้วกลับมาให้ทวนอีกครั้งในระยะเวลาที่เหมาะสม',
                           textAlign: TextAlign.center,
                           style: Styles.body,
                         ),
-                        SizedBox(height: 24),
+                        SizedBox(height: 16),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -785,6 +788,7 @@ class _HomeState extends State<Home> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
+            backgroundColor: Styles.bgGray0,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0)),
             child: Stack(
@@ -805,20 +809,18 @@ class _HomeState extends State<Home> {
                       left: 24, right: 24, top: 64, bottom: 40),
                   child: Container(
                     width: 320,
-                    height: 440,
+                    height: 448,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('Kanji Radical', style: Styles.H2),
                         Text('and Picture', style: Styles.H2),
                         SizedBox(height: 16),
                         Text(
-                          'จำคันจิง่ายขึ้นด้วยการต่อเติมคำให้กลายเป็นคำใหม่เพิ่มขึ้นเรื่อยๆพร้อมกับรูปวาดที่จะช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
-                          textAlign: TextAlign.center,
-                          style: Styles.body,
-                        ),
-                        SizedBox(height: 20),
+                            'จำคันจิได้ง่ายขึ้นด้วยการต่อเดิมคำต่างๆ พร้อมกับรูปวาดช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
+                            textAlign: TextAlign.center,
+                            style: Styles.body),
+                        SizedBox(height: 16),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -829,7 +831,7 @@ class _HomeState extends State<Home> {
                                 'assets/images/img-tutorial-3.png',
                               ),
                             ),
-                            SizedBox(height: 40),
+                            SizedBox(height: 24),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 fixedSize: Size(220, 64.0),
