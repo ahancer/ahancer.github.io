@@ -21,136 +21,144 @@ class SignUp extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-        child: GridView.count(
-          crossAxisCount: 2,
-          mainAxisSpacing: 16.0,
-          crossAxisSpacing: 16.0,
+        padding: const EdgeInsets.symmetric(vertical:24.0, horizontal: 24.0),
+        child: Column(
           children: [
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('tester1@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+            Text('今, 言, 少, 空, 化, 灰, 豚', style: Styles.jpSmall,),
+            const SizedBox(height: 24),
+            Expanded(
+              child: GridView.count(
+                crossAxisCount: 2,
+                mainAxisSpacing: 16.0,
+                crossAxisSpacing: 16.0,
                 children: [
-                  Image.asset(
-                    'assets/images/img-mascot-a.png',
-                    height: 80,
-                    width: 80,
+                  ElevatedButton(
+                    onPressed: () async {
+                      await loginSpecial('tester1@ahancer.com', 'test123');
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Home()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Styles.bgWhite,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                            16.0), // Adjust the radius as needed
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/img-mascot-a.png',
+                          height: 80,
+                          width: 80,
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          'Chita',
+                          style: Styles.body,
+                        ),
+                      ],
+                    ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Chita',
-                    style: Styles.body,
+                  ElevatedButton(
+                    onPressed: () async {
+                      await loginSpecial('natt@ahancer.com', 'test123');
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Home()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Styles.bgWhite,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                            16.0), // Adjust the radius as needed
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/img-mascot-b.png',
+                          height: 80,
+                          width: 80,
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          'Natt',
+                          style: Styles.body,
+                        ),
+                      ],
+                    ),
                   ),
-                ],
-              ),
-            ),
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('natt@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-b.png',
-                    height: 80,
-                    width: 80,
+                  ElevatedButton(
+                    onPressed: () async {
+                      await loginSpecial('tester2@ahancer.com', 'test123');
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Home()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Styles.bgWhite,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                            16.0), // Adjust the radius as needed
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/img-mascot-c.png',
+                          height: 80,
+                          width: 80,
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          'Dalad',
+                          style: Styles.body,
+                        ),
+                      ],
+                    ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Natt',
-                    style: Styles.body,
-                  ),
-                ],
-              ),
-            ),
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('tester2@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-c.png',
-                    height: 80,
-                    width: 80,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Dalad',
-                    style: Styles.body,
-                  ),
-                ],
-              ),
-            ),
-            ElevatedButton(
-              onPressed: () async {
-                await loginSpecial('tester3@ahancer.com', 'test123');
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Styles.bgWhite,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Adjust the radius as needed
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/img-mascot-d.png',
-                    height: 80,
-                    width: 80,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Nan',
-                    style: Styles.body,
+                  ElevatedButton(
+                    onPressed: () async {
+                      await loginSpecial('tester3@ahancer.com', 'test123');
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Home()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Styles.bgWhite,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                            16.0), // Adjust the radius as needed
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/img-mascot-d.png',
+                          height: 80,
+                          width: 80,
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          'Nan',
+                          style: Styles.body,
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

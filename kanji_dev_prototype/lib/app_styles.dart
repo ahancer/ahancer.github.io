@@ -56,14 +56,25 @@ class Styles {
       decoration: TextDecoration.underline,
       height: 1.16);
 
-  static TextStyle jpLarge =
-      TextStyle(fontSize: 128, fontWeight: FontWeight.w500, height: 1.1);
+  static TextStyle jpMedium = TextStyle(
+    fontFamily: 'Murecho',
+    fontSize: 64,
+    fontWeight: FontWeight.w400,
+    height: 1.25,
+  );
+  static TextStyle jpSmall = TextStyle(
+    fontFamily: 'Murecho',
+    fontSize: 32,
+    fontWeight: FontWeight.w400,
+    height: 1.3,
+  );
+  static TextStyle jpLarge = TextStyle(
+    fontFamily: 'Murecho',
+    fontSize: 128,
+    fontWeight: FontWeight.w400,
+    height: 1.1,
+  );
 
-  static TextStyle jpMedium =
-      TextStyle(fontSize: 64, fontWeight: FontWeight.w500, height: 1.25);
-
-  static TextStyle jpSmall =
-      TextStyle(fontSize: 32, fontWeight: FontWeight.w500, height: 1.3);
 
 //Header
 //   static TextStyle H1 = GoogleFonts.nunito(
