@@ -25,9 +25,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   fonts:
-    - family: Murecho
+    - family: NotoSansJP
       fonts:
-        - asset: fonts/Murecho-Regular.ttf
+        - asset: fonts/NotoSansJP-Medium.ttf
     - family: MaterialIcons
       fonts:
         - asset: fonts/MaterialIcons-Regular.otf
