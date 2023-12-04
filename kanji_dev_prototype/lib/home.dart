@@ -33,6 +33,9 @@ class _HomeState extends State<Home> {
     _myKanjisFuture = fetchKanjiData();
     _myLevelFuture = fetchLevelData();
     waitTimeList = [];
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      showFirstTutorial(context);
+    });
   }
 
   _fetchUserData() async {
@@ -91,13 +94,12 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-
     String mascotName = '';
-    if(username == 'tester1@ahancer.com'){
+    if (username == 'tester1@ahancer.com') {
       mascotName = 'img-mascot-a.png';
-    } else if (username == 'natt@ahancer.com'){
+    } else if (username == 'natt@ahancer.com') {
       mascotName = 'img-mascot-b.png';
-    } else if (username == 'tester2@ahancer.com'){
+    } else if (username == 'tester2@ahancer.com') {
       mascotName = 'img-mascot-c.png';
     } else {
       mascotName = 'img-mascot-d.png';
@@ -426,7 +428,7 @@ class _HomeState extends State<Home> {
 
                         //Timer Content
                         Expanded(
-                        child: Container(
+                            child: Container(
                           color: Colors.white,
                           width: double.infinity,
                           child: Column(
@@ -610,6 +612,241 @@ class _HomeState extends State<Home> {
                 }
               }
             }));
+  }
+
+  //--Dialog Tutorial--//
+  //First Tutorial
+  void showFirstTutorial(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0)),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: IconButton(
+                    icon: Icon(Icons.close),
+                    onPressed: () {
+                      Navigator.of(context).pop(); // Close the modal
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 24, right: 24, top: 64, bottom: 40),
+                  child: Container(
+                    width: 320,
+                    height: 440,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text('Welcome to', style: Styles.H2),
+                        Text('AHA Kanji', style: Styles.H2),
+                        SizedBox(height: 24),
+                        Text('More fun and cuter way'),
+                        Text('to remember N5 Kanji'),
+                        SizedBox(height: 24),
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Container(
+                              height: 180,
+                              child: Image.asset(
+                                'assets/images/img-tutorial-1.png',
+                              ),
+                            ),
+                            SizedBox(height: 40),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(220, 64.0),
+                                backgroundColor: Styles.bgAccent,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      64.0), // Adjust the radius as needed
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                                showSecondTutorial(context);
+                              },
+                              child: Text(
+                                'Next',
+                                style: Styles.textButton,
+                              ),
+                            ),
+                          ],
+                        ))
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        });
+  }
+
+  //second tutorial
+  void showSecondTutorial(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0)),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: IconButton(
+                    icon: Icon(Icons.close),
+                    onPressed: () {
+                      Navigator.of(context).pop(); // Close the modal
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 24, right: 24, top: 64, bottom: 40),
+                  child: Container(
+                    width: 320,
+                    height: 440,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text('SRS Learning', style: Styles.H2),
+                        SizedBox(height: 24),
+                        Text(
+                            'จำคันจิง่ายขึ้น ด้วยการต่อเติมคำ ให้กลายเป็นคำใหม่เพิ่มขึ้นเรื่อยๆ พร้อมกับรูปวาดที่จะช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
+                            textAlign: TextAlign.center),
+                        SizedBox(height: 24),
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Container(
+                              height: 180,
+                              child: Image.asset(
+                                'assets/images/img-tutorial-2.png',
+                              ),
+                            ),
+                            SizedBox(height: 40),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(220, 64.0),
+                                backgroundColor: Styles.bgAccent,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      64.0), // Adjust the radius as needed
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                                showThirdTutorial(context);
+                              },
+                              child: Text(
+                                'Next',
+                                style: Styles.textButton,
+                              ),
+                            ),
+                          ],
+                        ))
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        });
+  }
+
+  //third tutorial
+  void showThirdTutorial(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0)),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: IconButton(
+                    icon: Icon(Icons.close),
+                    onPressed: () {
+                      Navigator.of(context).pop(); // Close the modal
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 24, right: 24, top: 64, bottom: 40),
+                  child: Container(
+                    width: 320,
+                    height: 440,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text('Kanji Radical', style: Styles.H2),
+                        Text('and Picture', style: Styles.H2),
+                        SizedBox(height: 16),
+                        Text(
+                            'จำคันจิง่ายขึ้น ด้วยการต่อเติมคำให้กลายเป็นคำใหม่เพิ่มขึ้นเรื่อยๆ พร้อมกับรูปวาดที่จะช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
+                            textAlign: TextAlign.center),
+                        SizedBox(height: 20),
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Container(
+                              height: 180,
+                              child: Image.asset(
+                                'assets/images/img-tutorial-3.png',
+                              ),
+                            ),
+                            SizedBox(height: 40),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(220, 64.0),
+                                backgroundColor: Styles.bgAccent,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      64.0), // Adjust the radius as needed
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              child: Text(
+                                'Start',
+                                style: Styles.textButton,
+                              ),
+                            ),
+                          ],
+                        ))
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        });
   }
 
   //Count Kanji that is ready
