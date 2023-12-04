@@ -33,9 +33,9 @@ class _HomeState extends State<Home> {
     _myKanjisFuture = fetchKanjiData();
     _myLevelFuture = fetchLevelData();
     waitTimeList = [];
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      showFirstTutorial(context);
-    });
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   showFirstTutorial(context);
+    // });
   }
 
   _fetchUserData() async {
