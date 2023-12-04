@@ -56,31 +56,14 @@ class Styles {
       decoration: TextDecoration.underline,
       height: 1.16);
 
-  static TextStyle jpMedium = TextStyle(
-    fontFamily: 'Murecho',
-    fontSize: 64,
-    fontWeight: FontWeight.w400,
-    height: 1.25,
-  );
-  static TextStyle jpSmall = TextStyle(
-    fontFamily: 'Murecho',
-    fontSize: 32,
-    fontWeight: FontWeight.w400,
-    height: 1.3,
-  );
-  static TextStyle jpLarge = TextStyle(
-    fontFamily: 'Murecho',
-    fontSize: 128,
-    fontWeight: FontWeight.w400,
-    height: 1.1,
-  );
+  static TextStyle jpLarge =
+      TextStyle(fontSize: 128, fontWeight: FontWeight.w500, height: 1.1);
 
-  // static TextStyle jpLarge =
-  //     TextStyle(fontSize: 128, fontWeight: FontWeight.w500, height: 1.1);
-  // static TextStyle jpMedium =
-  //     TextStyle(fontSize: 64, fontWeight: FontWeight.w500, height: 1.25);
-  // static TextStyle jpSmall =
-  //     TextStyle(fontSize: 32, fontWeight: FontWeight.w500, height: 1.3);
+  static TextStyle jpMedium =
+      TextStyle(fontSize: 64, fontWeight: FontWeight.w500, height: 1.25);
+
+  static TextStyle jpSmall =
+      TextStyle(fontSize: 32, fontWeight: FontWeight.w500, height: 1.3);
 
 //Header
 //   static TextStyle H1 = GoogleFonts.nunito(
@@ -122,16 +105,16 @@ class Styles {
 //--------App Color---------//
 class AppColors {
   static MaterialColor primaryColor =
-    MaterialColor(0xff38B2AC, const <int, Color>{
-      50: const Color(0xff38b2ac),
-      100: const Color(0xff32a09b),
-      200: const Color(0xff2d8e8a),
-      300: const Color(0xff277d78),
-      400: const Color(0xff226b67),
-      500: const Color(0xff1c5956),
-      600: const Color(0xff164745),
-      700: const Color(0xff113534),
-      800: const Color(0xff0b2422),
-      900: const Color(0xff061211)
+      MaterialColor(0xff38B2AC, const <int, Color>{
+    50: const Color(0xff38b2ac),
+    100: const Color(0xff32a09b),
+    200: const Color(0xff2d8e8a),
+    300: const Color(0xff277d78),
+    400: const Color(0xff226b67),
+    500: const Color(0xff1c5956),
+    600: const Color(0xff164745),
+    700: const Color(0xff113534),
+    800: const Color(0xff0b2422),
+    900: const Color(0xff061211)
   });
 }

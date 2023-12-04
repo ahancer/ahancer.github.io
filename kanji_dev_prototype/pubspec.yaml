@@ -25,9 +25,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   fonts:
-    - family: Murecho
-      fonts:
-        - asset: fonts/Murecho-Regular.ttf
     - family: MaterialIcons
       fonts:
         - asset: fonts/MaterialIcons-Regular.otf

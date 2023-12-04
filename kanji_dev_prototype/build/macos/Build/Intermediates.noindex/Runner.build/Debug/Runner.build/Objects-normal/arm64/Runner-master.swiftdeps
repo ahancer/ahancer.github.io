@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
-options: "9c9516f8bdfc03d2c14efb8e805d4945f0847c7462aca571371548ecd8fd61e8"
-build_start_time: [1701599941, 246433019]
-build_end_time: [1701599948, 154278993]
-inputs:
-  "/Users/nattphenjati/workspace/ahancer.github.io/kanji_dev_prototype/macos/Flutter/GeneratedPluginRegistrant.swift": [1701599897, 396982669]
-  "/Users/nattphenjati/workspace/ahancer.github.io/kanji_dev_prototype/macos/Runner/AppDelegate.swift": [1701327898, 844368934]
-  "/Users/nattphenjati/workspace/ahancer.github.io/kanji_dev_prototype/macos/Runner/MainFlutterWindow.swift": [1701327898, 846122741]

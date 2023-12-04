@@ -94,10 +94,9 @@ class _ExamResultState extends State<ExamResult> {
     return Scaffold(
         backgroundColor: Styles.bgGray0,
         appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
           title: Text(
             'Review Complete',
-            style: Styles.H2.copyWith(color: Styles.textColorPrimary),
+            style: Styles.H2.copyWith(color: Styles.textColorWhite),
           ),
           automaticallyImplyLeading: false, // This will hide the back button
           actions: <Widget>[

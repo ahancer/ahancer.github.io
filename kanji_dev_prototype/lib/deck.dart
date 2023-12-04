@@ -50,7 +50,6 @@ class _LearnDeckState extends State<LearnDeck> {
     return Scaffold(
         backgroundColor: Styles.bgGray0,
         appBar: AppBar(
-          backgroundColor: Theme.of(context).primaryColor,
           toolbarHeight: 60,
           title: Text(widget.ChapterTitle,
               style: Styles.H2.copyWith(color: Styles.textColorWhite)),
@@ -108,7 +107,7 @@ class _LearnDeckState extends State<LearnDeck> {
                         },
                         child: Text(
                           'Unlock Chapter',
-                          style: Styles.textButton.copyWith(color:Styles.textColorPrimary),
+                          style: Styles.textButton,
                         ),
                       ),
                     ],
@@ -204,7 +203,7 @@ class _LearnDeckState extends State<LearnDeck> {
                         },
                         child: Text(
                           '+${widget.ChapterLenght} Words to Review',
-                          style: Styles.textButton.copyWith(color:Styles.textColorPrimary),
+                          style: Styles.textButton,
                         ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Styles.bgAccent,
@@ -246,8 +245,6 @@ class _LearnDeckState extends State<LearnDeck> {
               }
 
               return Dialog(
-                backgroundColor: Colors.white,
-                surfaceTintColor: Colors.transparent, 
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0)),
                 child: Stack(
