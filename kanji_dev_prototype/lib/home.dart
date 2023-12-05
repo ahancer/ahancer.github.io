@@ -101,8 +101,12 @@ class _HomeState extends State<Home> {
       mascotName = 'img-mascot-b.png';
     } else if (username == 'tester2@ahancer.com') {
       mascotName = 'img-mascot-c.png';
-    } else {
+    } else if (username == 'tester3@ahancer.com')  {
       mascotName = 'img-mascot-d.png';
+    } else if (username == 'tester4@ahancer.com')  {
+      mascotName = 'img-mascot-e.png';
+    } else {
+      mascotName = 'img-mascot-f.png';
     }
 
     return Scaffold(
@@ -279,8 +283,14 @@ class _HomeState extends State<Home> {
                                               myData[0]['level'];
                                           final int myExp = myData[0]['exp'];
                                           final int expCap = getExpCap(myLevel);
-                                          final double progress =
-                                              myExp / expCap;
+                                          final double progress = myExp / expCap;
+                                          
+                                          //Show Tutorial Dialog box if Level = 0 
+                                          if (myLevel == 1 && myExp == 0){
+                                            WidgetsBinding.instance.addPostFrameCallback((_) {
+                                              showFirstTutorial(context);
+                                            });
+                                          }
 
                                           return InkWell(
                                             hoverColor: Colors.transparent,
@@ -656,11 +666,11 @@ class _HomeState extends State<Home> {
                         Text('AHA Kanji', style: Styles.H2),
                         SizedBox(height: 24),
                         Text(
-                          'เราจะมาช่วยให้คุณจดจำคันจิระดับ N5 ได้ดียิ่งขึ้น!ผ่านวิธีการจำสนุก ๆ ไม่น่าเบื่อเหมือนเคย',
+                          'เราจะมาช่วยให้คุณจดจำคันจิระดับ N5 ได้ง่ายยิ่งขึ้นด้วยเทคนิค SRS Learning และ Kanji Radical',
                           textAlign: TextAlign.center,
-                          style: Styles.body,
+                          style: Styles.bodyDialog,
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height: 4),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -674,7 +684,7 @@ class _HomeState extends State<Home> {
                             SizedBox(height: 40),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                fixedSize: Size(220, 64.0),
+                                fixedSize: Size(220, 56.0),
                                 backgroundColor: Styles.bgAccent,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
@@ -734,13 +744,14 @@ class _HomeState extends State<Home> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text('SRS Learning', style: Styles.H2),
+                        Text('Technique', style: Styles.H2),
                         SizedBox(height: 24),
                         Text(
-                          'Spaced Repetition System (SRS) จะช่วยให้จำศัพท์ได้ดียิ่งขึ้น โดยนำคำที่จำไปแล้วกลับมาให้ทวนอีกครั้งในระยะเวลาที่เหมาะสม',
+                          'Spaced Repetition System (SRS) จะช่วยนำคำที่คุณจำไปแล้วมาให้ทวนอีกครั้งในเวลาที่เหมาะสม',
                           textAlign: TextAlign.center,
-                          style: Styles.body,
+                          style: Styles.bodyDialog,
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height: 4),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -754,7 +765,7 @@ class _HomeState extends State<Home> {
                             SizedBox(height: 40),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                fixedSize: Size(220, 64.0),
+                                fixedSize: Size(220, 56.0),
                                 backgroundColor: Styles.bgAccent,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
@@ -817,10 +828,10 @@ class _HomeState extends State<Home> {
                         Text('and Picture', style: Styles.H2),
                         SizedBox(height: 16),
                         Text(
-                            'จำคันจิได้ง่ายขึ้นด้วยการต่อเดิมคำต่างๆ พร้อมกับรูปวาดช่วยบอกแนวทางการจำที่แปลกใหม่และสนุกขึ้น',
+                            'จำคันจิคำใหม่โดยการต่อเติมคำจากคันจิที่เรียนไปแล้ว พร้อมกับรูปที่ช่วยให้จำได้ง่ายขึ้น',
                             textAlign: TextAlign.center,
-                            style: Styles.body),
-                        SizedBox(height: 16),
+                            style: Styles.bodyDialog),
+                        SizedBox(height: 4),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -834,7 +845,7 @@ class _HomeState extends State<Home> {
                             SizedBox(height: 24),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                fixedSize: Size(220, 64.0),
+                                fixedSize: Size(220, 56.0),
                                 backgroundColor: Styles.bgAccent,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
@@ -845,7 +856,7 @@ class _HomeState extends State<Home> {
                                 Navigator.of(context).pop();
                               },
                               child: Text(
-                                'Start',
+                                'Start Learning',
                                 style: Styles.textButton,
                               ),
                             ),

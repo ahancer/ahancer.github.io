@@ -315,7 +315,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '毎',
     'meaning': 'Every',
     'reading': 'マイ',
-    'hint': 'ทุกๆ (毎) = คน (人) มือกว้างอยากจะครอบครองทุกๆ นา'
+    'hint': 'ทุกๆ (毎) = คน (人) อ้าแขนโอบนา (田)'
   },
   {
     'kanji_id': 403,
@@ -493,7 +493,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '外',
     'meaning': 'Outside',
     'reading': 'ガイ',
-    'hint': 'ข้างนอก (外) ตึกมีพระจันทร์ (夕)'
+    'hint': 'ข้างนอก (外) มีคน (人) ยืนพิงพระจันทร์ (夕) '
   },
   {
     'kanji_id': 605,
@@ -531,9 +531,9 @@ List<Map<String, dynamic>> kanjiData = [
     'kanji_id': 609,
     'chapter_id': 6,
     'character': '主',
-    'meaning': 'Main',
+    'meaning': 'Main, Master',
     'reading': 'シュ',
-    'hint': 'สิ่งหลัก (主) ของประเทศคือพระราชา (王)'
+    'hint': 'สิ่งหลัก (主) = พระราชา (王) ที่ถูกชี้ให้เป็นคนหลัก'
   },
   {
     'kanji_id': 610,
@@ -760,7 +760,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '海',
     'meaning': 'Sea',
     'reading': 'うみ',
-    'hint': 'ทะเล (海) = คนเอาข้าวกล่องของแม่ (母) ไปกินในทะเล'
+    'hint': 'ทะเล (海) = เอานา (田) ไปลอยในทะเล'
   },
   //Chapter 10
   {

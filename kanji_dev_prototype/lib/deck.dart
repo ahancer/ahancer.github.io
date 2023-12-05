@@ -175,11 +175,11 @@ class _LearnDeckState extends State<LearnDeck> {
                                             MainAxisAlignment.center,
                                         children: [
                                           Icon(
-                                            Icons.thumb_up_outlined,
+                                            Icons.local_fire_department,
                                             color: Styles.textColorSecondary,
                                             size: 16,
                                           ),
-                                          SizedBox(width: 4.0),
+                                          SizedBox(width: 2.0),
                                           Text('x$kanjiScore',
                                               style: Styles.subBody.copyWith(
                                                   color: Styles

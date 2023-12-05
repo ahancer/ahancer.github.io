@@ -60,6 +60,12 @@ class Styles {
       fontWeight: FontWeight.w500,
       height: 1.2);
 
+    static TextStyle bodyDialog = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      height: 1.5);
+
   static TextStyle subBody = TextStyle(
       fontFamily: 'Nunito',
       fontSize: 14,
