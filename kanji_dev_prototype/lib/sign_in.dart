@@ -16,7 +16,7 @@ class SignUp extends StatelessWidget {
       backgroundColor: Styles.bgGray0,
       appBar: AppBar(
         title: Text(
-          '漢字 Prototype 7.0',
+          '漢字 Prototype 7.1',
           style: Styles.jpSmall.copyWith(color: Styles.textColorWhite).copyWith(fontSize: 24),
         ),
         automaticallyImplyLeading: false,
@@ -59,19 +59,19 @@ class SignUp extends StatelessWidget {
                     email: 'tester3@ahancer.com',
                     password: 'test123',
                     mascotImage: 'assets/images/img-mascot-d.png',
-                    mascotName: 'Dalad',
+                    mascotName: 'Nan',
                   ),
                  SpecialLoginButton(
                     email: 'tester4@ahancer.com',
                     password: 'test123',
                     mascotImage: 'assets/images/img-mascot-e.png',
-                    mascotName: 'New User',
+                    mascotName: 'New User A',
                   ),
                   SpecialLoginButton(
                     email: 'tester5@ahancer.com',
                     password: 'test123',
                     mascotImage: 'assets/images/img-mascot-f.png',
-                    mascotName: 'New User',
+                    mascotName: 'New User B',
                   ),
                 ],
               ),

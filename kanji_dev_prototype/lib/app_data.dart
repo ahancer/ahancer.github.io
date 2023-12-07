@@ -833,7 +833,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '家',
     'meaning': 'House',
     'reading': 'いえ',
-    'hint': 'บ้าน (家) ที่มีมีหมู (豕) อยู่ข้างใน'
+    'hint': 'บ้าน (家) ที่มีหมู (豚) อยู่ข้างใน'
   },
   //Chapter 11
   {
