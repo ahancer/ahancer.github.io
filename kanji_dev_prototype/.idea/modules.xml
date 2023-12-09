@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/login_email.iml" filepath="$PROJECT_DIR$/login_email.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/login_email_android.iml" filepath="$PROJECT_DIR$/android/login_email_android.iml" />
-    </modules>
-  </component>
-</project>
