@@ -27,43 +27,94 @@ class Styles {
 
 //--------Font Style---------//
 //-EN-//
-  static TextStyle H1 =
-      TextStyle(fontSize: 36, fontWeight: FontWeight.bold, height: 1.1);
-  static TextStyle H2 =
-      TextStyle(fontSize: 24, fontWeight: FontWeight.bold, height: 1.16);
-  static TextStyle textButton =
-      TextStyle(fontSize: 18, fontWeight: FontWeight.w700, height: 1.8);
-  static TextStyle title =
-      TextStyle(fontSize: 22, fontWeight: FontWeight.w600, height: 1.18);
-
-  static TextStyle subTitle =
-      TextStyle(fontSize: 20, fontWeight: FontWeight.w500, height: 1.2);
-
-  static TextStyle body =
-      TextStyle(fontSize: 16, fontWeight: FontWeight.w500, height: 1.2);
-
-  static TextStyle textHint =
-      TextStyle(fontSize: 16, fontWeight: FontWeight.w500, height: 1.6);
-
-  static TextStyle subBody =
-      TextStyle(fontSize: 14, fontWeight: FontWeight.w500, height: 1.14);
-
-  static TextStyle small =
-      TextStyle(fontSize: 12, fontWeight: FontWeight.w500, height: 1.16);
-  static TextStyle link = TextStyle(
+  static TextStyle H1 = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 36,
+      fontWeight: FontWeight.w800,
+      height: 1.1);
+  static TextStyle H2 = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 24,
+      fontWeight: FontWeight.w800,
+      height: 1.16);
+  static TextStyle textButton = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 18,
+      fontWeight: FontWeight.w800,
+      height: 1.8);
+  static TextStyle title = TextStyle(
+      fontFamily: 'Nunito',
       fontSize: 22,
+      fontWeight: FontWeight.w600,
+      height: 1.18);
+
+  static TextStyle subTitle = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 20,
       fontWeight: FontWeight.w500,
-      decoration: TextDecoration.underline,
+      height: 1.2);
+
+  static TextStyle body = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      height: 1.2);
+
+    static TextStyle bodyDialog = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      height: 1.5);
+
+  static TextStyle subBody = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      height: 1.14);
+
+  static TextStyle small = TextStyle(
+      fontFamily: 'Nunito',
+      fontSize: 12,
+      fontWeight: FontWeight.w500,
       height: 1.16);
 
-  static TextStyle jpLarge =
-      TextStyle(fontSize: 128, fontWeight: FontWeight.w500, height: 1.1);
+  static TextStyle link = TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w600,
+      decoration: TextDecoration.underline,
+      height: 1.16);
+//-JP-//
+  static TextStyle textHint = TextStyle(
+      fontFamily: 'NotoSansJP',
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      height: 1.6);
 
-  static TextStyle jpMedium =
-      TextStyle(fontSize: 64, fontWeight: FontWeight.w500, height: 1.25);
+  static TextStyle textReading = TextStyle(
+    fontFamily: 'NotoSansJP',
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    height: 1.1,
+  );
 
-  static TextStyle jpSmall =
-      TextStyle(fontSize: 32, fontWeight: FontWeight.w500, height: 1.3);
+  static TextStyle jpMedium = TextStyle(
+    fontFamily: 'NotoSansJP',
+    fontSize: 64,
+    fontWeight: FontWeight.w300,
+    height: 1.25,
+  );
+  static TextStyle jpSmall = TextStyle(
+    fontFamily: 'NotoSansJP',
+    fontSize: 32,
+    fontWeight: FontWeight.w300,
+    height: 1.3,
+  );
+  static TextStyle jpLarge = TextStyle(
+    fontFamily: 'NotoSansJP',
+    fontSize: 128,
+    fontWeight: FontWeight.w300,
+    height: 1.1,
+  );
 
 //Header
 //   static TextStyle H1 = GoogleFonts.nunito(

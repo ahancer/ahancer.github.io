@@ -42,17 +42,27 @@ class _MyLevelState extends State<MyLevel> {
       appBar: AppBar(
          title: Text('My Level', style: Styles.H2.copyWith(color: Styles.textColorWhite),),
          automaticallyImplyLeading: false,
+         leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back,
+              color: Styles.bgWhite,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Home(),
+                ),
+              );
+            },
+          ),
          actions: <Widget>[
             IconButton(
-              icon: const Icon(Icons.close, color: Colors.white,),
+              icon: const Icon(Icons.delete, color: Colors.white,),
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  PageRouteBuilder(
-                    pageBuilder: (context, animation1, animation2) => Home(),
-                    transitionDuration: Duration.zero,
-                  ),
-                );
+                WidgetsBinding.instance.addPostFrameCallback((_) {
+                  showWarning(context);
+                });
               }
             )
           ],
@@ -229,6 +239,38 @@ class _MyLevelState extends State<MyLevel> {
     setState(() {
       _myLevelFuture = fetchData();
     });
+  }
+
+  //First Tutorial
+  void showWarning(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            backgroundColor: Styles.bgGray0,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0)),
+            child: SingleChildScrollView( // Wrap content in SingleChildScrollView
+              child: Padding( 
+                padding: EdgeInsets.all(16.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min, 
+                  children: [
+                    Text('Reset Level to 1?'),
+                    SizedBox(height: 16), 
+                    ElevatedButton(
+                      onPressed: resetLevel,
+                      child: Text('Confirm'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Styles.bgHardBTN,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          );
+        });
   }
 
 }

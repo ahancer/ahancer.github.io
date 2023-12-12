@@ -1,62 +1,60 @@
-
 List<Map<String, dynamic>> chapterData = [
   {
-    'chapter_id':1,
-    'chapter_name':'Element',
-    'chapter_lenght':10,
+    'chapter_id': 1,
+    'chapter_name': 'Element',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':2,
-    'chapter_name':'Kingdom',
-    'chapter_lenght':10,
+    'chapter_id': 2,
+    'chapter_name': 'Kingdom',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':3,
-    'chapter_name':'Body',
-    'chapter_lenght':10,
+    'chapter_id': 3,
+    'chapter_name': 'Body',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':4,
-    'chapter_name':'People',
-    'chapter_lenght':10,
+    'chapter_id': 4,
+    'chapter_name': 'People',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':5,
-    'chapter_name':'Portion',
-    'chapter_lenght':10,
+    'chapter_id': 5,
+    'chapter_name': 'Portion',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':6,
-    'chapter_name':'Direction',
-    'chapter_lenght':10,
+    'chapter_id': 6,
+    'chapter_name': 'Direction',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':7,
-    'chapter_name':'Rural',
-    'chapter_lenght':10,
+    'chapter_id': 7,
+    'chapter_name': 'Rural',
+    'chapter_lenght': 10,
   },
   {
-    'chapter_id':8,
-    'chapter_name':'Color',
-    'chapter_lenght':9,
+    'chapter_id': 8,
+    'chapter_name': 'Color',
+    'chapter_lenght': 9,
   },
   {
-    'chapter_id':9,
-    'chapter_name':'Explore',
-    'chapter_lenght':8,
+    'chapter_id': 9,
+    'chapter_name': 'Explore',
+    'chapter_lenght': 8,
   },
   {
-    'chapter_id':10,
-    'chapter_name':'Animal',
-    'chapter_lenght':9,
+    'chapter_id': 10,
+    'chapter_name': 'Animal',
+    'chapter_lenght': 9,
   },
   {
-    'chapter_id':11,
-    'chapter_name':'Coming Soon',
-    'chapter_lenght':7,
+    'chapter_id': 11,
+    'chapter_name': 'Coming Soon',
+    'chapter_lenght': 7,
   },
 ];
-
 
 List<Map<String, dynamic>> kanjiData = [
   //Chapter 1
@@ -317,7 +315,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '毎',
     'meaning': 'Every',
     'reading': 'マイ',
-    'hint': 'ทุกๆ (毎) = คน (人) มือกว้างอยากจะครอบครองทุกๆ นา'
+    'hint': 'ทุกๆ (毎) = คน (人) อ้าแขนโอบนา (田)'
   },
   {
     'kanji_id': 403,
@@ -495,7 +493,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '外',
     'meaning': 'Outside',
     'reading': 'ガイ',
-    'hint': 'ข้างนอก (外) ตึกมีพระจันทร์ (夕)'
+    'hint': 'ข้างนอก (外) มีคน (人) ยืนพิงพระจันทร์ (夕) '
   },
   {
     'kanji_id': 605,
@@ -533,9 +531,9 @@ List<Map<String, dynamic>> kanjiData = [
     'kanji_id': 609,
     'chapter_id': 6,
     'character': '主',
-    'meaning': 'Main',
+    'meaning': 'Main, Master',
     'reading': 'シュ',
-    'hint': 'สิ่งหลัก (主) ของประเทศคือพระราชา (王)'
+    'hint': 'สิ่งหลัก (主) = พระราชา (王) ที่ถูกชี้ให้เป็นคนหลัก'
   },
   {
     'kanji_id': 610,
@@ -762,7 +760,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '海',
     'meaning': 'Sea',
     'reading': 'うみ',
-    'hint': 'ทะเล (海) = คนเอาข้าวกล่องของแม่ (母) ไปกินในทะเล'
+    'hint': 'ทะเล (海) = เอานา (田) ไปลอยในทะเล'
   },
   //Chapter 10
   {
@@ -824,10 +822,10 @@ List<Map<String, dynamic>> kanjiData = [
   {
     'kanji_id': 1008,
     'chapter_id': 10,
-    'character': '豕',
+    'character': '豚',
     'meaning': 'Pig',
     'reading': 'ぶた',
-    'hint': 'หมู (豕) ที่นอนข้างรางอาหาร'
+    'hint': 'หมู (豚) ที่นอนข้างรางอาหาร'
   },
   {
     'kanji_id': 1009,
@@ -835,7 +833,7 @@ List<Map<String, dynamic>> kanjiData = [
     'character': '家',
     'meaning': 'House',
     'reading': 'いえ',
-    'hint': 'บ้าน (家) ที่มีมีหมู (豕) อยู่ข้างใน'
+    'hint': 'บ้าน (家) ที่มีหมู (豚) อยู่ข้างใน'
   },
   //Chapter 11
   {

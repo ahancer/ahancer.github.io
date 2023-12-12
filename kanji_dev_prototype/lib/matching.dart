@@ -60,8 +60,8 @@ class _MatchingGameState extends State<MatchingGame> {
   int countCorrect = 0;
 
   Timer? _timer;
-  int _totalTime = 150; // 15 Seconds
-  int _remainingTime = 150;
+  int _totalTime = 80; // 8 Seconds
+  int _remainingTime = 80;
 
   @override
   void initState() {

@@ -222,7 +222,7 @@ class _ExamResultState extends State<ExamResult> {
                       child: Text(
                         'Back Home',
                         style: Styles.textButton
-                            .copyWith(color: Styles.textColorWhite),
+                            .copyWith(color: Styles.textColorPrimary),
                       ),
                     ),
                   if (_levelUp)
@@ -249,7 +249,7 @@ class _ExamResultState extends State<ExamResult> {
                       child: Text(
                         'Unlock new content',
                         style: Styles.textButton
-                            .copyWith(color: Styles.textColorWhite),
+                            .copyWith(color: Styles.textColorPrimary),
                       ),
                     ),
                   const SizedBox(height: 24.0),
@@ -286,9 +286,21 @@ class _ExamResultState extends State<ExamResult> {
                                     Text(widget.easyList[index],
                                         style: Styles.jpSmall),
                                     const SizedBox(height: 4.0),
-                                    Text(
-                                        'x${widget.easyStreakList[index]} Streak',
-                                        style: Styles.small),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.local_fire_department,
+                                          color: Styles.textColorSecondary,
+                                          size: 16,
+                                        ),
+                                        const SizedBox(width: 2.0),
+                                        Text(
+                                            'x${widget.easyStreakList[index]}',
+                                            style: Styles.small.copyWith(color: Styles.textColorSecondary)),
+                                      ],
+                                    ),
                                     const SizedBox(height: 4.0),
                                     // Text(
                                     //     'Wait ${getEaseText(widget.easyStreakList[index] - 1)}',
@@ -337,7 +349,19 @@ class _ExamResultState extends State<ExamResult> {
                                     Text(widget.againList[index],
                                         style: Styles.jpSmall),
                                     const SizedBox(height: 4.0),
-                                    Text('x0 Streak', style: Styles.small),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.local_fire_department,
+                                          color: Styles.textColorSecondary,
+                                          size: 16,
+                                        ),
+                                        const SizedBox(width: 2.0),
+                                        Text('x0', style: Styles.small.copyWith(color: Styles.textColorSecondary,)),
+                                      ],
+                                    ),
                                     const SizedBox(height: 4.0),
                                     // Text('Wait 0m',
                                     //     style: TextStyle(fontSize: 12)),
