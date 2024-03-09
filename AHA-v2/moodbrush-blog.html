@@ -31,6 +31,12 @@
       height: 96px;
       margin-right: 20px;
     }
+    .page-work-detail .work-detail{
+      padding-top: 0px;
+    }
+    .page-work-detail .work-detail .cover-image{
+      padding-bottom: 80px;
+    }
     .page-work-detail .work-detail p{
       color: #333333;
     }
@@ -83,7 +89,7 @@
 
     @media only screen and (max-width: 768px) {
       .page-work-detail .work-detail {
-        padding-top: 40px;
+        padding-top: 0px;
       }
       .logo{
         height: 72px;
@@ -91,6 +97,7 @@
         margin-top: 8px;
       }
       section h1{
+        padding-top: 8px;
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 16px;
@@ -157,11 +164,15 @@
 
   <div class="content">
     <section class="work-detail">
+
+      <img src="images/img-mb-cover-desktop.png" class="img-responsive cover-image desktop-only" alt="Cover Image">
+
+
       <div class="container">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1">
             
-            <div class="media blog-header">
+            <!-- <div class="media blog-header">
               <div class="media-left">
                 <a href="https://apps.apple.com/th/app/moodbrush-tooth-brush-timer/id6478204966" target="_blank">
                   <img src="images/img-mb-logo.png" alt="" class="logo">
@@ -171,14 +182,14 @@
                 <h2>MoodBrush App</h2>
                 <h4>Happy Teeth, Happy Vibes</h4>
               </div>
-            </div>
-
+            </div> -->
+            
 
             <div class="row">
               <div class="col-sm-12">
-                <img src="images/img-mb-cover.png" class="img-responsive main-image" alt="Cover Image">
+                <img src="images/img-mb-cover.png" class="img-responsive mobile-only main-image" alt="Cover Image">
                 <h1>จากไอเดีย สู่ App Store ใน 2 สัปดาห์</h1>
-                <h4>โดย <a href="https://ahancer.com">AHA Lab</a></h4><br>
+                <h4>โดย <a href="https://ahancer.com" target="_blank">AHA Lab</a></h4><br>
                 <p>
                   เคยสงสัยไหมว่าแอปที่ใช้ในแต่ละวัน มันถูกสร้างขึ้นมาได้อย่างไรนะ?
                   เราเลยอยากมาเล่าประสบการณ์สร้างแอปจากมุมมองของ Designer ให้ฟัง โดยเนื้อหาจะมี 3 ส่วน
@@ -199,9 +210,7 @@
                 
                 <p>
                   <strong>การตั้งตี้-จัดทีม:</strong>
-                  เนื่องจากเราเป็น UX/UI Designer ที่ปกติทำ Research, UX/UI Design ซึ่งวนเวียนอยู่กับ Business และ Marketing Team  แต่ส่วนของ Development จะเป็นโลกที่พวกเราเข้าไปแตะน้อยมากๆ ที่เราอยากจะเรียนรู้ และรู้จัก
-                </p>
-                <p>
+                  ปกติทีมเราทำเรื่องของ Research และ UX/UI Design ซึ่งวนเวียนอยู่กับ Business และ Marketing Team  แต่ส่วนของ Development จะเป็นโลกที่พวกเราเข้าไปแตะน้อยมากๆ ที่เราอยากจะเรียนรู้ และรู้จัก
                   ครั้งนี้จึงเป็นความตั้งใจของทีม ที่อยากทำ Product ของตัวเองตั้งแต่ 0 ถึง 100 ซึ่งด้วยความที่ทีมเราเล็กมี <strong>แค่ 4 คน</strong> เราจึงวาง role ในทีมไว้แบบนี้
                 </p>
                 <ul>
@@ -213,7 +222,9 @@
                 <p>
                   ซึ่ง role ก็จะวนเวียนกันไป ตามคนที่ว่าง ณ ตอนนั้น (ทุกคนแทบจะทำทุกอย่างจริงๆ) 
                 </p>
-
+                <div style="max-width: 600px; margin: auto;">
+                  <img src="images/img-mb-team.jpg" class="img-responsive main-image" alt="The Team">
+                </div>
                 <br>
 
                 <h5>
@@ -231,7 +242,7 @@
                 <hr id="2">
                 <h3>ทำแอป 2 อาทิตย์</h3>
                 <p>
-                2 สัปดาห์ กับการเข็น MoodBrush ให้ Launch จริงใน App Store ถือว่าสั้นมาก ถ้าเทียบกับแอปแรกที่ใช้เวลา 2 เดือน ดังนั้นเราจึงต้องกำหนดทุกอย่างให้ชัดเจนตั้งแต่แรก หรือ งาน UX ปกติที่พวกเราทำกับลูกค้ากันหลักปี!
+                2 สัปดาห์ กับการเข็น MoodBrush ให้ Launch จริงใน App Store ถือว่าสั้นมาก ถ้าเทียบกับแอปแรกที่ใช้เวลา 2 เดือน หรืองานโปรเจ็ค UX ที่ปกติพวกเราทำกับลูกค้ากันหลักปี ดังนั้นเราจึงต้องกำหนดทุกอย่างให้ชัดเจนตั้งแต่แรก
                 </p>
                 <h5>1. เริ่มจากกำหนด Experience Goal</h5>
                 <p>
@@ -242,7 +253,6 @@
                 </p>
                 <div style="max-width: 600px; margin: auto;">
                   <img src="images/img-mb-exp-goal.jpg" class="img-responsive main-image" alt="Set Experience Goal">
-
                 </div>
                 <p>
                   เราจึงศึกษาเพิ่มเติมเรื่องของ <a href="https://www.mindspringconsulting.com/2021/01/18/happiness-hormones/" target="_blank">สารสร้างความสุข</a> ที่ถูกนำมาใช้สร้างเป็น Mood และ Character ที่จะมอบความสุขแต่ละรูปแบบให้กับเราตอนแปรงฟัน มี 4 Mood ด้วยกันคือ
@@ -314,7 +324,7 @@
                 
                 <h5>4. เพิ่มชีวิตชีวา ด้วย Animation และ Sound Effect</h5>
                 <p>
-                  ตามที่กำหนดตอนออกแบบ UI Design ซึ่งทำให้แอปน่าใช้งานมากขึ้น ในตอนนี้เราได้รู้จักกับ <a href="https://lottiefiles.com/lottie-creator" target="_blank">Lottie Creator</a> เป็นเวปสำหรับทำ animation เอาไว้ใช้บนเว็บหรือแอป ซึ่ง่ายและสะดวกที่สุดในการนำมาใช้งานกับ Developer ด้วยรูปแบบไฟล์ .json ที่เล็กและใช้ได้ทั้ง iOS, Android, เว็บไซต์ และ React Native รวมถึงย่อ-ขยายภาพโดยที่ภาพไม่แตก 
+                  ตามที่กำหนดตอนออกแบบ UI Design ซึ่งทำให้แอปน่าใช้งานมากขึ้น ในตอนนี้เราได้รู้จักกับ <a href="https://lottiefiles.com/lottie-creator" target="_blank">Lottie Creator</a> เป็นเวปสำหรับทำ animation เอาไว้ใช้บนเว็บหรือแอป ซึ่งง่ายและสะดวกที่สุดในการนำมาใช้งานกับ Developer ด้วยรูปแบบไฟล์ .json ที่เล็กและใช้ได้ทั้ง iOS, Android, เว็บไซต์ และ React Native รวมถึงย่อ-ขยายภาพโดยที่ภาพไม่แตก 
                 </p>
                 <p>
                   นอกจากนี้ ทีมยังต้องหา เสียงเพลง มาใช้ใน Scene ต่าง ๆ รวมถึงการตัดให้เวลาเหมาะสม เช่น ก่อนแปรง, ขณะแปรงฟัน เป็นต้น เพื่อให้สอดคล้องกับแต่ละ Mood ที่ user เลือก ซึ่งสิ่งที่ยากในขั้นตอนนี้คือการ ดูเรื่อง License เพลงให้ถูกลิขสิทธิ์ และถูกต้อง
@@ -354,22 +364,17 @@
                 <p>ทำให้เรามีเวลาทำงานส่วนอื่นๆ ไม่ว่าจะเป็นการแปลงข้อมูลจาก Sheet มาเป็น Code, ภาพร่างสำหรับคุยไอเดียเบื้องต้น เป็นต้น อะไรที่เป็นงานซ้ำๆ จำเจ สามารถให้ AI ช่วยได้ นอกจากนี้ AI ยังมีความคิดที่นอกกรอบ และสดใหม่ ใช้หา idea ที่อยู่นอกเหนือจากสิ่งที่เราคิด และต่อยอดได้ดีขึ้นได้มาก 
                 </p>
                 <br>
-                <h5>ล้ม-ลุก ข้อที่ 2: UX Process ช่วยชีวิตได้จริง
-                </h5>
-                <p>UX Process เมื่อถูกนำมาใช้ มันไม่ใช้เป็นแค่หลักการ หรือของสวยบนกระดาษ แต่จะช่วยทำ Product ได้ดีมากๆ เช่น แอป Kanji Card ซึ่งถ้าไม่ได้ทำ User Test ก็คงไม่ได้ออกมาแบบนี้ และยังช่วยชี้จุดบกพร่องต่างๆในแอป ได้ดี ทำให้เราคาดเดา สิ่งที่จะเกิดขึ้นได้ หากปล่อยออกไปในสภาพนี้ จะได้ไม่ surprise และวางวิธีรับมือได้
-                </p>
-                <br>
-                <h5>ล้ม-ลุก ข้อที่ 3: รีบ Dev เร็วเท่าไหร่ ความเสี่ยงยิ่งสูง (เจ็บยิ่งหนัก)
+                <h5>ล้ม-ลุก ข้อที่ 2: รีบ Dev เร็วเท่าไหร่ ความเสี่ยงยิ่งสูง (เจ็บยิ่งหนัก)
                 </h5>
                 <p>การทำ Prototype ด้วยการ Dev จริง ที่เร็วเกินไป (เพราะทีม Dev เราร้อนวิชาแหละ) ทำให้ เมื่อนำไปให้ user ลองใช้ และต้องแก้ จะเกิด cost  ของการแก้ทั้งแรงและเวลา แบบปาดเหงื่อ เลยทีเดียว …อย่าทำอีกเลยนะ 
                 </p>
                 <br>
-                <h5>ล้ม-ลุก ข้อที่ 4: Animation ไม่ง่าย แต่เป็นไปได้
+                <h5>ล้ม-ลุก ข้อที่ 3: Animation ไม่ง่าย แต่เป็นไปได้
                 </h5>
                 <p>การทำ Animation ดูเป็นงานใหม่ของ Designer และ Lottie ก็เกิดมาเพื่อช่วยเรา (ฮาา) แต่อาจจะต้องวางแผน scene ของ animation ก่อน ซึ่งทำได้ง่ายๆ ด้วย Prototype บน Figma ด้วย Smart Animate Transition เพื่อให้เรามั่นใจว่า เราต้องเตรียมอะไรบ้าง ก่อนไปลงของจริง
                 </p>
                 <br>
-                <h5>ล้ม-ลุก ข้อที่ 5: MVP และ POC คือสิ่งจำเป็น ถ้าทุนน้อย
+                <h5>ล้ม-ลุก ข้อที่ 4: MVP และ POC คือสิ่งจำเป็น ถ้าทุนน้อย
                 </h5>
                 <p>
                   MVP คือการตัด scope ให้เหลือต่อของสำคัญจริงๆ ที่ถ้าเอาออกไป เราจะไม่ได้ experience ตามที่วางไว้ และ POC คือการ รีบ พิสูจน์ในจุดที่เสี่ยงของ app ให้เร็วที่สุด เพื่อรู้ความเป็นไปได้ 
@@ -377,9 +382,9 @@
                 <hr>
                 <h3>ขอขายของ… หน่อยนะ </h3>
                 <ul>
-                  <li>ใครอยากเป็นว่าแอป MoodBrush เสร็จแล้วเป็นอย่างไร โหลดได้ที่นี้เลย
+                  <li>ใครอยากเห็นว่าแอป MoodBrush เสร็จแล้วเป็นอย่างไร <a href="https://apps.apple.com/th/app/moodbrush-tooth-brush-timer/id6478204966" target="_blank">โหลดได้ที่นี้เลย</a>
                   </li>
-                  <li>ฝากติดตาม App ต่อไปจากพวกเราสำหรับ “คนปวดหลัง”
+                  <li>ฝากติดตาม App หน้าของพวกเราที่ทำขึ้นเพื่อ “คนปวดหลัง”
                   </li>
                 </ul>
                 <div class="blog-cta">
@@ -395,7 +400,7 @@
                   โปรเจค “MoodBrush” เป็นการสร้างแอปภายใต้เงื่อนไขให้เสร็จในเวลาที่กำหนด (2 สัปดาห์) จึงไม่ได้มี Feature ที่มีความซับซ้อนมากนัก กระบวนการสร้างแอปนี้จนเสร็จ อาจเทียบเท่ากับการทำงาน 1 Module ของแอปทั่วไป ซึ่งมองว่าสามารถนำวิธีการทำงานไปปรับใช้ได้
                 </p>
                 <p>
-                  บทความแชร์ประสบการณ์การทำแอปนี้ เป็นการนำเสนอจากมุมของ Designer ที่ทำทั้งส่วนของการ Design และ Dev กันเอง (พร้อมอาจารย์ ChatGPT) จึงไม่อาจกล่าวได้ว่ามีกระบวนท่าไร้เทียมทาน… ก็ยังเพิ่งเริ่มและเรียนรู้ใหม่ในทุกวันอยู่ ซึ่งเปิดรับความเห็นมาร่วมพูดคุยกันได้นะ
+                  บทความแชร์ประสบการณ์การทำแอปนี้ เป็นการนำเสนอจากมุมของ Designer ที่ทำทั้งส่วนของการ Design และ Dev กันเอง (พร้อมอาจารย์ ChatGPT) จึงไม่อาจกล่าวได้ว่ามีกระบวนท่าไร้เทียมทาน… ก็ยังเพิ่งเริ่มและเรียนรู้ใหม่ในทุกวันอยู่ ซึ่งเราเปิดรับทุกความเห็น สนใจก็มาร่วมพูดคุยกันได้นะ
                 </p>
               </div>
             </div>
