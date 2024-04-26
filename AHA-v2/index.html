@@ -67,6 +67,33 @@
   <!-- Google Vertification -->
   <meta name="google-site-verification" content="LYINhUG3wM0wircq39r2HqY2huo36MycwYZtEpBjM1g" />
 
+  <style>
+    .modal-contactus{
+      margin-top: 80px;
+    }
+    .modal-contactus h3{
+      margin-top: 24px;
+    }
+    .modal-contactus p{
+      font-size: 16px;
+    }
+    .modal-contactus .name{
+      margin-top: 24px;
+      text-align: right;
+    }
+    .modal-contactus .modal-content{
+        padding-bottom: 40px;
+      }
+    @media only screen and (max-width: 768px) {
+      .modal-contactus{
+        margin-top: 64px;
+      }
+      .modal-contactus .modal-content{
+        padding-bottom: 24px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -76,6 +103,24 @@
       <img src="images/loading.gif" width="80px" alt="loading...">
     </div>
   </div> -->
+
+  <div class="modal fade modal-contactus" id="announcement" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/icon-modal-close.svg" class="img-responsive">
+        </button>
+        <div class="modal-header">
+          <h3 class="modal-title" id="contactLabel">Big Announcement</h3>
+          <p>Ahancer is now AHA Lab, focusing on building our own apps. We've discontinued UX design services but still offer UX consultation. Contact us if you are interested.</a>
+          </p>
+          <div class="name">
+            <p><i>Natt Phenjati, the Founder of Ahancer</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="navigation-wrapper" id="topSection">
     <div class="container">
@@ -145,8 +190,8 @@
           <h4>Your Partner for UX Design</h4>
 
           <!-- <button type="button" name="button" class="btn btn-primary" data-toggle="modal" data-target="#contactUs">Contact Us</button> -->
-          <a href="#workSection" class="smooth">
-            <button type="button" name="button" class="btn btn-primary">Our Works</button>
+          <a href="mailto:natt@ahancer.com">
+            <button type="button" name="button" class="btn btn-primary">Contact Us</button>
           </a>
 
         </div>

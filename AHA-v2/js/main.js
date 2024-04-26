@@ -30,6 +30,7 @@ $(document).ready(function(){
   });
 });
 
+$("#announcement").modal({ show : true });
 
 //Scrolling gallery
 class InfiniteSlider {
