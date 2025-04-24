@@ -22,6 +22,9 @@ class LocalModel extends HiveObject {
   @HiveField(5)
   String transactionCurrency;
 
+  @HiveField(6)
+  String transactionName;
+
   LocalModel({
     this.transactionId = 0,
     this.transactionDate = 0,
@@ -29,5 +32,6 @@ class LocalModel extends HiveObject {
     this.transactionAmount = 0.00,
     this.transactionCategory = '',
     this.transactionCurrency = '',
+    this.transactionName = '',
   });
 }
