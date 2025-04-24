@@ -6,14 +6,14 @@ import 'package:zeny/utils/notification_controller.dart';
 import 'package:zeny/utils/local_provider.dart';
 import 'package:provider/provider.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class TodayScreen extends StatefulWidget {
+  const TodayScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<TodayScreen> createState() => _TodayScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _TodayScreenState extends State<TodayScreen> {
   int counter = 0;
 
   @override

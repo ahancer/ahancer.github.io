@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:zeny/models/model_local.dart';
-import 'package:zeny/screens/home_screen.dart';
+import 'package:zeny/screens/today_screen.dart';
 import 'package:zeny/utils/local_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Zeny Test',
-        home: HomeScreen(),
+        home: TodayScreen(),
       ),
     );
   }
