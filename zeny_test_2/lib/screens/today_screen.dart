@@ -30,6 +30,15 @@ class _TodayScreenState extends State<TodayScreen> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(todayDate),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.delete),
+              onPressed: () {
+                localProvider.deleteAllTransactions();
+                setState(() {}); // Refresh the screen after deletion
+              },
+            ),
+          ],
         ),
         body: Column(
           children: [
@@ -47,22 +56,17 @@ class _TodayScreenState extends State<TodayScreen> {
               child: ListView.builder(
                 itemCount: 99, // Keep the list at 99 items
                 itemBuilder: (context, index) {                  
-                  return TransactionWidget(index: index, baseId: baseId,);
+                  return TransactionWidget(
+                    index: index,
+                    baseId: baseId,
+                    onTransactionChanged: () {
+                      setState(() {}); // Refresh when there is changed
+                    },
+                  );
                 },
               ),
             ),
     
-          ],
-        ),
-        floatingActionButton: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            FloatingActionButton(
-              onPressed: () {
-                localProvider.deleteAllTransactions();
-              },
-              child: const Icon(Icons.delete),
-            ),
           ],
         ),
       ),
