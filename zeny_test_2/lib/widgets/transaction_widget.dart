@@ -31,6 +31,8 @@ class _TransactionWidgetState extends State<TransactionWidget> {
     final int todayTransactionsLenght = localProvider.todayTransactions.length;
     final int transactionId = int.parse('${widget.baseId}${number.toString().padLeft(2, '0')}');
 
+    double transactionNameWidth = 96;
+
     if (widget.index < todayTransactionsLenght) {
       final transaction = localProvider.todayTransactions[widget.index];
       return Container(
@@ -42,9 +44,9 @@ class _TransactionWidgetState extends State<TransactionWidget> {
         child: Row(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(left: 16, top:8.0, bottom: 8.0, right: 8.0),
               child: SizedBox(
-                width: 160,
+                width: transactionNameWidth,
                 child: Text(
                   transaction.transactionName,
                   overflow: TextOverflow.ellipsis,
@@ -89,9 +91,9 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                 }
               },
               child: Padding(
-                padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                padding: const EdgeInsets.only(left: 16.0, right: 8.0),
                 child: SizedBox(
-                  width: 160,
+                  width: transactionNameWidth,
                   child: TextField(
                     controller: _titleController,
                     decoration: const InputDecoration(
@@ -103,15 +105,37 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                 ),
               ),
             ),
-            FieldAmountWidget(
-              index: widget.index,
-              onTransactionChanged: () {
-                widget.onTransactionChanged();
-                setState(() {});
-              },
-              enabled: true, 
+        
+            Expanded(
+              child: FieldAmountWidget(
+                index: widget.index,
+                onTransactionChanged: () {
+                  widget.onTransactionChanged();
+                  setState(() {});
+                },
+                enabled: true, 
+              ),
             ),
-            
+            // Text('ssss'),
+            // SizedBox(
+            //   width: 140,
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.end,
+            //     mainAxisSize: MainAxisSize.min,
+            //     children: [
+            //       Text(
+            //         'Category',
+            //         textAlign: TextAlign.end,
+            //         overflow: TextOverflow.ellipsis,
+            //         style: const TextStyle(fontSize: 16, color: Colors.grey),
+            //       ),
+            //       const Icon(
+            //         Icons.arrow_drop_down, // Down arrow icon
+            //         color: Colors.grey,
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       );

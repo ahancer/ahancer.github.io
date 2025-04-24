@@ -42,33 +42,46 @@ class _FieldAmountWidgetState extends State<FieldAmountWidget> {
     return Focus(
       onFocusChange: (hasFocus) {
         if (!hasFocus) {
-          // Retrieve the value from the persistent controller
-          final transaction = localProvider.todayTransactions[widget.index];
-          final value = _amountController.text.trim();
-          print("Amount out of focus: $value");
-          final newAmount = double.tryParse(value);
-          if (newAmount != null) {
-            localProvider.updateTransactionAmount(
-              transactionId: transaction.transactionId,
-              newAmount: newAmount,
-            );
-            widget.onTransactionChanged(); // Notify the parent
-            setState(() {}); // Refresh the widget
+          // Ensure the index is valid before accessing the transaction
+          if (widget.index < localProvider.todayTransactions.length) {
+            final transaction = localProvider.todayTransactions[widget.index];
+            String value = _amountController.text.trim();
+            print("Amount out of focus: $value");
+
+            // Check if the value is a valid number
+            final newAmount = double.tryParse(value);
+            if (newAmount != null && newAmount > 0) {
+              // If the number is an integer, append .00
+              if (newAmount == newAmount.toInt()) {
+                value = '${newAmount.toInt()}.00';
+                _amountController.text = value; // Update the controller with .00
+              }
+
+              localProvider.updateTransactionAmount(
+                transactionId: transaction.transactionId,
+                newAmount: newAmount,
+              );
+              widget.onTransactionChanged(); // Notify the parent
+              setState(() {}); // Refresh the widget
+            }
+          } else {
+            print("Invalid index: ${widget.index}. Transaction does not exist.");
           }
         }
       },
       child: Padding(
         padding: const EdgeInsets.only(left: 8.0),
         child: SizedBox(
-          width: 120,
+          width: 96,
           child: TextField(
             controller: _amountController,
+            textAlign: TextAlign.end,
             decoration: const InputDecoration(
               border: InputBorder.none,
               hintText: '0.00',
-              hintStyle: TextStyle(fontSize: 16, color: Colors.grey),
+              hintStyle: TextStyle(fontSize: 16, color: Colors.grey, fontWeight: FontWeight.normal),
             ),
-            keyboardType: TextInputType.numberWithOptions(decimal: true), // Explicitly allow decimals
+            keyboardType: TextInputType.numberWithOptions(decimal: true),
             style: const TextStyle(fontSize: 16),
           ),
         ),
