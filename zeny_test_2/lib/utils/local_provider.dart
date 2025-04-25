@@ -12,24 +12,20 @@ class LocalProvider with ChangeNotifier {
   }
 
   // Getter to retrieve transactions for today
-  List<LocalModel> get todayTransactions {
-    final today = DateTime.now();
+  List<LocalModel> oneDayTransactions(int date) {
     return transactions.where((transaction) {
-      final transactionDate = DateTime.fromMillisecondsSinceEpoch(transaction.transactionDate * 1000);
-      return transactionDate.year == today.year &&
-          transactionDate.month == today.month &&
-          transactionDate.day == today.day;
+      return transaction.transactionDate == date;
     }).toList();
   }
 
 
-  void initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory}) {
+  void initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory, required int transactionDate}) {
     final tempTransaction = LocalModel(
       transactionId: transactionId,
       transactionName: transactionName,
-      transactionDate: (DateTime.now().millisecondsSinceEpoch / 1000).round(), // UNIX timestamp in seconds
+      transactionDate: transactionDate,
       transactionType: 'Expense', // Fix at expense for now
-      transactionAmount: transactionAmount, // random.nextDouble() * 99 + 1
+      transactionAmount: transactionAmount, 
       transactionCategory: transactionCategory,
       transactionCurrency: 'USD', // Fix at USD at first
     );
@@ -68,6 +64,21 @@ class LocalProvider with ChangeNotifier {
 
     notifyListeners(); 
   }
+
+  Future<void> deleteTransactionById(int transactionId) async {
+    // Find the key for the transaction with the given transactionId
+    final key = localBox.keys.firstWhere(
+      (k) => localBox.get(k)?.transactionId == transactionId,
+      orElse: () => null,
+    );
+
+    if (key != null) {
+      // Delete the transaction from the box
+      await localBox.delete(key);
+      notifyListeners(); // Notify listeners about the change
+    }
+  }
+
 
   void deleteAllTransactions() {
     localBox.clear(); // Clears all data in the box

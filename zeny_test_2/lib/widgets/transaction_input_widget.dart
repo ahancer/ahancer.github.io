@@ -3,10 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:zeny/utils/local_provider.dart';
 
 class TransactionInputWidget extends StatefulWidget {
-  const TransactionInputWidget({super.key});
+  const TransactionInputWidget({super.key, required this.basedId, required this.transactionId});
 
   @override
   State<TransactionInputWidget> createState() => _TransactionInputWidgetState();
+
+  final int basedId;
+  final int transactionId;
 }
 
 class _TransactionInputWidgetState extends State<TransactionInputWidget> {
@@ -34,7 +37,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
       children: [
         // Title TextField
         SizedBox(
-          width: screenWidth * 0.3,
+          width: screenWidth * 0.4,
           child: Padding(
             padding: const EdgeInsets.only(left: 12.0),
             child: TextField(
@@ -54,11 +57,11 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
 
         // Amount TextField
         SizedBox(
-          width: screenWidth * 0.3,
+          width: screenWidth * 0.2,
           child: TextField(
             controller: _amountController,
             focusNode: _amountFocusNode, // Attach the FocusNode
-            textAlign: TextAlign.end,
+            textAlign: TextAlign.start,
             decoration: const InputDecoration(
               border: InputBorder.none,
               hintText: '0.00',
@@ -74,6 +77,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
 
         // Category Selector
         GestureDetector(
+          behavior: HitTestBehavior.translucent,
           onTap: () {
             showModalBottomSheet(
               context: context,
@@ -98,12 +102,39 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
                         children: [
                           CategoryListItemWidget(
                             categoryTitle: 'Food',
-                            transactionId: 10001, // TODO: Change later
+                            transactionId: widget.transactionId,
                             transactionName: transactionName,
                             transactionAmount: transactionAmount,
+                            transactionDate: widget.basedId,
                           ),
-                          //Transportation, Shopping, Gift, Other
-
+                          CategoryListItemWidget(
+                            categoryTitle: 'Transport',
+                            transactionId: widget.transactionId,
+                            transactionName: transactionName,
+                            transactionAmount: transactionAmount,
+                            transactionDate: widget.basedId,
+                          ),
+                          CategoryListItemWidget(
+                            categoryTitle: 'Shopping',
+                            transactionId: widget.transactionId,
+                            transactionName: transactionName,
+                            transactionAmount: transactionAmount,
+                            transactionDate: widget.basedId,
+                          ),
+                          CategoryListItemWidget(
+                            categoryTitle: 'Gift',
+                            transactionId: widget.transactionId,
+                            transactionName: transactionName,
+                            transactionAmount: transactionAmount,
+                            transactionDate: widget.basedId,
+                          ),
+                          CategoryListItemWidget(
+                            categoryTitle: 'Other',
+                            transactionId: widget.transactionId,
+                            transactionName: transactionName,
+                            transactionAmount: transactionAmount,
+                            transactionDate: widget.basedId,
+                          ),
                         ],
                       ),
                     ],
@@ -141,13 +172,14 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
 
 class CategoryListItemWidget extends StatelessWidget {
   const CategoryListItemWidget({
-    super.key, required this.categoryTitle, required this.transactionId, required this.transactionName, required this.transactionAmount,
+    super.key, required this.categoryTitle, required this.transactionId, required this.transactionName, required this.transactionAmount, required this.transactionDate,
   });
 
   final String categoryTitle;
   final int transactionId;
   final String transactionName;
   final double transactionAmount;
+  final int transactionDate;
 
   @override
   Widget build(BuildContext context) {
@@ -161,6 +193,7 @@ class CategoryListItemWidget extends StatelessWidget {
           transactionName: transactionName,
           transactionAmount: transactionAmount,
           transactionCategory: categoryTitle,
+          transactionDate: transactionDate,
         );
         Navigator.pop(context);
       },

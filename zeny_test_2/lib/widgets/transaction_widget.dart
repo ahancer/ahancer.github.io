@@ -27,27 +27,29 @@ class _TransactionWidgetState extends State<TransactionWidget> {
   @override
   Widget build(BuildContext context) {
     final localProvider = Provider.of<LocalProvider>(context, listen: false);
-    final int todayTransactionsLenght = localProvider.todayTransactions.length;
+    final int todayTransactionsLenght = localProvider.oneDayTransactions(widget.baseId).length;
+    final int transactionId = (widget.baseId*1000)+ widget.index+1;
 
 
     if (widget.index < todayTransactionsLenght) {
       //Filled Row
       return RowWidget(
         children: [
-          TransactionFilledWidget(index: widget.index)
+          TransactionFilledWidget(index: widget.index, basedId: widget.baseId, transactionId: transactionId,)
         ],
       );
     } else if (todayTransactionsLenght == widget.index) {
       //Active Row
       return RowWidget(
         children: [
-          TransactionInputWidget()
+          TransactionInputWidget(basedId: widget.baseId, transactionId: transactionId,)
         ],
       );
     } else {
       //Empty Row
       return RowWidget(
         children: [
+          // Text(transactionId.toString()),
           SizedBox(width: 0)
         ],
       );
