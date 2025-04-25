@@ -22,7 +22,6 @@ class TransactionFilledWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        
         // Title
         SizedBox(
           width: screenWidth * 0.4,
@@ -30,6 +29,7 @@ class TransactionFilledWidget extends StatelessWidget {
             padding: const EdgeInsets.only(left: 12.0),
             child: Text(
               transaction.transactionName,
+              // transaction.transactionId.toString(),
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(fontSize: 16),
             ),
@@ -96,7 +96,7 @@ class TransactionFilledWidget extends StatelessWidget {
                   ),
                   
                   Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: const EdgeInsets.only(left: 6.0),
                     child: const Icon(
                       Icons.cancel,
                       color: Color(0xFF99B7FF),
@@ -111,5 +111,7 @@ class TransactionFilledWidget extends StatelessWidget {
         
       ]
     );
+
+    
   }
 }

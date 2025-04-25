@@ -41,6 +41,7 @@ class LocalProvider with ChangeNotifier {
       transactionAmount: transactionAmount, 
       transactionCategory: transactionCategory,
       transactionCurrency: 'USD', // Fix at USD at first
+      isDelete: false,
     );
 
     localBox.add(tempTransaction);
@@ -69,6 +70,7 @@ class LocalProvider with ChangeNotifier {
         transactionAmount: newAmount, // Update the amount
         transactionCategory: currentTransaction.transactionCategory,
         transactionCurrency: currentTransaction.transactionCurrency,
+        isDelete: false,
       );
 
       // Save the updated transaction back to the box
@@ -85,9 +87,23 @@ class LocalProvider with ChangeNotifier {
       orElse: () => null,
     );
 
-    if (key != null) {
-      // Delete the transaction from the box
-      await localBox.delete(key);
+    final currentTransaction = localBox.get(key);
+
+    if (currentTransaction != null) {
+      // Update the isDelete field to true
+      final updatedTransaction = LocalModel(
+        transactionId: currentTransaction.transactionId,
+        transactionName: currentTransaction.transactionName,
+        transactionDate: currentTransaction.transactionDate,
+        transactionType: currentTransaction.transactionType,
+        transactionAmount: 0,
+        transactionCategory: 'Deleted',
+        transactionCurrency: currentTransaction.transactionCurrency,
+        isDelete: true, // Mark the transaction as deleted
+      );
+
+      // Save the updated transaction back to the box
+      await localBox.put(key, updatedTransaction);
       notifyListeners(); // Notify listeners about the change
     }
   }

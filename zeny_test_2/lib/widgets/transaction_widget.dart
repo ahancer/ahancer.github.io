@@ -32,12 +32,20 @@ class _TransactionWidgetState extends State<TransactionWidget> {
 
 
     if (widget.index < todayTransactionsLenght) {
+      
+      final transaction = localProvider.oneDayTransactions(widget.baseId)[widget.index];
+      bool isDelete = transaction.isDelete;
+
       //Filled Row
-      return RowWidget(
-        children: [
-          TransactionFilledWidget(index: widget.index, basedId: widget.baseId, transactionId: transactionId,)
-        ],
-      );
+      if(!isDelete){
+        return RowWidget(
+          children: [
+            TransactionFilledWidget(index: widget.index, basedId: widget.baseId, transactionId: transactionId,)
+          ],
+        );
+      } else {
+        return SizedBox(height: 0);
+      }
     } else if (todayTransactionsLenght == widget.index) {
       //Active Row
       return RowWidget(

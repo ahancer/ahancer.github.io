@@ -25,6 +25,9 @@ class LocalModel extends HiveObject {
   @HiveField(6)
   String transactionName;
 
+  @HiveField(7)
+  bool isDelete;
+
   LocalModel({
     this.transactionId = 0,
     this.transactionDate = 0,
@@ -33,5 +36,6 @@ class LocalModel extends HiveObject {
     this.transactionCategory = '',
     this.transactionCurrency = '',
     this.transactionName = '',
+    this.isDelete = false,
   });
 }

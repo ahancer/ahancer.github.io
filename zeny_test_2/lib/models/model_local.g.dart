@@ -24,13 +24,14 @@ class LocalModelAdapter extends TypeAdapter<LocalModel> {
       transactionCategory: fields[4] as String,
       transactionCurrency: fields[5] as String,
       transactionName: fields[6] as String,
+      isDelete: fields[7] as bool,
     );
   }
 
   @override
   void write(BinaryWriter writer, LocalModel obj) {
     writer
-      ..writeByte(7)
+      ..writeByte(8)
       ..writeByte(0)
       ..write(obj.transactionId)
       ..writeByte(1)
@@ -44,7 +45,9 @@ class LocalModelAdapter extends TypeAdapter<LocalModel> {
       ..writeByte(5)
       ..write(obj.transactionCurrency)
       ..writeByte(6)
-      ..write(obj.transactionName);
+      ..write(obj.transactionName)
+      ..writeByte(7)
+      ..write(obj.isDelete);
   }
 
   @override
