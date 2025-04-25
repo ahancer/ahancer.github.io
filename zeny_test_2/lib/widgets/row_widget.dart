@@ -15,7 +15,7 @@ class RowWidget extends StatelessWidget {
       width: double.infinity,
       decoration: const BoxDecoration(
         border: Border(
-          bottom: BorderSide(color: Colors.grey, width: 0.5), // Add bottom border
+          bottom: BorderSide(color: Color(0xFFD0DEFF), width: 0.5), // Add bottom border
         ),
       ),
       child: Row(

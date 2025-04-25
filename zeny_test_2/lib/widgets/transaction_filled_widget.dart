@@ -99,7 +99,7 @@ class TransactionFilledWidget extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8.0),
                     child: const Icon(
                       Icons.cancel,
-                      color: Colors.grey,
+                      color: Color(0xFF99B7FF),
                       size: 18,
                     ),
                   ),

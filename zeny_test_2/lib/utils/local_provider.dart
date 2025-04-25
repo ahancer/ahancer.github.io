@@ -19,6 +19,19 @@ class LocalProvider with ChangeNotifier {
   }
 
 
+  double get getTotalExpense {
+    return transactions.fold(
+      0.0,
+      (sum, transaction) => sum + transaction.transactionAmount,
+    );
+  }
+
+  double getCategoryExpense(String transactionCategory) {
+    return transactions
+        .where((transaction) => transaction.transactionCategory == transactionCategory)
+        .fold(0.0, (sum, transaction) => sum + transaction.transactionAmount);
+  }
+
   void initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory, required int transactionDate}) {
     final tempTransaction = LocalModel(
       transactionId: transactionId,

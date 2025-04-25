@@ -21,27 +21,13 @@ class _TodayScreenState extends State<TodayScreen> {
     return PopScope(
       canPop: false,
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(todayDate),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.delete),
-              onPressed: () {
-                Provider.of<LocalProvider>(context, listen: false).deleteAllTransactions();
-              },
-            ),
-          ],
-        ),
-        body: Column(
-          children: [
-            Container(
-              decoration: const BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(color: Colors.grey, width: 0.5), // Add bottom border
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 0, bottom: 24),
+        
+        body: SafeArea(
+          bottom: false,
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 0, bottom: 16),
                 child: Consumer<LocalProvider>(
                   builder: (context, localProvider, child) {
                     // Calculate the total expense dynamically
@@ -49,38 +35,80 @@ class _TodayScreenState extends State<TodayScreen> {
                       0.0,
                       (sum, transaction) => sum + transaction.transactionAmount,
                     );
-                    return Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    return Column(
                       children: [
-                        Text(
-                          'Expense: \$${formatNumber(totalExpense)}',
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.normal,
+          
+                        Padding(
+                          padding: const EdgeInsets.only(top:4, bottom: 4),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                todayDate,
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ), 
+                              const Icon(
+                                Icons.arrow_drop_down, // Down arrow icon
+                                color: Colors.black,
+                              ),    
+                            ],
                           ),
+                        ),
+          
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Expense: \$${formatNumber(totalExpense)}',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.normal,
+                              ),
+                            ),
+                            Text(
+                              ' (฿${formatNumber(totalExpense*exchangeRateTHB)})',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.normal,
+                                color: Colors.grey
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     );
                   },
                 ),
               ),
-            ),
-            Expanded(
-              child: Consumer<LocalProvider>(
-                builder: (context, localProvider, child) {
-                  return ListView.builder(
-                    itemCount: 99,
-                    itemBuilder: (context, index) {
-                      return TransactionWidget(
-                        index: index,
-                        baseId: baseId,
-                      );
-                    },
-                  );
-                },
+              Divider(color: Color(0xFFD0DEFF), thickness: 0.5, height: 1,),
+              Padding(
+                padding: const EdgeInsets.only(top: 2.0,),
+                child: Divider(color: Color(0xFFD0DEFF), thickness: 0.5, height: 1),
               ),
-            ),
-          ],
+              
+              Expanded(
+                child: Consumer<LocalProvider>(
+                  builder: (context, localProvider, child) {
+                    return ListView.builder(
+                      itemCount: 99,
+                      itemBuilder: (context, index) {
+                        return TransactionWidget(
+                          index: index,
+                          baseId: baseId,
+                        );
+                      },
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
