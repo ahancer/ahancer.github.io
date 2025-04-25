@@ -23,15 +23,15 @@ class LocalProvider with ChangeNotifier {
   }
 
 
-  void initTransaction({required int transactionId, required String transactionName}) {
+  void initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory}) {
     final tempTransaction = LocalModel(
       transactionId: transactionId,
       transactionName: transactionName,
       transactionDate: (DateTime.now().millisecondsSinceEpoch / 1000).round(), // UNIX timestamp in seconds
-      transactionType: '', // Example type
-      transactionAmount: 0.00, // random.nextDouble() * 99 + 1
-      transactionCategory: '', // Example category
-      transactionCurrency: '', // Example currency
+      transactionType: 'Expense', // Fix at expense for now
+      transactionAmount: transactionAmount, // random.nextDouble() * 99 + 1
+      transactionCategory: transactionCategory,
+      transactionCurrency: 'USD', // Fix at USD at first
     );
 
     localBox.add(tempTransaction);

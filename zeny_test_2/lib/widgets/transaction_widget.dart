@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:zeny/utils/local_provider.dart';
 import 'package:zeny/widgets/row_widget.dart';
+import 'package:zeny/widgets/transaction_filled_widget.dart';
 import 'package:zeny/widgets/transaction_input_widget.dart';
 
 class TransactionWidget extends StatefulWidget {
-  const TransactionWidget({super.key, required this.index, required this.baseId, required this.onTransactionChanged});
+  const TransactionWidget({super.key, required this.index, required this.baseId});
 
   final int index;
-  final int baseId; //TODO: Remove later
-  final VoidCallback onTransactionChanged; // Callback to notify parent
-
+  final int baseId;
 
   @override
   State<TransactionWidget> createState() => _TransactionWidgetState();
@@ -35,7 +34,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
       //Filled Row
       return RowWidget(
         children: [
-          Text('Filled Stage')
+          TransactionFilledWidget(index: widget.index)
         ],
       );
     } else if (todayTransactionsLenght == widget.index) {
