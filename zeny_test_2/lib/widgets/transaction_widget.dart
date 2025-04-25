@@ -106,17 +106,15 @@ class _TransactionWidgetState extends State<TransactionWidget> {
               ),
             ),
         
-            Expanded(
-              child: FieldAmountWidget(
-                index: widget.index,
-                onTransactionChanged: () {
-                  widget.onTransactionChanged();
-                  setState(() {});
-                },
-                enabled: true, 
-              ),
+            FieldAmountWidget(
+              index: widget.index,
+              onTransactionChanged: () {
+                widget.onTransactionChanged();
+                setState(() {});
+              },
+              enabled: true, 
             ),
-            // Text('ssss'),
+          
             // SizedBox(
             //   width: 140,
             //   child: Row(
