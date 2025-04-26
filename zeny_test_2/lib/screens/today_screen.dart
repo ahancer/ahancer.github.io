@@ -13,15 +13,23 @@ class TodayScreen extends StatefulWidget {
 }
 
 class _TodayScreenState extends State<TodayScreen> {
+  late String todayDate;
+  late int baseId;
+
+  @override
+void initState() {
+    super.initState();
+    final DateTime now = DateTime.now();
+    todayDate = DateFormat('d MMMM yyyy').format(now); // Initialize todayDate
+    baseId = int.parse(DateFormat('yyyyMMdd').format(now)); // Initialize baseId
+  }
+
   @override
   Widget build(BuildContext context) {
-    final String todayDate = DateFormat('d MMMM yyyy').format(DateTime.now());
-    final int baseId = int.parse(DateFormat('yyyyMMdd').format(DateTime.now()));
 
     return PopScope(
       canPop: false,
       child: Scaffold(
-        
         body: SafeArea(
           bottom: false,
           child: Column(
@@ -31,36 +39,51 @@ class _TodayScreenState extends State<TodayScreen> {
                 child: Consumer<LocalProvider>(
                   builder: (context, localProvider, child) {
                     // Calculate the total expense dynamically
-                    final double totalExpense = localProvider.transactions.fold(
-                      0.0,
-                      (sum, transaction) => sum + transaction.transactionAmount,
-                    );
+                    final double totalExpense = localProvider.getTotalExpenseByDate(baseId);
+
                     return Column(
                       children: [
-          
-                        Padding(
-                          padding: const EdgeInsets.only(top:4, bottom: 4),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Text(
-                                todayDate,
-                                style: const TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
+                        GestureDetector(
+                          onTap: () async {
+                            // Show the date picker
+                            final DateTime? selectedDate = await showDatePicker(
+                              context: context,
+                              initialDate: DateTime.now(), // Default to today's date
+                              firstDate: DateTime(2000), // Earliest selectable date
+                              lastDate: DateTime(2100), // Latest selectable date
+                            );
+
+                            if (selectedDate != null) {
+                              // Update the selected date
+                              setState(() {
+                                todayDate = DateFormat('d MMMM yyyy').format(selectedDate);
+                                baseId = int.parse(DateFormat('yyyyMMdd').format(selectedDate));
+                              });
+                            }
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 4, bottom: 4),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const SizedBox(
+                                  width: 8,
                                 ),
-                              ), 
-                              const Icon(
-                                Icons.arrow_drop_down, // Down arrow icon
-                                color: Colors.black,
-                              ),    
-                            ],
+                                Text(
+                                  todayDate,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const Icon(
+                                  Icons.arrow_drop_down, // Down arrow icon
+                                  color: Colors.black,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-          
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -72,11 +95,11 @@ class _TodayScreenState extends State<TodayScreen> {
                               ),
                             ),
                             Text(
-                              ' (฿${formatNumber(totalExpense*exchangeRateTHB)})',
+                              ' (฿${formatNumber(totalExpense * exchangeRateTHB)})',
                               style: const TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.normal,
-                                color: Colors.grey
+                                color: Colors.grey,
                               ),
                             ),
                           ],
@@ -86,12 +109,11 @@ class _TodayScreenState extends State<TodayScreen> {
                   },
                 ),
               ),
-              Divider(color: Color(0xFFD0DEFF), thickness: 0.5, height: 1,),
-              Padding(
-                padding: const EdgeInsets.only(top: 2.0,),
+              const Divider(color: Color(0xFFD0DEFF), thickness: 0.5, height: 1),
+              const Padding(
+                padding: EdgeInsets.only(top: 2.0),
                 child: Divider(color: Color(0xFFD0DEFF), thickness: 0.5, height: 1),
               ),
-              
               Expanded(
                 child: Consumer<LocalProvider>(
                   builder: (context, localProvider, child) {

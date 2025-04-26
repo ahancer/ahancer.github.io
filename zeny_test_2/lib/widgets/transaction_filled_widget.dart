@@ -36,7 +36,7 @@ class TransactionFilledWidget extends StatelessWidget {
           ),
         ),
 
-        // Title
+        // Amount
         SizedBox(
           width: screenWidth * 0.3,
           child: Text(

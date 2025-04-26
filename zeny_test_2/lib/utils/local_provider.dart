@@ -32,6 +32,12 @@ class LocalProvider with ChangeNotifier {
         .fold(0.0, (sum, transaction) => sum + transaction.transactionAmount);
   }
 
+  double getTotalExpenseByDate(int date) {
+    return transactions
+        .where((transaction) => transaction.transactionDate == date && !transaction.isDelete) // Filter by date and exclude deleted transactions
+        .fold(0.0, (sum, transaction) => sum + transaction.transactionAmount); // Sum up the amounts
+  }
+
   void initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory, required int transactionDate}) {
     final tempTransaction = LocalModel(
       transactionId: transactionId,

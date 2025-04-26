@@ -57,7 +57,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
 
         // Amount TextField
         SizedBox(
-          width: screenWidth * 0.2,
+          width: screenWidth * 0.3,
           child: TextField(
             controller: _amountController,
             focusNode: _amountFocusNode, // Attach the FocusNode
@@ -144,7 +144,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
             );
           },
           child: SizedBox(
-            width: screenWidth * 0.4,
+            width: screenWidth * 0.3,
             child: Padding(
               padding: const EdgeInsets.only(top: 5, right: 8),
               child: Row(
