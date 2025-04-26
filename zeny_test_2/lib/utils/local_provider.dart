@@ -162,7 +162,7 @@ class LocalProvider with ChangeNotifier {
 
   int? get tempTransactionId => _tempTransactionId;
 
-  Future<void> setTempTransactionId(int transactionId) async {
+  setTempTransactionId(int transactionId) async {
     _tempTransactionId = transactionId;
     print('Set Temp ID to: $transactionId');
     notifyListeners(); // Notify listeners about the change
