@@ -19,6 +19,18 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
   final FocusNode _amountFocusNode = FocusNode(); // FocusNode for amount field
 
   @override
+  void initState() {
+    super.initState();
+
+    // Add listeners to the title focus node
+    _titleFocusNode.addListener(() {
+      Provider.of<LocalProvider>(context, listen: false)
+          .setTitleFocus(_titleFocusNode.hasFocus); // Update focus state in provider
+    });
+  }
+
+
+  @override
   void dispose() {
     _titleController.dispose();
     _amountController.dispose();
@@ -54,7 +66,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
             ),
           ),
         ),
-
+    
         // Amount TextField
         SizedBox(
           width: screenWidth * 0.3,
@@ -74,7 +86,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
             },
           ),
         ),
-
+    
         // Category Selector
         GestureDetector(
           behavior: HitTestBehavior.translucent,
@@ -86,7 +98,7 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
                     ? _titleController.text.trim()
                     : 'Expense';
                 double transactionAmount = double.tryParse(_amountController.text.trim()) ?? 0.00;
-
+    
                 return Container(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(

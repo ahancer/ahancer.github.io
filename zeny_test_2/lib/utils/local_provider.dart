@@ -119,4 +119,15 @@ class LocalProvider with ChangeNotifier {
     localBox.clear(); // Clears all data in the box
     notifyListeners(); 
   }
+
+
+  bool _isTitleFocused = false; // Track if the title input is focused
+
+  bool get isTitleFocused => _isTitleFocused;
+
+  void setTitleFocus(bool isFocused) {
+    _isTitleFocused = isFocused;
+    notifyListeners(); // Notify listeners about the change
+  }
+
 }
