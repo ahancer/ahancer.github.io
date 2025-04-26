@@ -16,13 +16,7 @@ class TransactionWidget extends StatefulWidget {
 }
 
 class _TransactionWidgetState extends State<TransactionWidget> {
-  final TextEditingController _titleController = TextEditingController();
 
-  @override
-  void dispose() {
-    _titleController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +44,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
       //Active Row
       return RowWidget(
         children: [
-          TransactionInputWidget(basedId: widget.baseId, transactionId: transactionId,)
+          Focus(
+            onFocusChange: (hasFocus) {
+              if (hasFocus) {
+                  // Set the temporary transaction ID in LocalProvider when focused
+                  localProvider.setTempTransactionId(transactionId);
+                  print("Focused on TransactionInputWidget with ID: $transactionId");
+                }
+              },
+              child: TransactionInputWidget(
+                basedId: widget.baseId,
+                transactionId: transactionId,
+              ),
+            ),
         ],
       );
     } else {

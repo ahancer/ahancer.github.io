@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:zeny/utils/local_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:zeny/utils/number.dart';
+import 'package:zeny/widgets/category_list_widget.dart';
 import 'package:zeny/widgets/transaction_widget.dart';
 
 class TodayScreen extends StatefulWidget {
@@ -22,6 +23,31 @@ class _TodayScreenState extends State<TodayScreen> {
     final DateTime now = DateTime.now();
     todayDate = DateFormat('d MMMM yyyy').format(now); // Initialize todayDate
     baseId = int.parse(DateFormat('yyyyMMdd').format(now)); // Initialize baseId
+
+    final localProvider = Provider.of<LocalProvider>(context, listen: false);
+
+    // Add listener for titleFocusNode
+    localProvider.titleFocusNode.addListener(() {
+      localProvider.setTitleFocus(localProvider.titleFocusNode.hasFocus);
+    });
+
+    // Add listener for amountFocusNode
+    localProvider.amountFocusNode.addListener(() {
+      localProvider.setAmountFocus(localProvider.amountFocusNode.hasFocus);
+    });
+
+  }
+
+  @override
+  void dispose() {
+
+    final localProvider = Provider.of<LocalProvider>(context, listen: false);
+    
+    localProvider.disposeResources();
+    localProvider.titleFocusNode.dispose();
+    localProvider.amountFocusNode.dispose();
+
+    super.dispose();
   }
 
   @override
@@ -142,14 +168,59 @@ class _TodayScreenState extends State<TodayScreen> {
                       bottom: 16,
                       right: 16,
                       child: FloatingActionButton(
+                        shape: const CircleBorder(),
+                        mini: true,
+                        elevation: 2,
+                        backgroundColor: Color(0xFF99B7FF),
                         onPressed: () {
-                          FocusScope.of(context).nextFocus(); // Move focus to the next input
+                          FocusScope.of(context).requestFocus(localProvider.amountFocusNode);
                         },
-                        child: const Icon(Icons.arrow_forward), // "Next" icon
+                        child: const Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                        ),
                       ),
                     );
+                  } else if (localProvider.isAmountFocused) {
+                    return Positioned(
+                      bottom: 16,
+                      right: 16,
+                      child: FloatingActionButton(
+                        shape: const CircleBorder(),
+                        mini: true,
+                        elevation: 2,
+                        backgroundColor: Color(0xFF99B7FF),
+                        onPressed: () {
+                          FocusScope.of(context).unfocus(); // Close the keyboard
+                          localProvider.setAmountFocus(false); 
+
+                          showModalBottomSheet(
+                            context: context,
+                            builder: (BuildContext context) {
+                              String transactionName = localProvider.titleController.text.trim().isNotEmpty
+                                  ? localProvider.titleController.text.trim()
+                                  : 'Expense';
+                              double transactionAmount = double.tryParse(localProvider.amountController.text.trim()) ?? 0.00;
+                  
+                              return CategoryListWidget(
+                                transactionId: localProvider.tempTransactionId ?? 0,
+                                transactionName: transactionName,
+                                transactionAmount: transactionAmount,
+                                transactionDate: baseId,
+                              );
+                            },
+                          );
+
+                        },
+                        child: const Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                        ), // "Next" icon for category selection
+                      ),
+                    );
+                  } else{
+                    return const SizedBox.shrink(); // Return an empty widget if no focus
                   }
-                  return const SizedBox.shrink(); // Return an empty widget if not focused
                 },
               ),
 

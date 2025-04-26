@@ -71,7 +71,12 @@ class CategoryListWidget extends StatelessWidget {
 
 class CategoryListItemWidget extends StatelessWidget {
   const CategoryListItemWidget({
-    super.key, required this.categoryTitle, required this.transactionId, required this.transactionName, required this.transactionAmount, required this.transactionDate,
+    super.key,
+    required this.categoryTitle,
+    required this.transactionId,
+    required this.transactionName,
+    required this.transactionAmount,
+    required this.transactionDate,
   });
 
   final String categoryTitle;
@@ -87,6 +92,7 @@ class CategoryListItemWidget extends StatelessWidget {
     return ListTile(
       title: Text(categoryTitle),
       onTap: () {
+        // Initialize the transaction
         localProvider.initTransaction(
           transactionId: transactionId,
           transactionName: transactionName,
@@ -94,7 +100,19 @@ class CategoryListItemWidget extends StatelessWidget {
           transactionCategory: categoryTitle,
           transactionDate: transactionDate,
         );
+
+        // Clear the title and amount controllers
+        localProvider.amountController.clear();
+        localProvider.titleController.clear();
+
+        // Close the bottom sheet
         Navigator.pop(context);
+
+        // Refocus the title text field and reopen the keyboard after the widget tree stabilizes
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          localProvider.setTempTransactionId(transactionId + 1);
+          localProvider.titleFocusNode.requestFocus();
+        });
       },
     );
   }

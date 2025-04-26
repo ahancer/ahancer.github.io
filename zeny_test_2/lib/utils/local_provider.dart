@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:zeny/models/model_local.dart';
 
@@ -38,7 +39,7 @@ class LocalProvider with ChangeNotifier {
         .fold(0.0, (sum, transaction) => sum + transaction.transactionAmount); // Sum up the amounts
   }
 
-  void initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory, required int transactionDate}) {
+  initTransaction({required int transactionId, required String transactionName, required double transactionAmount, required String transactionCategory, required int transactionDate}) {
     final tempTransaction = LocalModel(
       transactionId: transactionId,
       transactionName: transactionName,
@@ -121,12 +122,54 @@ class LocalProvider with ChangeNotifier {
   }
 
 
-  bool _isTitleFocused = false; // Track if the title input is focused
+  bool _isTitleFocused = false;
+  bool _isAmountFocused = false;
 
   bool get isTitleFocused => _isTitleFocused;
+  bool get isAmountFocused => _isAmountFocused;
 
   void setTitleFocus(bool isFocused) {
     _isTitleFocused = isFocused;
+    print('Title Focus: $_isTitleFocused');
+    notifyListeners();
+  }
+
+  void setAmountFocus(bool isFocused) {
+    _isAmountFocused = isFocused;
+    print('Amount Focus: $_isAmountFocused');
+    notifyListeners();
+  }
+
+
+  // Controllers
+  final TextEditingController titleController = TextEditingController();
+  final TextEditingController amountController = TextEditingController();
+
+  // Focus Nodes
+  final FocusNode titleFocusNode = FocusNode();
+  final FocusNode amountFocusNode = FocusNode();
+
+  // Dispose resources
+  void disposeResources() {
+    titleController.dispose();
+    amountController.dispose();
+    titleFocusNode.dispose();
+    amountFocusNode.dispose();
+  }
+
+  // Temporary transaction ID
+  int? _tempTransactionId;
+
+  int? get tempTransactionId => _tempTransactionId;
+
+  Future<void> setTempTransactionId(int transactionId) async {
+    _tempTransactionId = transactionId;
+    print('Set Temp ID to: $transactionId');
+    notifyListeners(); // Notify listeners about the change
+  }
+
+  void clearTempTransactionId() {
+    _tempTransactionId = null;
     notifyListeners(); // Notify listeners about the change
   }
 
