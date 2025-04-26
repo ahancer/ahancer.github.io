@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:zeny/utils/local_provider.dart';
+import 'package:zeny/widgets/category_list_widget.dart';
 
 class TransactionInputWidget extends StatefulWidget {
   const TransactionInputWidget({super.key, required this.basedId, required this.transactionId});
@@ -99,58 +100,11 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
                     : 'Expense';
                 double transactionAmount = double.tryParse(_amountController.text.trim()) ?? 0.00;
     
-                return Container(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Text(
-                        'Select Category',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(height: 16),
-                      ListView(
-                        shrinkWrap: true,
-                        children: [
-                          CategoryListItemWidget(
-                            categoryTitle: 'Food',
-                            transactionId: widget.transactionId,
-                            transactionName: transactionName,
-                            transactionAmount: transactionAmount,
-                            transactionDate: widget.basedId,
-                          ),
-                          CategoryListItemWidget(
-                            categoryTitle: 'Transport',
-                            transactionId: widget.transactionId,
-                            transactionName: transactionName,
-                            transactionAmount: transactionAmount,
-                            transactionDate: widget.basedId,
-                          ),
-                          CategoryListItemWidget(
-                            categoryTitle: 'Shopping',
-                            transactionId: widget.transactionId,
-                            transactionName: transactionName,
-                            transactionAmount: transactionAmount,
-                            transactionDate: widget.basedId,
-                          ),
-                          CategoryListItemWidget(
-                            categoryTitle: 'Gift',
-                            transactionId: widget.transactionId,
-                            transactionName: transactionName,
-                            transactionAmount: transactionAmount,
-                            transactionDate: widget.basedId,
-                          ),
-                          CategoryListItemWidget(
-                            categoryTitle: 'Other',
-                            transactionId: widget.transactionId,
-                            transactionName: transactionName,
-                            transactionAmount: transactionAmount,
-                            transactionDate: widget.basedId,
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
+                return CategoryListWidget(
+                  transactionId: widget.transactionId,
+                  transactionName: transactionName,
+                  transactionAmount: transactionAmount,
+                  transactionDate: widget.basedId,
                 );
               },
             );
@@ -182,33 +136,3 @@ class _TransactionInputWidgetState extends State<TransactionInputWidget> {
   }
 }
 
-class CategoryListItemWidget extends StatelessWidget {
-  const CategoryListItemWidget({
-    super.key, required this.categoryTitle, required this.transactionId, required this.transactionName, required this.transactionAmount, required this.transactionDate,
-  });
-
-  final String categoryTitle;
-  final int transactionId;
-  final String transactionName;
-  final double transactionAmount;
-  final int transactionDate;
-
-  @override
-  Widget build(BuildContext context) {
-    final localProvider = Provider.of<LocalProvider>(context, listen: false);
-
-    return ListTile(
-      title: Text(categoryTitle),
-      onTap: () {
-        localProvider.initTransaction(
-          transactionId: transactionId,
-          transactionName: transactionName,
-          transactionAmount: transactionAmount,
-          transactionCategory: categoryTitle,
-          transactionDate: transactionDate,
-        );
-        Navigator.pop(context);
-      },
-    );
-  }
-}
