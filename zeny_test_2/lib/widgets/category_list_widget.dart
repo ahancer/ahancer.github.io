@@ -21,7 +21,7 @@ class CategoryListWidget extends StatelessWidget {
             'Select Category',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 8),
           ListView(
             shrinkWrap: true,
             children: [
@@ -47,7 +47,14 @@ class CategoryListWidget extends StatelessWidget {
                 transactionDate: transactionDate,
               ),
               CategoryListItemWidget(
-                categoryTitle: 'Gift',
+                categoryTitle: 'Housing',
+                transactionId: transactionId,
+                transactionName: transactionName,
+                transactionAmount: transactionAmount,
+                transactionDate: transactionDate,
+              ),
+              CategoryListItemWidget(
+                categoryTitle: 'Personal',
                 transactionId: transactionId,
                 transactionName: transactionName,
                 transactionAmount: transactionAmount,
@@ -90,7 +97,7 @@ class CategoryListItemWidget extends StatelessWidget {
     final localProvider = Provider.of<LocalProvider>(context, listen: false);
 
     return ListTile(
-      title: Text(categoryTitle),
+      title: Text(categoryTitle,),
       onTap: () {
         // Initialize the transaction
         localProvider.initTransaction(

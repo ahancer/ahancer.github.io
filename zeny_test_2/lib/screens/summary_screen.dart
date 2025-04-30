@@ -23,7 +23,8 @@ class _SummaryScreenState extends State<SummaryScreen> {
     double foodExpense = localProvider.getCategoryExpense('Food');
     double transportExpense = localProvider.getCategoryExpense('Transport');
     double shoppingExpense = localProvider.getCategoryExpense('Shopping');
-    double giftExpense = localProvider.getCategoryExpense('Gift');
+    double housingExpense = localProvider.getCategoryExpense('Housing');
+    double personalExpense = localProvider.getCategoryExpense('Personal');
     double otherExpense = localProvider.getCategoryExpense('Other');
 
     return PopScope(
@@ -69,9 +70,14 @@ class _SummaryScreenState extends State<SummaryScreen> {
                     amount: shoppingExpense * exchangeRate,
                   ),
                   SummaryRowWidget(
-                    label: 'Gift',
+                    label: 'Housing',
                     currency: currency,
-                    amount: giftExpense * exchangeRate,
+                    amount: housingExpense * exchangeRate,
+                  ),
+                  SummaryRowWidget(
+                    label: 'Personal',
+                    currency: currency,
+                    amount: personalExpense * exchangeRate,
                   ),
                   SummaryRowWidget(
                     label: 'Other',

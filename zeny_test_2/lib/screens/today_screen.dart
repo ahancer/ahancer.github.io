@@ -38,17 +38,7 @@ class _TodayScreenState extends State<TodayScreen> {
 
   }
 
-  @override
-  void dispose() {
 
-    final localProvider = Provider.of<LocalProvider>(context, listen: false);
-    
-    localProvider.disposeResources();
-    localProvider.titleFocusNode.dispose();
-    localProvider.amountFocusNode.dispose();
-
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
